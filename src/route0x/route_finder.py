@@ -163,7 +163,7 @@ class RouteFinder:
         embeddings = self._get_embeddings(query)
 
         is_outlier, _ = self._is_outlier(embeddings)
-        route = {"is_outlier": is_outlier}
+        route = {"is_oos": is_outlier}
 
         probabilities = self.classifier.predict_proba(embeddings)[0]
         class_id = np.argmax(probabilities)
@@ -194,7 +194,7 @@ class RouteFinder:
             predicted_route = route["route_name"]
             prob = float(route['prob'])
 
-            if route['is_outlier']:
+            if route['is_oos']:
                 if prob < model_confidence_threshold_for_using_outlier_head:
                     predicted_route = self.oos_label
             else:

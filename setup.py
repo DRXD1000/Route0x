@@ -29,7 +29,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.0.1',
+    version='0.0.21',
     description='Low latency, High Accuracy, Custom Query routers for Humans and Agents',
     packages=['route0x'],                
     package_dir={'route0x': 'src/route0x'}, 

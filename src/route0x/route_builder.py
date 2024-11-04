@@ -113,7 +113,8 @@ class RouteBuilder:
                  add_additional_invalid_routes: bool = False,
                  invalid_routes: Optional[List[str]] = None,
                  only_oos_head: bool = False,
-                 log_level: str = "info"):
+                 log_level: str = "info",
+                 do_quantise: bool = False):
                  
         """
         Initializes the RouteBuilder with configuration parameters.
@@ -156,6 +157,7 @@ class RouteBuilder:
         self.build_request = build_request if build_request else None
         self.fallback_samples_per_route = config.get("fallback_samples_per_route")
         self.device = "cuda:0" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu") if not device else device
+        self.do_quantise = do_quantise
 
         self.local_llm_host = config.get("local_llm_host")
         self.client = Client(host=self.local_llm_host)
@@ -826,7 +828,8 @@ class RouteBuilder:
             opset_version=13
         )
 
-        self._quantize_onnx_model(onnx_save_path, quantized_model_path)
+        if self.do_quantise:
+            self._quantize_onnx_model(onnx_save_path, quantized_model_path)
 
     def _quantize_onnx_model(self, onnx_model_path, quantized_model_path):
         """
