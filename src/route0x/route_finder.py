@@ -14,11 +14,6 @@ class RouteFinder:
     def __init__(self, 
                  model_dir: str = None, 
                  oos_label: str = "NO_NODES_DETECTED",
-                 return_raw_scores = False,
-                 # Valid only when return_raw_scores = False
-                 model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
-                 model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
-                 nn_for_fallback: int = 5,
                  use_calibrated_head = False,
                  max_length: int = 32,
                  use_compressed_model: bool = False):
@@ -40,9 +35,6 @@ class RouteFinder:
             self.logger.info(f"Loading un-calibrated classifier")
             self.classifier = self._load_classifier()
         
-        self.model_confidence_threshold_for_using_outlier_head = model_confidence_threshold_for_using_outlier_head
-        self.model_uncertainity_threshold_for_using_nn = model_uncertainity_threshold_for_using_nn
-        self.return_raw_scores = return_raw_scores
         self.outlier_detectors = self._load_outlier_detectors()
         self.pooling_strategy = self._get_pooling_strategy()
         self.vectordb = VectorDB()
@@ -50,7 +42,6 @@ class RouteFinder:
         self.labels_dict = self.vectordb.load_labels(str(self.model_dir / "label_dict.pkl"))
         self.oos_label = oos_label
         self.max_length = max_length
-        self.nn_for_fallback = nn_for_fallback
 
         # TODO: Default ONNX FP32 offers best latency, only mem usage is the concern, Quantisation might address it but perfomance drop is quite a bit
         # So use_compressed_model at the moment will be discouraged for users, but can be used.
@@ -160,9 +151,16 @@ class RouteFinder:
         return prediction, raw_score  
     
 
-    def find_route(self, text: str) -> dict:
+    def find_route(self, 
+                   query: str,
+                   return_raw_scores = False,
+                   # Valid only when return_raw_scores = False
+                   model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
+                   model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
+                   nn_for_fallback: int = 5,
+                   ) -> dict:
 
-        embeddings = self._get_embeddings(text)
+        embeddings = self._get_embeddings(query)
 
         is_outlier, _ = self._is_outlier(embeddings)
         route = {"is_outlier": is_outlier}
@@ -172,13 +170,13 @@ class RouteFinder:
         class_name = self.classifier.classes_[class_id]
 
         route.update({
-            "query": text,
+            "query": query,
             "route_id": class_id, 
             "route_name": class_name, 
             "prob": np.round(probabilities[class_id],2)
         })
 
-        indices, distances = self.vectordb.search_index(embeddings, self.vec_index , num_neighbors=self.nn_for_fallback)
+        indices, distances = self.vectordb.search_index(embeddings, self.vec_index , num_neighbors=nn_for_fallback)
         vec_nns = self.vectordb.get_labels_from_indices(indices, self.labels_dict)
         label_counts = Counter(vec_nns)
         most_common_label = label_counts.most_common(1)[0][0]  
@@ -191,16 +189,16 @@ class RouteFinder:
             "mean_distance_from_majority_route": mean_distance_for_most_common_label
         })
 
-        if not self.return_raw_scores:
+        if not return_raw_scores:
 
             predicted_route = route["route_name"]
             prob = float(route['prob'])
 
             if route['is_outlier']:
-                if prob < self.model_confidence_threshold_for_using_outlier_head:
+                if prob < model_confidence_threshold_for_using_outlier_head:
                     predicted_route = self.oos_label
             else:
-                if prob <= self.model_uncertainity_threshold_for_using_nn:
+                if prob <= model_uncertainity_threshold_for_using_nn:
                     predicted_route = route["majority_voted_route"]
                     prob = route["mean_distance_from_majority_route"]
 
