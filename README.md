@@ -5,7 +5,7 @@
 
 <div align="center">
 
-[![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/flashrank)
+[![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/route0x)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
 [![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![package]( https://img.shields.io/badge/Package-PYPI-blue.svg)](https://pypi.org/project/route0x/)
