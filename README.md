@@ -1,5 +1,5 @@
 <p align ="center">
-<img width=350 src = "./images/route0x_logo_v2.png">
+<img width=350 src = "./images/route0x_logo.png">
 </p>
 
 
