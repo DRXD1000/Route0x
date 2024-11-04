@@ -5,10 +5,11 @@
 
 <div align="center">
 
-[![Downloads](https://static.pepy.tech/badge/flashrank)](https://pepy.tech/project/flashrank)
+[![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/flashrank)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
-[![license]( https://img.shields.io/badge/License-Apache-blue.svg)](https://opensource.org/licenses/Apache2.0)
-[![package]( https://img.shields.io/badge/Package-PYPI-blue.svg)](https://pypi.org/project/FlashRank/)[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524)
+[![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![package]( https://img.shields.io/badge/Package-PYPI-blue.svg)](https://pypi.org/project/route0x/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524)
 
 </div>
 
