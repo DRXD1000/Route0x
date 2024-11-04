@@ -1,4 +1,7 @@
 from setuptools import setup, find_packages
+import glob
+import os
+
 
 build_requires = [
     'pandas',
@@ -25,11 +28,13 @@ route_requires = [
     'tokenizers==0.19.1',
     'onnxruntime==1.15.1',
     'joblib==1.4.2',
+    'seaborn'
 ]
+
 
 setup(
     name='Route0x',
-    version='0.0.21',
+    version='0.0.28',
     description='Low latency, High Accuracy, Custom Query routers for Humans and Agents',
     packages=['route0x'],                
     package_dir={'route0x': 'src/route0x'}, 
@@ -39,7 +44,7 @@ setup(
         'route': route_requires,
     },
      package_data={
-        'route0x': ['*.json', '*.csv', '*.txt', 'data/*'], 
+        'route0x': ['*.json', '*.csv', '*.txt', 'data/*']
     },
     include_package_data=True, 
     classifiers=[

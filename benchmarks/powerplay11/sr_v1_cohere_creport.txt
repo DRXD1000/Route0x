@@ -1,0 +1,64 @@
+                              precision    recall  f1-score   support
+
+    Account Balance Deducted       0.53      1.00      0.70         8
+        Account Not Verified       0.21      1.00      0.35         3
+               Account Reset       0.25      1.00      0.40         1
+                Appreciation       0.12      1.00      0.22         1
+   Bank Verification Details       0.25      1.00      0.40         1
+  Cannot See Joined Contests       0.07      1.00      0.13         3
+                Capabilities       0.58      0.88      0.70         8
+                  Cash Bonus       0.00      0.00      0.00         3
+           Cash Bonus Expiry       0.00      0.00      0.00         1
+         Change Bank Account       0.30      1.00      0.46         3
+        Change Mobile Number       0.45      1.00      0.62         5
+ Change Profile Team Details       0.08      0.50      0.13         2
+          Chat With An Agent       0.63      0.32      0.42        38
+        Check Deposit Status       0.73      0.67      0.70        12
+        Check Wallet Balance       0.18      0.80      0.30         5
+              Contact Number       0.44      0.73      0.55        11
+                   Criticism       0.11      0.75      0.19         4
+Deducted Amount Not Received       0.04      1.00      0.08         1
+             Delete Pan Card       0.33      0.50      0.40         4
+        Download Powerplay11       0.03      1.00      0.05         1
+         Fairplay Violations       0.55      1.00      0.71         6
+                  Fake Teams       0.00      0.00      0.00         9
+                    Feedback       0.20      1.00      0.33         1
+               Greetings Day       0.05      0.75      0.09         4
+       How Points Calculated       0.33      0.67      0.44         3
+                 How To Play       0.00      0.00      0.00         1
+          Instant Withdrawal       0.54      1.00      0.70         7
+                Join Contest       0.04      0.50      0.07         2
+        Less Winnings Amount       0.10      1.00      0.19         4
+             Match Abandoned       0.21      0.71      0.32         7
+           NO_NODES_DETECTED       0.95      0.10      0.18       674
+            New Team Pattern       0.14      1.00      0.25         1
+       No Email Confirmation       0.17      1.00      0.29         1
+        Offers And Referrals       0.33      0.67      0.44         3
+     Pan Verification Failed       0.05      1.00      0.10         1
+          Points Not Updated       0.37      0.69      0.48        35
+                    Presence       0.00      0.00      0.00         2
+        Refund Of Added Cash       0.07      0.50      0.12         2
+      Refund Of Wrong Amount       0.08      0.50      0.14         2
+                Signup Bonus       0.08      1.00      0.14         1
+           Taxes On Winnings       0.50      1.00      0.67         1
+               Team Deadline       0.00      0.00      0.00         3
+                      Thanks       0.41      0.88      0.56         8
+                 Types Bonus       0.00      0.00      0.00         2
+              Types Contests       0.00      0.00      0.00         3
+            Unutilized Money       0.14      1.00      0.25         1
+                  Update App       0.12      1.00      0.22         1
+                Verify Email       0.11      1.00      0.19         2
+               Verify Mobile       0.00      0.00      0.00         0
+                  Verify Pan       0.00      0.00      0.00         8
+        What If Theres A Tie       0.17      1.00      0.29         2
+                  Why Verify       0.00      0.00      0.00         0
+                    Winnings       0.45      0.53      0.49        36
+         Withdraw Cash Bonus       0.07      1.00      0.13         1
+            Withdrawal Intro       0.07      0.25      0.11         4
+           Withdrawal Status       0.27      0.43      0.33         7
+             Withdrawal Time       0.06      0.50      0.11         2
+                Wrong Scores       0.26      0.33      0.29        21
+
+                    accuracy                           0.25       983
+                   macro avg       0.21      0.64      0.27       983
+                weighted avg       0.76      0.25      0.25       983

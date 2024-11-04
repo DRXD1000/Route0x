@@ -1,0 +1,27 @@
+                       precision    recall  f1-score   support
+
+100 Night Trial Offer       0.00      0.00      0.00         5
+   About Sof Mattress       0.11      0.33      0.17         3
+         Cancel Order       1.00      1.00      1.00         6
+        Check Pincode       0.79      0.60      0.68        25
+                  Cod       1.00      0.83      0.91        12
+           Comparison       0.91      0.56      0.69        18
+    Delay In Delivery       0.43      0.67      0.53        15
+         Distributors       0.33      0.46      0.39        13
+                  Emi       0.73      0.85      0.79        13
+        Ergo Features       0.33      0.67      0.44         3
+             Lead Gen       0.00      0.00      0.00        17
+        Mattress Cost       0.50      0.39      0.44        23
+    NO_NODES_DETECTED       0.61      0.85      0.71       144
+               Offers       1.00      0.18      0.31        11
+         Order Status       0.75      0.38      0.50         8
+       Ortho Features       0.62      0.45      0.53        11
+              Pillows       0.83      0.77      0.80        13
+     Product Variants       0.00      0.00      0.00         8
+      Return Exchange       1.00      0.08      0.15        12
+   Size Customization       0.36      0.53      0.43        15
+   What Size To Order       0.56      0.23      0.32        22
+
+             accuracy                           0.59       397
+            macro avg       0.57      0.47      0.47       397
+         weighted avg       0.60      0.59      0.56       397

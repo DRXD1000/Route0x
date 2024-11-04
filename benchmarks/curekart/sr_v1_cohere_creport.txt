@@ -1,0 +1,35 @@
+                              precision    recall  f1-score   support
+
+                 Call Center       0.33      0.20      0.25         5
+                Cancel Order       0.63      0.91      0.74        32
+             Chat With Agent       0.30      0.43      0.35        14
+               Check Pincode       0.17      0.18      0.17        22
+               Consult Start       0.15      0.25      0.19        16
+             Delay In Parcel       0.33      0.20      0.25        10
+                 Expiry Date       0.35      1.00      0.52        13
+                   Franchise       0.33      0.17      0.22        12
+                    Immunity       0.00      0.00      0.00         0
+      International Shipping       0.00      0.00      0.00         0
+           Modes Of Payments       0.00      0.00      0.00         0
+              Modify Address       0.25      1.00      0.40         3
+           NO_NODES_DETECTED       0.86      0.36      0.51       532
+                 Order Query       0.00      0.00      0.00         0
+                Order Status       0.28      0.75      0.41        12
+                Order Taking       0.00      0.00      0.00        19
+            Original Product       0.64      0.95      0.77        43
+            Payment And Bill       0.20      0.33      0.25         3
+                Portal Issue       0.00      0.00      0.00         0
+           Recommend Product       0.60      0.26      0.36       205
+                  Refer Earn       0.00      0.00      0.00         0
+Refunds Returns Replacements       0.72      0.65      0.68        20
+             Resume Delivery       0.22      0.22      0.22         9
+                 Side Effect       0.10      1.00      0.18         5
+                     Sign Up       0.07      1.00      0.14         3
+                  Start Over       0.00      0.00      0.00         0
+           Store Information       0.50      0.64      0.56        11
+              User Goal Form       0.22      1.00      0.36         2
+              Work From Home       0.00      0.00      0.00         0
+
+                    accuracy                           0.40       991
+                   macro avg       0.25      0.40      0.26       991
+                weighted avg       0.68      0.40      0.46       991

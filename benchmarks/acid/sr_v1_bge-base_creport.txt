@@ -1,0 +1,182 @@
+                                             precision    recall  f1-score   support
+
+                             Info Add House       0.29      1.00      0.44         6
+                    Info Add Remove Insured       0.97      0.40      0.57       179
+                    Info Add Remove Vehicle       0.77      0.78      0.77       189
+Info Add Vehicle Property Paperless Billing       0.75      0.81      0.78       129
+                           Info Agent Wrong       0.50      1.00      0.67         7
+                    Info Agt Not Responding       0.97      0.90      0.93       132
+                         Info American Star       0.71      1.00      0.83         5
+                               Info Amt Due       0.79      0.77      0.78       115
+                          Info Ast Purchase       0.09      0.25      0.13         8
+                             Info Ast Quote       0.56      0.56      0.56        18
+                        Info Atv Ins Explan       0.62      1.00      0.77         5
+                     Info Auto Cov Question       0.67      0.11      0.18       131
+                       Info Auto Ins Canada       0.96      0.94      0.95       143
+          Info Auto Policy Cant See In Acct       0.56      0.90      0.69        59
+                      Info Auto Pymt Cancel       0.74      0.96      0.84       109
+                 Info Auto Pymt Min Balance       0.45      0.83      0.59         6
+                    Info Auto Pymt Schedule       0.87      0.90      0.88       111
+                         Info Bill Due Date       0.87      0.77      0.82       126
+                Info Billing Acct Name Edit       0.26      0.86      0.40         7
+                      Info Billing Acct Num       0.80      0.98      0.88       101
+                  Info Billing Dept Contact       0.90      1.00      0.95        94
+                       Info Boat Cov Explan       0.55      1.00      0.71         6
+              Info Business Policy Cant See       0.95      0.82      0.88       129
+                        Info Cancel Confirm       0.65      0.94      0.77        34
+                            Info Cancel Fee       0.95      1.00      0.98        81
+                     Info Cancel Ins Policy       0.87      0.82      0.84       154
+            Info Cant See Farm Ranch Policy       0.99      0.99      0.99       144
+                       Info Cant See Policy       0.79      0.76      0.77        87
+                               Info Careers       0.96      0.47      0.63       162
+                  Info Cfr Question General       0.50      0.57      0.53         7
+                          Info Change Agent       0.33      0.80      0.47        15
+                   Info Change Autopay Date       0.17      0.62      0.27         8
+                      Info Change Bank Acct       0.83      0.97      0.89        94
+                         Info Change Userid       0.96      1.00      0.98       101
+                      Info Cl Adjuster Info       0.84      0.88      0.86       114
+                       Info Cl Check Status       0.41      0.64      0.50        14
+                        Info Cl Claim Filed       0.80      0.68      0.74        84
+                          Info Cl Complaint       0.77      0.80      0.78        83
+                         Info Cl Docs Email       0.79      0.29      0.42        90
+                           Info Cl Docs Fax       0.90      0.93      0.91        74
+                          Info Cl Docs Mail       0.25      0.37      0.30        35
+                          Info Cl Docs Send       0.05      0.21      0.09        14
+                         Info Cl Drp Assign       0.33      0.62      0.43         8
+                           Info Cl Drp Join       0.67      1.00      0.80         6
+                         Info Cl File Claim       0.76      0.80      0.78        46
+                               Info Cl Fnol       0.82      0.71      0.76       107
+                     Info Cl Fnol Auto Hail       0.35      1.00      0.52         7
+                     Info Cl Glass Safelite       0.50      0.57      0.53         7
+                           Info Cl Hrp Join       0.50      0.60      0.55         5
+                             Info Cl Rental       0.86      0.50      0.63        12
+                      Info Cl Shop Add Work       0.71      0.62      0.67         8
+                 Info Cl Shop Send Estimate       0.21      1.00      0.35         8
+                             Info Cl Status       0.80      0.83      0.81       124
+                        Info Cl Update Info       0.56      0.33      0.41        58
+                       Info Coll Cov Explan       0.14      0.40      0.21         5
+                           Info Collections       1.00      0.67      0.80        45
+                         Info Combine Pymts       0.96      0.77      0.86       115
+                       Info Comp Cov Explan       0.42      0.71      0.53         7
+                      Info Confirm Coverage       0.34      0.77      0.48        13
+                Info Credit Card Change Num       0.96      0.97      0.96       125
+                       Info Credit Card Fee       0.97      0.99      0.98       135
+                Info Customer Service Hours       0.67      0.86      0.75         7
+                       Info Dec Page Needed       0.96      0.94      0.95       141
+                            Info Ded Explan       0.71      0.83      0.77         6
+                            Info Deductible       0.91      1.00      0.95        48
+                      Info Delete Dupe Pymt       0.95      0.89      0.92       147
+                        Info Different Amts       0.98      0.84      0.91       160
+                             Info Discounts       0.98      0.85      0.91       126
+                        Info Do Not Contact       0.81      0.98      0.89        49
+                     Info Dreamkeep Rewards       0.80      0.80      0.80         5
+              Info Dreamkeep Rewards Errors       0.67      0.80      0.73         5
+                     Info Dreams Foundation       1.00      1.00      1.00         8
+                     Info Employment Verify       0.11      1.00      0.19         7
+                                   Info Ers       0.93      0.58      0.71       179
+                           Info Ers Contact       0.27      0.76      0.39        17
+                         Info Ers Reimburse       0.43      1.00      0.60         6
+                            Info Find Agent       0.92      0.83      0.87       110
+                      Info Flood Ins Explan       0.30      0.60      0.40         5
+                          Info Forgot Email       0.88      0.84      0.86        58
+                       Info Forgot Password       0.85      0.99      0.91        84
+                         Info Forgot Userid       0.96      0.98      0.97        92
+                          Info Gap Coverage       0.80      0.89      0.84         9
+               Info Gen Policy Cov Question       0.46      0.26      0.34       125
+                      Info Get A Quote Auto       0.36      0.91      0.52        47
+             Info Get A Quote Auto Nonowner       0.36      0.83      0.50         6
+                       Info Get A Quote Cfr       0.85      0.96      0.90        73
+                     Info Get A Quote Other       0.65      0.31      0.42       118
+                   Info Get A Quote Renters       0.54      0.70      0.61        10
+          Info Get A Quote Renters Purchase       0.31      0.80      0.44         5
+                             Info Glass Cov       0.93      0.95      0.94       135
+                   Info Handling Fee Remove       0.98      0.95      0.96        86
+                      Info Health Ins Quote       0.98      0.56      0.71       116
+                      Info Homesite Contact       0.50      1.00      0.67         6
+                        Info Ins Card Print       0.24      0.79      0.37        14
+                        Info Ins Card Proof       0.92      0.66      0.77       129
+                         Info Ins Card Send       0.31      0.42      0.36        12
+                     Info Ins Not Available       0.98      0.39      0.55       106
+                         Info Knowyourdrive       0.50      0.17      0.25         6
+         Info Knowyourdrive Device Activate       0.36      0.57      0.44         7
+           Info Knowyourdrive Device Return       0.50      0.80      0.62         5
+                  Info Knowyourdrive Errors       1.00      0.33      0.50         6
+                  Info Letter Of Experience       0.94      0.80      0.86        59
+                           Info Liab Explan       0.62      1.00      0.77         5
+               Info Life Beneficiary Change       0.97      0.99      0.98       140
+                         Info Life Cash Out       0.99      0.87      0.93       111
+                         Info Life Incr Cov       0.98      0.88      0.93       103
+                   Info Life Policy Amt Due       0.79      0.94      0.86        77
+                 Info Life Policy Auto Pymt       0.90      0.97      0.93        59
+                    Info Life Policy Cancel       0.91      0.99      0.94        78
+                Info Life Policy Cannot See       0.83      0.95      0.88       125
+                 Info Life Question General       0.50      0.12      0.20         8
+                           Info Life Refund       1.00      0.98      0.99        95
+              Info Life Update Contact Info       0.96      0.62      0.76        80
+                               Info Log Out       0.94      1.00      0.97        50
+                           Info Login Error       0.97      0.79      0.87       185
+                     Info Mail Pymt Address       0.95      0.97      0.96        89
+                             Info Make Pymt       0.63      0.79      0.70       139
+                       Info Mexico Auto Ins       0.98      0.98      0.98        95
+                       Info Mortgage Co Poi       0.57      0.36      0.44        11
+                           Info Name Change       0.74      0.88      0.80        98
+              Info New Vehicle Grace Period       0.27      0.90      0.42        10
+                         Info One Time Pymt       0.87      0.88      0.88       103
+                        Info Operating Area       0.74      0.86      0.79       106
+                          Info Operating Co       0.96      0.71      0.81        31
+                  Info Paperless Docs Setup       0.57      0.41      0.48        99
+                   Info Paperless Docs Stop       0.80      0.59      0.68       100
+                        Info Paperless Mail       0.65      0.73      0.69        44
+                          Info Pay Life Ins       0.93      0.95      0.94        92
+                             Info Phone Num       0.53      0.72      0.61        32
+               Info Phone Num International       0.98      0.72      0.83        61
+                               Info Poi Old       0.36      0.50      0.42         8
+                     Info Policy Doc Needed       0.83      0.68      0.75       133
+                            Info Policy Num       0.83      0.93      0.88       102
+                Info Policy Trans To Rental       0.84      1.00      0.91        86
+                     Info Premium Breakdown       0.59      0.50      0.54        20
+                     Info Prepaid Card Pymt       0.98      0.95      0.97        88
+                       Info Profile Section       0.14      1.00      0.25         5
+                          Info Pymt Confirm       0.78      0.87      0.82        91
+                   Info Pymt Duedate Change       0.85      0.86      0.85       106
+                            Info Pymt Error       0.46      0.63      0.54        30
+                          Info Pymt History       0.90      0.77      0.83        99
+                       Info Pymt Not Ontime       0.85      0.62      0.72       111
+                   Info Pymt Process Change       0.86      0.93      0.89        81
+                  Info Pymt Setup Auto Pymt       0.79      0.93      0.86        70
+                             Info Pymt Time       0.17      1.00      0.29         5
+                          Info Refund Check       1.00      0.97      0.99       118
+                  Info Reinstate Ins Policy       0.97      0.80      0.87       113
+                    Info Renters Cov Explan       0.56      1.00      0.71         5
+                         Info Rideshare Cov       0.95      0.98      0.97        85
+                         Info Rv Ins Explan       0.50      0.80      0.62         5
+                       Info Salvage Vehicle       0.67      1.00      0.80         6
+                           Info Set Up Acct       0.89      0.84      0.87        96
+                          Info Speak To Rep       0.80      0.82      0.81       155
+                           Info Srtwentytwo       0.62      0.62      0.62         8
+               Info Teen Safe Driver Signup       0.24      1.00      0.38         5
+                   Info The General Contact       0.71      0.71      0.71         7
+                 Info Transfer Acct Balance       0.79      0.99      0.88       100
+                     Info Travel Ins Explan       0.25      0.60      0.35         5
+                   Info Update Contact Info       0.94      0.72      0.82        89
+                          Info Update Email       0.87      0.99      0.93        89
+                     Info Update Lienholder       0.99      0.97      0.98       152
+                      Info Update Phone Num       0.90      0.97      0.93       118
+                    Info Uw Alumni Discount       0.50      1.00      0.67         5
+                       Info Who Is My Agent       0.50      0.58      0.54        12
+              Info Why Was Policy Cancelled       0.85      0.87      0.86       110
+                          NO_NODES_DETECTED       0.00      0.00      0.00         0
+                                         No       0.22      0.22      0.22         9
+                         St General Request       0.07      0.22      0.10        18
+                                   St Hello       0.67      0.29      0.40         7
+                             St How Is Abby       0.72      0.90      0.80        20
+                         St How Old Is Abby       1.00      0.36      0.53        14
+                            St Is Abby Real       0.67      0.67      0.67         6
+                               St Thank You       0.83      0.83      0.83        12
+                        St What Can Abby Do       0.13      0.40      0.20         5
+                    St Where Does Abby Live       0.21      1.00      0.35         8
+                                        Yes       0.60      0.75      0.67         8
+
+                                   accuracy                           0.80     11042
+                                  macro avg       0.69      0.77      0.69     11042
+                               weighted avg       0.85      0.80      0.80     11042

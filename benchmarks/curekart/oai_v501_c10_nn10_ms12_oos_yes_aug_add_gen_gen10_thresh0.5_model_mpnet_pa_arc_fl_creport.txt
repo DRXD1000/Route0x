@@ -1,0 +1,32 @@
+                              precision    recall  f1-score   support
+
+                 Call Center       0.25      0.60      0.35         5
+                Cancel Order       1.00      0.72      0.84        32
+             Chat With Agent       0.80      0.57      0.67        14
+               Check Pincode       0.91      0.45      0.61        22
+               Consult Start       0.70      0.88      0.78        16
+             Delay In Parcel       1.00      0.40      0.57        10
+                 Expiry Date       1.00      1.00      1.00        13
+                   Franchise       1.00      0.92      0.96        12
+      International Shipping       0.00      0.00      0.00         0
+           Modes Of Payments       0.00      0.00      0.00         0
+              Modify Address       1.00      0.67      0.80         3
+           NO_NODES_DETECTED       0.76      0.85      0.80       532
+                 Order Query       0.00      0.00      0.00         0
+                Order Status       0.62      0.42      0.50        12
+                Order Taking       0.86      0.32      0.46        19
+            Original Product       1.00      0.86      0.92        43
+            Payment And Bill       0.40      0.67      0.50         3
+                Portal Issue       0.00      0.00      0.00         0
+           Recommend Product       0.76      0.58      0.66       205
+Refunds Returns Replacements       0.79      0.75      0.77        20
+             Resume Delivery       0.31      0.44      0.36         9
+                 Side Effect       1.00      0.60      0.75         5
+                     Sign Up       0.20      1.00      0.33         3
+                  Start Over       0.00      0.00      0.00         0
+           Store Information       0.71      0.91      0.80        11
+              User Goal Form       0.50      1.00      0.67         2
+
+                    accuracy                           0.75       991
+                   macro avg       0.60      0.56      0.54       991
+                weighted avg       0.78      0.75      0.75       991
