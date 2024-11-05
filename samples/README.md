@@ -1,15 +1,6 @@
 ## Details on using Route0x different nuanced routing requirements
 
 
-FAQs:
-1. `train/eval/test` csvs expect two columns `text` and `label`.
-2. All generated synthetic queries will be in the folder `generated_datasets`
-3. `min_samples` signifies the no of samples per route expected for training and defaults to 12.
-4. `samples_per_route` signifies how many synthetic samples to be generated per route.
-4. routebuilder obj method show_defaults() prints all defaults.
-
-
-
 | Scenario | Link |
 |---------------|----------|
 |Get me started | [Snippet](#get-me-started) |
@@ -55,4 +46,13 @@ routebuilder = RouteBuilder(
     )
 ```
 
-### Knobs
+### FAQs:
+- T.B.A
+
+### Knobs and Tips
+
+1. `train/eval/test` csvs expect two columns `text` and `label`.
+2. All generated synthetic queries will be in the folder `generated_datasets`
+3. `min_samples` signifies the no of samples per route expected for training and defaults to 12.
+4. `samples_per_route` signifies how many synthetic samples to be generated per route.
+4. routebuilder obj method show_defaults() prints all defaults.
