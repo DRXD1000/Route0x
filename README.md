@@ -37,9 +37,9 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
   - [Training](#training)
   - [Inference](#inference)
 - [Route0x Evals: A Highlight reel](#route0x-evals-a-highlight-reel)
-  - [1. Route0x x Amazon Research 2024: HINT3 OOS Dataset](#1-route0x-x-amazon-research-2024-hint3-oos-dataset)
-  - [2. Route0x x Salesforce Research 2022: CLINC OOS Dataset](#2-route0x-x-salesforce-research-2022-clinc-oos-dataset)
-  - [3. Route0x x Aurelio Labs' Semantic Router](#3-route0x-x-aurelio-labs-semantic-router)
+  - [1. Route0x vs Amazon Research 2024: HINT3 OOS Dataset](#1-route0x-vs-amazon-research-2024-hint3-oos-dataset)
+  - [2. Route0x vs Salesforce Research 2022: CLINC OOS Dataset](#2-route0x-vs-salesforce-research-2022-clinc-oos-dataset)
+  - [3. Route0x vs Aurelio Labs' Semantic Router](#3-route0x-vs-aurelio-labs-semantic-router)
 - [I want to use it](#i-want-to-use-it)
 - [I want to know how it works](#i-want-to-know-how-it-works)
 - [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
@@ -72,7 +72,7 @@ route_obj = query_router.find_route(<your-query>)
 
 ## Route0x Evals: A Highlight reel.
 
-### 1. [Route0x x Amazon Research 2024: HINT3 OOS Dataset](https://arxiv.org/pdf/2410.01627)
+### 1. [Route0x vs Amazon Research 2024: HINT3 OOS Dataset](https://arxiv.org/pdf/2410.01627)
 
 **Goal of this comparison:** To show that Route0x offers:
 
@@ -97,7 +97,7 @@ best number without any notion of variations denoted usually with ±.
 
 
 
-### 2. [Route0x x Salesforce Research 2022: CLINC OOS Dataset](https://arxiv.org/pdf/2106.04564)
+### 2. [Route0x vs Salesforce Research 2022: CLINC OOS Dataset](https://arxiv.org/pdf/2106.04564)
 
 [Datasets](https://huggingface.co/datasets/Salesforce/dialogstudio) 
 
@@ -115,7 +115,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/FS-CLINC-Training Regime.png"/>
 
 
-### 3. [Route0x x Aurelio Labs' Semantic Router](https://github.com/aurelio-labs/semantic-router)
+### 3. [Route0x vs Aurelio Labs' Semantic Router](https://github.com/aurelio-labs/semantic-router)
 
 **Goal of this comparison:** To show that Route0x beats pure embedding similarity + threshold based approach for query routing.
 
