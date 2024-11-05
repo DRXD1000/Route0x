@@ -36,23 +36,23 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.0.34',
+    version='0.0.35',
     description='Low latency, High Accuracy, Custom Query routers for Humans and Agents',
-    packages=['route0x'],                
-    package_dir={'route0x': 'src/route0x'}, 
+    packages=find_packages(include=['route0x', 'route0x.*']),  
+    package_dir={'route0x': 'route0x'},  
     install_requires=[],
     extras_require={
         'build': build_requires,
         'route': route_requires,
     },
-     package_data={
-        'route0x': ['*.json', '*.csv', '*.txt', 'data/*']
+    package_data={
+        'route0x.route_builder': ['*.json', 'data/*'] 
     },
-    include_package_data=True, 
+    include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.8',  
+    python_requires='>=3.8',
 )
