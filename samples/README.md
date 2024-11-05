@@ -1,4 +1,4 @@
-## This page helps you use Route0x for your different nuanced needs
+## Details on using Route0x different nuanced routing requirements
 
 
 FAQs:
@@ -6,7 +6,7 @@ FAQs:
 2. All generated synthetic queries will be in the folder `generated_datasets`
 3. `min_samples` signifies the no of samples per route expected for training and defaults to 12.
 4. `samples_per_route` signifies how many synthetic samples to be generated per route.
-4. routebuilder obj method show_default() prints all defaults.
+4. routebuilder obj method show_defaults() prints all defaults.
 
 
 
