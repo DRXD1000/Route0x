@@ -29,13 +29,14 @@ route_requires = [
     'tokenizers==0.19.1',
     'onnxruntime==1.15.1',
     'joblib==1.4.2',
-    'seaborn'
+    'faiss-cpu'
+    'seaborn',
 ]
 
 
 setup(
     name='Route0x',
-    version='0.0.31',
+    version='0.0.32',
     description='Low latency, High Accuracy, Custom Query routers for Humans and Agents',
     packages=['route0x'],                
     package_dir={'route0x': 'src/route0x'}, 
