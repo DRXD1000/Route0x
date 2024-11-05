@@ -130,6 +130,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 ### I want to use it
 ### I want to know how it works
+<img src="./images/How it works.png"/><br/><br/>
 ### I want to see the detailed empirical evals
 ### Roadmap
 ### Limitations
