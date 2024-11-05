@@ -43,7 +43,7 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 - [I want to use it](#i-want-to-use-it)
 - [I want to know how it works](#i-want-to-know-how-it-works)
 - [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
-- [Roadmap](#roadmap)
+- [Features and Roadmap](#features-and-roadmap)
 - [Caveats and Limitations](#caveats-and-limitations)
 - [Citations](#citations)
 
@@ -128,9 +128,16 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/SOFM_SR.png"/><br/><br/>
 
 ### I want to use it
+-T.B.A
 ### I want to know how it works
+
 <img src="./images/How it works.png" width=500/><br/><br/>
+
 ### I want to see the detailed empirical evals
-### Roadmap
+-T.B.A
+### Features and Roadmap
+-T.B.A
 ### Caveats and Limitations
+-T.B.A
 ### Citations
+-T.B.A
