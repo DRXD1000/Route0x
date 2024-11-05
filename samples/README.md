@@ -12,13 +12,13 @@ FAQs:
 
 | Scenario | Link |
 |---------------|----------|
-|Get me started |  |
-|I have a list of routes and I can give 2 samples per route |  |
-|I have a list of routes but no samples |  |
-|I have a full-on train.csv and test.csv  |  |
-|I would like to handle In-domain / adversarial OOS queries  |  |
-|I would like my router robust to typos in queries |  |
-|I would like run route0x on a TODS style benchmark dataset to compare performance |  |
+|Get me started | [Snippet](#get-me-started) |
+|I have a list of routes and I can give 2 samples per route | T.B.A |
+|I have a list of routes but no samples | T.B.A |
+|I have a full-on train.csv and test.csv  | T.B.A |
+|I would like to handle In-domain / adversarial OOS queries  | T.B.A |
+|I would like my router robust to typos in queries | T.B.A |
+|I would like run route0x on a TODS style benchmark dataset to compare performance | T.B.A |
 
 
 ### Get me started:
@@ -48,14 +48,11 @@ build_request = RouteBuilderRequest(routes)
 routebuilder = RouteBuilder(
             seed = 1234,
             build_request = build_request,
-            loss_funct_name="PairwiseArcFaceFocalLoss",
             domain="personal assistant",
-            max_steps=100,
-            warmup_proportion=0.05,
             llm_name="llama3.1",
             enable_synth_data_gen = True,
             enable_id_oos_gen = True,
-            skip_eval = False,
-            add_additional_invalid_routes = False,
     )
 ```
+
+### Knobs
