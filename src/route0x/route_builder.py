@@ -987,6 +987,7 @@ class RouteBuilder:
                 train_dataset = self._load_data(file_path=train_path)
                 self.logger.info(f"Augmenting synthetic data from your sample <query,label> pairs:")
                 if self.eval_path:
+                    number_of_synthetic_samples = self.samples_per_route if self.samples_per_route else self.min_samples
                     train_file, eval_file = self._generate_synthetic_queries(self.routes, self.domain, samples_per_route=number_of_synthetic_samples, model=self.llm_name, route_template=self.route_template, prefix=prefix, user_instructions=self.instruct_llm, train_samples=train_dataset, make_eval_samples=False)
                     eval_file = self.eval_path  
                 else:    
