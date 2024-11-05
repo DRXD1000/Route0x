@@ -13,6 +13,8 @@ import subprocess
 import platform
 import time
 import csv
+import random
+
 
 import pandas as pd
 from datasets import Dataset, concatenate_datasets, load_dataset, load_from_disk
@@ -35,6 +37,9 @@ import chardet
 import ollama
 import torch
 from setfit import SetFitModel
+
+import nlpaug.augmenter.char as nac
+
 
 from .outlier_detector import OutlierDetector
 from .vector_db import VectorDB
@@ -114,7 +119,8 @@ class RouteBuilder:
                  invalid_routes: Optional[List[str]] = None,
                  only_oos_head: bool = False,
                  log_level: str = "info",
-                 do_quantise: bool = False):
+                 do_quantise: bool = False,
+                 add_typo_robustness: bool = False):
                  
         """
         Initializes the RouteBuilder with configuration parameters.
@@ -154,6 +160,7 @@ class RouteBuilder:
         self.nn_for_oos_detection = nn_for_oos_detection if nn_for_oos_detection else config.get("nn_for_oos_detection")
         self.skip_eval = skip_eval
         self.only_oos_head = only_oos_head
+        self.add_typo_robustness = add_typo_robustness if add_typo_robustness else config.get("add_typo_robustness")
         self.build_request = build_request if build_request else None
         self.fallback_samples_per_route = config.get("fallback_samples_per_route")
         self.device = "cuda:0" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu") if not device else device
@@ -175,6 +182,9 @@ class RouteBuilder:
 
         self.logger = self._setup_logger(log_level)
         self.logger.info(f"Using device -  {self.device}")
+    
+    def show_defaults(self):
+        return {k: v for k, v in vars(self).items() if self._is_json_serializable(v)}  
     
     def _setup_logger(self, level_str) -> logging.Logger:
         """
@@ -455,6 +465,14 @@ class RouteBuilder:
                     self.logger.info(f"Total queries for  {label} - {len(examples)}")
 
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
+
+                    if self.add_typo_robustness:
+                        synthetic_data.extend(
+                                [{'text': typo, 'label': entry['label'], 'is_user_sample': entry['is_user_sample']}
+                                for entry in synthetic_data
+                                for typo in self._generate_natural_typo_variants(entry['text'])]
+                        )
+                    
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
 
@@ -951,7 +969,40 @@ class RouteBuilder:
             return True
         except (TypeError, OverflowError):
             return False
-    
+
+    def _generate_natural_typo_variants(self, query, num_variants=2):
+        """
+        Generate naturally typo-augmented versions of a given query.
+        
+        Parameters:
+            query (str): The original query.
+            num_variants (int): Number of typo-augmented queries to generate.
+            
+        Returns:
+            List[str]: List of typo-augmented queries.
+        """
+        
+        augmented_queries = set()
+        
+        aug_keyboard = nac.KeyboardAug(min_char=1, aug_char_min=1, aug_char_max=1)       # Subtle keyboard typos
+        aug_delete = nac.RandomCharAug(action="delete", aug_char_min=1, aug_char_max=1)  # Single character deletion
+        aug_swap = nac.RandomCharAug(action="swap", aug_char_min=1, aug_char_max=1)      # Swap adjacent characters
+        
+        while len(augmented_queries) < num_variants:
+            # Randomly select an augmentation type for each variant
+            augmenters = [aug_keyboard, aug_delete, aug_swap]
+            augmenter = random.choice(augmenters)
+            
+            # Apply the selected augmentation and retrieve a single string result
+            typo_query = augmenter.augment(query)[0]
+            
+            # Ensure the typo-augmented query is distinct and add it to the set
+            augmented_queries.add(typo_query)
+
+        return list(augmented_queries)[:num_variants]
+
+
+
     def build_routes(self):
         """
         Builds the semantic query routes based on the provided configurations.

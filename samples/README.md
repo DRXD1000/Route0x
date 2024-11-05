@@ -1,11 +1,13 @@
 ## This page helps you use Route0x for your different nuanced needs
 
+
 FAQs:
 1. `train/eval/test` csvs expect two columns `text` and `label`.
 2. All generated synthetic queries will be in the folder `generated_datasets`
 3. `min_samples` signifies the no of samples per route expected for training and defaults to 12.
 4. `samples_per_route` signifies how many synthetic samples to be generated per route.
 4. routebuilder obj method show_default() prints all defaults.
+
 
 
 | Scenario | Link |
