@@ -606,12 +606,31 @@ class RouteBuilder:
             embeddings.append(batch_embeddings)
         return np.vstack(embeddings)
     
+    def display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, num_samples=25):
+        """
+        Display confidence scores before and after calibration for a random sample of records.
+        """
+
+        random_indices = np.random.choice(len(val_text_embeddings), num_samples, replace=False)
+
+        before_confidences = []
+        after_confidences = []
+
+        for idx in random_indices:
+            before_conf = classifier_head.predict_proba(val_text_embeddings[idx:idx+1]).max()
+            after_conf = calibrated_model.predict_proba(val_text_embeddings[idx:idx+1]).max()
+            before_confidences.append(before_conf)
+            after_confidences.append(after_conf)
+
+        for i, (before, after) in enumerate(zip(before_confidences, after_confidences), 1):
+            self.logger.info(f"Sample {i}: Confidence before/after calibration: {before:.3f}/{after:.3f}")
+
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
 
             classifier_path = os.path.join(output_dir, "route0x_model", "model_head.pkl")
             classifier_head = joblib.load(classifier_path)
-            self.logger.info(classifier_head.classes_)
+            self.logger.debug(classifier_head.classes_)
             
             calibrated_model = CalibratedClassifierCV(
                 estimator=classifier_head, 
@@ -621,14 +640,16 @@ class RouteBuilder:
             
             calibrated_model.fit(val_text_embeddings, val_labels)
             
-            before_conf = classifier_head.predict_proba(val_text_embeddings[0:1]).max()
-            after_conf = calibrated_model.predict_proba(val_text_embeddings[0:1]).max()
-            self.logger.info(f"Sample Confidence before/after calibration: {before_conf:.3f}/{after_conf:.3f}")
+            # before_conf = classifier_head.predict_proba(val_text_embeddings[0:1]).max()
+            # after_conf = calibrated_model.predict_proba(val_text_embeddings[0:1]).max()
+            # self.logger.info(f"Sample Confidence before/after calibration: {before_conf:.3f}/{after_conf:.3f}")
             
             calibrated_path = os.path.join(output_dir, "route0x_model", "model_head_calibrated.pkl")
             joblib.dump(calibrated_model, calibrated_path)
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
+            
+            self.display_calibration_trend(val_text_embeddings, classifier_head, calibrated_model, num_samples=25)
             
         except Exception as e:
             self.logger.error(f"Calibration failed: {str(e)}")
