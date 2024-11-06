@@ -125,7 +125,7 @@ class RouteBuilder:
         """
         Initializes the RouteBuilder with configuration parameters.
         """
-        config_path = pkg_resources.resource_filename('route0x', 'config.json')
+        config_path = pkg_resources.resource_filename('route0x.route_builder', 'config.json')
         with open(config_path, 'r') as f:
             config = json.load(f)
         
@@ -169,16 +169,6 @@ class RouteBuilder:
         self.local_llm_host = config.get("local_llm_host")
         self.client = Client(host=self.local_llm_host)
         self.HOSTED_LLM_FAMILIES = config.get("hosted_llm_families")
-        self.LOGO = """
-            ____             _        _____           
-            |  _ \ ___  _   _| |_ ___|  _  | __  __
-            | |_) / _ \| | | | __/ _ \ | | |\ \/ /
-            |  _ < (_) | |_| | ||  __/ |_| | >  < 
-            |_| \_\___/ \__,_|\__\___|_____| /_/\_\\
-
-                                                           
-        Low Latency, High Accuracy, Custom Query routers for Humans and Agents.
-        """
 
         self.logger = self._setup_logger(log_level)
         self.logger.info(f"Using device -  {self.device}")
@@ -570,7 +560,7 @@ class RouteBuilder:
 
         if self.invalid_routes:
             train_file = os.path.join(self.synthetic_data_dir, f"{prefix}_train_additional_invalid.csv")
-            add_invalid_routes_file = pkg_resources.resource_filename('route0x', 'data/outliers_v1.csv')
+            add_invalid_routes_file = pkg_resources.resource_filename('route0x.route_builder', 'data/outliers_v1.csv')
             outliers_df = pd.read_csv(add_invalid_routes_file)
             filtered_df = outliers_df[outliers_df['label'].isin(self.invalid_routes)]
             N = 2
@@ -648,7 +638,7 @@ class RouteBuilder:
             joblib.dump(calibrated_model, calibrated_path)
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
-            
+
             self.display_calibration_trend(val_text_embeddings, classifier_head, calibrated_model, num_samples=25)
             
         except Exception as e:
@@ -1028,7 +1018,17 @@ class RouteBuilder:
         """
         Builds the semantic query routes based on the provided configurations.
         """
-        print(self.LOGO)
+        LOGO = """
+            ____             _        _____           
+            |  _ \ ___  _   _| |_ ___|  _  | __  __
+            | |_) / _ \| | | | __/ _ \ | | |\ \/ /
+            |  _ < (_) | |_| | ||  __/ |_| | >  < 
+            |_| \_\___/ \__,_|\__\___|_____| /_/\_\\
+
+                                                           
+        Low Latency, High Accuracy, Custom Query routers for Humans and Agents.
+        """
+        print(LOGO)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         prefix = f"synthetic_{self.llm_name}_{self.domain}_{timestamp}"    
         prefix = prefix.replace(" ", "_")

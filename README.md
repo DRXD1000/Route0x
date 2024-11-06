@@ -25,6 +25,7 @@
 
 Query Routing is a higher level tasks that neither dovetails into Intent classification nor into Query similarity, not atleast in isolation. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. Query routing cannot be just mapped to Intent classification alone and it won't work owing to the above requirements. Research literature hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue and offer a production-grade solution for Humans and Agents.
 
+
 **KPI for Query Routing:** $ / Query. (this subsumes accuracy, latency)
 
 > Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains and grains` against 2 different researches and 1 library.*
@@ -35,17 +36,19 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 
 - [Route0x: Getting Started](#route0x-getting-started)
   - [Training](#training)
+  - [Build your router - Starter Notebook](#build-your-router---starter-notebook)
   - [Inference](#inference)
-- [Route0x Evals: A Highlight reel](#route0x-evals-a-highlight-reel)
+- [Route0x Evals: A Highlight Reel](#route0x-evals-a-highlight-reel)
   - [1. Route0x vs Amazon Research 2024: HINT3 OOS Dataset](#1-route0x-vs-amazon-research-2024-hint3-oos-dataset)
   - [2. Route0x vs Salesforce Research 2022: CLINC OOS Dataset](#2-route0x-vs-salesforce-research-2022-clinc-oos-dataset)
   - [3. Route0x vs Aurelio Labs' Semantic Router](#3-route0x-vs-aurelio-labs-semantic-router)
-- [I want to use it](#i-want-to-use-it)
 - [I want to know how it works](#i-want-to-know-how-it-works)
+- [I want to understand the knobs and tinker with it](#i-want-to-understand-the-knobs-and-tinker-with-it)
 - [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
 - [Features and Roadmap](#features-and-roadmap)
 - [Caveats and Limitations](#caveats-and-limitations)
 - [Citations](#citations)
+
 
 
 ## Route0x: Getting Started
@@ -127,17 +130,66 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/PP11_SR.png"/><br/><br/>
 <img src="./images/SOFM_SR.png"/><br/><br/>
 
-### I want to use it
--T.B.A
 ### I want to know how it works
-
 <img src="./images/How it works.png" width=500/><br/><br/>
+
+### I want to understand the knobs and tinker with it:
+
+```python
+{'train_path': None,
+ 'eval_path': None,
+ 'model_name': 'sentence-transformers/all-mpnet-base-v2',
+ 'epochs': 1,
+ 'max_steps': 100,
+ 'batch_size': 16,
+ 'output_dir': 'output',
+ 'seed': 1234,
+ 'lr': 2e-05,
+ 'loss_funct_name': 'PairwiseArcFaceFocalLoss',
+ 'warmup_proportion': 0.05,
+ 'min_samples': 12,
+ 'samples_per_route': None,
+ 'routes': None,
+ 'route_template': '{}',
+ 'domain': None,
+ 'llm_name': 'llama3.1',
+ 'instruct_llm': '',
+ 'enable_id_oos_gen': True,
+ 'enable_synth_data_gen': True,
+ 'max_query_len': 24,
+ 'hf_dataset': None,
+ 'label_column': 'label',
+ 'text_column': 'text',
+ 'oos_label': 'NO_NODES_DETECTED',
+ 'add_additional_invalid_routes': False,
+ 'invalid_routes': ['gibberish',
+  'mojibake',
+  'chitchat',
+  'non-english',
+  'profanity'],
+ 'expected_oos_proportion': 0.1,
+ 'nn_for_oos_detection': 10,
+ 'skip_eval': False,
+ 'only_oos_head': False,
+ 'add_typo_robustness': False,
+ 'build_request': None,
+ 'fallback_samples_per_route': 30,
+ 'device': 'mps',
+ 'do_quantise': False,
+ 'local_llm_host': 'http://localhost:11434',
+ 'HOSTED_LLM_FAMILIES': {'openai': ['gpt'],
+  'anthropic': ['claude'],
+  'google': ['gemini']}}
+```
 
 ### I want to see the detailed empirical evals
 -T.B.A
+
 ### Features and Roadmap
 -T.B.A
+
 ### Caveats and Limitations
 -T.B.A
+
 ### Citations
 -T.B.A
