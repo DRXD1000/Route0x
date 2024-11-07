@@ -1,0 +1,284 @@
+text,label,is_user_sample
+You guys provide EMI option?,Emi,True
+Do you offer Zero Percent EMI payment options?,Emi,True
+Is there an EMI plan available for this sofa set?,Emi,False
+Can I pay for this dining table in monthly installments?,Emi,False
+What are the EMI terms for bedroom furniture?,Emi,False
+Do you have interest-free EMI options for home decor?,Emi,False
+How can I apply for EMI on this furniture purchase?,Emi,False
+Are there any special EMI offers on living room sets?,Emi,False
+Can I get this recliner on a 12-month EMI plan?,Emi,False
+Is EMI available for bulk furniture orders?,Emi,False
+What is the minimum purchase amount for EMI eligibility?,Emi,False
+Do you offer flexible EMI plans for interior design packages?,Emi,False
+COD option is availble?,Cod,True
+Do you offer COD to my pincode?,Cod,True
+Is cash on delivery available for furniture items?,Cod,False
+Can I pay on delivery for my interior decor order?,Cod,False
+Do you support COD for large furniture pieces?,Cod,False
+Is COD an option for my sofa purchase?,Cod,False
+Can I use COD for my home decor shopping?,Cod,False
+Are there any restrictions on COD for furniture?,Cod,False
+Is COD available for all interior design products?,Cod,False
+Can I choose COD for my new dining table?,Cod,False
+Is there a COD limit for furniture orders?,Cod,False
+Do you provide COD for custom interior items?,Cod,False
+Features of Ortho mattress,Ortho Features,True
+What are the key features of the SOF Ortho mattress,Ortho Features,True
+Characteristics of orthopedic mattresses,Ortho Features,False
+Ortho mattress specifications,Ortho Features,False
+Benefits of using an orthopedic mattress,Ortho Features,False
+Top features of orthopedic bedding,Ortho Features,False
+Ortho mattress design elements,Ortho Features,False
+What makes an orthopedic mattress unique?,Ortho Features,False
+Core features of orthopedic sleep surfaces,Ortho Features,False
+Ortho mattress technology highlights,Ortho Features,False
+Essential features of orthopedic sleep systems,Ortho Features,False
+Innovative features in orthopedic mattresses,Ortho Features,False
+What are the key features of the SOF Ergo mattress,Ergo Features,True
+Features of Ergo mattress,Ergo Features,True
+What distinguishes the Ergo chair from others?,Ergo Features,False
+List the ergonomic features of the Ergo desk,Ergo Features,False
+How does the Ergo sofa support posture?,Ergo Features,False
+Ergo table features overview,Ergo Features,False
+What makes the Ergo recliner unique?,Ergo Features,False
+Ergo office chair features,Ergo Features,False
+Key benefits of the Ergo standing desk,Ergo Features,False
+Ergo bed features and benefits,Ergo Features,False
+What are the ergonomic aspects of the Ergo stool?,Ergo Features,False
+Ergo furniture features comparison,Ergo Features,False
+What is the difference between the Ergo & Ortho variants,Comparison,True
+Difference between Ergo & Ortho Mattress,Comparison,True
+How does a sectional sofa compare to a traditional sofa?,Comparison,False
+Contrast the features of a king-size bed and a queen-size bed.,Comparison,False
+What are the pros and cons of leather vs fabric upholstery?,Comparison,False
+Compare the durability of hardwood and engineered wood flooring.,Comparison,False
+How does a recliner differ from an armchair?,Comparison,False
+What distinguishes a modular kitchen from a traditional kitchen?,Comparison,False
+Differences between a pedestal table and a trestle table.,Comparison,False
+How does a loft bed compare to a bunk bed?,Comparison,False
+What are the key differences between blackout curtains and regular curtains?,Comparison,False
+Compare the aesthetics of Scandinavian design to industrial design.,Comparison,False
+What is the warranty period?,Warranty,True
+Warranty,Warranty,True
+How long is the furniture warranty?,Warranty,False
+Is there a warranty on this sofa?,Warranty,False
+Warranty details for dining table,Warranty,False
+Does the warranty cover upholstery?,Warranty,False
+What does the warranty include?,Warranty,False
+Warranty terms for bedroom set,Warranty,False
+Is the warranty transferable?,Warranty,False
+How to claim warranty for furniture?,Warranty,False
+Warranty policy for interior items,Warranty,False
+Are there any warranty exclusions?,Warranty,False
+How does the 100 night trial work,100 Night Trial Offer,True
+What is the 100-night offer,100 Night Trial Offer,True
+Can I return the mattress after the 100-night trial?,100 Night Trial Offer,False
+Is there a fee for the 100-night trial return?,100 Night Trial Offer,False
+What items are eligible for the 100-night trial?,100 Night Trial Offer,False
+Do I need to keep the packaging for the 100-night trial return?,100 Night Trial Offer,False
+How do I initiate a return under the 100-night trial?,100 Night Trial Offer,False
+Are there any conditions for the 100-night trial offer?,100 Night Trial Offer,False
+Is the 100-night trial available for all furniture?,100 Night Trial Offer,False
+What happens if I don't like the product after the 100-night trial?,100 Night Trial Offer,False
+Can I exchange an item during the 100-night trial?,100 Night Trial Offer,False
+Does the 100-night trial apply to custom furniture?,100 Night Trial Offer,False
+I want to change the size of the mattress.,Size Customization,True
+Need some help in changing size of the mattress,Size Customization,True
+How can I adjust the dimensions of my sofa?,Size Customization,False
+Can I customize the table size?,Size Customization,False
+Is it possible to resize the bookshelf?,Size Customization,False
+I need to alter the chair dimensions.,Size Customization,False
+Can you help me with bed size customization?,Size Customization,False
+Looking to modify the wardrobe size.,Size Customization,False
+How do I change the size of my dining table?,Size Customization,False
+Can the cabinet size be adjusted?,Size Customization,False
+I want to resize my coffee table.,Size Customization,False
+Is there an option to customize the couch size?,Size Customization,False
+Can you help with the size?,What Size To Order,True
+How do I know what size to order?,What Size To Order,True
+What dimensions should I choose?,What Size To Order,False
+Which size is best for my space?,What Size To Order,False
+How do I select the right size?,What Size To Order,False
+What are the size options available?,What Size To Order,False
+Can you guide me on the size selection?,What Size To Order,False
+What size fits a small room?,What Size To Order,False
+How to measure for the correct size?,What Size To Order,False
+What size would suit a large living room?,What Size To Order,False
+Is there a size guide for this product?,What Size To Order,False
+What size should I pick for a studio apartment?,What Size To Order,False
+Get in Touch,Lead Gen,True
+Want to talk to an live agent,Lead Gen,True
+Request a design consultation,Lead Gen,False
+Schedule a showroom visit,Lead Gen,False
+Speak with a furniture expert,Lead Gen,False
+Inquire about custom furniture options,Lead Gen,False
+Connect with an interior designer,Lead Gen,False
+Request a catalog,Lead Gen,False
+Ask about bulk order discounts,Lead Gen,False
+Get a quote for office furniture,Lead Gen,False
+Find out about delivery options,Lead Gen,False
+Learn more about sustainable materials,Lead Gen,False
+Do you deliver to my pincode,Check Pincode,True
+Check pincode,Check Pincode,True
+Is my area serviceable for delivery?,Check Pincode,False
+Can you ship to my postal code?,Check Pincode,False
+Verify delivery availability for my zip code,Check Pincode,False
+Is my location eligible for shipping?,Check Pincode,False
+Do you cover my pincode for delivery?,Check Pincode,False
+Can I get furniture delivered to my area?,Check Pincode,False
+Is delivery possible to my postal code?,Check Pincode,False
+Check if my zip code is in your delivery range,Check Pincode,False
+Can you confirm delivery to my pincode?,Check Pincode,False
+Is my pincode within your service area?,Check Pincode,False
+Do you have any showrooms in Delhi state,Distributors,True
+Do you have any distributors in Mumbai city,Distributors,True
+Can you provide a list of your authorized dealers in Bangalore?,Distributors,False
+Where can I find your furniture distributors in Chennai?,Distributors,False
+Are there any official showrooms in Hyderabad?,Distributors,False
+Do you have any partners in the Kolkata region?,Distributors,False
+Is there a distributor network in Pune?,Distributors,False
+Who are your main suppliers in Ahmedabad?,Distributors,False
+Can I visit a showroom in Jaipur?,Distributors,False
+Are there any exclusive dealers in Lucknow?,Distributors,False
+Do you have a distribution center in Surat?,Distributors,False
+Where is your nearest showroom in Chandigarh?,Distributors,False
+Price of mattress,Mattress Cost,True
+Mattress cost,Mattress Cost,True
+How much does a mattress cost?,Mattress Cost,False
+Mattress price range,Mattress Cost,False
+Cost of a queen mattress,Mattress Cost,False
+King size mattress price,Mattress Cost,False
+Twin mattress cost,Mattress Cost,False
+Affordable mattress prices,Mattress Cost,False
+Mattress pricing details,Mattress Cost,False
+Cost of memory foam mattress,Mattress Cost,False
+Latex mattress price,Mattress Cost,False
+Mattress price comparison,Mattress Cost,False
+What are the product variants,Product Variants,True
+Product Variants,Product Variants,True
+List all available furniture variants,Product Variants,False
+Show me the interior design options,Product Variants,False
+Different styles of this furniture,Product Variants,False
+What are the available color options?,Product Variants,False
+Furniture size variations,Product Variants,False
+Interior design variants,Product Variants,False
+Available finishes for this product,Product Variants,False
+What are the material options?,Product Variants,False
+Show furniture model variations,Product Variants,False
+List the upholstery choices,Product Variants,False
+How is SOF different from other mattress brands,About Sof Mattress,True
+Why SOF mattress,About Sof Mattress,True
+What materials are used in SOF mattresses?,About Sof Mattress,False
+Is SOF mattress suitable for back pain relief?,About Sof Mattress,False
+What is the warranty period for SOF mattresses?,About Sof Mattress,False
+How does SOF mattress support spinal alignment?,About Sof Mattress,False
+Are SOF mattresses eco-friendly?,About Sof Mattress,False
+What sizes are available for SOF mattresses?,About Sof Mattress,False
+How does the SOF mattress regulate temperature?,About Sof Mattress,False
+What is the firmness level of SOF mattresses?,About Sof Mattress,False
+Can SOF mattresses be used on adjustable beds?,About Sof Mattress,False
+What is the return policy for SOF mattresses?,About Sof Mattress,False
+It's been a month,Delay In Delivery,True
+Why so long?,Delay In Delivery,True
+Where is my order?,Delay In Delivery,False
+Still waiting for my furniture,Delay In Delivery,False
+Delivery date passed,Delay In Delivery,False
+Shipment overdue,Delay In Delivery,False
+Order not arrived,Delay In Delivery,False
+When will it be delivered?,Delay In Delivery,False
+Expected delivery date?,Delay In Delivery,False
+Why the holdup?,Delay In Delivery,False
+Any update on my order?,Delay In Delivery,False
+Furniture still not here,Delay In Delivery,False
+Order Status,Order Status,True
+What is my order status?,Order Status,True
+Track my furniture order,Order Status,False
+Check delivery status,Order Status,False
+Is my sofa shipped?,Order Status,False
+Order tracking update,Order Status,False
+Furniture order progress,Order Status,False
+Status of my interior order,Order Status,False
+Has my table been dispatched?,Order Status,False
+When will my chairs arrive?,Order Status,False
+Current status of my order,Order Status,False
+Order status for my couch,Order Status,False
+Need my money back,Return Exchange,True
+I want refund,Return Exchange,True
+Request a return for my purchase,Return Exchange,False
+Exchange this item for a different one,Return Exchange,False
+How do I return a damaged product?,Return Exchange,False
+Initiate a refund process,Return Exchange,False
+Return policy for furniture items,Return Exchange,False
+Swap this chair for another model,Return Exchange,False
+Refund for defective sofa,Return Exchange,False
+Return this table for a full refund,Return Exchange,False
+Exchange this lamp for a different color,Return Exchange,False
+Process a return for this order,Return Exchange,False
+I want to cancel my order,Cancel Order,True
+How can I cancel my order,Cancel Order,True
+Cancel my furniture order,Cancel Order,False
+Request to cancel my interior order,Cancel Order,False
+How do I cancel my furniture purchase?,Cancel Order,False
+Cancel the order for my sofa,Cancel Order,False
+I need to cancel my interior design order,Cancel Order,False
+Can I cancel my furniture order?,Cancel Order,False
+Please cancel my order for the dining set,Cancel Order,False
+Cancel my order for the living room set,Cancel Order,False
+How to cancel my furniture order online?,Cancel Order,False
+Cancel my order for the bedroom furniture,Cancel Order,False
+Can I get pillows?,Pillows,True
+Do you sell pillows?,Pillows,True
+Where can I find decorative pillows?,Pillows,False
+Are there any hypoallergenic pillows available?,Pillows,False
+What are the best pillows for side sleepers?,Pillows,False
+Do you have memory foam pillows?,Pillows,False
+Can I order custom-sized pillows?,Pillows,False
+Are there any eco-friendly pillow options?,Pillows,False
+What is the price range for luxury pillows?,Pillows,False
+Do you offer pillow sets?,Pillows,False
+Can I see the latest pillow designs?,Pillows,False
+Are there any discounts on pillows currently?,Pillows,False
+Offers,Offers,True
+What are the available offers,Offers,True
+Current furniture discounts,Offers,False
+Interior design promotions,Offers,False
+Latest deals on sofas,Offers,False
+Special offers on dining sets,Offers,False
+Furniture sale events,Offers,False
+Exclusive interior decor offers,Offers,False
+Discounts on bedroom furniture,Offers,False
+Limited-time furniture deals,Offers,False
+Promotions on home furnishings,Offers,False
+Best offers on living room sets,Offers,False
+Can I adjust the dimensions of the bed?,NO_NODES_DETECTED,
+What options are available for mattresses?,NO_NODES_DETECTED,
+Tell me about the features of the new mattress model,NO_NODES_DETECTED,
+What makes the latest mattress unique?,NO_NODES_DETECTED,
+Can I pay on delivery at my location?,NO_NODES_DETECTED,
+Can you update me on my shipment?,NO_NODES_DETECTED,
+Is there a guarantee on the product?,NO_NODES_DETECTED,
+How does the new mattress compare to the old one?,NO_NODES_DETECTED,
+Is there a way to pay in installments?,NO_NODES_DETECTED,
+What size should I choose for my room?,NO_NODES_DETECTED,
+Are there any discounts currently?,NO_NODES_DETECTED,
+I need to return my purchase,NO_NODES_DETECTED,
+How do I stop my order from processing?,NO_NODES_DETECTED,
+Are there any outlets in Bangalore?,NO_NODES_DETECTED,
+What sets your brand apart from others?,NO_NODES_DETECTED,
+Can you verify delivery to my area?,NO_NODES_DETECTED,
+I need assistance with customer service,NO_NODES_DETECTED,
+Is there a payment plan available?,NO_NODES_DETECTED,
+How much does the new bed cost?,NO_NODES_DETECTED,
+Explain the trial period for the mattress,NO_NODES_DETECTED,
+Do you have cushions available?,NO_NODES_DETECTED,
+How's the weather today?,NO_NODES_DETECTED,
+Do you have any pets?,NO_NODES_DETECTED,
+Blurp glurp fnord schnozzle,NO_NODES_DETECTED,
+Wishy-washy mish-mash,NO_NODES_DETECTED,
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½,NO_NODES_DETECTED,
+Tï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½,NO_NODES_DETECTED,
+"Dobrý den, jak se máte?",NO_NODES_DETECTED,
+"Γεια σας, πώς είστε;",NO_NODES_DETECTED,
+f*cking moron!,NO_NODES_DETECTED,
+Shut the hell up!,NO_NODES_DETECTED,

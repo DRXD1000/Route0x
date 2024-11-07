@@ -458,11 +458,12 @@ class RouteBuilder:
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
 
                     if self.add_typo_robustness:
-                        typo_aug_samples.extend(
-                                            [{'text': typo.strip(), 'label': route_template.format(label), 'is_user_sample': False} for example in examples
-                                            for typo in self._generate_natural_typo_variants(example.strip())
-                                            ]
-                                            )
+                        raise NotImplementedError("Typo robustness is not yet implemented.")
+                        # typo_aug_samples.extend(
+                        #                     [{'text': typo.strip(), 'label': route_template.format(label), 'is_user_sample': False} for example in examples
+                        #                     for typo in self._generate_natural_typo_variants(example.strip())
+                        #                     ]
+                        #                     )
                     
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
@@ -471,12 +472,11 @@ class RouteBuilder:
                 #Users could be in different LLM usage tiers, Don't hit tokens/min limits
                 time.sleep(10)
 
-        if self.add_typo_robustness:
-                synthetic_data.extend(typo_aug_samples)
-
         if make_eval_samples:
             synthetic_df = pd.DataFrame(synthetic_data)
             train_data, eval_data = self._split_synthetic_data(synthetic_df, self.min_samples)
+            # if self.add_typo_robustness:
+            #     train_data = pd.concat([train_data, pd.DataFrame(typo_aug_samples)], ignore_index=True)
             train_data.to_csv(train_file, index=False)
             eval_data.to_csv(eval_file, index=False)
             self.logger.info(f"Synthetic training data saved to {train_file}")
@@ -485,9 +485,14 @@ class RouteBuilder:
             synthetic_df = pd.DataFrame(synthetic_data)
             if self.min_samples < 12:
                 train_data, eval_data = self._split_synthetic_data(synthetic_df, self.min_samples)
+                # if self.add_typo_robustness:
+                #     train_data = pd.concat([train_data, pd.DataFrame(typo_aug_samples)], ignore_index=True)
                 train_data.to_csv(train_file, index=False)
             else:
-                synthetic_df.to_csv(train_file, index=False)                    
+                # if self.add_typo_robustness:
+                #     synthetic_df = pd.concat([synthetic_df, pd.DataFrame(typo_aug_samples)], ignore_index=True)
+                synthetic_df.to_csv(train_file, index=False)      
+
             self.logger.info(f"Synthetic training data saved to {train_file}")
         return train_file, eval_file
 
@@ -984,7 +989,7 @@ class RouteBuilder:
         except (TypeError, OverflowError):
             return False
 
-    def _generate_natural_typo_variants(self, query, num_variants=2):
+    def _generate_natural_typo_variants(self, query, num_variants=1):
         """
         Generate naturally typo-augmented versions of a given query.
         
