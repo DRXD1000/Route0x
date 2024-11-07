@@ -131,7 +131,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/SOFM_SR.png"/><br/><br/>
 
 ### I want to know how it works
-<img src="./images/How it works.png" width=500/><br/><br/>
+<img src="./images/How it works.png" width=100%/><br/><br/>
 
 ### I want to understand the knobs and tinker with it:
 
