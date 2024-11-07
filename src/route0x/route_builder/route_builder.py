@@ -387,6 +387,7 @@ class RouteBuilder:
         Generates synthetic queries using an LLM in N stages
         """
         synthetic_data = []
+        typo_aug_samples = []
         train_file = os.path.join(self.synthetic_data_dir, f"{prefix}_train.csv")
         eval_file = os.path.join(self.synthetic_data_dir,f"{prefix}_eval.csv")
         ZERO_SHOT_SYSTEM_PROMPT = """You are an expert synthetic query generator for given labels. For a request like below, Request: Generate minimum of 2 short, high-quality, realistic queries with domain terminology for the label: 'Product Support' in 'e-commerce' domain without using the words in the label or domain the queries, Respond with a JSON list like below: ["What's your policy on software updates for electronic products?", "Do you provide warranty and spare parts for your products", "When can I expect my refund?"]. A Syntactically correct, well-formed JSON List as response is enough. No explanations or foot notes of any sort strictly NOT needed."""
@@ -457,12 +458,9 @@ class RouteBuilder:
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
 
                     if self.add_typo_robustness:
-                        typo_aug_samples = [typo for example in examples
+                        typo_aug_samples.extend([typo for example in examples
                                             for typo in self._generate_natural_typo_variants(example.strip())
-                                            ]
-                        self.logger.debug(f"Typo aug samples {typo_aug_samples}")
-                        synthetic_data.extend([{'text': typo_aug_sample.strip(), 'label': route_template.format(label), 'is_user_sample': False} for typo_aug_sample in typo_aug_samples if typo_aug_sample.strip()])
-                        
+                                            ])
                     
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
@@ -471,6 +469,9 @@ class RouteBuilder:
                 #Users could be in different LLM usage tiers, Don't hit tokens/min limits
                 time.sleep(10)
 
+        if self.add_typo_robustness:
+            for label in tqdm(labels, desc="Collating typo augs"):
+                synthetic_data.extend([{'text': typo_aug_sample.strip(), 'label': route_template.format(label), 'is_user_sample': False} for typo_aug_sample in typo_aug_samples if typo_aug_sample.strip()])
 
         if make_eval_samples:
             synthetic_df = pd.DataFrame(synthetic_data)
