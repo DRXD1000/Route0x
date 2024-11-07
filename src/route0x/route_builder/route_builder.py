@@ -458,9 +458,11 @@ class RouteBuilder:
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
 
                     if self.add_typo_robustness:
-                        typo_aug_samples.extend([typo for example in examples
+                        typo_aug_samples.extend(
+                                            [{'text': typo.strip(), 'label': route_template.format(label), 'is_user_sample': False} for example in examples
                                             for typo in self._generate_natural_typo_variants(example.strip())
-                                            ])
+                                            ]
+                                            )
                     
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
@@ -470,8 +472,7 @@ class RouteBuilder:
                 time.sleep(10)
 
         if self.add_typo_robustness:
-            for label in tqdm(labels, desc="Collating typo augs"):
-                synthetic_data.extend([{'text': typo_aug_sample.strip(), 'label': route_template.format(label), 'is_user_sample': False} for typo_aug_sample in typo_aug_samples if typo_aug_sample.strip()])
+                synthetic_data.extend(typo_aug_samples)
 
         if make_eval_samples:
             synthetic_df = pd.DataFrame(synthetic_data)
