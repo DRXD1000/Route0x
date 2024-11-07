@@ -21,7 +21,7 @@ build_requires = [
     'anthropic',
     'onnxconverter-common',
     'faiss-cpu',
-    'nlp-aug'
+    'nlpaug'
 ]
 
 route_requires = [
@@ -36,7 +36,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.0.39',
+    version='0.0.41',
     description='Low latency, High Accuracy, Custom Query routers for Humans and Agents',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
