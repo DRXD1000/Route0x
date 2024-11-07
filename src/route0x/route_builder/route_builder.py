@@ -41,10 +41,10 @@ from setfit import SetFitModel
 import nlpaug.augmenter.char as nac
 
 
-from .outlier_detector import OutlierDetector
-from .vector_db import VectorDB
-from .unified_llm_caller import UnifiedLLM
-from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+from outlier_detector import OutlierDetector
+from vector_db import VectorDB
+from unified_llm_caller import UnifiedLLM
+from losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -173,7 +173,7 @@ class RouteBuilder:
         self.logger = self._setup_logger(log_level)
         self.logger.info(f"Using device -  {self.device}")
     
-    def show_defaults(self):
+    def build_params(self):
         return {k: v for k, v in vars(self).items() if self._is_json_serializable(v)}  
     
     def _setup_logger(self, level_str) -> logging.Logger:
@@ -457,11 +457,12 @@ class RouteBuilder:
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
 
                     if self.add_typo_robustness:
-                        synthetic_data.extend(
-                                [{'text': typo, 'label': entry['label'], 'is_user_sample': entry['is_user_sample']}
-                                for entry in synthetic_data
-                                for typo in self._generate_natural_typo_variants(entry['text'])]
-                        )
+                        typo_aug_samples = [typo for example in examples
+                                            for typo in self._generate_natural_typo_variants(example.strip())
+                                            ]
+                        self.logger.debug(f"Typo aug samples {typo_aug_samples}")
+                        synthetic_data.extend([{'text': typo_aug_sample.strip(), 'label': route_template.format(label), 'is_user_sample': False} for typo_aug_sample in typo_aug_samples if typo_aug_sample.strip()])
+                        
                     
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
@@ -1155,5 +1156,3 @@ class RouteBuilder:
         self._export_onnx(run_dir)
         self.logger.info("Model training and evaluation completed.")
         self.logger.info("Thank you for using route0x! May all your queries find their way.")
-
-
