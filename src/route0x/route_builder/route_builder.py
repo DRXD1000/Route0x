@@ -701,6 +701,7 @@ class RouteBuilder:
                     loss=LOSS_FUNCTIONS[self.loss_funct_name],
                     max_length = max_query_len,
                     seed = self.seed,
+                    report_to = "none"
                 )
             else:
                 training_args = TrainingArguments(
@@ -720,6 +721,7 @@ class RouteBuilder:
                     loss=LOSS_FUNCTIONS[self.loss_funct_name],
                     max_length = max_query_len,
                     seed = self.seed,
+                    report_to = "none"
                 )
 
 
