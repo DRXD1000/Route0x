@@ -135,8 +135,26 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 ### I want to understand the knobs and tinker with it:
 
+#### Key knobs for building
+
 ```python
-{'train_path': None,
+'loss_funct_name': 'PairwiseArcFaceFocalLoss',
+'llm_name': 'llama3.1',
+'min_samples': 12,
+'samples_per_route': 50,
+'expected_oos_proportion': 0.1,
+'nn_for_oos_detection': 10,
+'model_name': 'sentence-transformers/all-mpnet-base-v2',
+'add_additional_invalid_routes': False,
+'instruct_llm': ''
+```
+
+#### Key knobs for routing
+
+
+```python
+{
+  'train_path': None,
  'eval_path': None,
  'model_name': 'sentence-transformers/all-mpnet-base-v2',
  'epochs': 1,
@@ -148,10 +166,10 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
  'loss_funct_name': 'PairwiseArcFaceFocalLoss',
  'warmup_proportion': 0.05,
  'min_samples': 12,
- 'samples_per_route': None,
+ 'samples_per_route': 50,
  'routes': None,
  'route_template': '{}',
- 'domain': None,
+ 'domain': 'personal assistant',
  'llm_name': 'llama3.1',
  'instruct_llm': '',
  'enable_id_oos_gen': True,
@@ -172,21 +190,25 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
  'skip_eval': False,
  'only_oos_head': False,
  'add_typo_robustness': False,
- 'build_request': None,
  'fallback_samples_per_route': 30,
- 'device': 'mps',
+ 'device': 'cuda:0',
  'do_quantise': False,
  'local_llm_host': 'http://localhost:11434',
  'HOSTED_LLM_FAMILIES': {'openai': ['gpt'],
   'anthropic': ['claude'],
-  'google': ['gemini']}}
+  'google': ['gemini']}
+  }
 ```
 
 ### I want to see the detailed empirical evals
 -T.B.A
 
 ### Features and Roadmap
--T.B.A
+- Integrate DSPy or AdalFlow for streamlining LLM prompt integrations (make sense ?).
+- Run identify best non-english base model and test on few datasets (should be straight-jacket).
+- Implement typo robustness for queries.
+- Fill-in other LLM providers.
+
 
 ### Caveats and Limitations
 -T.B.A

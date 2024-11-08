@@ -15,8 +15,12 @@ class RouteFinder:
                  model_dir: str = None, 
                  oos_label: str = "NO_NODES_DETECTED",
                  use_calibrated_head = False,
-                 max_length: int = 32,
-                 use_compressed_model: bool = False):
+                 max_length: int = 64,
+                # Valid only when return_raw_scores = False
+                model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
+                model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
+                nn_for_fallback: int = 5,
+                use_compressed_model: bool = False):
         
         self.logger = logging.getLogger(__name__)
         self.model_dir = Path(model_dir)
@@ -40,8 +44,13 @@ class RouteFinder:
         self.vectordb = VectorDB()
         self.vec_index = self._load_vector_index()
         self.labels_dict = self.vectordb.load_labels(str(self.model_dir / "label_dict.pkl"))
+        self.metadata_dict  = self.vectordb.load_metadata(str(self.model_dir / "metadata_dict.pkl"))
+        self.multi_vec_embs = os.path.join(self.model_dir, "token_embeddings.npz")
         self.oos_label = oos_label
         self.max_length = max_length
+        self.model_confidence_threshold_for_using_outlier_head = model_confidence_threshold_for_using_outlier_head
+        self.model_uncertainity_threshold_for_using_nn = model_uncertainity_threshold_for_using_nn
+        self.nn_for_fallback = nn_for_fallback
 
         # TODO: Default ONNX FP32 offers best latency, only mem usage is the concern, Quantisation might address it but perfomance drop is quite a bit
         # So use_compressed_model at the moment will be discouraged for users, but can be used.
@@ -49,8 +58,22 @@ class RouteFinder:
         #     self.onnx_session = ort.InferenceSession(os.path.join(self.model_dir, "model_body_quantized.onnx"))
         # else:
             # TODO: Expand support for fp16 models, Suprisingly FP16 ONNX actually offers worse latency, not sure why inspite of saving memory
+        if use_compressed_model:
+            raise NotImplementedError("Using compressed model is not yet implemented,  with quantisation (weirdly) latency tanks.")
 
-
+    def route_params(self):
+        return {k: v for k, v in vars(self).items() if self._is_json_serializable(v)}  
+        
+    def _is_json_serializable(self, obj):
+        """
+        Check if an object is JSON serializable.
+        """
+        try:
+            json.dumps(obj)
+            return True
+        except (TypeError, OverflowError):
+            return False
+            
     def _get_tokenizer(self, max_length: int = 512) -> Tokenizer:
         """Initializes and configures the tokenizer with padding and truncation."""
         config = json.load(open(str(self.model_dir / "config.json")))
@@ -131,7 +154,7 @@ class RouteFinder:
         embeddings_norm = np.linalg.norm(embeddings, axis=1, keepdims=True)
         embeddings_normalized = embeddings / np.clip(embeddings_norm, a_min=1e-12, a_max=None)
 
-        return embeddings_normalized
+        return embeddings_normalized, onnx_output[0]
         
     def _is_outlier(self, embeddings, use_ensemble=False):
         lof_prediction, lof_threshold_breach = self._predict_with_threshold(self.outlier_detectors[0], embeddings)
@@ -154,13 +177,10 @@ class RouteFinder:
     def find_route(self, 
                    query: str,
                    return_raw_scores = False,
-                   # Valid only when return_raw_scores = False
-                   model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
-                   model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
-                   nn_for_fallback: int = 5,
+                   use_multivec_reranking  = True
                    ) -> dict:
 
-        embeddings = self._get_embeddings(query)
+        embeddings, query_token_embeddings = self._get_embeddings(query)
 
         is_outlier, _ = self._is_outlier(embeddings)
         route = {"is_oos": is_outlier}
@@ -176,14 +196,25 @@ class RouteFinder:
             "prob": np.round(probabilities[class_id],2)
         })
 
-        indices, distances = self.vectordb.search_index(embeddings, self.vec_index , num_neighbors=nn_for_fallback)
-        vec_nns = self.vectordb.get_labels_from_indices(indices, self.labels_dict)
-        label_counts = Counter(vec_nns)
-        most_common_label = label_counts.most_common(1)[0][0]  
 
-        common_label_indices = [i for i, label in enumerate(vec_nns) if label == most_common_label]
-        mean_distance_for_most_common_label = np.mean([distances[0][i] for i in common_label_indices])
+        indices, distances = self.vectordb.search_index(embeddings, self.vec_index , num_neighbors=self.nn_for_fallback)
+        if use_multivec_reranking:
 
+            metadata = self.vectordb.get_metadata_from_indices(indices, self.metadata_dict)
+            reranked_metadata = self.vectordb.rerank_with_maxsim(query_token_embeddings, metadata, self.multi_vec_embs)
+            most_common_label = self.vectordb.majority_vote(reranked_metadata)
+
+            original_labels = [item['label'] for item in metadata]
+            common_label_indices = [i for i, label in enumerate(original_labels) if label == most_common_label]
+            mean_distance_for_most_common_label = np.mean([distances[0][i] for i in common_label_indices])
+        else:
+            vec_nns = self.vectordb.get_labels_from_indices(indices, self.labels_dict)
+            label_counts = Counter(vec_nns)
+            most_common_label = label_counts.most_common(1)[0][0]  
+
+            common_label_indices = [i for i, label in enumerate(vec_nns) if label == most_common_label]
+            mean_distance_for_most_common_label = np.mean([distances[0][i] for i in common_label_indices])    
+        
         route.update({
             "majority_voted_route": most_common_label,
             "mean_distance_from_majority_route": mean_distance_for_most_common_label
@@ -195,10 +226,10 @@ class RouteFinder:
             prob = float(route['prob'])
 
             if route['is_oos']:
-                if prob < model_confidence_threshold_for_using_outlier_head:
+                if prob < self.model_confidence_threshold_for_using_outlier_head:
                     predicted_route = self.oos_label
             else:
-                if prob <= model_uncertainity_threshold_for_using_nn:
+                if prob <= self.model_uncertainity_threshold_for_using_nn:
                     predicted_route = route["majority_voted_route"]
                     prob = route["mean_distance_from_majority_route"]
 

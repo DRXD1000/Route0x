@@ -1,0 +1,718 @@
+text,label,is_user_sample
+I want to know about offers and referral programs,OFFERS AND REFERRALS,True
+What are offers and referral programs available,OFFERS AND REFERRALS,True
+Are there any referral bonuses for new players?,OFFERS AND REFERRALS,False
+How can I earn rewards through referrals?,OFFERS AND REFERRALS,False
+What promotions are available for referring friends?,OFFERS AND REFERRALS,False
+Can I get a bonus for inviting friends to join?,OFFERS AND REFERRALS,False
+What are the current offers for new users?,OFFERS AND REFERRALS,False
+Is there a referral code I can use for extra credits?,OFFERS AND REFERRALS,False
+How do referral programs work in online gaming?,OFFERS AND REFERRALS,False
+What incentives are there for referring others?,OFFERS AND REFERRALS,False
+Are there any special offers for first-time players?,OFFERS AND REFERRALS,False
+What are the benefits of joining through a referral link?,OFFERS AND REFERRALS,False
+Check Deposit Status,CHECK DEPOSIT STATUS,True
+My deposit statement,CHECK DEPOSIT STATUS,True
+Verify deposit transaction,CHECK DEPOSIT STATUS,False
+Deposit confirmation status,CHECK DEPOSIT STATUS,False
+Status of my gaming deposit,CHECK DEPOSIT STATUS,False
+Check funds deposit,CHECK DEPOSIT STATUS,False
+Deposit receipt inquiry,CHECK DEPOSIT STATUS,False
+Gaming account deposit status,CHECK DEPOSIT STATUS,False
+Pending deposit check,CHECK DEPOSIT STATUS,False
+Deposit processing status,CHECK DEPOSIT STATUS,False
+Track my deposit,CHECK DEPOSIT STATUS,False
+Deposit status update,CHECK DEPOSIT STATUS,False
+How to join a Contest?,JOIN CONTEST,True
+How can I join a Contest on PowerPlay11?,JOIN CONTEST,True
+What are the steps to enter a contest on this platform?,JOIN CONTEST,False
+Can I participate in multiple contests at once?,JOIN CONTEST,False
+Where do I find the option to join a new contest?,JOIN CONTEST,False
+Is there a fee to enter contests on this site?,JOIN CONTEST,False
+How do I register for a contest on the app?,JOIN CONTEST,False
+What is the process to join a fantasy league contest?,JOIN CONTEST,False
+Are there any requirements to join a contest?,JOIN CONTEST,False
+How do I sign up for a daily contest?,JOIN CONTEST,False
+Can I join a contest after it has started?,JOIN CONTEST,False
+What is the deadline to enter a contest?,JOIN CONTEST,False
+Withdrawal Time,WITHDRAWAL TIME,True
+How much time it takes to withdraw my amount,WITHDRAWAL TIME,True
+Time required for withdrawal,WITHDRAWAL TIME,False
+Withdrawal processing duration,WITHDRAWAL TIME,False
+How long for funds to withdraw,WITHDRAWAL TIME,False
+Withdrawal time frame,WITHDRAWAL TIME,False
+Expected withdrawal time,WITHDRAWAL TIME,False
+Withdrawal duration,WITHDRAWAL TIME,False
+How soon can I withdraw,WITHDRAWAL TIME,False
+Withdrawal time estimate,WITHDRAWAL TIME,False
+Withdrawal completion time,WITHDRAWAL TIME,False
+Withdrawal time period,WITHDRAWAL TIME,False
+Where is my withdraw,WITHDRAWAL INTRO,True
+Withdrawals,WITHDRAWAL INTRO,True
+How do I withdraw my winnings?,WITHDRAWAL INTRO,False
+Withdrawal options,WITHDRAWAL INTRO,False
+Cash out process,WITHDRAWAL INTRO,False
+Request a withdrawal,WITHDRAWAL INTRO,False
+Withdrawal methods available,WITHDRAWAL INTRO,False
+Initiate a withdrawal,WITHDRAWAL INTRO,False
+Withdrawal status,WITHDRAWAL INTRO,False
+How to cash out,WITHDRAWAL INTRO,False
+Withdrawal limits,WITHDRAWAL INTRO,False
+Withdrawal pending,WITHDRAWAL INTRO,False
+Details for Bank Account Verification,BANK VERIFICATION DETAILS,True
+What details I need to provide for bank account,BANK VERIFICATION DETAILS,True
+How to verify my bank account for gaming withdrawals?,BANK VERIFICATION DETAILS,False
+Required bank details for betting account verification,BANK VERIFICATION DETAILS,False
+Steps to complete bank verification for online gaming,BANK VERIFICATION DETAILS,False
+What bank information is needed for betting site verification?,BANK VERIFICATION DETAILS,False
+Bank account verification process for gaming platforms,BANK VERIFICATION DETAILS,False
+Which bank details are necessary for online betting verification?,BANK VERIFICATION DETAILS,False
+How do I submit bank details for gaming account verification?,BANK VERIFICATION DETAILS,False
+Verification of bank account for online betting transactions,BANK VERIFICATION DETAILS,False
+What are the bank verification requirements for gaming sites?,BANK VERIFICATION DETAILS,False
+How to update bank verification details for betting account?,BANK VERIFICATION DETAILS,False
+Wrong amount refund,REFUND OF WRONG AMOUNT,True
+Amount added by mistake,REFUND OF WRONG AMOUNT,True
+Incorrect payout refund,REFUND OF WRONG AMOUNT,False
+Refund for miscalculated winnings,REFUND OF WRONG AMOUNT,False
+Wrong bet amount credited,REFUND OF WRONG AMOUNT,False
+Refund for erroneous deposit,REFUND OF WRONG AMOUNT,False
+Mistaken bonus amount refund,REFUND OF WRONG AMOUNT,False
+Refund for incorrect transaction,REFUND OF WRONG AMOUNT,False
+Wrong withdrawal amount refund,REFUND OF WRONG AMOUNT,False
+Refund for overcharged bet,REFUND OF WRONG AMOUNT,False
+Refund for incorrect game credit,REFUND OF WRONG AMOUNT,False
+Refund for misapplied funds,REFUND OF WRONG AMOUNT,False
+Refund of Added Cash,REFUND OF ADDED CASH,True
+Please refund money,REFUND OF ADDED CASH,True
+Request cash refund,REFUND OF ADDED CASH,False
+Added funds refund request,REFUND OF ADDED CASH,False
+Reimburse my deposit,REFUND OF ADDED CASH,False
+Return added balance,REFUND OF ADDED CASH,False
+Refund my gaming deposit,REFUND OF ADDED CASH,False
+Withdraw added cash,REFUND OF ADDED CASH,False
+Reclaim deposited funds,REFUND OF ADDED CASH,False
+Reverse added money,REFUND OF ADDED CASH,False
+Get back my added cash,REFUND OF ADDED CASH,False
+Refund my betting balance,REFUND OF ADDED CASH,False
+Chat With an Agent,CHAT WITH AN AGENT,True
+Nope,CHAT WITH AN AGENT,True
+Talk to support,CHAT WITH AN AGENT,False
+Live chat assistance,CHAT WITH AN AGENT,False
+Connect with a representative,CHAT WITH AN AGENT,False
+Speak to customer service,CHAT WITH AN AGENT,False
+Agent chat,CHAT WITH AN AGENT,False
+Help from an agent,CHAT WITH AN AGENT,False
+Contact support team,CHAT WITH AN AGENT,False
+Get live help,CHAT WITH AN AGENT,False
+Assistance from a representative,CHAT WITH AN AGENT,False
+Customer service chat,CHAT WITH AN AGENT,False
+My winnings are wrong,LESS WINNINGS AMOUNT,True
+My winnings are incorrect,LESS WINNINGS AMOUNT,True
+Winnings amount is less than expected,LESS WINNINGS AMOUNT,False
+Why is my payout lower?,LESS WINNINGS AMOUNT,False
+Received less winnings than calculated,LESS WINNINGS AMOUNT,False
+Payout discrepancy noticed,LESS WINNINGS AMOUNT,False
+Winnings do not match my bet,LESS WINNINGS AMOUNT,False
+Amount won is incorrect,LESS WINNINGS AMOUNT,False
+Payout is not accurate,LESS WINNINGS AMOUNT,False
+Winnings are lower than they should be,LESS WINNINGS AMOUNT,False
+My prize money is short,LESS WINNINGS AMOUNT,False
+Winnings calculation error,LESS WINNINGS AMOUNT,False
+Did not receive my winnings,WINNINGS,True
+Did not receive my amount,WINNINGS,True
+Where are my game winnings?,WINNINGS,False
+My prize money hasn't been credited,WINNINGS,False
+Winnings not showing in my account,WINNINGS,False
+Why haven't I received my jackpot?,WINNINGS,False
+My payout is missing,WINNINGS,False
+Funds from my win are not available,WINNINGS,False
+I can't find my tournament earnings,WINNINGS,False
+My betting profits are delayed,WINNINGS,False
+Why is my reward not processed?,WINNINGS,False
+My cash prize hasn't arrived,WINNINGS,False
+Instant Withdrawal,INSTANT WITHDRAWAL,True
+Instant withdrawal is available,INSTANT WITHDRAWAL,True
+Withdraw instantly,INSTANT WITHDRAWAL,False
+Immediate cashout,INSTANT WITHDRAWAL,False
+Fast withdrawal option,INSTANT WITHDRAWAL,False
+Quick payout available,INSTANT WITHDRAWAL,False
+Instant cash withdrawal,INSTANT WITHDRAWAL,False
+Rapid withdrawal process,INSTANT WITHDRAWAL,False
+Instant funds transfer,INSTANT WITHDRAWAL,False
+Withdraw winnings instantly,INSTANT WITHDRAWAL,False
+Instant payout feature,INSTANT WITHDRAWAL,False
+Immediate withdrawal service,INSTANT WITHDRAWAL,False
+Check withdrawal status,WITHDRAWAL STATUS,True
+I want to view my withdrawal status,WITHDRAWAL STATUS,True
+What is the status of my withdrawal request?,WITHDRAWAL STATUS,False
+Has my withdrawal been processed?,WITHDRAWAL STATUS,False
+Can you update me on my withdrawal status?,WITHDRAWAL STATUS,False
+Is my withdrawal still pending?,WITHDRAWAL STATUS,False
+When will my withdrawal be completed?,WITHDRAWAL STATUS,False
+Please provide the current status of my withdrawal,WITHDRAWAL STATUS,False
+How long until my withdrawal is approved?,WITHDRAWAL STATUS,False
+Is there any delay with my withdrawal?,WITHDRAWAL STATUS,False
+Can I track my withdrawal status online?,WITHDRAWAL STATUS,False
+Has my withdrawal been finalized?,WITHDRAWAL STATUS,False
+PAN Card verification failed,PAN VERIFICATION FAILED,True
+PAN verification failed,PAN VERIFICATION FAILED,True
+Unable to verify PAN for account setup,PAN VERIFICATION FAILED,False
+PAN validation unsuccessful,PAN VERIFICATION FAILED,False
+Failed to authenticate PAN details,PAN VERIFICATION FAILED,False
+PAN check not passed,PAN VERIFICATION FAILED,False
+PAN number verification error,PAN VERIFICATION FAILED,False
+PAN authentication failed,PAN VERIFICATION FAILED,False
+PAN details could not be verified,PAN VERIFICATION FAILED,False
+Verification of PAN unsuccessful,PAN VERIFICATION FAILED,False
+PAN card validation failed,PAN VERIFICATION FAILED,False
+Error in PAN verification process,PAN VERIFICATION FAILED,False
+How Are Points Calculated on PowerPlay11,HOW POINTS CALCULATED,True
+How are points distributed in the MPL app?,HOW POINTS CALCULATED,True
+How is the scoring system structured in Dream11?,HOW POINTS CALCULATED,False
+What is the points calculation method in FanDuel?,HOW POINTS CALCULATED,False
+How do points work in the Bet365 fantasy league?,HOW POINTS CALCULATED,False
+What are the criteria for point allocation in DraftKings?,HOW POINTS CALCULATED,False
+How are fantasy points determined in the Yahoo Sports app?,HOW POINTS CALCULATED,False
+What is the formula for calculating points in the My11Circle app?,HOW POINTS CALCULATED,False
+How does the points system operate in the RummyCircle platform?,HOW POINTS CALCULATED,False
+What factors influence point distribution in the PokerStars app?,HOW POINTS CALCULATED,False
+How are points awarded in the Lottoland games?,HOW POINTS CALCULATED,False
+What is the point calculation process in the WinZO app?,HOW POINTS CALCULATED,False
+Change My Bank Account,CHANGE BANK ACCOUNT,True
+How to change Bank account,CHANGE BANK ACCOUNT,True
+Update my bank account details,CHANGE BANK ACCOUNT,False
+Modify bank account for payouts,CHANGE BANK ACCOUNT,False
+Switch bank account for withdrawals,CHANGE BANK ACCOUNT,False
+Alter bank account information,CHANGE BANK ACCOUNT,False
+Edit bank account for deposits,CHANGE BANK ACCOUNT,False
+Replace bank account on file,CHANGE BANK ACCOUNT,False
+Revise bank account for transactions,CHANGE BANK ACCOUNT,False
+Change linked bank account,CHANGE BANK ACCOUNT,False
+Adjust bank account for gaming funds,CHANGE BANK ACCOUNT,False
+Set new bank account for betting,CHANGE BANK ACCOUNT,False
+Change My Profile or Team Details,CHANGE PROFILE TEAM DETAILS,True
+Update My Profile/Team Details,CHANGE PROFILE TEAM DETAILS,True
+Modify my gaming profile details,CHANGE PROFILE TEAM DETAILS,False
+Edit team information,CHANGE PROFILE TEAM DETAILS,False
+Revise my betting profile,CHANGE PROFILE TEAM DETAILS,False
+Adjust team settings,CHANGE PROFILE TEAM DETAILS,False
+Update my gaming account info,CHANGE PROFILE TEAM DETAILS,False
+Change team roster details,CHANGE PROFILE TEAM DETAILS,False
+Refresh my profile data,CHANGE PROFILE TEAM DETAILS,False
+Alter team profile,CHANGE PROFILE TEAM DETAILS,False
+Revamp my betting account details,CHANGE PROFILE TEAM DETAILS,False
+Amend team member information,CHANGE PROFILE TEAM DETAILS,False
+Modify mobile number,CHANGE MOBILE NUMBER,True
+Change phone number,CHANGE MOBILE NUMBER,True
+Update contact number,CHANGE MOBILE NUMBER,False
+Edit mobile contact,CHANGE MOBILE NUMBER,False
+Switch phone number,CHANGE MOBILE NUMBER,False
+Revise mobile details,CHANGE MOBILE NUMBER,False
+Alter phone contact,CHANGE MOBILE NUMBER,False
+Replace mobile number,CHANGE MOBILE NUMBER,False
+Renew phone details,CHANGE MOBILE NUMBER,False
+Adjust contact number,CHANGE MOBILE NUMBER,False
+Refresh mobile contact,CHANGE MOBILE NUMBER,False
+Amend phone number,CHANGE MOBILE NUMBER,False
+Taxes on Winnings,TAXES ON WINNINGS,True
+Are there any taxes associated with withdrawals,TAXES ON WINNINGS,True
+Do I need to pay taxes on my online gaming winnings?,TAXES ON WINNINGS,False
+How are online betting winnings taxed?,TAXES ON WINNINGS,False
+What is the tax rate for online casino winnings?,TAXES ON WINNINGS,False
+Are my poker tournament winnings taxable?,TAXES ON WINNINGS,False
+Do I report my online gambling earnings to the IRS?,TAXES ON WINNINGS,False
+Is there a tax deduction for gambling losses?,TAXES ON WINNINGS,False
+How do I declare my online betting income?,TAXES ON WINNINGS,False
+Are lottery winnings from online platforms taxable?,TAXES ON WINNINGS,False
+What forms do I need for reporting gambling winnings?,TAXES ON WINNINGS,False
+Do international online gaming winnings get taxed?,TAXES ON WINNINGS,False
+Fake teams,FAKE TEAMS,True
+You have your own team in the leagues,FAKE TEAMS,True
+Create a fantasy team,FAKE TEAMS,False
+Join a virtual league,FAKE TEAMS,False
+Build your dream squad,FAKE TEAMS,False
+Assemble a custom roster,FAKE TEAMS,False
+Manage your own esports team,FAKE TEAMS,False
+Draft players for your team,FAKE TEAMS,False
+Simulate a sports team,FAKE TEAMS,False
+Compete with your fantasy lineup,FAKE TEAMS,False
+Enter your team in the tournament,FAKE TEAMS,False
+Customize your gaming team,FAKE TEAMS,False
+Why I haven't received any email confirmation link,NO EMAIL CONFIRMATION,True
+No Email Confirmation,NO EMAIL CONFIRMATION,True
+Missing email confirmation for my gaming account,NO EMAIL CONFIRMATION,False
+Email confirmation not received for betting site,NO EMAIL CONFIRMATION,False
+Haven't got the confirmation email for my online casino,NO EMAIL CONFIRMATION,False
+No confirmation email after signing up for poker site,NO EMAIL CONFIRMATION,False
+Didn't receive email verification for my gaming profile,NO EMAIL CONFIRMATION,False
+Email confirmation link not arriving for betting account,NO EMAIL CONFIRMATION,False
+Why is my email confirmation missing for online slots,NO EMAIL CONFIRMATION,False
+No email verification received for my sportsbook account,NO EMAIL CONFIRMATION,False
+Email confirmation not showing up for my gaming login,NO EMAIL CONFIRMATION,False
+Still waiting for email confirmation from betting platform,NO EMAIL CONFIRMATION,False
+Withdraw Cash Bonus,WITHDRAW CASH BONUS,True
+Bonus funds cashout,WITHDRAW CASH BONUS,True
+Cash bonus withdrawal,WITHDRAW CASH BONUS,False
+Redeem bonus funds,WITHDRAW CASH BONUS,False
+Cash out bonus money,WITHDRAW CASH BONUS,False
+Withdraw bonus credits,WITHDRAW CASH BONUS,False
+Bonus cashout request,WITHDRAW CASH BONUS,False
+Convert bonus to cash,WITHDRAW CASH BONUS,False
+Bonus withdrawal process,WITHDRAW CASH BONUS,False
+Claim bonus cash,WITHDRAW CASH BONUS,False
+Transfer bonus to account,WITHDRAW CASH BONUS,False
+Bonus funds withdrawal,WITHDRAW CASH BONUS,False
+Cash Bonus Expiry,CASH BONUS EXPIRY,True
+Expiry of my gaming bonus,CASH BONUS EXPIRY,True
+When does my bonus expire?,CASH BONUS EXPIRY,False
+Bonus expiration date,CASH BONUS EXPIRY,False
+Expiry date for my cash bonus,CASH BONUS EXPIRY,False
+How long until my bonus expires?,CASH BONUS EXPIRY,False
+Check bonus expiry,CASH BONUS EXPIRY,False
+When will my gaming bonus expire?,CASH BONUS EXPIRY,False
+Bonus expiry notification,CASH BONUS EXPIRY,False
+Expiry details for my bonus,CASH BONUS EXPIRY,False
+Cash bonus expiration reminder,CASH BONUS EXPIRY,False
+When is my bonus expiry date?,CASH BONUS EXPIRY,False
+Cash Bonus,CASH BONUS,True
+Loyalty Bonus,CASH BONUS,True
+Signup Bonus,CASH BONUS,False
+Deposit Match Bonus,CASH BONUS,False
+Referral Bonus,CASH BONUS,False
+Welcome Bonus,CASH BONUS,False
+Reload Bonus,CASH BONUS,False
+No Deposit Bonus,CASH BONUS,False
+High Roller Bonus,CASH BONUS,False
+VIP Bonus,CASH BONUS,False
+Free Bet Bonus,CASH BONUS,False
+Weekly Bonus,CASH BONUS,False
+Types of Bonus,TYPES BONUS,True
+What is the difference between sign-up bonus and cash bonus,TYPES BONUS,True
+How do loyalty bonuses work in online casinos?,TYPES BONUS,False
+Explain the concept of a no-deposit bonus,TYPES BONUS,False
+What are reload bonuses in betting?,TYPES BONUS,False
+Differentiate between cashback bonus and match bonus,TYPES BONUS,False
+What is a referral bonus in online gaming?,TYPES BONUS,False
+How do free spin bonuses differ from cash bonuses?,TYPES BONUS,False
+What are the terms for a welcome bonus?,TYPES BONUS,False
+How does a high roller bonus function?,TYPES BONUS,False
+What is a VIP bonus in online casinos?,TYPES BONUS,False
+Explain the wagering requirements for a bonus,TYPES BONUS,False
+What is the deadline for a match on PowerPlay11?,TEAM DEADLINE,True
+Team Deadline for Match,TEAM DEADLINE,True
+When is the final team submission for the tournament?,TEAM DEADLINE,False
+Cut-off time for team entry on Fantasy League,TEAM DEADLINE,False
+Deadline for squad selection in Dream11,TEAM DEADLINE,False
+Last date to finalize team for the contest,TEAM DEADLINE,False
+What is the roster lock time for today's game?,TEAM DEADLINE,False
+When does team registration close for the event?,TEAM DEADLINE,False
+Final time to set team lineup on My11Circle,TEAM DEADLINE,False
+What is the team lock deadline for the upcoming match?,TEAM DEADLINE,False
+When is the last call for team changes on MPL?,TEAM DEADLINE,False
+Deadline for confirming team on FanFight,TEAM DEADLINE,False
+Account Not Verified,ACCOUNT NOT VERIFIED,True
+How to Verify my Account?,ACCOUNT NOT VERIFIED,True
+Why is my gaming account unverified?,ACCOUNT NOT VERIFIED,False
+Steps to verify betting account,ACCOUNT NOT VERIFIED,False
+Account verification pending in gaming app,ACCOUNT NOT VERIFIED,False
+Unable to verify my betting profile,ACCOUNT NOT VERIFIED,False
+Verification process for online gaming account,ACCOUNT NOT VERIFIED,False
+How do I complete account verification?,ACCOUNT NOT VERIFIED,False
+My betting account is still not verified,ACCOUNT NOT VERIFIED,False
+Verification required for gaming account,ACCOUNT NOT VERIFIED,False
+What to do if account verification fails?,ACCOUNT NOT VERIFIED,False
+Help with verifying my online betting account,ACCOUNT NOT VERIFIED,False
+Why do I Need to Verify my Account,WHY VERIFY,True
+Why do I need to Verify,WHY VERIFY,True
+Why is account verification required for online gaming?,WHY VERIFY,False
+Why must I verify my identity to place bets?,WHY VERIFY,False
+Why is verification necessary for online betting?,WHY VERIFY,False
+Why do gaming platforms require verification?,WHY VERIFY,False
+Why is identity verification important in online casinos?,WHY VERIFY,False
+Why do I need to verify my account to withdraw winnings?,WHY VERIFY,False
+Why is age verification mandatory for online gambling?,WHY VERIFY,False
+Why do betting sites ask for verification documents?,WHY VERIFY,False
+Why is it important to verify my account in online gaming?,WHY VERIFY,False
+Why do I have to verify my identity for online poker?,WHY VERIFY,False
+Contests,TYPES CONTESTS,True
+Types of Contests,TYPES CONTESTS,True
+Online gaming competitions,TYPES CONTESTS,False
+Betting contest categories,TYPES CONTESTS,False
+Esports tournament types,TYPES CONTESTS,False
+Varieties of online gaming contests,TYPES CONTESTS,False
+Different betting challenges,TYPES CONTESTS,False
+Gaming contest formats,TYPES CONTESTS,False
+Types of esports competitions,TYPES CONTESTS,False
+Online betting contest types,TYPES CONTESTS,False
+Categories of gaming tournaments,TYPES CONTESTS,False
+Varieties of betting contests,TYPES CONTESTS,False
+How to Verify my email address,VERIFY EMAIL,True
+Verify Email,VERIFY EMAIL,True
+Confirm my email for gaming account,VERIFY EMAIL,False
+Email verification for betting site,VERIFY EMAIL,False
+Authenticate email for online casino,VERIFY EMAIL,False
+Verify my email for poker platform,VERIFY EMAIL,False
+Email confirmation for gaming profile,VERIFY EMAIL,False
+Validate email for betting account,VERIFY EMAIL,False
+Check email verification status for gaming,VERIFY EMAIL,False
+Activate email for online gambling,VERIFY EMAIL,False
+Email verification link for gaming site,VERIFY EMAIL,False
+Resend email verification for betting app,VERIFY EMAIL,False
+Verify PAN Card,VERIFY PAN,True
+How to verify my PAN Card?,VERIFY PAN,True
+Check PAN for gaming account,VERIFY PAN,False
+Validate PAN for betting site,VERIFY PAN,False
+PAN verification for online casino,VERIFY PAN,False
+Confirm PAN for gaming profile,VERIFY PAN,False
+Authenticate PAN for betting platform,VERIFY PAN,False
+Verify PAN for online poker,VERIFY PAN,False
+PAN check for gaming registration,VERIFY PAN,False
+Validate PAN for betting account,VERIFY PAN,False
+Confirm PAN for online gambling,VERIFY PAN,False
+Verify PAN for esports betting,VERIFY PAN,False
+How to verify my mobile number,VERIFY MOBILE,True
+Verify Mobile Number,VERIFY MOBILE,True
+Confirm my phone number for gaming account,VERIFY MOBILE,False
+Mobile verification for betting site,VERIFY MOBILE,False
+Authenticate my mobile for online casino,VERIFY MOBILE,False
+Verify phone for gaming profile,VERIFY MOBILE,False
+How to confirm my mobile for betting,VERIFY MOBILE,False
+Mobile number verification for gaming,VERIFY MOBILE,False
+Validate my phone number for online betting,VERIFY MOBILE,False
+Phone verification process for gaming account,VERIFY MOBILE,False
+Verify my mobile for casino login,VERIFY MOBILE,False
+How to authenticate phone for betting site,VERIFY MOBILE,False
+Account reset,ACCOUNT RESET,True
+PowerPlay11 account reset,ACCOUNT RESET,True
+Reset my gaming account,ACCOUNT RESET,False
+Betting account reset request,ACCOUNT RESET,False
+How to reset my online casino account,ACCOUNT RESET,False
+Reset credentials for my poker account,ACCOUNT RESET,False
+Need to reset my sportsbook account,ACCOUNT RESET,False
+Reset my fantasy league account,ACCOUNT RESET,False
+Online betting account reset instructions,ACCOUNT RESET,False
+Reset my eSports account,ACCOUNT RESET,False
+Reset my gambling account password,ACCOUNT RESET,False
+Request to reset my online gaming profile,ACCOUNT RESET,False
+What happens in case there is a tie,WHAT IF THERES A TIE,True
+And if there is a tie,WHAT IF THERES A TIE,True
+How is a tie resolved in online betting?,WHAT IF THERES A TIE,False
+What are the rules for a tie in gaming?,WHAT IF THERES A TIE,False
+What if the game ends in a draw?,WHAT IF THERES A TIE,False
+How do ties affect payouts in betting?,WHAT IF THERES A TIE,False
+What is the protocol for a tie in online tournaments?,WHAT IF THERES A TIE,False
+What happens to my bet if there's a tie?,WHAT IF THERES A TIE,False
+Are there tie-breaker rules in online games?,WHAT IF THERES A TIE,False
+What is the outcome if a match results in a tie?,WHAT IF THERES A TIE,False
+How are ties handled in esports competitions?,WHAT IF THERES A TIE,False
+What are the consequences of a tie in online gambling?,WHAT IF THERES A TIE,False
+Cannot See Joined Contests,CANNOT SEE JOINED CONTESTS,True
+Why can I not see my joined leagues,CANNOT SEE JOINED CONTESTS,True
+Where are my joined contests?,CANNOT SEE JOINED CONTESTS,False
+Joined contests not visible,CANNOT SEE JOINED CONTESTS,False
+Missing my active leagues,CANNOT SEE JOINED CONTESTS,False
+Can't find my entered contests,CANNOT SEE JOINED CONTESTS,False
+Why aren't my contests showing up?,CANNOT SEE JOINED CONTESTS,False
+Joined leagues disappeared,CANNOT SEE JOINED CONTESTS,False
+Unable to view my contests,CANNOT SEE JOINED CONTESTS,False
+My contests list is empty,CANNOT SEE JOINED CONTESTS,False
+Where did my leagues go?,CANNOT SEE JOINED CONTESTS,False
+Joined contests not appearing,CANNOT SEE JOINED CONTESTS,False
+Fairplay Violation,FAIRPLAY VIOLATIONS,True
+What is considered as FairPlay Violation on PowerPlay11?,FAIRPLAY VIOLATIONS,True
+How does PowerPlay11 handle fairplay breaches?,FAIRPLAY VIOLATIONS,False
+Examples of fairplay violations in online betting,FAIRPLAY VIOLATIONS,False
+Consequences of fairplay violations on gaming platforms,FAIRPLAY VIOLATIONS,False
+Reporting fairplay violations on PowerPlay11,FAIRPLAY VIOLATIONS,False
+What actions are taken against fairplay violators?,FAIRPLAY VIOLATIONS,False
+Guidelines to avoid fairplay violations in online games,FAIRPLAY VIOLATIONS,False
+How to identify fairplay violations in betting?,FAIRPLAY VIOLATIONS,False
+What constitutes a fairplay breach in online gaming?,FAIRPLAY VIOLATIONS,False
+Are there penalties for fairplay violations on PowerPlay11?,FAIRPLAY VIOLATIONS,False
+How to report a fairplay violation in online betting?,FAIRPLAY VIOLATIONS,False
+Points not updated,POINTS NOT UPDATED,True
+Points Delay,POINTS NOT UPDATED,True
+Points not reflecting,POINTS NOT UPDATED,False
+Missing points,POINTS NOT UPDATED,False
+Points not credited,POINTS NOT UPDATED,False
+Unupdated score,POINTS NOT UPDATED,False
+Delayed points update,POINTS NOT UPDATED,False
+Score not showing,POINTS NOT UPDATED,False
+Points not appearing,POINTS NOT UPDATED,False
+Uncredited points,POINTS NOT UPDATED,False
+Points update pending,POINTS NOT UPDATED,False
+Scoreboard not updated,POINTS NOT UPDATED,False
+What if a game is completed with wrong scores?,WRONG SCORES,True
+Is there a way to verify scores after a game ends?,WRONG SCORES,True
+How can I report incorrect scores in an online match?,WRONG SCORES,False
+What should I do if I notice a discrepancy in the final scores?,WRONG SCORES,False
+Are there penalties for submitting false scores in tournaments?,WRONG SCORES,False
+Can I appeal a match result due to wrong scoring?,WRONG SCORES,False
+Who should I contact if the leaderboard shows incorrect scores?,WRONG SCORES,False
+Is there a process to correct scores after a match has been finalized?,WRONG SCORES,False
+What happens if a betting outcome is based on incorrect scores?,WRONG SCORES,False
+How are score disputes resolved in online gaming?,WRONG SCORES,False
+Can wrong scores affect my ranking in competitive gaming?,WRONG SCORES,False
+What are the common reasons for score inaccuracies in online games?,WRONG SCORES,False
+Want to know how my Account Balance can get Deducted,ACCOUNT BALANCE DEDUCTED,True
+Account Balance Deducted,ACCOUNT BALANCE DEDUCTED,True
+Why was my account balance reduced?,ACCOUNT BALANCE DEDUCTED,False
+Unexpected deduction from my gaming account,ACCOUNT BALANCE DEDUCTED,False
+Balance deducted after placing a bet,ACCOUNT BALANCE DEDUCTED,False
+Account balance decreased without notice,ACCOUNT BALANCE DEDUCTED,False
+Funds missing from my betting account,ACCOUNT BALANCE DEDUCTED,False
+Why is my gaming balance lower?,ACCOUNT BALANCE DEDUCTED,False
+Unexplained deduction from my account balance,ACCOUNT BALANCE DEDUCTED,False
+Account balance reduced after game purchase,ACCOUNT BALANCE DEDUCTED,False
+Why did my betting balance drop?,ACCOUNT BALANCE DEDUCTED,False
+Balance deduction after game update,ACCOUNT BALANCE DEDUCTED,False
+Signup Bonus,SIGNUP BONUS,True
+New Member Offer,SIGNUP BONUS,True
+Welcome Bonus,SIGNUP BONUS,False
+First Deposit Reward,SIGNUP BONUS,False
+Join Now Incentive,SIGNUP BONUS,False
+Initial Signup Perk,SIGNUP BONUS,False
+New Player Bonus,SIGNUP BONUS,False
+Registration Offer,SIGNUP BONUS,False
+Starter Pack Bonus,SIGNUP BONUS,False
+First-Time User Reward,SIGNUP BONUS,False
+Account Creation Bonus,SIGNUP BONUS,False
+Introductory Offer,SIGNUP BONUS,False
+How to Play,HOW TO PLAY,True
+How Can I Play on PowerPlay11,HOW TO PLAY,True
+How do I start playing on Bet365?,HOW TO PLAY,False
+What are the steps to play on DraftKings?,HOW TO PLAY,False
+How to join a game on FanDuel?,HOW TO PLAY,False
+How can I participate in online poker tournaments?,HOW TO PLAY,False
+How to play fantasy football on ESPN?,HOW TO PLAY,False
+How do I enter a contest on Yahoo Sports?,HOW TO PLAY,False
+How to play live casino games online?,HOW TO PLAY,False
+How can I place a bet on William Hill?,HOW TO PLAY,False
+How to play blackjack on 888 Casino?,HOW TO PLAY,False
+How do I register to play on PokerStars?,HOW TO PLAY,False
+How to delete PAN card,DELETE PAN CARD,True
+I want to change my PAN,DELETE PAN CARD,True
+Remove PAN from gaming account,DELETE PAN CARD,False
+Delete PAN linked to betting profile,DELETE PAN CARD,False
+Unlink PAN from online casino,DELETE PAN CARD,False
+Erase PAN details from poker site,DELETE PAN CARD,False
+How to unlink PAN from betting app,DELETE PAN CARD,False
+Remove PAN card from gaming site,DELETE PAN CARD,False
+Delete PAN info from gambling account,DELETE PAN CARD,False
+Unregister PAN from online betting,DELETE PAN CARD,False
+How to remove PAN from casino account,DELETE PAN CARD,False
+Delete PAN from online gaming profile,DELETE PAN CARD,False
+Wallet Balance,CHECK WALLET BALANCE,True
+Show my wallet balance,CHECK WALLET BALANCE,True
+What's my current wallet balance?,CHECK WALLET BALANCE,False
+Display my wallet funds,CHECK WALLET BALANCE,False
+How much do I have in my wallet?,CHECK WALLET BALANCE,False
+Check my wallet balance,CHECK WALLET BALANCE,False
+Wallet funds status,CHECK WALLET BALANCE,False
+Balance in my gaming wallet,CHECK WALLET BALANCE,False
+Show available wallet balance,CHECK WALLET BALANCE,False
+View my wallet balance,CHECK WALLET BALANCE,False
+Wallet balance inquiry,CHECK WALLET BALANCE,False
+Current balance in my betting wallet,CHECK WALLET BALANCE,False
+Unutilized,UNUTILIZED MONEY,True
+Unutilized Amount,UNUTILIZED MONEY,True
+Unused Funds,UNUTILIZED MONEY,False
+Remaining Balance,UNUTILIZED MONEY,False
+Unspent Credits,UNUTILIZED MONEY,False
+Available Cash,UNUTILIZED MONEY,False
+Leftover Winnings,UNUTILIZED MONEY,False
+Idle Money,UNUTILIZED MONEY,False
+Dormant Account Balance,UNUTILIZED MONEY,False
+Surplus Betting Funds,UNUTILIZED MONEY,False
+Residual Game Credits,UNUTILIZED MONEY,False
+Unclaimed Prize Money,UNUTILIZED MONEY,False
+What is the new team format,NEW TEAM PATTERN,True
+How many bolwers I can select,NEW TEAM PATTERN,True
+What are the new team selection rules?,NEW TEAM PATTERN,False
+Can I choose more than one captain?,NEW TEAM PATTERN,False
+What is the maximum number of players allowed?,NEW TEAM PATTERN,False
+Are there any restrictions on player roles?,NEW TEAM PATTERN,False
+How many all-rounders can be included?,NEW TEAM PATTERN,False
+Is there a limit on international players?,NEW TEAM PATTERN,False
+What is the new team budget?,NEW TEAM PATTERN,False
+Can I change my team after the match starts?,NEW TEAM PATTERN,False
+Are there any new bonus points for team selection?,NEW TEAM PATTERN,False
+What is the minimum number of batsmen required?,NEW TEAM PATTERN,False
+Thanks a lot,THANKS,True
+Tysm,THANKS,True
+"GG, thanks!",THANKS,False
+Much appreciated!,THANKS,False
+Thx for the carry!,THANKS,False
+"Cheers, mate!",THANKS,False
+Thanks for the boost!,THANKS,False
+"Appreciate it, team!",THANKS,False
+Thx for the tips!,THANKS,False
+Grateful for the help!,THANKS,False
+Thanks for the assist!,THANKS,False
+Big thanks for the support!,THANKS,False
+How can you help me,CAPABILITIES,True
+Help me,CAPABILITIES,True
+What services do you offer?,CAPABILITIES,False
+What can you do for me?,CAPABILITIES,False
+Show me your features,CAPABILITIES,False
+What are your functions?,CAPABILITIES,False
+Tell me your abilities,CAPABILITIES,False
+What options do you provide?,CAPABILITIES,False
+List your capabilities,CAPABILITIES,False
+What can I do here?,CAPABILITIES,False
+Explain your services,CAPABILITIES,False
+What features are available?,CAPABILITIES,False
+You are amazing,APPRECIATION,True
+Appreciate it,APPRECIATION,True
+Great teamwork!,APPRECIATION,False
+Thanks for the assist!,APPRECIATION,False
+You're a legend!,APPRECIATION,False
+Couldn't have done it without you!,APPRECIATION,False
+Your strategy was spot on!,APPRECIATION,False
+Kudos for the clutch play!,APPRECIATION,False
+Impressive skills!,APPRECIATION,False
+Thanks for carrying the team!,APPRECIATION,False
+Your callouts were perfect!,APPRECIATION,False
+Appreciate the backup!,APPRECIATION,False
+What if amount is debited from account but not added on PowerPlay11?,DEDUCTED AMOUNT NOT RECEIVED,True
+Amount is not received on PowerPlay11 even though debited from account,DEDUCTED AMOUNT NOT RECEIVED,True
+Why hasn't the deducted amount appeared in my PowerPlay11 wallet?,DEDUCTED AMOUNT NOT RECEIVED,False
+"My bank shows a deduction, but PowerPlay11 balance is unchanged.",DEDUCTED AMOUNT NOT RECEIVED,False
+Funds were debited but not credited to my gaming account.,DEDUCTED AMOUNT NOT RECEIVED,False
+"I see a debit in my bank, but no credit on PowerPlay11.",DEDUCTED AMOUNT NOT RECEIVED,False
+Why is my PowerPlay11 account not reflecting the deducted amount?,DEDUCTED AMOUNT NOT RECEIVED,False
+"The transaction shows completed, but funds are missing in PowerPlay11.",DEDUCTED AMOUNT NOT RECEIVED,False
+"My account was charged, but PowerPlay11 balance is still the same.",DEDUCTED AMOUNT NOT RECEIVED,False
+Where is the money that was deducted from my bank for PowerPlay11?,DEDUCTED AMOUNT NOT RECEIVED,False
+"The amount was debited, but my PowerPlay11 account hasn't been updated.",DEDUCTED AMOUNT NOT RECEIVED,False
+Why is there no credit on PowerPlay11 after the deduction from my bank?,DEDUCTED AMOUNT NOT RECEIVED,False
+What if a match is abandoned?,MATCH ABANDONED,True
+If match get abandoned will I get refund,MATCH ABANDONED,True
+What happens to my bet if the game is called off?,MATCH ABANDONED,False
+Do I get my stake back if the match is not completed?,MATCH ABANDONED,False
+Is my wager void if the match is abandoned?,MATCH ABANDONED,False
+Will my bet be settled if the game is interrupted?,MATCH ABANDONED,False
+How are bets handled if a match is suspended?,MATCH ABANDONED,False
+What is the policy for abandoned matches in betting?,MATCH ABANDONED,False
+Are there refunds for bets on canceled matches?,MATCH ABANDONED,False
+Does an abandoned match affect my betting slip?,MATCH ABANDONED,False
+What are the rules for voiding bets on unfinished games?,MATCH ABANDONED,False
+How does an abandoned match impact my betting outcome?,MATCH ABANDONED,False
+Are You Online,PRESENCE,True
+Are you there,PRESENCE,True
+Are you active?,PRESENCE,False
+Is anyone online?,PRESENCE,False
+Who's currently logged in?,PRESENCE,False
+Is the server live?,PRESENCE,False
+Are you connected?,PRESENCE,False
+Is the game up?,PRESENCE,False
+Is the lobby open?,PRESENCE,False
+Is the chat active?,PRESENCE,False
+Is the room full?,PRESENCE,False
+Is the tournament live?,PRESENCE,False
+How to download app,DOWNLOAD POWERPLAY11,True
+Download app,DOWNLOAD POWERPLAY11,True
+Get PowerPlay11 app,DOWNLOAD POWERPLAY11,False
+Install PowerPlay11,DOWNLOAD POWERPLAY11,False
+PowerPlay11 app download,DOWNLOAD POWERPLAY11,False
+Download PowerPlay11 APK,DOWNLOAD POWERPLAY11,False
+PowerPlay11 app install,DOWNLOAD POWERPLAY11,False
+PowerPlay11 download link,DOWNLOAD POWERPLAY11,False
+How to get PowerPlay11,DOWNLOAD POWERPLAY11,False
+PowerPlay11 app setup,DOWNLOAD POWERPLAY11,False
+Download PowerPlay11 for Android,DOWNLOAD POWERPLAY11,False
+PowerPlay11 iOS download,DOWNLOAD POWERPLAY11,False
+You are horrible,CRITICISM,True
+You are dumb,CRITICISM,True
+Your strategy is pathetic,CRITICISM,False
+You play like a noob,CRITICISM,False
+Your skills are embarrassing,CRITICISM,False
+You always make the worst bets,CRITICISM,False
+Your gameplay is a joke,CRITICISM,False
+You never learn from your mistakes,CRITICISM,False
+Your decisions are always wrong,CRITICISM,False
+You are the weakest link,CRITICISM,False
+Your tactics are laughable,CRITICISM,False
+You are a liability to the team,CRITICISM,False
+Hey,GREETINGS DAY,True
+Hello,GREETINGS DAY,True
+Good day,GREETINGS DAY,False
+Hi there,GREETINGS DAY,False
+Greetings,GREETINGS DAY,False
+What's up,GREETINGS DAY,False
+Howdy,GREETINGS DAY,False
+Yo,GREETINGS DAY,False
+Hey there,GREETINGS DAY,False
+Hiya,GREETINGS DAY,False
+Salutations,GREETINGS DAY,False
+Ahoy,GREETINGS DAY,False
+Can you share your number,CONTACT NUMBER,True
+Contact Details,CONTACT NUMBER,True
+What's your phone number?,CONTACT NUMBER,False
+How can I reach you?,CONTACT NUMBER,False
+Provide your mobile contact,CONTACT NUMBER,False
+Share your contact info,CONTACT NUMBER,False
+What's the best number to call?,CONTACT NUMBER,False
+Can I get your phone details?,CONTACT NUMBER,False
+Need your contact number,CONTACT NUMBER,False
+What's your direct line?,CONTACT NUMBER,False
+How do I contact you?,CONTACT NUMBER,False
+Can you give me your phone number?,CONTACT NUMBER,False
+How to update the app,UPDATE APP,True
+Guide to updating the poker app,UPDATE APP,True
+Steps to refresh the casino app,UPDATE APP,False
+Instructions for updating the betting app,UPDATE APP,False
+How do I upgrade my gaming app,UPDATE APP,False
+Process to update the online poker app,UPDATE APP,False
+Updating the sportsbook app guide,UPDATE APP,False
+How can I update my gambling app,UPDATE APP,False
+Latest version update for the casino app,UPDATE APP,False
+Procedure to update the betting platform app,UPDATE APP,False
+How to install updates for the poker app,UPDATE APP,False
+Guide to refresh the online gaming app,UPDATE APP,False
+Feedback,FEEDBACK,True
+I want to give feedback,FEEDBACK,True
+Submit game feedback,FEEDBACK,False
+Provide feedback on betting experience,FEEDBACK,False
+Game feedback form,FEEDBACK,False
+Share my gaming feedback,FEEDBACK,False
+Feedback on online casino,FEEDBACK,False
+Betting site feedback,FEEDBACK,False
+Leave feedback for game developers,FEEDBACK,False
+Feedback on gaming platform,FEEDBACK,False
+Rate my gaming experience,FEEDBACK,False
+Feedback on betting odds,FEEDBACK,False
+What if my app crashes during a game?,NO_NODES_DETECTED,
+How to enable two-factor authentication?,NO_NODES_DETECTED,
+How to get notifications for new contests?,NO_NODES_DETECTED,
+What if my team is disqualified?,NO_NODES_DETECTED,
+How to set spending limits?,NO_NODES_DETECTED,
+What if I want to block a user?,NO_NODES_DETECTED,
+How to increase my chances of winning?,NO_NODES_DETECTED,
+What if I want to delete my account?,NO_NODES_DETECTED,
+What if I want to pause my account?,NO_NODES_DETECTED,
+What if I want to change my username?,NO_NODES_DETECTED,
+What if I want to change my language preference?,NO_NODES_DETECTED,
+How to get more points in PowerPlay11?,NO_NODES_DETECTED,
+What happens if I forget my password?,NO_NODES_DETECTED,
+How to contact customer support?,NO_NODES_DETECTED,
+How to view my transaction history?,NO_NODES_DETECTED,
+What if I suspect fraudulent activity?,NO_NODES_DETECTED,
+How to secure my account?,NO_NODES_DETECTED,
+How to change my email address?,NO_NODES_DETECTED,
+How to customize my app settings?,NO_NODES_DETECTED,
+What if I enter the wrong bank details?,NO_NODES_DETECTED,
+Can I change my team after joining a contest?,NO_NODES_DETECTED,
+Have you tried any new restaurants lately?,NO_NODES_DETECTED,
+What's your favorite way to relax?,NO_NODES_DETECTED,
+",1219mnmlsdnsnd914h1b4,,,.,,.m 1212n 0 k ",NO_NODES_DETECTED,
+===122121-=1212120129jkdwfdjsgkrjsgsjrbgsdjf,NO_NODES_DETECTED,
+O O O O O O Owkr sfkjdsajkfbajrbeajraber12121,NO_NODES_DETECTED,
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,NO_NODES_DETECTED,
+ʜɪʜᴇ ʙɪʀʙᴏ ʀᴏɪɴᴏᴄᴋ,NO_NODES_DETECTED,
+你好，你今天好吗？,NO_NODES_DETECTED,
+สวัสดีครับ/ค่ะ คุณสบายดีไหม?,NO_NODES_DETECTED,
+You don't know shit!,NO_NODES_DETECTED,
+"Get lost, asshole!",NO_NODES_DETECTED,
+You are a fucking idiot!,NO_NODES_DETECTED,

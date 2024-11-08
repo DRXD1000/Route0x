@@ -40,11 +40,16 @@ from setfit import SetFitModel
 
 import nlpaug.augmenter.char as nac
 
-
 from .outlier_detector import OutlierDetector
 from .vector_db import VectorDB
 from .unified_llm_caller import UnifiedLLM
 from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+
+import torch.nn.functional as F
+from transformers import AutoTokenizer
+import json
+import uuid
+
 
 import warnings
 warnings.filterwarnings("ignore")
@@ -587,22 +592,80 @@ class RouteBuilder:
         """
         return dataset.shuffle(seed=self.seed)
     
-    def _get_embeddings(self, setfit_model: SetFitModel, texts: list, batch_size: int = 32) -> np.ndarray:
-        """Generate embeddings for the input texts using the SetFit model body.
+
+    def _mean_pooling(self, model_output, attention_mask):
+        token_embeddings = model_output[0] 
+        input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+        return torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
+
+    def _cls_pooling(self, model_output):
+        return model_output[0][:, 0]  
+
+    def _get_pooling_strategy(self, model_dir):
+        pooling_config_path = os.path.join(model_dir, "1_Pooling", "config.json")
+        with open(pooling_config_path, 'r') as config_file:
+            pooling_config = json.load(config_file)
+        return "mean" if pooling_config.get("pooling_mode_mean_tokens") else "cls"
+
+    def _get_embeddings(self, setfit_model, texts, model_dir, output_file=None,batch_size=32):
+
+        model = setfit_model.model_body[0].auto_model
+        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         
-        Args:
-            texts (list): List of input texts to embed.
-            batch_size (int): Batch size to process the text in chunks (default 32).
-        
-        Returns:
-            np.ndarray: The concatenated embeddings for all input texts.
-        """
-        embeddings = []
+        pooling_strategy = self._get_pooling_strategy(model_dir)
+        sentence_embeddings = []
+        token_embeddings_dict = {}
+        sentence_ids = []
+
         for i in tqdm(range(0, len(texts), batch_size), desc="Extracting embeddings"):
             batch_texts = texts[i:i + batch_size]
-            batch_embeddings = setfit_model.model_body.encode(batch_texts, normalize_embeddings=True)
-            embeddings.append(batch_embeddings)
-        return np.vstack(embeddings)
+            
+            batch_ids = [str(uuid.uuid4()) for _ in batch_texts]
+            sentence_ids.extend(batch_ids)
+            
+            encoded_input = tokenizer(batch_texts, padding=True, truncation=True, return_tensors='pt', max_length=self.max_query_len).to(self.device)
+
+            with torch.no_grad():
+                model_output = model(**encoded_input)
+            
+            for j, sentence_id in enumerate(batch_ids):
+                sentence_token_embeddings = model_output[0][j].cpu().numpy()
+                token_embeddings_dict[sentence_id] = sentence_token_embeddings
+            
+            if pooling_strategy == "mean":
+                batch_sentence_embeddings = self._mean_pooling(model_output, encoded_input['attention_mask'])
+            elif pooling_strategy == "cls":
+                batch_sentence_embeddings = self._cls_pooling(model_output)
+            
+            batch_sentence_embeddings = F.normalize(batch_sentence_embeddings, p=2, dim=1)
+            
+            sentence_embeddings.append(batch_sentence_embeddings.cpu().numpy())
+        
+        sentence_embeddings = np.vstack(sentence_embeddings)
+        
+        if output_file is not None:
+            output_file = os.path.join(model_dir, output_file)
+            np.savez_compressed(output_file, **token_embeddings_dict)
+        
+        return sentence_embeddings, sentence_ids
+
+    
+    # def _get_embeddings(self, setfit_model: SetFitModel, texts: list, batch_size: int = 32) -> np.ndarray:
+    #     """Generate embeddings for the input texts using the SetFit model body.
+        
+    #     Args:
+    #         texts (list): List of input texts to embed.
+    #         batch_size (int): Batch size to process the text in chunks (default 32).
+        
+    #     Returns:
+    #         np.ndarray: The concatenated embeddings for all input texts.
+    #     """
+    #     embeddings = []
+    #     for i in tqdm(range(0, len(texts), batch_size), desc="Extracting embeddings"):
+    #         batch_texts = texts[i:i + batch_size]
+    #         batch_embeddings = setfit_model.model_body.encode(batch_texts, normalize_embeddings=True)
+    #         embeddings.append(batch_embeddings)
+    #     return np.vstack(embeddings)
     
     def display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, num_samples=25):
         """
@@ -755,16 +818,16 @@ class RouteBuilder:
         full_dataset = concatenate_datasets([train_dataset,eval_dataset])
 
         if not self.only_oos_head:
-            inlier_embeddings = self._get_embeddings(trainer.model, inlier_dataset["text"])
-            full_embeddings = self._get_embeddings(trainer.model, full_dataset["text"])
-            val_embeddings = self._get_embeddings(trainer.model, eval_dataset["text"])
+            inlier_embeddings,_ = self._get_embeddings(trainer.model, inlier_dataset["text"], os.path.join(output_dir, "route0x_model"))
+            full_embeddings, sentence_ids = self._get_embeddings(trainer.model, full_dataset["text"], os.path.join(output_dir, "route0x_model"), "token_embeddings.npz")
+            val_embeddings,_ = self._get_embeddings(trainer.model, eval_dataset["text"], os.path.join(output_dir, "route0x_model"))
             outlier_detector = OutlierDetector(contamination=contamination_pct, 
                                             output_dir=os.path.join(output_dir, "route0x_model"), 
                                             n_neighbors=self.nn_for_oos_detection)
         else:
-            inlier_embeddings = self._get_embeddings(model, inlier_dataset["text"])
-            full_embeddings = self._get_embeddings(model, full_dataset["text"])
-            val_embeddings = self._get_embeddings(model, eval_dataset["text"])
+            inlier_embeddings, _ = self._get_embeddings(model, inlier_dataset["text"], os.path.join(output_dir, "route0x_model"))
+            full_embeddings,sentence_ids = self._get_embeddings(model, full_dataset["text"], os.path.join(output_dir, "route0x_model"), "token_embeddings.npz")
+            val_embeddings, _ = self._get_embeddings(model, eval_dataset["text"], os.path.join(output_dir, "route0x_model"))
             outlier_detector = OutlierDetector(contamination=contamination_pct, 
                                             output_dir=os.path.join(output_dir, "route0x_model"), 
                                             n_neighbors=self.nn_for_oos_detection)
@@ -776,8 +839,8 @@ class RouteBuilder:
 
         vectordb = VectorDB()
         index_file_path = os.path.join(output_dir, "route0x_model")
-        vectordb.build_index(full_embeddings, full_dataset["label"], index_file_path)
-        self.logger.info("Vectordb loaded")
+        vectordb.build_index(full_embeddings, full_dataset["label"], sentence_ids, index_file_path)
+        self.logger.info("Vectordb Indexed")
 
         
         self._calibrate_classifer(output_dir, val_embeddings, eval_dataset["label"])
@@ -1165,3 +1228,4 @@ class RouteBuilder:
         self._export_onnx(run_dir)
         self.logger.info("Model training and evaluation completed.")
         self.logger.info("Thank you for using route0x! May all your queries find their way.")
+
