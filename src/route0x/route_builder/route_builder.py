@@ -700,11 +700,34 @@ class RouteBuilder:
         
         import matplotlib.pyplot as plt
         
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(12, 7))
         x = np.linspace(0, 1, len(before_confidences))
         
-        plt.fill_between(x, before_confidences, alpha=0.3, label='Before Calibration')
-        plt.fill_between(x, after_confidences, alpha=0.3, label='After Calibration')
+        # Base plots with specific colors
+        plt.fill_between(x, before_confidences, alpha=0.3, label='Before Calibration', color='lightgray')
+        plt.fill_between(x, after_confidences, alpha=0.3, label='After Calibration', color='peachpuff')
+        
+        # Add threshold line
+        threshold = 0.7
+        plt.axhline(y=threshold, color='red', linestyle='--', alpha=0.7)
+        plt.text(0.02, threshold + 0.02, f'Confidence Threshold ({threshold})', color='red', fontsize=10)
+        
+        # Add zone annotations
+        plt.annotate('High Confidence Zone\n✓ Use Model Predictions', 
+                    xy=(0.8, 0.8), xytext=(0.5, 0.9),
+                    arrowprops=dict(facecolor='green', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='green', alpha=0.8))
+        
+        plt.annotate('Low Confidence Zone\n⚠️ Use Fallback Strategy', 
+                    xy=(0.3, 0.5), xytext=(0.1, 0.3),
+                    arrowprops=dict(facecolor='orange', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='orange', alpha=0.8))
+        
+        # Add elbow point annotation
+        plt.annotate('Natural Confidence\nThreshold Point', 
+                    xy=(0.7, 0.7), xytext=(0.8, 0.6),
+                    arrowprops=dict(facecolor='red', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='red', alpha=0.8))
         
         plt.xlabel('Sample Percentile')
         plt.ylabel('Confidence Score')
@@ -712,13 +735,15 @@ class RouteBuilder:
         plt.legend()
         plt.grid(True)
         
-        # Save or display
+        # Save plot
         plt.savefig(os.path.join(output_dir, "route0x_model",'confidence_trend.png'))
         plt.close()
         
-        # Log some key statistics
+        # Log key statistics and threshold recommendation
         self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
         self.logger.info(f"After Calibration - Mean: {after_confidences.mean():.3f}, Median: {np.median(after_confidences):.3f}")
+        self.logger.info(f"Recommended confidence threshold: {threshold}")
+        self.logger.info(f"Percentage of predictions above threshold: {(after_confidences > threshold).mean()*100:.1f}%")
 
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
@@ -1263,3 +1288,20 @@ class RouteBuilder:
         self.logger.info("Model training and evaluation completed.")
         self.logger.info("Thank you for using route0x! May all your queries find their way.")
 
+        import matplotlib.pyplot as plt
+        import matplotlib.image as mpimg
+
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 7))  
+
+        img1 = mpimg.imread(f"./output/{run_dir}/tsne_embeddings_plot.png")
+        ax1.imshow(img1)
+        ax1.axis('off')
+        ax1.set_title('TSNE Embeddings')
+
+        img2 = mpimg.imread(f"./output/{run_dir}/confidence_trend.png")
+        ax2.imshow(img2)
+        ax2.axis('off')
+        ax2.set_title('Confidence Distribution')
+
+        plt.tight_layout()  
+        plt.show()

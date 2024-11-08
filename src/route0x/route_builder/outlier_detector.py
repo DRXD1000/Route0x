@@ -81,6 +81,7 @@ class OutlierDetector:
 
         output_file = os.path.join(self.output_dir, f"tsne_embeddings_plot.png")
         plt.savefig(output_file)
+        plt.close()
         self.logger.info(f"t-SNE plot saved to {output_file}")
 
 
