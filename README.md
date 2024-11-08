@@ -67,9 +67,10 @@ pip install route0x[build] # installs a package thats few GBs
 ```python 
 pip install route0x[route] # installs a package thats few MBs
 ```
+
 ```python
-from route0x import RouteFinder
-query_router = RouteFinder(<your_route0x_model_path>)
+from route0x.route_finder import RouteFinder
+query_router = RouteFinder(<your_route0x_model_path>, max_length=64)
 route_obj = query_router.find_route(<your-query>)
 ```
 
@@ -151,6 +152,16 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 #### Key knobs for routing
 
+```python
+  'use_calibrated_head': False,
+  'return_raw_scores': False,
+  'use_multivec_reranking': False,
+  'max_length': 64,
+  'model_confidence_threshold_for_using_outlier_head': 0.9,
+  'model_uncertainity_threshold_for_using_nn': 0.5,
+```
+
+#### Full set of knobs for building
 
 ```python
 {
@@ -199,6 +210,23 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
   'google': ['gemini']}
   }
 ```
+
+#### Full set of knobs for routing
+
+```python
+  {
+  'pooling_strategy': 'mean',
+  'labels_dict': {},
+  'metadata_dict':{},
+  'multi_vec_embs': '/content/route0x_sof_model/token_embeddings.npz',
+  'oos_label': 'NO_NODES_DETECTED',
+  'max_length': 64,
+  'model_confidence_threshold_for_using_outlier_head': 0.9,
+  'model_uncertainity_threshold_for_using_nn': 0.5,
+  'nn_for_fallback': 5
+  }
+```
+
 
 ### I want to see the detailed empirical evals
 -T.B.A

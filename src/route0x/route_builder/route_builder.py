@@ -667,24 +667,58 @@ class RouteBuilder:
     #         embeddings.append(batch_embeddings)
     #     return np.vstack(embeddings)
     
-    def display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, num_samples=25):
+    # def display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, num_samples=25):
+    #     """
+    #     Display confidence scores before and after calibration for a random sample of records.
+    #     """
+
+    #     random_indices = np.random.choice(len(val_text_embeddings), num_samples, replace=False)
+
+    #     before_confidences = []
+    #     after_confidences = []
+
+    #     for idx in random_indices:
+    #         before_conf = classifier_head.predict_proba(val_text_embeddings[idx:idx+1]).max()
+    #         after_conf = calibrated_model.predict_proba(val_text_embeddings[idx:idx+1]).max()
+    #         before_confidences.append(before_conf)
+    #         after_confidences.append(after_conf)
+
+    #     for i, (before, after) in enumerate(zip(before_confidences, after_confidences), 1):
+    #         self.logger.info(f"Sample {i}: Confidence before/after calibration: {before:.3f}/{after:.3f}")
+
+    def _display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, output_dir):
         """
-        Display confidence scores before and after calibration for a random sample of records.
+        Display and plot confidence scores before and after calibration across all validation samples.
         """
-
-        random_indices = np.random.choice(len(val_text_embeddings), num_samples, replace=False)
-
-        before_confidences = []
-        after_confidences = []
-
-        for idx in random_indices:
-            before_conf = classifier_head.predict_proba(val_text_embeddings[idx:idx+1]).max()
-            after_conf = calibrated_model.predict_proba(val_text_embeddings[idx:idx+1]).max()
-            before_confidences.append(before_conf)
-            after_confidences.append(after_conf)
-
-        for i, (before, after) in enumerate(zip(before_confidences, after_confidences), 1):
-            self.logger.info(f"Sample {i}: Confidence before/after calibration: {before:.3f}/{after:.3f}")
+        # Get all confidences
+        before_confidences = classifier_head.predict_proba(val_text_embeddings).max(axis=1)
+        after_confidences = calibrated_model.predict_proba(val_text_embeddings).max(axis=1)
+        
+        # Sort for trend visualization
+        before_confidences = np.sort(before_confidences)
+        after_confidences = np.sort(after_confidences)
+        
+        import matplotlib.pyplot as plt
+        
+        plt.figure(figsize=(10, 6))
+        x = np.linspace(0, 1, len(before_confidences))
+        
+        plt.fill_between(x, before_confidences, alpha=0.3, label='Before Calibration')
+        plt.fill_between(x, after_confidences, alpha=0.3, label='After Calibration')
+        
+        plt.xlabel('Sample Percentile')
+        plt.ylabel('Confidence Score')
+        plt.title('Confidence Distribution Before vs After Calibration')
+        plt.legend()
+        plt.grid(True)
+        
+        # Save or display
+        plt.savefig(os.path.join(output_dir, "route0x_model",'confidence_trend.png'))
+        plt.close()
+        
+        # Log some key statistics
+        self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
+        self.logger.info(f"After Calibration - Mean: {after_confidences.mean():.3f}, Median: {np.median(after_confidences):.3f}")
 
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
@@ -710,7 +744,7 @@ class RouteBuilder:
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
 
-            self.display_calibration_trend(val_text_embeddings, classifier_head, calibrated_model, num_samples=25)
+            self._display_calibration_trend(val_text_embeddings, classifier_head, calibrated_model,output_dir)
             
         except Exception as e:
             self.logger.error(f"Calibration failed: {str(e)}")
