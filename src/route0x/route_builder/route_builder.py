@@ -1293,12 +1293,12 @@ class RouteBuilder:
 
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 7))  
 
-        img1 = mpimg.imread(f".{run_dir}/tsne_embeddings_plot.png")
+        img1 = mpimg.imread(f"./{run_dir}/route0x_model/tsne_embeddings_plot.png")
         ax1.imshow(img1)
         ax1.axis('off')
         ax1.set_title('TSNE Embeddings')
 
-        img2 = mpimg.imread(f".{run_dir}/confidence_trend.png")
+        img2 = mpimg.imread(f"./{run_dir}/route0x_model/confidence_trend.png")
         ax2.imshow(img2)
         ax2.axis('off')
         ax2.set_title('Confidence Distribution')
