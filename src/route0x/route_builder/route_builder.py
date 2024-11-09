@@ -1291,17 +1291,18 @@ class RouteBuilder:
         import matplotlib.pyplot as plt
         import matplotlib.image as mpimg
 
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(24, 7))  
-
+        # First image
+        plt.figure(figsize=(12, 7))
         img1 = mpimg.imread(f"./{run_dir}/route0x_model/tsne_embeddings_plot.png")
-        ax1.imshow(img1)
-        ax1.axis('off')
-        ax1.set_title('TSNE Embeddings')
+        plt.imshow(img1)
+        plt.axis('off')
+        plt.title('TSNE Embeddings')
+        plt.show()
 
+        # Second image
+        plt.figure(figsize=(12, 7))
         img2 = mpimg.imread(f"./{run_dir}/route0x_model/confidence_trend.png")
-        ax2.imshow(img2)
-        ax2.axis('off')
-        ax2.set_title('Confidence Distribution')
-
-        plt.tight_layout()  
+        plt.imshow(img2)
+        plt.axis('off')
+        plt.title('Confidence Distribution')
         plt.show()
