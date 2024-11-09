@@ -114,6 +114,7 @@ class RouteBuilder:
                  instruct_llm: str = None,
                  enable_id_oos_gen: bool = None,
                  enable_synth_data_gen: bool = None,
+                 enable_test_dataset_gen: bool = None,
                  max_query_len: int = None,
                  seed: int = None,
                  device: str = None,
@@ -157,6 +158,7 @@ class RouteBuilder:
         self.instruct_llm = instruct_llm if instruct_llm is not None else config.get("instruct_llm")
         self.enable_id_oos_gen = enable_id_oos_gen if enable_id_oos_gen is not None else config.get("enable_id_oos_gen")
         self.enable_synth_data_gen = enable_synth_data_gen if enable_synth_data_gen is not None else config.get("enable_synth_data_gen")
+        self.enable_test_dataset_gen = enable_test_dataset_gen if enable_test_dataset_gen is not None else config.get("enable_test_dataset_gen")
         self.max_query_len = max_query_len if max_query_len is not None else config.get("max_query_len")
         self.hf_dataset = hf_dataset if hf_dataset is not None else config.get("hf_dataset")
         self.label_column = label_column if label_column is not None else config.get("label_column")
@@ -1319,15 +1321,16 @@ class RouteBuilder:
         self.logger.info(f"Training dataset w/ ID OOS {train_dataset.num_rows}")
         self.logger.info(f"Eval dataset w/ ID OOS {eval_dataset.num_rows}")
 
-        train_dataset = self._load_data(train_file)
-        test_file = self._generate_synthetic_test_queries(self.routes, 
-                                                            self.domain, 
-                                                            samples_per_route=int(self.test_samples_per_route), 
-                                                            model=self.llm_name, 
-                                                            route_template=self.route_template, 
-                                                            prefix=prefix, 
-                                                            user_instructions=self.instruct_llm, 
-                                                            train_samples=train_dataset)
+        if self.enable_test_dataset_gen:
+            train_dataset = self._load_data(train_file)
+            test_file = self._generate_synthetic_test_queries(self.routes, 
+                                                                self.domain, 
+                                                                samples_per_route=self.test_samples_per_route, 
+                                                                model=self.llm_name, 
+                                                                route_template=self.route_template, 
+                                                                prefix=prefix, 
+                                                                user_instructions=self.instruct_llm, 
+                                                                train_samples=train_dataset)
         
         if self.add_additional_invalid_routes:    
             train_additional_invalid_file = self._generate_additional_invalid_routes(prefix)

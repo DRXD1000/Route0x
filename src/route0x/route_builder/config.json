@@ -15,6 +15,7 @@
     "llm_name": "llama3.1",
     "enable_id_oos_gen": true,
     "enable_synth_data_gen": true,
+    "enable_test_dataset_gen": false,
     "add_typo_robustness": false,
     "max_query_len": 24,
     "instruct_llm": "",
