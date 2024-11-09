@@ -38,12 +38,21 @@ import ollama
 import torch
 from setfit import SetFitModel
 
+from kneed import KneeLocator
+import matplotlib.pyplot as plt
+
 import nlpaug.augmenter.char as nac
 
-from .outlier_detector import OutlierDetector
-from .vector_db import VectorDB
-from .unified_llm_caller import UnifiedLLM
-from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+from outlier_detector import OutlierDetector
+from vector_db import VectorDB
+from unified_llm_caller import UnifiedLLM
+from losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+
+
+# from .outlier_detector import OutlierDetector
+# from .vector_db import VectorDB
+# from .unified_llm_caller import UnifiedLLM
+# from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
 
 import torch.nn.functional as F
 from transformers import AutoTokenizer
@@ -751,82 +760,39 @@ class RouteBuilder:
         return sentence_embeddings, sentence_ids
 
     
-    # def _display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, output_dir):
-    #     """
-    #     Display and plot confidence scores before and after calibration across all validation samples.
-    #     """
-
-    #     before_confidences = classifier_head.predict_proba(val_text_embeddings).max(axis=1)
-    #     after_confidences = calibrated_model.predict_proba(val_text_embeddings).max(axis=1)
-        
-    #     before_confidences = np.sort(before_confidences)
-    #     after_confidences = np.sort(after_confidences)
-        
-    #     import matplotlib.pyplot as plt
-        
-    #     plt.figure(figsize=(12, 7))
-    #     x = np.linspace(0, 1, len(before_confidences))
-        
-    #     plt.fill_between(x, before_confidences, alpha=0.3, label='Before Calibration', color='lightgray')
-    #     plt.fill_between(x, after_confidences, alpha=0.3, label='After Calibration', color='peachpuff')
-        
-    #     threshold = 0.7
-    #     plt.axhline(y=threshold, color='red', linestyle='--', alpha=0.7)
-    #     plt.text(0.02, threshold + 0.02, f'Confidence Threshold ({threshold})', color='red', fontsize=10)
-        
-    #     plt.annotate('High Confidence Zone\n✓ Use Model Predictions', 
-    #                 xy=(0.8, 0.8), xytext=(0.5, 0.9),
-    #                 arrowprops=dict(facecolor='green', shrink=0.05),
-    #                 bbox=dict(facecolor='white', edgecolor='green', alpha=0.8))
-        
-    #     plt.annotate('Low Confidence Zone\n⚠️ Use Fallback Strategy', 
-    #                 xy=(0.3, 0.5), xytext=(0.1, 0.3),
-    #                 arrowprops=dict(facecolor='orange', shrink=0.05),
-    #                 bbox=dict(facecolor='white', edgecolor='orange', alpha=0.8))
-        
-    #     plt.annotate('Natural Confidence\nThreshold Point', 
-    #                 xy=(0.7, 0.7), xytext=(0.8, 0.6),
-    #                 arrowprops=dict(facecolor='red', shrink=0.05),
-    #                 bbox=dict(facecolor='white', edgecolor='red', alpha=0.8))
-        
-    #     plt.xlabel('Sample Percentile')
-    #     plt.ylabel('Confidence Score')
-    #     plt.title('Confidence Distribution Before vs After Calibration')
-    #     plt.legend()
-    #     plt.grid(True)
-        
-    #     plt.savefig(os.path.join(output_dir, "route0x_model",'confidence_trend.png'))
-    #     plt.close()
-        
-    #     self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
-    #     self.logger.info(f"After Calibration - Mean: {after_confidences.mean():.3f}, Median: {np.median(after_confidences):.3f}")
-    #     self.logger.info(f"Recommended confidence threshold: {threshold}")
-    #     self.logger.info(f"Percentage of predictions above threshold: {(after_confidences > threshold).mean()*100:.1f}%")
-
     def _display_calibration_trend(self, val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir):
 
         before_confidences = classifier_head.predict_proba(val_text_embeddings).max(axis=1)
         after_confidences = calibrated_model.predict_proba(val_text_embeddings).max(axis=1)
         predictions = calibrated_model.predict(val_text_embeddings)
 
+        after_confidences = np.array(after_confidences)
+        predictions = np.array(predictions)
+        val_labels = np.array(val_labels)
+
+        # Sort by confidence for analysis
         sort_idx = np.argsort(after_confidences)
         sorted_conf = after_confidences[sort_idx]
         sorted_preds = predictions[sort_idx]
-        sorted_labels = val_labels[sort_idx]
+        sorted_labels = np.array(val_labels)[sort_idx]
 
         window = len(sorted_conf) // 10
         accuracies = []
         for i in range(len(sorted_conf) - window):
             acc = (sorted_preds[i:i+window] == sorted_labels[i:i+window]).mean()
             accuracies.append(acc)
-        accuracies = np.array(accuracies)
-        
-        confidence_threshold = np.median(sorted_conf)  
-        uncertainty_idx = np.where(accuracies < 0.4)[0][0]  
-        uncertainty_threshold = sorted_conf[uncertainty_idx]
+        # accuracies = np.array(accuracies)
+        accuracies = np.array(accuracies + [np.nan] * (len(sorted_conf) - len(accuracies)))
 
+        confidence_threshold = np.median(sorted_conf)
 
-        import matplotlib.pyplot as plt
+        knee = KneeLocator(sorted_conf, accuracies, curve='convex', direction='increasing')
+        if knee.knee:
+            uncertainty_threshold = knee.knee
+        else:
+            self.logger.info("No elbow found")
+            uncertainty_threshold = np.min(sorted_conf)  # Fallback if no elbow found
+
         plt.figure(figsize=(12, 7))
         x = np.linspace(0, 1, len(before_confidences))
         
@@ -863,7 +829,7 @@ class RouteBuilder:
         plt.legend()
         plt.grid(True)
         
-        plt.savefig(os.path.join(output_dir, "route0x_model",'confidence_trend.png'))
+        plt.savefig(os.path.join(output_dir, "route0x_model", 'confidence_trend.png'))
         plt.close()
         
         self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
@@ -873,6 +839,7 @@ class RouteBuilder:
         self.logger.info(f"Percentage of high confidence predictions: {(after_confidences > confidence_threshold).mean()*100:.1f}%")
         self.logger.info(f"Percentage of very uncertain predictions: {(after_confidences < uncertainty_threshold).mean()*100:.1f}%")
 
+    
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
 
@@ -1432,3 +1399,27 @@ class RouteBuilder:
             self.logger.info("Model training and evaluation completed.")
             self.logger.info("Thank you for using route0x! May all your queries find their way.")
 
+
+
+routebuilder = RouteBuilder(
+            seed = 1234,
+            train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_train.csv",
+            eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_eval.csv",
+            loss_funct_name="PairwiseArcFaceFocalLoss",
+            oos_label = "NO_NODES_DETECTED",
+            expected_oos_proportion =  0.1,
+            nn_for_oos_detection = 10,
+            max_query_len = 64,
+            domain="personal assistant",
+            max_steps=100,
+            warmup_proportion=0.05,
+            # llm_name="llama3.1",
+            enable_test_dataset_gen = False,
+            enable_synth_data_gen = False,
+            enable_id_oos_gen = False,
+            skip_eval = False,
+            add_additional_invalid_routes = False,
+            log_level = "info",
+    )
+
+routebuilder.build_routes()
