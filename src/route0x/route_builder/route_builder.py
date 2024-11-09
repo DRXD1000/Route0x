@@ -1395,25 +1395,25 @@ class RouteBuilder:
 
 
 
-routebuilder = RouteBuilder(
-            seed = 1234,
-            train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_train.csv",
-            eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_eval.csv",
-            loss_funct_name="PairwiseArcFaceFocalLoss",
-            oos_label = "NO_NODES_DETECTED",
-            expected_oos_proportion =  0.1,
-            nn_for_oos_detection = 10,
-            max_query_len = 64,
-            domain="personal assistant",
-            max_steps=100,
-            warmup_proportion=0.05,
-            # llm_name="llama3.1",
-            enable_test_dataset_gen = False,
-            enable_synth_data_gen = False,
-            enable_id_oos_gen = False,
-            skip_eval = False,
-            add_additional_invalid_routes = False,
-            log_level = "info",
-    )
+# routebuilder = RouteBuilder(
+#             seed = 1234,
+#             train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_train.csv",
+#             eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_eval.csv",
+#             loss_funct_name="PairwiseArcFaceFocalLoss",
+#             oos_label = "NO_NODES_DETECTED",
+#             expected_oos_proportion =  0.1,
+#             nn_for_oos_detection = 10,
+#             max_query_len = 64,
+#             domain="personal assistant",
+#             max_steps=100,
+#             warmup_proportion=0.05,
+#             # llm_name="llama3.1",
+#             enable_test_dataset_gen = False,
+#             enable_synth_data_gen = False,
+#             enable_id_oos_gen = False,
+#             skip_eval = False,
+#             add_additional_invalid_routes = False,
+#             log_level = "info",
+#     )
 
-routebuilder.build_routes()
+# routebuilder.build_routes()
