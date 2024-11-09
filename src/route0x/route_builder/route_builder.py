@@ -1287,18 +1287,3 @@ class RouteBuilder:
         self._export_onnx(run_dir)
         self.logger.info("Model training and evaluation completed.")
         self.logger.info("Thank you for using route0x! May all your queries find their way.")
-
-        import matplotlib.pyplot as plt
-        import matplotlib.image as mpimg
-
-        img1 = mpimg.imread(f"./{run_dir}/route0x_model/tsne_embeddings_plot.png")
-        plt.imshow(img1)
-        plt.axis('off')
-        plt.title('TSNE Embeddings')
-        plt.show()
-
-        img2 = mpimg.imread(f"./{run_dir}/route0x_model/confidence_trend.png")
-        plt.imshow(img2)
-        plt.axis('off')
-        plt.title('Confidence Distribution')
-        plt.show()
