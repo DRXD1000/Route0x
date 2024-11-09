@@ -607,7 +607,6 @@ class RouteBuilder:
         """
 
         synthetic_data = []
-        typo_aug_samples = []
         test_file = os.path.join(self.synthetic_data_dir, f"{prefix}_test.csv")
         TEST_SLICE_SYSTEM_PROMPT = """You are an expert chatbot engineer designing challenging test cases for a semantic query router. Your goal is to create hard but realistic test cases that verify the router's robustness and decision boundaries. Router must correctly classify user intents while detecting out-of-scope queries. For Example for a "Pay Bill" intent: Simple: "pay my electricity bill" Challenge Cases: 1. Complex: "need to schedule next month's utility payment but only after my paycheck clears" 2. Ambiguous: "handle my monthly payment situation" 3. Colloquial: "yo gotta sort out my phone bill asap fam" 4. Contextual: "while checking my account summary i need to take care of that overdue gas payment".  Always respond with a JSON list of new queries, like: ["New query 1", "New query 2", "New query 3"]. A syntactically correct JSON response is required. No explanations needed."""
 
@@ -674,12 +673,6 @@ class RouteBuilder:
 
                     synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
 
-                    typo_aug_samples.extend(
-                                        [{'text': typo.strip(), 'label': route_template.format(label), 'is_user_sample': False} for example in examples
-                                        for typo in self._generate_natural_typo_variants(example.strip())
-                                        ]
-                                        )
-
                 except Exception as e:
                     self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
 
@@ -687,7 +680,6 @@ class RouteBuilder:
                 #Users could be in different LLM usage tiers, Don't hit tokens/min limits
                 time.sleep(10)
 
-            synthetic_data.extend(typo_aug_samples)
             synthetic_df = pd.DataFrame(synthetic_data)
             synthetic_df.to_csv(test_file, index=False)      
 
