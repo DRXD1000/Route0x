@@ -635,7 +635,6 @@ class RouteBuilder:
                 if train_samples is not None and label in sample_dict:
                     if stage_index == 0:
                         few_shot_examples = sample_dict[label]
-                        synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': True} for ex in few_shot_examples])
                     else:    
                          few_shot_examples = [synthetic_datum['text'] for synthetic_datum in synthetic_data if synthetic_datum['label'] == route_template.format(label)]
 
