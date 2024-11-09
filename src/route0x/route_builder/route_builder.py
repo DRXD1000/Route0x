@@ -897,7 +897,7 @@ class RouteBuilder:
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
 
-            self._display_calibration_trend(val_text_embeddings, classifier_head, calibrated_model,output_dir)
+            self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
             
         except Exception as e:
             self.logger.error(f"Calibration failed: {str(e)}")
