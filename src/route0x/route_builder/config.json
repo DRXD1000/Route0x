@@ -8,6 +8,7 @@
     "warmup_proportion": 0.05,
     "min_samples": 12,
     "fallback_samples_per_route": 30,
+    "test_samples_per_route": 10,
     "label_column": "label",
     "text_column": "text",
     "route_template": "{}",

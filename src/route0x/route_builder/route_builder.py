@@ -40,10 +40,16 @@ from setfit import SetFitModel
 
 import nlpaug.augmenter.char as nac
 
-from .outlier_detector import OutlierDetector
-from .vector_db import VectorDB
-from .unified_llm_caller import UnifiedLLM
-from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+from outlier_detector import OutlierDetector
+from vector_db import VectorDB
+from unified_llm_caller import UnifiedLLM
+from losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+
+# from .outlier_detector import OutlierDetector
+# from .vector_db import VectorDB
+# from .unified_llm_caller import UnifiedLLM
+# from .losses import PairwiseArcFaceFocalLoss, ScaledAnglELoss, BinaryLabelTripletMarginLoss
+
 
 import torch.nn.functional as F
 from transformers import AutoTokenizer
@@ -106,6 +112,7 @@ class RouteBuilder:
                  warmup_proportion: float = None,
                  min_samples: int = None,
                  samples_per_route: Optional[int] = None,
+                 test_samples_per_route: Optional[int] = None,
                  routes: Optional[List[str]] = None,
                  route_template: str = None,
                  domain: Optional[str] = None,
@@ -123,6 +130,7 @@ class RouteBuilder:
                  add_additional_invalid_routes: bool = False,
                  invalid_routes: Optional[List[str]] = None,
                  only_oos_head: bool = False,
+                 only_gen_dataset: bool = False,
                  log_level: str = "info",
                  do_quantise: bool = False,
                  add_typo_robustness: bool = False):
@@ -147,6 +155,7 @@ class RouteBuilder:
         self.warmup_proportion = warmup_proportion if warmup_proportion is not None else config.get("warmup_proportion")
         self.min_samples = min_samples if min_samples is not None else config.get("min_samples")
         self.samples_per_route = samples_per_route if samples_per_route is not None else config.get("samples_per_route")
+        self.test_samples_per_route = test_samples_per_route if test_samples_per_route is not None else config.get("test_samples_per_route")
         self.routes = routes if routes is not None else config.get("routes")
         self.route_template = route_template if route_template is not None else config.get("route_template")
         self.domain = domain if domain is not None else config.get("domain")
@@ -165,6 +174,7 @@ class RouteBuilder:
         self.nn_for_oos_detection = nn_for_oos_detection if nn_for_oos_detection else config.get("nn_for_oos_detection")
         self.skip_eval = skip_eval
         self.only_oos_head = only_oos_head
+        self.only_gen_dataset = only_gen_dataset
         self.add_typo_robustness = add_typo_robustness if add_typo_robustness else config.get("add_typo_robustness")
         self.build_request = build_request if build_request else None
         self.fallback_samples_per_route = config.get("fallback_samples_per_route")
@@ -565,7 +575,7 @@ class RouteBuilder:
         train_data.to_csv(train_file, index=False)
         eval_data.to_csv(eval_file, index=False)
         self.logger.info(f"Adversarial training data saved to {train_file}")
-        self.logger.info(f"Adversarial test data saved to {eval_file}")
+        self.logger.info(f"Adversarial eval data saved to {eval_file}")
         return train_file, eval_file
     
     
@@ -585,6 +595,110 @@ class RouteBuilder:
             final_df.to_csv(train_file, index=False)
         return train_file
 
+    def _generate_synthetic_test_queries(
+                                    self,
+                                    labels: List[str],
+                                    domain: str,
+                                    samples_per_route: int,
+                                    route_template: str,
+                                    model: str = "llama3.1",
+                                    prefix: str = None,
+                                    user_instructions: str = "",
+                                    train_samples: Optional[Dataset] = None,
+                                ) -> Tuple[str, str]:
+        """
+        Generates synthetic test queries using an LLM 
+        """
+
+        synthetic_data = []
+        typo_aug_samples = []
+        test_file = os.path.join(self.synthetic_data_dir, f"{prefix}_test.csv")
+        TEST_SLICE_SYSTEM_PROMPT = """You are an expert chatbot engineer designing challenging test cases for a semantic query router. Your goal is to create hard but realistic test cases that verify the router's robustness and decision boundaries. Router must correctly classify user intents while detecting out-of-scope queries. For Example for a "Pay Bill" intent: Simple: "pay my electricity bill" Challenge Cases: 1. Complex: "need to schedule next month's utility payment but only after my paycheck clears" 2. Ambiguous: "handle my monthly payment situation" 3. Colloquial: "yo gotta sort out my phone bill asap fam" 4. Contextual: "while checking my account summary i need to take care of that overdue gas payment".  Always respond with a JSON list of new queries, like: ["New query 1", "New query 2", "New query 3"]. A syntactically correct JSON response is required. No explanations needed."""
+
+        sample_dict = {}
+        if train_samples is not None and len(train_samples) > 0:
+            for sample in train_samples:
+                if sample['label'] not in sample_dict:
+                    sample_dict[sample['label']] = []
+                sample_dict[sample['label']].append(sample['text'])
+        
+        system_prompt = TEST_SLICE_SYSTEM_PROMPT
+
+        llm = UnifiedLLM(self.llm_provider, model, system_prompt=system_prompt)
+        labels = sample_dict.keys() if len(sample_dict) > 0 else labels
+
+        generate_stages = lambda N: [10] + [20 for _ in range(N - 1)]
+        generate_phrases = lambda N: [""] + ["lexically diverse," for _ in range(N - 1)]
+        gen_stage_count = (samples_per_route - 10) // 20 if samples_per_route > 10 else 0
+        stage_wise_counts = generate_stages(gen_stage_count + 1)
+        stage_wise_phrases = generate_phrases(gen_stage_count + 1)
+        few_shot_examples = []
+
+        for stage_index in range(gen_stage_count + 1):
+            self.logger.info(f"Generation STAGE {stage_index}:")
+            for label in tqdm(labels, desc="Generating synthetic test data"):
+                if train_samples is not None and label in sample_dict:
+                    if stage_index == 0:
+                        few_shot_examples = sample_dict[label]
+                        synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': True} for ex in few_shot_examples])
+                    else:    
+                         few_shot_examples = [synthetic_datum['text'] for synthetic_datum in synthetic_data if synthetic_datum['label'] == route_template.format(label)]
+
+                    prompt = f"\n\nHere are some example queries for the label '{label}':\n"
+                    for i, few_shot_example in enumerate(few_shot_examples, 1):
+                        prompt += f"{i}. {few_shot_example}\n"
+                    if label == self.oos_label:    
+                        prompt += f"\nNow, generate {stage_wise_counts[stage_index]} more {stage_wise_phrases[stage_index]} challenging but Out-of-Scope test queries like the examples above that : 1.) Stays true to the intent but test boundary conditions 2.) Mix complexity, ambiguity, and colloquial language 3.) Include realistic context and domain terminology 4.) Challenge the router's decision making for the label: '{label}' in '{domain}' domain"
+                    else:
+                        prompt += f"\nNow, generate {stage_wise_counts[stage_index]} more {stage_wise_phrases[stage_index]} high-quality, challenging test queries that : 1.) Stays true to the intent but test boundary conditions 2.) Mix complexity, ambiguity, and colloquial language 3.) Include realistic context and domain terminology 4.) Challenge the router's decision making for the label: '{label}' in '{domain}' domain"
+                else:
+                    prompt = f"\n\nGenerate minimum of {stage_wise_counts[stage_index]} more {stage_wise_phrases[stage_index]} high-quality, challenging test queries that : 1.) Stays true to the intent but test boundary conditions 2.) Mix complexity, ambiguity, and colloquial language 3.) Include realistic context and domain terminology 4.) Challenge the router's decision making for the label: '{label}' in '{domain}' domain"
+
+                prompt = prompt if user_instructions == "" else user_instructions + "\n\n" + prompt
+                self.logger.info(prompt)
+                try:
+                    response = llm.generate(prompt)
+                    if self.llm_provider == "ollama":
+                        response = response.replace("```json", "")
+                        response = response.replace("```", "")
+                        if response.endswith('.'):
+                            response = response[:-1]
+                        examples = json.loads(response)
+                        self.logger.debug(response)
+                    else:
+                        resp_obj = json.loads(response)
+                        if "queries" in resp_obj:
+                            examples = resp_obj["queries"]
+                        else:
+                            self.logger.error("LLM Prompt failed to stick to the schema") 
+                            sys.exit(0)       
+                        self.logger.debug(examples)
+                        time.sleep(1)
+                    self.logger.info(f"Total queries for  {label} - {len(examples)}")
+
+                    synthetic_data.extend([{'text': ex.strip(), 'label': route_template.format(label), 'is_user_sample': False} for ex in examples if ex.strip()])
+
+                    typo_aug_samples.extend(
+                                        [{'text': typo.strip(), 'label': route_template.format(label), 'is_user_sample': False} for example in examples
+                                        for typo in self._generate_natural_typo_variants(example.strip())
+                                        ]
+                                        )
+
+                except Exception as e:
+                    self.logger.error(f"Error generating synthetic data for label '{label}': {str(e)}")
+
+            if self.llm_provider != "ollama":  
+                #Users could be in different LLM usage tiers, Don't hit tokens/min limits
+                time.sleep(10)
+
+            synthetic_data.extend(typo_aug_samples)
+            synthetic_df = pd.DataFrame(synthetic_data)
+            synthetic_df.to_csv(test_file, index=False)      
+
+            self.logger.info(f"Synthetic test data saved to {test_file}")
+
+        return test_file
+    
 
     def _shuffle_dataset(self, dataset: Dataset) -> Dataset:
         """
@@ -650,51 +764,14 @@ class RouteBuilder:
         return sentence_embeddings, sentence_ids
 
     
-    # def _get_embeddings(self, setfit_model: SetFitModel, texts: list, batch_size: int = 32) -> np.ndarray:
-    #     """Generate embeddings for the input texts using the SetFit model body.
-        
-    #     Args:
-    #         texts (list): List of input texts to embed.
-    #         batch_size (int): Batch size to process the text in chunks (default 32).
-        
-    #     Returns:
-    #         np.ndarray: The concatenated embeddings for all input texts.
-    #     """
-    #     embeddings = []
-    #     for i in tqdm(range(0, len(texts), batch_size), desc="Extracting embeddings"):
-    #         batch_texts = texts[i:i + batch_size]
-    #         batch_embeddings = setfit_model.model_body.encode(batch_texts, normalize_embeddings=True)
-    #         embeddings.append(batch_embeddings)
-    #     return np.vstack(embeddings)
-    
-    # def display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, num_samples=25):
-    #     """
-    #     Display confidence scores before and after calibration for a random sample of records.
-    #     """
-
-    #     random_indices = np.random.choice(len(val_text_embeddings), num_samples, replace=False)
-
-    #     before_confidences = []
-    #     after_confidences = []
-
-    #     for idx in random_indices:
-    #         before_conf = classifier_head.predict_proba(val_text_embeddings[idx:idx+1]).max()
-    #         after_conf = calibrated_model.predict_proba(val_text_embeddings[idx:idx+1]).max()
-    #         before_confidences.append(before_conf)
-    #         after_confidences.append(after_conf)
-
-    #     for i, (before, after) in enumerate(zip(before_confidences, after_confidences), 1):
-    #         self.logger.info(f"Sample {i}: Confidence before/after calibration: {before:.3f}/{after:.3f}")
-
     def _display_calibration_trend(self, val_text_embeddings, classifier_head, calibrated_model, output_dir):
         """
         Display and plot confidence scores before and after calibration across all validation samples.
         """
-        # Get all confidences
+
         before_confidences = classifier_head.predict_proba(val_text_embeddings).max(axis=1)
         after_confidences = calibrated_model.predict_proba(val_text_embeddings).max(axis=1)
         
-        # Sort for trend visualization
         before_confidences = np.sort(before_confidences)
         after_confidences = np.sort(after_confidences)
         
@@ -703,16 +780,13 @@ class RouteBuilder:
         plt.figure(figsize=(12, 7))
         x = np.linspace(0, 1, len(before_confidences))
         
-        # Base plots with specific colors
         plt.fill_between(x, before_confidences, alpha=0.3, label='Before Calibration', color='lightgray')
         plt.fill_between(x, after_confidences, alpha=0.3, label='After Calibration', color='peachpuff')
         
-        # Add threshold line
         threshold = 0.7
         plt.axhline(y=threshold, color='red', linestyle='--', alpha=0.7)
         plt.text(0.02, threshold + 0.02, f'Confidence Threshold ({threshold})', color='red', fontsize=10)
         
-        # Add zone annotations
         plt.annotate('High Confidence Zone\n✓ Use Model Predictions', 
                     xy=(0.8, 0.8), xytext=(0.5, 0.9),
                     arrowprops=dict(facecolor='green', shrink=0.05),
@@ -723,7 +797,6 @@ class RouteBuilder:
                     arrowprops=dict(facecolor='orange', shrink=0.05),
                     bbox=dict(facecolor='white', edgecolor='orange', alpha=0.8))
         
-        # Add elbow point annotation
         plt.annotate('Natural Confidence\nThreshold Point', 
                     xy=(0.7, 0.7), xytext=(0.8, 0.6),
                     arrowprops=dict(facecolor='red', shrink=0.05),
@@ -735,11 +808,9 @@ class RouteBuilder:
         plt.legend()
         plt.grid(True)
         
-        # Save plot
         plt.savefig(os.path.join(output_dir, "route0x_model",'confidence_trend.png'))
         plt.close()
         
-        # Log key statistics and threshold recommendation
         self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
         self.logger.info(f"After Calibration - Mean: {after_confidences.mean():.3f}, Median: {np.median(after_confidences):.3f}")
         self.logger.info(f"Recommended confidence threshold: {threshold}")
@@ -934,7 +1005,7 @@ class RouteBuilder:
 
     def _evaluate_model(self, trainer, eval_dataset, routes=None):
         """
-        Evaluates the model on the test dataset.
+        Evaluates the model on the eval dataset.
         """
         metrics = trainer.evaluate()
         predictions = trainer.model.predict(eval_dataset['text'])
@@ -1167,7 +1238,7 @@ class RouteBuilder:
         self.synthetic_data_dir = "generated_datasets" 
         if not os.path.exists(self.synthetic_data_dir):
             os.makedirs(self.synthetic_data_dir, exist_ok=True)
-        #PATH 0: Users want to test with a intent classification dataset with labels as routes (Only for advanced users / researchers)    
+        #PATH 0: Users want to try Route0x with a intent classification dataset with labels as routes (Only for advanced users / researchers)    
         if self.hf_dataset:
             train_dataset, eval_dataset = self._load_data(None, hf_dataset=self.hf_dataset, label_column=self.label_column, text_column=self.text_column, train_samples=self.min_samples, label_mapping=self.routes)
         elif self.enable_synth_data_gen:  
@@ -1227,6 +1298,10 @@ class RouteBuilder:
             self.enable_id_oos_gen = False
             train_file, eval_file = self.train_path, self.eval_path
 
+        # if train_without_adv_dataset.num_rows == 0 or eval_without_adv_dataset.num_rows == 0:
+        #     self.logger.error("Your train slice doesn't have enough samples, We recommend a minimum of 12 samples per route. Add more samples or choose ask route0x to generate synthetic data")
+        #     sys.exit(0)
+
         train_without_adv_dataset = self._load_data(train_file)
         eval_without_adv_dataset =  self._load_data(eval_file)
         train_without_adv_dataset = train_without_adv_dataset.filter(lambda x: x['label'] != self.route_template.format(self.oos_label))
@@ -1248,8 +1323,18 @@ class RouteBuilder:
             eval_dataset =  self._load_data(eval_file)
 
         self.logger.info(f"Training dataset w/ ID OOS {train_dataset.num_rows}")
-        self.logger.info(f"Test dataset w/ ID OOS {eval_dataset.num_rows}")
+        self.logger.info(f"Eval dataset w/ ID OOS {eval_dataset.num_rows}")
 
+        train_dataset = self._load_data(train_file)
+        test_file = self._generate_synthetic_test_queries(self.routes, 
+                                                            self.domain, 
+                                                            samples_per_route=int(self.test_samples_per_route), 
+                                                            model=self.llm_name, 
+                                                            route_template=self.route_template, 
+                                                            prefix=prefix, 
+                                                            user_instructions=self.instruct_llm, 
+                                                            train_samples=train_dataset)
+        
         if self.add_additional_invalid_routes:    
             train_additional_invalid_file = self._generate_additional_invalid_routes(prefix)
             train_additional_invalid_dataset = self._load_data(train_additional_invalid_file)
@@ -1261,29 +1346,31 @@ class RouteBuilder:
             self.logger.error("Your train slice doesn't have enough samples, We recommend a minimum of 12 samples per route. Add more samples or choose ask route0x to generate synthetic data")
             sys.exit(0)
 
-        train_dataset = self._shuffle_dataset(train_dataset)
-        if eval_dataset:
-            eval_dataset = self._shuffle_dataset(eval_dataset)
-        self.logger.info(f"Training route0x model using {self.model_name} for {self.epochs} epochs...")
+        if not self.only_gen_dataset:
+            train_dataset = self._shuffle_dataset(train_dataset)
+            if eval_dataset:
+                eval_dataset = self._shuffle_dataset(eval_dataset)
+            self.logger.info(f"Training route0x model using {self.model_name} for {self.epochs} epochs...")
 
-        all_metrics, run_dir = self._train_and_evaluate(
-            train_dataset, 
-            eval_dataset, 
-            train_without_adv_dataset,
-            eval_without_adv_dataset,
-            model_name=self.model_name, 
-            epochs=self.epochs, 
-            max_steps = self.max_steps if self.max_steps else -1,
-            batch_size=self.batch_size, 
-            lr=self.lr, 
-            warmup_proportion=self.warmup_proportion,        
-            min_samples=self.min_samples,
-            routes = self.routes,
-            max_query_len = self.max_query_len
-        )
+            all_metrics, run_dir = self._train_and_evaluate(
+                train_dataset, 
+                eval_dataset, 
+                train_without_adv_dataset,
+                eval_without_adv_dataset,
+                model_name=self.model_name, 
+                epochs=self.epochs, 
+                max_steps = self.max_steps if self.max_steps else -1,
+                batch_size=self.batch_size, 
+                lr=self.lr, 
+                warmup_proportion=self.warmup_proportion,        
+                min_samples=self.min_samples,
+                routes = self.routes,
+                max_query_len = self.max_query_len
+            )
 
-        hyperparams = {k: v for k, v in vars(self).items() if self._is_json_serializable(v)}  
-        self._save_final_report(hyperparams, all_metrics, output_dir=f"{run_dir}")
-        self._export_onnx(run_dir)
-        self.logger.info("Model training and evaluation completed.")
-        self.logger.info("Thank you for using route0x! May all your queries find their way.")
+            hyperparams = {k: v for k, v in vars(self).items() if self._is_json_serializable(v)}  
+            self._save_final_report(hyperparams, all_metrics, output_dir=f"{run_dir}")
+            self._export_onnx(run_dir)
+            self.logger.info("Model training and evaluation completed.")
+            self.logger.info("Thank you for using route0x! May all your queries find their way.")
+
