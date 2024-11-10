@@ -756,6 +756,164 @@ class RouteBuilder:
         return sentence_embeddings, sentence_ids
 
     
+    def _display_calibration_trend(self, val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir):
+
+        before_confidences = classifier_head.predict_proba(val_text_embeddings).max(axis=1)
+        after_confidences = calibrated_model.predict_proba(val_text_embeddings).max(axis=1)
+        predictions = calibrated_model.predict(val_text_embeddings)
+
+        after_confidences = np.array(after_confidences)
+        predictions = np.array(predictions)
+        val_labels = np.array(val_labels)
+
+        # Sort by confidence for analysis
+        sort_idx = np.argsort(after_confidences)
+        sorted_conf = after_confidences[sort_idx]
+        sorted_preds = predictions[sort_idx]
+        sorted_labels = np.array(val_labels)[sort_idx]
+
+        window = len(sorted_conf) // 10
+        accuracies = []
+        for i in range(len(sorted_conf) - window):
+            acc = (sorted_preds[i:i+window] == sorted_labels[i:i+window]).mean()
+            accuracies.append(acc)
+        # accuracies = np.array(accuracies)
+        accuracies = np.array(accuracies + [np.nan] * (len(sorted_conf) - len(accuracies)))
+
+        # confidence_threshold = np.median(sorted_conf)
+        knee_confidence = KneeLocator(sorted_conf, accuracies, curve='concave', direction='decreasing')
+        if knee_confidence.knee:
+            confidence_threshold = knee_confidence.knee
+            self.logger.info(f"Upper elbow (Confidence Threshold) found at: {confidence_threshold:.3f}")
+        else:
+            self.logger.info("No elbow found for high confidence; defaulting to median.")
+            confidence_threshold = np.median(sorted_conf)
+
+        knee = KneeLocator(sorted_conf, accuracies, curve='convex', direction='increasing')
+        if knee.knee:
+            uncertainty_threshold = knee.knee
+        else:
+            self.logger.info("No elbow found")
+            uncertainty_threshold = np.min(sorted_conf)  # Fallback if no elbow found
+
+        plt.figure(figsize=(12, 7))
+        x = np.linspace(0, 1, len(before_confidences))
+        
+        plt.fill_between(x, np.sort(before_confidences), alpha=0.3, label='Before Calibration', color='lightgray')
+        plt.fill_between(x, np.sort(after_confidences), alpha=0.3, label='After Calibration', color='peachpuff')
+        
+        plt.axhline(y=confidence_threshold, color='red', linestyle='--', alpha=0.7)
+        plt.text(0.02, confidence_threshold + 0.02, f'Confidence Threshold ({confidence_threshold:.2f})', color='red', fontsize=10)
+        
+        plt.axhline(y=uncertainty_threshold, color='orange', linestyle='--', alpha=0.7)
+        plt.text(0.02, uncertainty_threshold - 0.05, f'Uncertainty Threshold ({uncertainty_threshold:.2f})', color='orange', fontsize=10)
+        
+        plt.annotate('High Confidence Zone\n✓ Use Model Predictions', 
+                    xy=(0.8, confidence_threshold + 0.1), 
+                    xytext=(0.5, confidence_threshold + 0.2),
+                    arrowprops=dict(facecolor='green', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='green', alpha=0.8))
+        
+        plt.annotate('Uncertain Zone\n⚠️ Consider Fallback', 
+                    xy=(0.4, (confidence_threshold + uncertainty_threshold)/2),
+                    xytext=(0.1, (confidence_threshold + uncertainty_threshold)/2),
+                    arrowprops=dict(facecolor='orange', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='orange', alpha=0.8))
+        
+        plt.annotate('Very Uncertain Zone\n❌ Use Fallback', 
+                    xy=(0.2, uncertainty_threshold - 0.1),
+                    xytext=(0.1, uncertainty_threshold - 0.15),
+                    arrowprops=dict(facecolor='red', shrink=0.05),
+                    bbox=dict(facecolor='white', edgecolor='red', alpha=0.8))
+        
+        plt.xlabel('Sample Percentile')
+        plt.ylabel('Confidence Score')
+        plt.title('Confidence Distribution Before vs After Calibration')
+        plt.legend()
+        plt.grid(True)
+        
+        plt.savefig(os.path.join(output_dir, "route0x_model", 'confidence_trend.png'))
+        plt.close()
+        
+        self.logger.info(f"Before Calibration - Mean: {before_confidences.mean():.3f}, Median: {np.median(before_confidences):.3f}")
+        self.logger.info(f"After Calibration - Mean: {after_confidences.mean():.3f}, Median: {np.median(after_confidences):.3f}")
+        self.logger.info(f"Confidence Threshold: {confidence_threshold:.3f}")
+        self.logger.info(f"Uncertainty Threshold: {uncertainty_threshold:.3f}")
+        self.logger.info(f"Percentage of high confidence predictions: {(after_confidences > confidence_threshold).mean()*100:.1f}%")
+        self.logger.info(f"Percentage of very uncertain predictions: {(after_confidences < uncertainty_threshold).mean()*100:.1f}%")
+
+
+    # def _calculate_thresholds(self, calibrated_model, val_text_embeddings, val_labels):
+    #     """
+    #     Calculate confidence and uncertainty thresholds using Kneedle detector
+    #     on precision-recall and ROC curves
+    #     """
+    #     try:
+    #         # Get calibrated probabilities and predictions
+    #         calibrated_probs = calibrated_model.predict_proba(val_text_embeddings)
+    #         max_probs = np.max(calibrated_probs, axis=1)
+    #         pred_labels = calibrated_model.classes_[np.argmax(calibrated_probs, axis=1)]
+            
+    #         # Create binary correctness indicator
+    #         correct_predictions = (pred_labels == val_labels)
+            
+    #         # Get precision-recall curve for confidence threshold
+    #         precisions, recalls, pr_thresholds = precision_recall_curve(
+    #             correct_predictions,
+    #             max_probs
+    #         )
+            
+    #         # Align the arrays for KneeLocator
+    #         precision_curve = precisions[:-1]  # Remove last element to match pr_thresholds
+            
+    #         # For confidence threshold
+    #         kn_precision = KneeLocator(
+    #             range(len(pr_thresholds)),  # Use indices instead of thresholds
+    #             precision_curve,
+    #             curve='convex',
+    #             direction='increasing'
+    #         )
+            
+    #         # Convert knee point to integer index
+    #         conf_idx = int(kn_precision.knee) if kn_precision.knee is not None else len(pr_thresholds) // 2
+    #         confidence_threshold = pr_thresholds[conf_idx]
+            
+    #         # Get ROC curve for uncertainty threshold
+    #         fpr, tpr, roc_thresholds = roc_curve(
+    #             correct_predictions,
+    #             max_probs
+    #         )
+            
+    #         kn_roc = KneeLocator(
+    #             range(len(roc_thresholds)),  # Use indices instead of thresholds
+    #             tpr,
+    #             curve='concave',
+    #             direction='decreasing'
+    #         )
+            
+    #         # Convert knee point to integer index
+    #         uncert_idx = int(kn_roc.knee) if kn_roc.knee is not None else len(roc_thresholds) // 2
+    #         uncertainty_threshold = roc_thresholds[uncert_idx]
+            
+    #         thresholds = {
+    #             'confidence_threshold': float(confidence_threshold),
+    #             'uncertainty_threshold': float(uncertainty_threshold)
+    #         }
+            
+    #         # Log the curve points and detected thresholds for validation
+    #         self.logger.info(f"Precision at confidence threshold: {precision_curve[conf_idx]:.3f}")
+    #         self.logger.info(f"Recall at confidence threshold: {recalls[conf_idx]:.3f}")
+    #         self.logger.info(f"FPR at uncertainty threshold: {fpr[uncert_idx]:.3f}")
+    #         self.logger.info(f"TPR at uncertainty threshold: {tpr[uncert_idx]:.3f}")
+    #         self.logger.info(f"Calculated thresholds: {thresholds}")
+            
+    #         return thresholds
+            
+    #     except Exception as e:
+    #         self.logger.error(f"Threshold calculation failed: {str(e)}")
+    #         raise
+
+
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
 
@@ -780,7 +938,7 @@ class RouteBuilder:
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
 
-            # self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
+            self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
             # self._calculate_thresholds(calibrated_model, val_text_embeddings, val_labels)
             
         except Exception as e:
