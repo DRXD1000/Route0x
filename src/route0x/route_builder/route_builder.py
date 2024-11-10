@@ -778,7 +778,14 @@ class RouteBuilder:
         # accuracies = np.array(accuracies)
         accuracies = np.array(accuracies + [np.nan] * (len(sorted_conf) - len(accuracies)))
 
-        confidence_threshold = np.median(sorted_conf)
+        # confidence_threshold = np.median(sorted_conf)
+        knee_confidence = KneeLocator(sorted_conf, accuracies, curve='concave', direction='decreasing')
+        if knee_confidence.knee:
+            confidence_threshold = knee_confidence.knee
+            self.logger.info(f"Upper elbow (Confidence Threshold) found at: {confidence_threshold:.3f}")
+        else:
+            self.logger.info("No elbow found for high confidence; defaulting to median.")
+            confidence_threshold = np.median(sorted_conf)
 
         knee = KneeLocator(sorted_conf, accuracies, curve='convex', direction='increasing')
         if knee.knee:
@@ -1397,8 +1404,8 @@ class RouteBuilder:
 
 # routebuilder = RouteBuilder(
 #             seed = 1234,
-#             train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_train.csv",
-#             eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_134041_eval.csv",
+#             train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_164543_train.csv",
+#             eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_164543_eval.csv",
 #             loss_funct_name="PairwiseArcFaceFocalLoss",
 #             oos_label = "NO_NODES_DETECTED",
 #             expected_oos_proportion =  0.1,
