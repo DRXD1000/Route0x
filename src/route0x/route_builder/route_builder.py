@@ -866,7 +866,7 @@ class RouteBuilder:
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
 
-            if self.eval_path is not None:
+            if self.eval_path is None:
                 self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
             
         except Exception as e:
