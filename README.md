@@ -23,7 +23,7 @@
   </h4>
 </div>
 
-Query Routing is a higher level tasks that neither dovetails into Intent classification nor into Query similarity, not atleast in isolation. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. Query routing cannot be just mapped to Intent classification alone and it won't work owing to the above requirements. Research literature hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue and offer a production-grade solution for Humans and Agents.
+**Why Route0x?** Query Routing is a higher level tasks that neither dovetails into Intent classification nor into Query similarity, not atleast in isolation. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. Query routing cannot be just mapped to Intent classification alone and it won't work owing to the above requirements. Research literature hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue and offer a production-grade solution for Humans and Agents.
 
 
 **KPI for Query Routing:** $ / Query. (this subsumes accuracy, latency)
@@ -55,17 +55,16 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 
 We have disetangled the resource heavy route building (entails model training) from query routing (entails quick model inference)
 
-
-### Training
+### Training 
 ```python 
-pip install route0x[build] # installs a package thats few GBs
+pip install route0x[build] # (*ML skills not needed)
 ```
 ### [Build your router - Starter Notebook]()
 
-### Inference
+### Inference 
 
 ```python 
-pip install route0x[route] # installs a package thats few MBs
+pip install route0x[route] # (Light-weight without any heavy torch dependencies)
 ```
 
 ```python
@@ -87,14 +86,13 @@ route_obj = query_router.find_route(<your-query>)
 <img src="./images/HINT3-F1.png"/><br/><br/>
 <img src="./images/HINT3-OOS-RECALL.png"/><br/><br/>
 
-**P50 Latency:** Numbers taken from the Amazon research paper and compared with Route0x system that uses FP32 ONNX and more.
+**P50 Latency:** Numbers taken from the Amazon research paper and compared with Route0x system that uses FP32 ONNX and more. Our latency numbers were ran on a Mac M1 Pro 16" machine, while not directly comparable as the hardware is different gives an idea.
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
 Caveat: Route0x uses SetFit as a base. But not as-is, we added a tweak on how we use it and a few more innovations on top of SetFit. (Jump to the sections below for more details). But unlike the SetFit + NA option suggested in the paper, We do not perturb positive samples to create hard negatives, We employ a straight forward Low-shot learning regime that only needs 2-samples from real dataset to simulate real world query routing users (who might find it hard to offer more samples for each route of interest). We augment those 2 sampls into to 12 effective samplesm, more on this later. Also we train only for 100 steps. The LLMs used in the paper as for as we can tell are hosted APIs hence by design suffers high latency due to network I/O and incurs $ which makes it infeasible for query routing which might touch many queries even if with uncertainity routing.
 
-Note: All numbers are based on MPS GPU device. Numbers can slightly vary based on the device and seeds. As the paper shows only the 
-best number without any notion of variations denoted usually with ±.
+Note: All numbers are based on CPU, MPS/CUDA GPU device. Numbers can slightly vary based on the device and seeds. As the paper shows only the best numbers (without any notion of variations denoted usually with ±), we also show the best numbers in this comparison. 
 
 <img src="./images/HINT3-Training Regime.png"/>
 

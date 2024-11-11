@@ -766,7 +766,6 @@ class RouteBuilder:
         predictions = np.array(predictions)
         val_labels = np.array(val_labels)
 
-        # Sort by confidence for analysis
         sort_idx = np.argsort(after_confidences)
         sorted_conf = after_confidences[sort_idx]
         sorted_preds = predictions[sort_idx]
@@ -777,7 +776,6 @@ class RouteBuilder:
         for i in range(len(sorted_conf) - window):
             acc = (sorted_preds[i:i+window] == sorted_labels[i:i+window]).mean()
             accuracies.append(acc)
-        # accuracies = np.array(accuracies)
         accuracies = np.array(accuracies + [np.nan] * (len(sorted_conf) - len(accuracies)))
 
         # confidence_threshold = np.median(sorted_conf)
@@ -793,8 +791,8 @@ class RouteBuilder:
         if knee.knee:
             uncertainty_threshold = knee.knee
         else:
-            self.logger.info("No elbow found")
-            uncertainty_threshold = np.min(sorted_conf)  # Fallback if no elbow found
+            self.logger.info("No elbow found for uncertainity; defaulting to min.")
+            uncertainty_threshold = np.min(sorted_conf)  
 
         plt.figure(figsize=(12, 7))
         x = np.linspace(0, 1, len(before_confidences))
@@ -843,76 +841,6 @@ class RouteBuilder:
         self.logger.info(f"Percentage of very uncertain predictions: {(after_confidences < uncertainty_threshold).mean()*100:.1f}%")
 
 
-    # def _calculate_thresholds(self, calibrated_model, val_text_embeddings, val_labels):
-    #     """
-    #     Calculate confidence and uncertainty thresholds using Kneedle detector
-    #     on precision-recall and ROC curves
-    #     """
-    #     try:
-    #         # Get calibrated probabilities and predictions
-    #         calibrated_probs = calibrated_model.predict_proba(val_text_embeddings)
-    #         max_probs = np.max(calibrated_probs, axis=1)
-    #         pred_labels = calibrated_model.classes_[np.argmax(calibrated_probs, axis=1)]
-            
-    #         # Create binary correctness indicator
-    #         correct_predictions = (pred_labels == val_labels)
-            
-    #         # Get precision-recall curve for confidence threshold
-    #         precisions, recalls, pr_thresholds = precision_recall_curve(
-    #             correct_predictions,
-    #             max_probs
-    #         )
-            
-    #         # Align the arrays for KneeLocator
-    #         precision_curve = precisions[:-1]  # Remove last element to match pr_thresholds
-            
-    #         # For confidence threshold
-    #         kn_precision = KneeLocator(
-    #             range(len(pr_thresholds)),  # Use indices instead of thresholds
-    #             precision_curve,
-    #             curve='convex',
-    #             direction='increasing'
-    #         )
-            
-    #         # Convert knee point to integer index
-    #         conf_idx = int(kn_precision.knee) if kn_precision.knee is not None else len(pr_thresholds) // 2
-    #         confidence_threshold = pr_thresholds[conf_idx]
-            
-    #         # Get ROC curve for uncertainty threshold
-    #         fpr, tpr, roc_thresholds = roc_curve(
-    #             correct_predictions,
-    #             max_probs
-    #         )
-            
-    #         kn_roc = KneeLocator(
-    #             range(len(roc_thresholds)),  # Use indices instead of thresholds
-    #             tpr,
-    #             curve='concave',
-    #             direction='decreasing'
-    #         )
-            
-    #         # Convert knee point to integer index
-    #         uncert_idx = int(kn_roc.knee) if kn_roc.knee is not None else len(roc_thresholds) // 2
-    #         uncertainty_threshold = roc_thresholds[uncert_idx]
-            
-    #         thresholds = {
-    #             'confidence_threshold': float(confidence_threshold),
-    #             'uncertainty_threshold': float(uncertainty_threshold)
-    #         }
-            
-    #         # Log the curve points and detected thresholds for validation
-    #         self.logger.info(f"Precision at confidence threshold: {precision_curve[conf_idx]:.3f}")
-    #         self.logger.info(f"Recall at confidence threshold: {recalls[conf_idx]:.3f}")
-    #         self.logger.info(f"FPR at uncertainty threshold: {fpr[uncert_idx]:.3f}")
-    #         self.logger.info(f"TPR at uncertainty threshold: {tpr[uncert_idx]:.3f}")
-    #         self.logger.info(f"Calculated thresholds: {thresholds}")
-            
-    #         return thresholds
-            
-    #     except Exception as e:
-    #         self.logger.error(f"Threshold calculation failed: {str(e)}")
-    #         raise
-
 
     def _calibrate_classifer(self, output_dir, val_text_embeddings, val_labels):
         try:
@@ -938,8 +866,8 @@ class RouteBuilder:
             self.logger.info("Calibrated head saved successfully")
             self.logger.debug(calibrated_model.classes_)
 
-            self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
-            # self._calculate_thresholds(calibrated_model, val_text_embeddings, val_labels)
+            if self.eval_path is not None:
+                self._display_calibration_trend(val_text_embeddings, val_labels, classifier_head, calibrated_model, output_dir)
             
         except Exception as e:
             self.logger.error(f"Calibration failed: {str(e)}")
@@ -1399,9 +1327,6 @@ class RouteBuilder:
             self.enable_id_oos_gen = False
             train_file, eval_file = self.train_path, self.eval_path
 
-        # if train_without_adv_dataset.num_rows == 0 or eval_without_adv_dataset.num_rows == 0:
-        #     self.logger.error("Your train slice doesn't have enough samples, We recommend a minimum of 12 samples per route. Add more samples or choose ask route0x to generate synthetic data")
-        #     sys.exit(0)
 
         train_without_adv_dataset = self._load_data(train_file)
         eval_without_adv_dataset =  self._load_data(eval_file)
