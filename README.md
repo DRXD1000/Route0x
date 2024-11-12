@@ -336,7 +336,7 @@ Benchmarking is only researchers and not casual users.
 [Samples](./samples/README.md)
 
 ### I want to see the detailed numbers & reproduce benchmarks
-[Benchmarks](./benchmarks/README.mdp)
+[Benchmarks](./benchmarks/README.md)
 
 ### Features and Roadmap
 <details>
