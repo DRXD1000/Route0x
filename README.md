@@ -26,9 +26,18 @@
 **Why Route0x?** Query Routing is a higher level tasks that neither dovetails into Intent classification nor into Query similarity, not atleast in isolation. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. Query routing cannot be just mapped to Intent classification alone and it won't work owing to the above requirements. Research literature hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue and offer a production-grade solution for Humans and Agents.
 
 
-**KPI for Query Routing:** $ / Query. (this subsumes accuracy, latency)
+**KPI for Query Routing:** $ / Query. (subsumes accuracy, latency)
 
 > Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains and grains` against 2 different researches and 1 library.*
+
+**Contributions**
+
+1. Large scale and angular margin loss function variant.
+2. Unsupervised OOS detection.
+3. Uncertainity based fall-back mechanism via NN.
+4. Multi-vector (late interaction) reranking.
+
+Ablations suggest each of these are required.
 
 Check out the highlight reel of empirical evals and/or even dig deep with more numbers or get your hands-on with the starter notebook.
 
@@ -53,7 +62,7 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 
 ## Route0x: Getting Started
 
-We have disetangled the resource heavy route building (entails model training) from query routing (entails quick model inference)
+We've disetangled the resource heavy route building (entails training) from query routing (entails inference)
 
 ### Training 
 ```python 
@@ -132,32 +141,74 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 ### I want to know how it works
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
+Model predictions are default and overridden based on the below default fallback mechanism
+
+```python
+route_obj = query_router.find_route(query="How can we build an Alarm clock from scratch?", 
+                                    return_raw_scores=False)
+```
+
+returns `route_obj`
+
+```python
+
+{
+  'is_oos': True,
+ 'query': 'How can we build an Alarm clock from scratch?',
+ 'route_id': 1,
+ 'route_name': 'NO_NODES_DETECTED',
+ 'prob': 0.56,
+ 'majority_voted_route': 'NO_NODES_DETECTED',
+ 'mean_distance_from_majority_route': 1.1501572
+ }
+
+```
+
+default algorithm controlled by `return_raw_scores`, when `False` 
+
+```python
+if route['is_oos']:
+    if prob < model_confidence_threshold_for_using_outlier_head:
+        predicted_route = oos_label
+else:
+    if prob <= model_uncertainity_threshold_for_using_nn:
+        predicted_route = route["majority_voted_route"]
+```
+
+if you want to use your own thresholds or a custom logic for fallback set `return_raw_scores = True`
+
+
 ### I want to understand the knobs and tinker with it:
+
+<details>
 
 #### Key knobs for building
 
 ```python
-'loss_funct_name': 'PairwiseArcFaceFocalLoss',
-'llm_name': 'llama3.1',
-'min_samples': 12,
-'samples_per_route': 50,
-'expected_oos_proportion': 0.1,
-'nn_for_oos_detection': 10,
-'model_name': 'sentence-transformers/all-mpnet-base-v2',
-'add_additional_invalid_routes': False,
-'instruct_llm': ''
+'loss_funct_name': 'PairwiseArcFaceFocalLoss',   # If you need Large Angular Margin + Scale between your routes.
+'llm_name': 'llama3.1',   # If you want local or hosted LLMs, for hosted LLMs use provider given model names as-is
+'min_samples': 12, # Recommended,  works well for most cases.
+'samples_per_route': 30, # Recommended, try experimenting with 50 if needed.
+'expected_oos_proportion': 0.1, # if you have domain knowledge on OOS / bechmarking use this other wise reduce to 1% or 0.01
+'nn_for_oos_detection': 10, # if you have domain knowledge on OOS / bechmarking try experimenting 5/10/20
+'model_name': 'sentence-transformers/all-mpnet-base-v2',# Recommended, works well for most english use-cases.
+'add_additional_invalid_routes': False, # enable when you have want to stop specific user behaviour like chitchat/profanity 
+"invalid_routes": ["gibberish", "mojibake", "chitchat", "non-english", "profanity"],
+'instruct_llm': '' # If you want additional instructions about your domain or anything to help synthetic data gen.
 ```
 
 #### Key knobs for routing
 
 ```python
-  'use_calibrated_head': False,
-  'return_raw_scores': False,
-  'use_multivec_reranking': False,
-  'max_length': 64,
-  'model_confidence_threshold_for_using_outlier_head': 0.9,
-  'model_uncertainity_threshold_for_using_nn': 0.5,
+  'use_calibrated_head': True, # Recommended, but when benchmarking on hard datasets try turning it off.
+  'return_raw_scores': False, # Recommended, but when you want a logic to when to use fallback enable.
+  'use_multivec_reranking': True, # Recommended, but if you want to experiment try turning it off. 
+  'max_length': 64, # Recommended, if use_multivec_reranking =  True, else 24 is good.
+  'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (see experimental features below for more on when to change)
+  'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (see experimental features below for more on when to change)
 ```
+
+
 
 #### Full set of knobs for building
 
@@ -224,20 +275,30 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
   'nn_for_fallback': 5
   }
 ```
-
+</details>
 
 ### I want to see the detailed empirical evals
--T.B.A
+<details>
+- Will be added shortly
+</details>
 
 ### Features and Roadmap
+<details>
 - Integrate DSPy or AdalFlow for streamlining LLM prompt integrations (make sense ?).
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
 - Implement typo robustness for queries.
 - Fill-in other LLM providers.
-
+- **Experimental**
+  - Identifying Confidence and Uncertainity thresholds to use fallback mechanism using Elbow/Knee locator.
+  - Generating a test set quickly check the route0x outputs.
+</details>
 
 ### Caveats and Limitations
--T.B.A
+<details>
+- Will be added shortly
+</details>
 
 ### Citations
--T.B.A
+<details>
+- Will be added shortly
+</details>
