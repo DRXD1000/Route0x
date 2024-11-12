@@ -78,7 +78,7 @@ pip install route0x[route] # (Light-weight without any heavy torch dependencies)
 
 ```python
 from route0x.route_finder import RouteFinder
-query_router = RouteFinder(<your_route0x_model_path>)
+query_router = RouteFinder(<your_route0x_model_path>, use_calibrated_head=True)
 route_obj = query_router.find_route(<your-query>)
 ```
 
@@ -182,12 +182,13 @@ else:
         predicted_route = route["majority_voted_route"]
 ```
 
-You can add your own fallback flow in 2 ways:
+**You can add your own fallback flow in 2 ways:**
 
 a.) Add your own thresholds:
 
 ```python
 query_router = RouteFinder(<your_route0x_model_path>, 
+                          use_calibrated_head= True,
                           model_confidence_threshold_for_using_outlier_head = <your_value>,
                           model_uncertainity_threshold_for_using_nn= <your_value>
                           )
@@ -195,7 +196,7 @@ query_router = RouteFinder(<your_route0x_model_path>,
 
 b.) Add your custom logic  set `return_raw_scores = True` and do post-hoc
 
-**How can you come up with sensible values for `model_confidence_threshold_for_using_outlier_head` and `model_uncertainity_threshold_for_using_nn` for your dataset/domain ?**
+How can you come up with sensible values for `model_confidence_threshold_for_using_outlier_head` and `model_uncertainity_threshold_for_using_nn` for your dataset/domain ?
 
 We have added an experimental feature to offer a confidence_trend (confidence_trend.png in your route0x model folder), which can give a good idea as what should be these values.
 
