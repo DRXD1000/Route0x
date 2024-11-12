@@ -121,7 +121,7 @@ route_obj = query_router.find_route(<your-query>)
 <img src="./images/HINT3-F1.png"/><br/><br/>
 <img src="./images/HINT3-OOS-RECALL.png"/><br/><br/>
 
-**P50 Latency:** Numbers taken from the Amazon research paper and compared with Route0x system that uses FP32 ONNX and more. Our latency numbers were ran on a Mac M1 Pro 16" machine, while not directly comparable as the hardware is different gives an idea.
+**P50 Latency:** Numbers taken from the Amazon research paper but no hardware details were shared. Our latency numbers were ran on a Mac M1 Pro 16" machine, while we acknowledge it is not directly comparable (as the hardware details are missing) this gives a ballpark.
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
