@@ -78,7 +78,7 @@ pip install route0x[route] # (Light-weight without any heavy torch dependencies)
 
 ```python
 from route0x.route_finder import RouteFinder
-query_router = RouteFinder(<your_route0x_model_path>, max_length=64)
+query_router = RouteFinder(<your_route0x_model_path>)
 route_obj = query_router.find_route(<your-query>)
 ```
 
@@ -141,32 +141,39 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 ### I want to know how it works
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
-Model predictions are default and overridden based on the below default fallback mechanism
+As the image suggests we have multiple heads to the same model a setfit model with 
+default logistic regression head, a calibrated head, a LOF and IF head and a faiss index of NNs and a numpy compressed file of multi-vector representation of the NNs.
+classifier heads will the first pass, LOF/IF heads help in OOS detection and NNs can help for classifier uncertainity, multi-vector representations help in reranking candidates. 
+
+So when run `find_route`
 
 ```python
-route_obj = query_router.find_route(query="How can we build an Alarm clock from scratch?", 
-                                    return_raw_scores=False)
+route_obj = query_router.find_route(query="How can we build an Alarm clock from scratch?")
 ```
 
-returns `route_obj`
+route0x system combines all of its heads returns `route_obj`
 
 ```python
 
 {
-  'is_oos': True,
+  'is_oos': True,    # LOF / IF head output
  'query': 'How can we build an Alarm clock from scratch?',
  'route_id': 1,
- 'route_name': 'NO_NODES_DETECTED',
- 'prob': 0.56,
- 'majority_voted_route': 'NO_NODES_DETECTED',
+ 'route_name': 'NO_NODES_DETECTED',  # default OOS label
+ 'prob': 0.56, # Model confidence
+ 'majority_voted_route': 'NO_NODES_DETECTED' # Majority voted NN
  'mean_distance_from_majority_route': 1.1501572
  }
 
 ```
 
-default algorithm controlled by `return_raw_scores`, when `False` 
+default flow is controlled by `return_raw_scores`, when `False`. 
+
 
 ```python
+
+route_obj = query_router.find_route(<your_query>, return_raw_scores= False)
+
 if route['is_oos']:
     if prob < model_confidence_threshold_for_using_outlier_head:
         predicted_route = oos_label
@@ -175,7 +182,26 @@ else:
         predicted_route = route["majority_voted_route"]
 ```
 
-if you want to use your own thresholds or a custom logic for fallback set `return_raw_scores = True`
+You can add your own fallback flow in 2 ways:
+
+a.) Add your own thresholds:
+
+```python
+query_router = RouteFinder(<your_route0x_model_path>, 
+                          model_confidence_threshold_for_using_outlier_head = <your_value>,
+                          model_uncertainity_threshold_for_using_nn= <your_value>
+                          )
+```                        
+
+b.) Add your custom logic  set `return_raw_scores = True` and do post-hoc
+
+**How can you come up with sensible values for `model_confidence_threshold_for_using_outlier_head` and `model_uncertainity_threshold_for_using_nn` for your dataset/domain ?**
+
+We have added an experimental feature to offer a confidence_trend (confidence_trend.png in your route0x model folder), which can give a good idea as what should be these values.
+
+
+<img src="./images/ctrend.png" width=100%/><br/><br/>
+
 
 
 ### I want to understand the knobs and tinker with it:
