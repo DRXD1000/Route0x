@@ -28,13 +28,28 @@
 
 **KPI for Query Routing:** $ / Query. (subsumes accuracy, latency)
 
-> Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains and grains` against 2 different researches and 1 library.*
+> Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains, granularity and complexity` against 2 different researches and 1 library.*
+
+<br/>
+
+| Dataset                   | Domain              | Has OOS? | Type                     | Test Size |
+|---------------------------|---------------------|----------|--------------------------|-----------|
+| Curekart                  | E-commerce         | Yes      | Real-world TODS queries  | 991       |
+| Powerplay11               | Online Gaming      | Yes      | Real-world TODS queries  | 983       |
+| Sofmattress               | Furniture          | Yes      | Real-world TODS queries  | 397       |
+| CLINC150 OOS - Banking    | Banking            | Yes      | Expert / Synthetic       | 1850      |
+| CLINC150 OOS - Credit Cards | Credit Cards     | Yes      | Expert / Synthetic       | 1850      |
+| Banking 77                | Banking            | Yes      | Expert / Synthetic       | 4076      |
+| ACID                      | Insurance          | No       | Real-world TODS queries  | 11042     |
+| ROSTD                     | Personal Assistant | Yes      | Expert written           | 11711     |
+
+<br/>
 
 **Contributions**
 
-1. Large scale and angular margin loss function variant.
-2. Unsupervised OOS detection.
-3. Uncertainity based fall-back mechanism via NN.
+1. Loss function - Variant of large scale angular margin loss .
+2. Unsupervised OOS detection - novel combination. 
+3. Uncertainity based fall-back mechanism - via NN.
 4. Multi-vector (late interaction) reranking.
 
 Ablations suggest each of these are required.
@@ -63,7 +78,8 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
   - [Full set of knobs for building](#full-set-of-knobs-for-building)
   - [Full set of knobs for routing](#full-set-of-knobs-for-routing)
 
-- [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
+- [I want to see more usage samples](#i-want-to-see-more-usage-samples)
+- [I want to see the detailed numbers & reproduce benchmarks](#i-want-to-see-the-detailed-numbers--reproduce-benchmarks)
 
 - [Features and Roadmap](#features-and-roadmap)
 
@@ -318,11 +334,11 @@ Benchmarking is only researchers and not casual users.
 ```
 </details>
 
-### I want to see the detailed empirical evals
-<details>
+### I want to see more usage samples
+[Samples](./samples/README.md)
 
-- Will be added shortly
-</details>
+### I want to see the detailed numbers & reproduce benchmarks
+[Benchmarks](./benchmarks/README.mdp)
 
 ### Features and Roadmap
 <details>
