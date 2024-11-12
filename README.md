@@ -58,8 +58,6 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 
 ## Table of Contents
 
-# Table of Contents
-
 - [Route0x: Getting Started](#route0x-getting-started)
   - [Training](#training)
   - [Starter Notebook](#build-a-query-router-for-your-routes---starter-notebook)
