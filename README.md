@@ -333,10 +333,10 @@ Benchmarking is only researchers and not casual users.
 </details>
 
 ### I want to see more usage samples
-[Samples](./samples/README.md)
+[Samples](./samples/)
 
 ### I want to see the detailed numbers & reproduce benchmarks
-[Benchmarks](./benchmarks/README.md)
+[Benchmarks](./benchmarks/)
 
 ### Features and Roadmap
 <details>
