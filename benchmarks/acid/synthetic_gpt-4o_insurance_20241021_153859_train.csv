@@ -1,0 +1,2122 @@
+text,label,is_user_sample
+add a homeowners policy,Info Add House,True
+I just bought a house and want to add it to the rest of my policies,Info Add House,True
+Include my new property in my insurance plan,Info Add House,False
+How do I add a new house to my coverage?,Info Add House,False
+Add my recent home purchase to my insurance,Info Add House,False
+Can I update my policy to include a new house?,Info Add House,False
+I need to insure my newly acquired home,Info Add House,False
+What steps to take to add a house to my policy?,Info Add House,False
+Include my new residence in my insurance policy,Info Add House,False
+How can I extend my coverage to a new house?,Info Add House,False
+Add my new home to my existing insurance,Info Add House,False
+I want to insure my new property,Info Add House,False
+how do i add a family member,Info Add Remove Insured,True
+My divorce case is filed and would to remove my wife from the auto policy kindly do the needful,Info Add Remove Insured,True
+Can I add my newborn to my health insurance plan?,Info Add Remove Insured,False
+What is the process to remove a dependent from my policy?,Info Add Remove Insured,False
+How do I update my policy to include my spouse?,Info Add Remove Insured,False
+I need to remove my ex-partner from my insurance coverage.,Info Add Remove Insured,False
+Is it possible to add my parents to my health insurance?,Info Add Remove Insured,False
+How can I delete a beneficiary from my life insurance?,Info Add Remove Insured,False
+What steps are needed to add a new driver to my car insurance?,Info Add Remove Insured,False
+Can I remove my adult child from my health plan?,Info Add Remove Insured,False
+How do I add a secondary insured to my homeowner's policy?,Info Add Remove Insured,False
+What documentation is required to remove someone from my policy?,Info Add Remove Insured,False
+resently am buy new car i want to add that to my policy,Info Add Remove Vehicle,True
+interest to remove a car from my policy,Info Add Remove Vehicle,True
+How do I update my policy to include my new motorcycle?,Info Add Remove Vehicle,False
+I need to delete an old vehicle from my insurance plan.,Info Add Remove Vehicle,False
+Can I add a leased car to my current coverage?,Info Add Remove Vehicle,False
+What is the process to remove a sold vehicle from my policy?,Info Add Remove Vehicle,False
+I want to include my new truck in my insurance policy.,Info Add Remove Vehicle,False
+Please guide me on how to drop a vehicle from my coverage.,Info Add Remove Vehicle,False
+Is it possible to add a temporary vehicle to my insurance?,Info Add Remove Vehicle,False
+I need assistance with removing a vehicle I no longer own.,Info Add Remove Vehicle,False
+How can I add a second car to my existing policy?,Info Add Remove Vehicle,False
+What steps are needed to exclude a vehicle from my insurance?,Info Add Remove Vehicle,False
+Can I sign up for paperless bills for my house,Info Add Vehicle Property Paperless Billing,True
+How can get paperless billing if I add a new car to my policy,Info Add Vehicle Property Paperless Billing,True
+Is it possible to receive digital statements for my new vehicle?,Info Add Vehicle Property Paperless Billing,False
+How do I enable electronic billing for my added property?,Info Add Vehicle Property Paperless Billing,False
+What steps are needed to activate paperless billing for my insurance?,Info Add Vehicle Property Paperless Billing,False
+Can I opt for e-bills when adding a new vehicle to my coverage?,Info Add Vehicle Property Paperless Billing,False
+How do I switch to online billing for my updated policy?,Info Add Vehicle Property Paperless Billing,False
+Is there an option for digital invoices for my new car insurance?,Info Add Vehicle Property Paperless Billing,False
+How can I transition to paperless billing for my property insurance?,Info Add Vehicle Property Paperless Billing,False
+What is the process to enroll in electronic billing for my policy?,Info Add Vehicle Property Paperless Billing,False
+Can I receive my insurance bills via email for my new vehicle?,Info Add Vehicle Property Paperless Billing,False
+How do I set up paperless statements for my added property?,Info Add Vehicle Property Paperless Billing,False
+how can I correct my agent in my account,Info Agent Wrong,True
+Did I get a new agent I dont know the agent in my account,Info Agent Wrong,True
+Why is my insurance agent different from the one I signed up with?,Info Agent Wrong,False
+"The agent listed on my policy is incorrect, how do I update it?",Info Agent Wrong,False
+"I don't recognize the agent assigned to my insurance account, what should I do?",Info Agent Wrong,False
+How do I change the agent associated with my insurance policy?,Info Agent Wrong,False
+"The agent on my insurance documents is wrong, how can I fix this?",Info Agent Wrong,False
+Who is the current agent on my insurance account? It seems incorrect.,Info Agent Wrong,False
+"My insurance agent details are wrong, how do I correct them?",Info Agent Wrong,False
+"I was assigned a new agent without notice, how do I verify this?",Info Agent Wrong,False
+"The agent information on my insurance profile is outdated, how do I update it?",Info Agent Wrong,False
+"I need to update the agent information on my insurance account, how do I proceed?",Info Agent Wrong,False
+Ive tried calling my agent and I never hear back,Info Agt Not Responding,True
+Why does my agent not reply my calls,Info Agt Not Responding,True
+My insurance agent is not returning my emails,Info Agt Not Responding,False
+How do I get in touch with my unresponsive insurance agent?,Info Agt Not Responding,False
+Agent hasn't responded to my policy inquiry,Info Agt Not Responding,False
+What should I do if my insurance agent is ignoring me?,Info Agt Not Responding,False
+I can't get a response from my insurance representative,Info Agt Not Responding,False
+Why is my insurance agent not answering my messages?,Info Agt Not Responding,False
+My insurance broker is not getting back to me,Info Agt Not Responding,False
+How can I escalate an issue with a non-responsive insurance agent?,Info Agt Not Responding,False
+Agent is not acknowledging my claim requests,Info Agt Not Responding,False
+No response from my insurance agent regarding my policy update,Info Agt Not Responding,False
+All the agent sites state American Star but dont explain exactly what that means,Info American Star,True
+I want to know what an American Star agent is,Info American Star,True
+What are the benefits of being an American Star agent?,Info American Star,False
+How does one qualify as an American Star agent?,Info American Star,False
+Can you explain the criteria for American Star status?,Info American Star,False
+What distinguishes an American Star agent from others?,Info American Star,False
+Is there a certification process for becoming an American Star agent?,Info American Star,False
+What perks come with the American Star designation?,Info American Star,False
+How is the performance of an American Star agent evaluated?,Info American Star,False
+Are there any special training programs for American Star agents?,Info American Star,False
+What is the role of an American Star agent in customer service?,Info American Star,False
+How does American Star status impact an agent's career growth?,Info American Star,False
+Is there any amount due,Info Amt Due,True
+what is the amount i need to pay,Info Amt Due,True
+How much do I owe on my policy?,Info Amt Due,False
+Can you tell me the outstanding balance?,Info Amt Due,False
+What is the current amount due for my insurance?,Info Amt Due,False
+Please provide the due amount for my coverage.,Info Amt Due,False
+How much is pending on my insurance bill?,Info Amt Due,False
+What is the total amount I need to settle?,Info Amt Due,False
+Could you inform me of the balance due?,Info Amt Due,False
+What is the payment amount required?,Info Amt Due,False
+How much is left to pay on my insurance?,Info Amt Due,False
+What is the outstanding premium amount?,Info Amt Due,False
+Yesterday I got a quote from AMFAM and I would like to proceed with that,Info Ast Purchase,True
+I am interested in purchasing an online policy that I got a quote for,Info Ast Purchase,True
+I want to finalize the quote I received from State Farm last week,Info Ast Purchase,False
+Can you help me complete the purchase for the policy I was quoted?,Info Ast Purchase,False
+I am ready to buy the insurance policy I was quoted online,Info Ast Purchase,False
+Please assist me in purchasing the policy I got a quote for from GEICO,Info Ast Purchase,False
+I would like to move forward with the insurance quote I received,Info Ast Purchase,False
+How do I proceed with buying the policy I was quoted for?,Info Ast Purchase,False
+I need assistance to purchase the policy from the quote I received,Info Ast Purchase,False
+I want to accept the insurance quote I got from Progressive,Info Ast Purchase,False
+Can you guide me through the purchase process for my quoted policy?,Info Ast Purchase,False
+I am ready to purchase the policy based on the quote I received from Allstate,Info Ast Purchase,False
+I just did a quote on line am I not able to start a policy on line,Info Ast Quote,True
+Hello I was just getting a quote PMVM and it said to contact you,Info Ast Quote,True
+Can I finalize my insurance policy online after getting a quote?,Info Ast Quote,False
+"I received a quote online, how do I proceed with purchasing the policy?",Info Ast Quote,False
+Is it possible to activate my policy directly from the online quote?,Info Ast Quote,False
+"I completed an online quote, what are the next steps to start coverage?",Info Ast Quote,False
+"After getting a quote online, can I immediately enroll in the policy?",Info Ast Quote,False
+"I got a quote through your website, how do I confirm my policy?",Info Ast Quote,False
+What should I do after receiving an online insurance quote to begin coverage?,Info Ast Quote,False
+"I finished an online quote, can I initiate the policy online as well?",Info Ast Quote,False
+How do I transition from an online quote to an active policy?,Info Ast Quote,False
+"I have an online quote, what are the steps to activate my insurance policy?",Info Ast Quote,False
+Do you sell insurance for my wheeler,Info Atv Ins Explan,True
+ATV insurance,Info Atv Ins Explan,True
+What coverage options are available for ATV insurance?,Info Atv Ins Explan,False
+How much does ATV insurance cost?,Info Atv Ins Explan,False
+Is ATV insurance mandatory?,Info Atv Ins Explan,False
+Can I bundle ATV insurance with my car insurance?,Info Atv Ins Explan,False
+What does ATV insurance cover?,Info Atv Ins Explan,False
+Are there discounts for ATV insurance?,Info Atv Ins Explan,False
+How do I file a claim for ATV insurance?,Info Atv Ins Explan,False
+What factors affect ATV insurance premiums?,Info Atv Ins Explan,False
+Do you offer liability coverage for ATVs?,Info Atv Ins Explan,False
+Can I get ATV insurance for off-road use?,Info Atv Ins Explan,False
+Is the auto coverage anything to do with depreciation of the car,Info Auto Cov Question,True
+Does my insurance cover  to  bodily injury liability,Info Auto Cov Question,True
+What does comprehensive auto insurance cover?,Info Auto Cov Question,False
+Is collision coverage included in my policy?,Info Auto Cov Question,False
+How does uninsured motorist coverage work?,Info Auto Cov Question,False
+Does my policy cover rental car expenses?,Info Auto Cov Question,False
+What is the deductible for my auto insurance?,Info Auto Cov Question,False
+Are there any exclusions in my auto coverage?,Info Auto Cov Question,False
+How is the premium for auto insurance calculated?,Info Auto Cov Question,False
+Does my insurance cover theft of personal items from my car?,Info Auto Cov Question,False
+What is the difference between liability and full coverage?,Info Auto Cov Question,False
+Is roadside assistance part of my auto insurance plan?,Info Auto Cov Question,False
+is my car insurance policy valuable in canada,Info Auto Ins Canada,True
+there Is my car still covered if I vacation in Canada,Info Auto Ins Canada,True
+does canadian car insurance cover rental vehicles,Info Auto Ins Canada,False
+how does no-fault insurance work in canada,Info Auto Ins Canada,False
+are there discounts for bundling home and auto insurance in canada,Info Auto Ins Canada,False
+what is the minimum car insurance requirement in canada,Info Auto Ins Canada,False
+can i drive in canada with us car insurance,Info Auto Ins Canada,False
+how do i file a car insurance claim in canada,Info Auto Ins Canada,False
+is roadside assistance included in canadian auto insurance,Info Auto Ins Canada,False
+what factors affect car insurance premiums in canada,Info Auto Ins Canada,False
+are there penalties for driving without insurance in canada,Info Auto Ins Canada,False
+how do i switch car insurance providers in canada,Info Auto Ins Canada,False
+car insurance hidden my account,Info Auto Policy Cant See In Acct,True
+i am unable to find my car insuranc policy,Info Auto Policy Cant See In Acct,True
+auto policy not visible in my account,Info Auto Policy Cant See In Acct,False
+can't locate my vehicle insurance details online,Info Auto Policy Cant See In Acct,False
+where is my car insurance policy on the website,Info Auto Policy Cant See In Acct,False
+missing auto insurance info in my profile,Info Auto Policy Cant See In Acct,False
+unable to access my car insurance policy online,Info Auto Policy Cant See In Acct,False
+car insurance policy not showing up in account,Info Auto Policy Cant See In Acct,False
+can't find my auto policy in the app,Info Auto Policy Cant See In Acct,False
+vehicle insurance details not appearing in my account,Info Auto Policy Cant See In Acct,False
+my car insurance policy is not listed in my account,Info Auto Policy Cant See In Acct,False
+auto insurance policy missing from my online account,Info Auto Policy Cant See In Acct,False
+How to cancel automatic payment,Info Auto Pymt Cancel,True
+i no longer wish to make automatic payments,Info Auto Pymt Cancel,True
+Stop recurring insurance payments,Info Auto Pymt Cancel,False
+Disable auto-pay for my policy,Info Auto Pymt Cancel,False
+End automatic billing for insurance,Info Auto Pymt Cancel,False
+Turn off auto payment for my insurance,Info Auto Pymt Cancel,False
+Cancel scheduled insurance payments,Info Auto Pymt Cancel,False
+Remove auto payment option,Info Auto Pymt Cancel,False
+Terminate automatic insurance deductions,Info Auto Pymt Cancel,False
+How do I stop auto insurance payments?,Info Auto Pymt Cancel,False
+Cease automatic premium payments,Info Auto Pymt Cancel,False
+Unsubscribe from auto payment service,Info Auto Pymt Cancel,False
+Whats the difference between minimum and account balance,Info Auto Pymt Min Balance,True
+Im setting up auto pay Is minimum due a monthly payment,Info Auto Pymt Min Balance,True
+How does auto payment affect my minimum balance?,Info Auto Pymt Min Balance,False
+Is the minimum balance required for auto insurance payments?,Info Auto Pymt Min Balance,False
+Can I set auto pay for just the minimum insurance premium?,Info Auto Pymt Min Balance,False
+What happens if my account balance is below the minimum for auto pay?,Info Auto Pymt Min Balance,False
+Does auto pay cover the minimum insurance payment automatically?,Info Auto Pymt Min Balance,False
+Will auto pay adjust if my insurance minimum balance changes?,Info Auto Pymt Min Balance,False
+Is there a penalty for not maintaining the minimum balance with auto pay?,Info Auto Pymt Min Balance,False
+How is the minimum balance calculated for auto insurance payments?,Info Auto Pymt Min Balance,False
+Can I change the minimum payment amount for auto pay?,Info Auto Pymt Min Balance,False
+Does auto pay ensure my insurance minimum balance is met?,Info Auto Pymt Min Balance,False
+When does that auto payment go through,Info Auto Pymt Schedule,True
+What is the payment plan for my automatic payments,Info Auto Pymt Schedule,True
+When is my next automatic insurance payment due?,Info Auto Pymt Schedule,False
+Can you tell me the schedule for my auto insurance payments?,Info Auto Pymt Schedule,False
+What date is my insurance auto payment scheduled for?,Info Auto Pymt Schedule,False
+How often are my insurance payments automatically deducted?,Info Auto Pymt Schedule,False
+When will the next automatic deduction for my insurance occur?,Info Auto Pymt Schedule,False
+What is the frequency of my automatic insurance payments?,Info Auto Pymt Schedule,False
+When is the next scheduled auto payment for my policy?,Info Auto Pymt Schedule,False
+How is my insurance auto payment plan structured?,Info Auto Pymt Schedule,False
+What are the dates for my upcoming automatic insurance payments?,Info Auto Pymt Schedule,False
+When should I expect the next auto payment for my insurance?,Info Auto Pymt Schedule,False
+I just set up my billing account names and need to edit them,Info Billing Acct Name Edit,True
+I just set up my billing accounts and got the names wrong,Info Billing Acct Name Edit,True
+How do I change the name on my insurance billing account?,Info Billing Acct Name Edit,False
+I need to update the billing account name for my policy.,Info Billing Acct Name Edit,False
+Can I edit the name on my insurance billing account?,Info Billing Acct Name Edit,False
+Where can I modify the billing account name for my insurance?,Info Billing Acct Name Edit,False
+Steps to correct the name on my insurance billing account.,Info Billing Acct Name Edit,False
+Is it possible to change the billing account name for my insurance?,Info Billing Acct Name Edit,False
+"I entered the wrong name on my insurance billing account, how do I fix it?",Info Billing Acct Name Edit,False
+Need to update the name on my insurance billing account.,Info Billing Acct Name Edit,False
+How can I correct the billing account name for my insurance policy?,Info Billing Acct Name Edit,False
+I need assistance with editing my insurance billing account name.,Info Billing Acct Name Edit,False
+please get my billing number,Info Billing Acct Num,True
+I lost my billing number could you show me what it is,Info Billing Acct Num,True
+What is my insurance billing account number?,Info Billing Acct Num,False
+Can you provide my billing account number?,Info Billing Acct Num,False
+I need my billing account number for my records.,Info Billing Acct Num,False
+Where can I find my billing account number?,Info Billing Acct Num,False
+Could you tell me my billing account number?,Info Billing Acct Num,False
+Help me locate my billing account number.,Info Billing Acct Num,False
+"I forgot my billing account number, can you assist?",Info Billing Acct Num,False
+Please send me my billing account number.,Info Billing Acct Num,False
+How do I access my billing account number?,Info Billing Acct Num,False
+I need assistance with my billing account number.,Info Billing Acct Num,False
+what is the email of the billing department,Info Billing Dept Contact,True
+can i get the email address of the billing department,Info Billing Dept Contact,True
+how do i reach the billing team via email,Info Billing Dept Contact,False
+please provide the billing department's contact email,Info Billing Dept Contact,False
+where can i find the billing department's email address,Info Billing Dept Contact,False
+is there a direct email for the billing department,Info Billing Dept Contact,False
+could you share the billing department's email contact,Info Billing Dept Contact,False
+what is the contact email for billing inquiries,Info Billing Dept Contact,False
+who do i email for billing questions,Info Billing Dept Contact,False
+can you give me the billing department's email,Info Billing Dept Contact,False
+i need the email for the billing office,Info Billing Dept Contact,False
+how can i email the billing department,Info Billing Dept Contact,False
+I need to pay my bill by what date,Info Bill Due Date,True
+insurance payment due date when do i neef to pay,Info Bill Due Date,True
+When is my insurance bill due?,Info Bill Due Date,False
+What is the deadline for my insurance payment?,Info Bill Due Date,False
+By what date should I settle my insurance bill?,Info Bill Due Date,False
+When must I pay my insurance premium?,Info Bill Due Date,False
+What is the due date for my insurance invoice?,Info Bill Due Date,False
+When is the last day to pay my insurance bill?,Info Bill Due Date,False
+How soon do I need to pay my insurance premium?,Info Bill Due Date,False
+What is the payment deadline for my insurance?,Info Bill Due Date,False
+When is the insurance payment due?,Info Bill Due Date,False
+By when should I pay my insurance bill?,Info Bill Due Date,False
+boat insurance,Info Boat Cov Explan,True
+what are the benefits of boat insurance,Info Boat Cov Explan,True
+types of boat insurance coverage,Info Boat Cov Explan,False
+how does boat insurance work,Info Boat Cov Explan,False
+boat insurance policy details,Info Boat Cov Explan,False
+boat insurance coverage options,Info Boat Cov Explan,False
+importance of boat insurance,Info Boat Cov Explan,False
+boat insurance vs. yacht insurance,Info Boat Cov Explan,False
+boat insurance cost factors,Info Boat Cov Explan,False
+boat insurance claim process,Info Boat Cov Explan,False
+boat insurance for fishing vessels,Info Boat Cov Explan,False
+boat insurance liability coverage,Info Boat Cov Explan,False
+Where do i find my business policy,Info Business Policy Cant See,True
+where online is my buisness insurance policy,Info Business Policy Cant See,True
+How can I access my business insurance policy online?,Info Business Policy Cant See,False
+Where is my business policy document located?,Info Business Policy Cant See,False
+How do I view my business insurance policy details?,Info Business Policy Cant See,False
+Where can I find my business insurance policy information?,Info Business Policy Cant See,False
+How do I locate my business policy on the insurance portal?,Info Business Policy Cant See,False
+Where is my business insurance policy stored online?,Info Business Policy Cant See,False
+How do I retrieve my business insurance policy document?,Info Business Policy Cant See,False
+Where can I see my business insurance policy coverage?,Info Business Policy Cant See,False
+How do I find my business insurance policy number?,Info Business Policy Cant See,False
+Where can I access my business insurance policy records?,Info Business Policy Cant See,False
+I receive the confirmation on cancellation of policy,Info Cancel Confirm,True
+Confirm policy cancellation,Info Cancel Confirm,True
+Has my insurance policy been successfully cancelled?,Info Cancel Confirm,False
+Please confirm the cancellation of my insurance policy.,Info Cancel Confirm,False
+Did my policy cancellation go through?,Info Cancel Confirm,False
+Can you verify the cancellation of my insurance policy?,Info Cancel Confirm,False
+Is the cancellation of my policy confirmed?,Info Cancel Confirm,False
+Have you processed the cancellation of my insurance?,Info Cancel Confirm,False
+Can you confirm that my policy is cancelled?,Info Cancel Confirm,False
+Was my insurance policy cancellation successful?,Info Cancel Confirm,False
+Please verify the cancellation of my policy.,Info Cancel Confirm,False
+Is my insurance policy officially cancelled?,Info Cancel Confirm,False
+Do I have to pay a fee to cancel my policy,Info Cancel Fee,True
+EXPLAIN HOW I CAN CANCEL POLICY EARLY AND WHAT MY FEES ARE,Info Cancel Fee,True
+What are the charges for terminating my insurance early?,Info Cancel Fee,False
+Is there a penalty for canceling my insurance plan?,Info Cancel Fee,False
+How much will it cost to cancel my policy before the term ends?,Info Cancel Fee,False
+Can you provide details on the cancellation fees for my insurance?,Info Cancel Fee,False
+Are there any fees associated with policy cancellation?,Info Cancel Fee,False
+What is the cost implication of canceling my insurance policy?,Info Cancel Fee,False
+Will I incur any charges if I decide to cancel my coverage?,Info Cancel Fee,False
+Could you explain the cancellation fee structure for my policy?,Info Cancel Fee,False
+Is there a refund or fee when I cancel my insurance?,Info Cancel Fee,False
+What are the financial consequences of canceling my insurance policy?,Info Cancel Fee,False
+tell me how to cancel an insurance policy,Info Cancel Ins Policy,True
+please cancel all my policies,Info Cancel Ins Policy,True
+how do I terminate my insurance coverage?,Info Cancel Ins Policy,False
+I need to discontinue my insurance policy,Info Cancel Ins Policy,False
+what is the process to cancel my insurance?,Info Cancel Ins Policy,False
+can you guide me on policy cancellation?,Info Cancel Ins Policy,False
+I want to end my insurance policy,Info Cancel Ins Policy,False
+steps to cancel my insurance plan,Info Cancel Ins Policy,False
+how can I stop my insurance policy?,Info Cancel Ins Policy,False
+please assist with cancelling my insurance,Info Cancel Ins Policy,False
+I wish to withdraw from my insurance policy,Info Cancel Ins Policy,False
+how to deactivate my insurance policy?,Info Cancel Ins Policy,False
+I cant find my farm policy when I bring my account up,Info Cant See Farm Ranch Policy,True
+want to cant see my ranch policy online,Info Cant See Farm Ranch Policy,True
+Where is my farm insurance policy on the website?,Info Cant See Farm Ranch Policy,False
+Unable to locate my ranch policy in my account,Info Cant See Farm Ranch Policy,False
+Farm policy not visible in my online profile,Info Cant See Farm Ranch Policy,False
+Can't access my ranch insurance details online,Info Cant See Farm Ranch Policy,False
+My farm policy isn't showing up on the portal,Info Cant See Farm Ranch Policy,False
+Ranch policy missing from my digital account,Info Cant See Farm Ranch Policy,False
+Why can't I see my farm insurance policy online?,Info Cant See Farm Ranch Policy,False
+Ranch insurance policy not appearing in my account,Info Cant See Farm Ranch Policy,False
+Farm policy details are not accessible on the site,Info Cant See Farm Ranch Policy,False
+Can't find my ranch policy in the online system,Info Cant See Farm Ranch Policy,False
+Tell me the reason why my policy details are not show in website,Info Cant See Policy,True
+I just purchased an online insurance policy and I cannot find it,Info Cant See Policy,True
+Why is my insurance policy not visible in my account?,Info Cant See Policy,False
+"I can't locate my policy information online, can you help?",Info Cant See Policy,False
+Where can I view my insurance policy details?,Info Cant See Policy,False
+"My policy isn't appearing on the portal, what should I do?",Info Cant See Policy,False
+How do I access my policy documents online?,Info Cant See Policy,False
+"I am unable to see my policy on the app, any suggestions?",Info Cant See Policy,False
+Why are my policy details missing from my profile?,Info Cant See Policy,False
+"I can't find my insurance policy under my login, please assist.",Info Cant See Policy,False
+"My policy information is not showing up, how can I fix this?",Info Cant See Policy,False
+Help! I can't see my policy on the website.,Info Cant See Policy,False
+Which positions are you recruiting for,Info Careers,True
+Where Can I submit my resume for a manager to look at,Info Careers,True
+What are the current job openings in the claims department?,Info Careers,False
+How can I apply for an underwriter position?,Info Careers,False
+Are there any internships available in the actuarial field?,Info Careers,False
+What qualifications are needed for a risk analyst role?,Info Careers,False
+Can I get information on career advancement opportunities in insurance?,Info Careers,False
+Where can I find job descriptions for insurance sales positions?,Info Careers,False
+Is there a graduate program for new insurance professionals?,Info Careers,False
+What is the hiring process for a policy advisor?,Info Careers,False
+Are there remote work opportunities in the insurance sector?,Info Careers,False
+How do I contact the HR department for career inquiries?,Info Careers,False
+question about a commercial policy bill,Info Cfr Question General,True
+need a direct number for a business policy question,Info Cfr Question General,True
+how to inquire about a corporate insurance policy,Info Cfr Question General,False
+seeking clarification on a business coverage plan,Info Cfr Question General,False
+where to find details on a commercial liability policy,Info Cfr Question General,False
+requesting information on a company insurance package,Info Cfr Question General,False
+how to contact support for a business policy inquiry,Info Cfr Question General,False
+need assistance with a commercial insurance question,Info Cfr Question General,False
+looking for guidance on a corporate policy issue,Info Cfr Question General,False
+how to resolve a query about a business insurance plan,Info Cfr Question General,False
+seeking advice on a commercial policy matter,Info Cfr Question General,False
+where to direct questions about a business coverage policy,Info Cfr Question General,False
+What can I do to get a new agent,Info Change Agent,True
+get a better agent,Info Change Agent,True
+How do I switch my insurance agent?,Info Change Agent,False
+Process to change my insurance representative,Info Change Agent,False
+Steps to replace my current insurance agent,Info Change Agent,False
+Can I request a different insurance advisor?,Info Change Agent,False
+Procedure for changing my insurance broker,Info Change Agent,False
+How to transfer my policy to a new agent,Info Change Agent,False
+Is it possible to select a new insurance agent?,Info Change Agent,False
+Guidelines for changing my insurance consultant,Info Change Agent,False
+What are the steps to change my insurance agent?,Info Change Agent,False
+How can I assign a new agent to my policy?,Info Change Agent,False
+I want to change the date my automatic payments come out How can I do that,Info Change Autopay Date,True
+I would like to know if you can help me schedule my car insurance payment for this week I need to make the payment scheduled for Wednesday March th,Info Change Autopay Date,True
+Can I adjust the date for my insurance autopay?,Info Change Autopay Date,False
+How do I modify the automatic payment date for my policy?,Info Change Autopay Date,False
+Is it possible to reschedule my insurance payment to a different day?,Info Change Autopay Date,False
+I need assistance changing the autopay date for my insurance premium.,Info Change Autopay Date,False
+What steps do I take to update the date of my automatic insurance payment?,Info Change Autopay Date,False
+Could you guide me on how to alter the autopay date for my insurance?,Info Change Autopay Date,False
+I want to set a new date for my insurance automatic payment. How do I proceed?,Info Change Autopay Date,False
+Please help me change the scheduled date for my insurance autopay.,Info Change Autopay Date,False
+How can I shift my insurance payment to a different date?,Info Change Autopay Date,False
+I need to update the autopay date for my insurance policy.,Info Change Autopay Date,False
+enter new bank information,Info Change Bank Acct,True
+Can you help me update my bank account,Info Change Bank Acct,True
+Modify my bank account details,Info Change Bank Acct,False
+Update my direct deposit information,Info Change Bank Acct,False
+Change my payment account,Info Change Bank Acct,False
+Switch my bank account for payments,Info Change Bank Acct,False
+Revise my banking details,Info Change Bank Acct,False
+Adjust my account information,Info Change Bank Acct,False
+Replace my bank account on file,Info Change Bank Acct,False
+Edit my bank account settings,Info Change Bank Acct,False
+Renew my bank account information,Info Change Bank Acct,False
+Alter my bank account for billing,Info Change Bank Acct,False
+would like to change user ID,Info Change Userid,True
+change user ID please,Info Change Userid,True
+update my user ID,Info Change Userid,False
+modify user ID,Info Change Userid,False
+request user ID change,Info Change Userid,False
+alter user ID,Info Change Userid,False
+need to update user ID,Info Change Userid,False
+switch user ID,Info Change Userid,False
+revise user ID,Info Change Userid,False
+user ID needs changing,Info Change Userid,False
+adjust user ID,Info Change Userid,False
+user ID update request,Info Change Userid,False
+Who is handling my claim,Info Cl Adjuster Info,True
+Who is the file for this claim,Info Cl Adjuster Info,True
+Who is the adjuster assigned to my case,Info Cl Adjuster Info,False
+Can I get the contact details of my claim adjuster,Info Cl Adjuster Info,False
+Who is responsible for my insurance claim,Info Cl Adjuster Info,False
+Who is the claims handler for my policy,Info Cl Adjuster Info,False
+Who is managing my insurance file,Info Cl Adjuster Info,False
+Who is the claims representative for my account,Info Cl Adjuster Info,False
+Who is the point of contact for my claim,Info Cl Adjuster Info,False
+Who is overseeing my insurance claim,Info Cl Adjuster Info,False
+Who is the claims specialist for my case,Info Cl Adjuster Info,False
+Who is the adjuster in charge of my file,Info Cl Adjuster Info,False
+IM SORRY HAS HE BEEN ISSUED ANY PAYMENTS,Info Cl Check Status,True
+Where is my claim payment,Info Cl Check Status,True
+Has the payment for my claim been processed?,Info Cl Check Status,False
+Can you confirm if my claim check has been sent?,Info Cl Check Status,False
+What is the status of my insurance payout?,Info Cl Check Status,False
+Is there an update on my claim disbursement?,Info Cl Check Status,False
+When will my claim payment be issued?,Info Cl Check Status,False
+Has my insurance claim been approved for payment?,Info Cl Check Status,False
+Could you provide the status of my claim check?,Info Cl Check Status,False
+Is my claim payment on its way?,Info Cl Check Status,False
+Has my claim been settled with a payment?,Info Cl Check Status,False
+What is the current status of my claim check issuance?,Info Cl Check Status,False
+Has anyone filed a claim about the accident yesterday,Info Cl Claim Filed,True
+I got hit by someone you insure yesterday and need to see if a claim was filed,Info Cl Claim Filed,True
+Did a claim get submitted for the incident on Tuesday?,Info Cl Claim Filed,False
+Can you confirm if a claim was initiated for the collision last week?,Info Cl Claim Filed,False
+Is there a claim on record for the damage reported yesterday?,Info Cl Claim Filed,False
+Has a claim been opened for the recent theft incident?,Info Cl Claim Filed,False
+Was a claim filed for the storm damage reported last night?,Info Cl Claim Filed,False
+Can you check if a claim exists for the accident on Friday?,Info Cl Claim Filed,False
+Is there a claim number assigned for the recent property damage?,Info Cl Claim Filed,False
+Has a claim been processed for the fender bender on Main Street?,Info Cl Claim Filed,False
+Did anyone file a claim for the water leak issue?,Info Cl Claim Filed,False
+Is there an active claim for the fire damage reported last month?,Info Cl Claim Filed,False
+I need the phone number email and other details of the following adjuster boss,Info Cl Complaint,True
+I would like to file a complaint about how my claim is being handled,Info Cl Complaint,True
+How can I escalate my complaint regarding the claim process?,Info Cl Complaint,False
+Where can I find the contact details for the claims department manager?,Info Cl Complaint,False
+I want to report an issue with the adjuster's conduct during my claim assessment.,Info Cl Complaint,False
+Please provide the procedure to lodge a formal complaint about my claim.,Info Cl Complaint,False
+Who should I contact to discuss discrepancies in my claim settlement?,Info Cl Complaint,False
+I need assistance with filing a grievance about my claim handling.,Info Cl Complaint,False
+Can you direct me to the supervisor responsible for my claim?,Info Cl Complaint,False
+What is the process to appeal a decision made on my insurance claim?,Info Cl Complaint,False
+I am dissatisfied with the claim resolution and need to know my next steps.,Info Cl Complaint,False
+How do I submit a complaint about the delay in my claim processing?,Info Cl Complaint,False
+I was supposed to get an email that tells where my car repair shop is to send estimate information but I never recieved this Could you give me this information,Info Cl Docs Email,True
+I need to send an email with police report from my car accident Whats your email address,Info Cl Docs Email,True
+Can you provide the email address to send my medical bills for the claim?,Info Cl Docs Email,False
+Where should I email the photos of the vehicle damage?,Info Cl Docs Email,False
+I need to forward my rental agreement for the claim process. What's the correct email?,Info Cl Docs Email,False
+Could you send me the email to submit my repair invoices?,Info Cl Docs Email,False
+Please let me know the email address to send my accident report.,Info Cl Docs Email,False
+To whom should I email the documentation for my claim appeal?,Info Cl Docs Email,False
+What is the email for submitting my proof of loss documents?,Info Cl Docs Email,False
+I need to email my policy cancellation request. Can you provide the address?,Info Cl Docs Email,False
+Where do I send the email with my completed claim form?,Info Cl Docs Email,False
+Could you confirm the email for sending my vehicle inspection report?,Info Cl Docs Email,False
+To which fax number i should send the accident medical bill,Info Cl Docs Fax,True
+Help me to send my picture of accident to your fax number,Info Cl Docs Fax,True
+What is the correct fax number for submitting my claim documents?,Info Cl Docs Fax,False
+Can you provide the fax details for sending my insurance paperwork?,Info Cl Docs Fax,False
+Where should I fax the completed claim form?,Info Cl Docs Fax,False
+Is there a specific fax number for sending my policy documents?,Info Cl Docs Fax,False
+Could you confirm the fax number for accident report submissions?,Info Cl Docs Fax,False
+How do I fax my medical receipts to your office?,Info Cl Docs Fax,False
+Please advise on the fax number for sending my insurance claim evidence.,Info Cl Docs Fax,False
+To which fax should I send the repair estimate for my vehicle?,Info Cl Docs Fax,False
+What is the fax number for submitting my proof of loss?,Info Cl Docs Fax,False
+"Can I fax my signed claim form to your office, and if so, what is the number?",Info Cl Docs Fax,False
+Please provide your address to send my accident MEDICAL BILL,Info Cl Docs Mail,True
+I need to submit pictures of my accident evidence Which mail address should I send them to,Info Cl Docs Mail,True
+Where should I send the completed claim form?,Info Cl Docs Mail,False
+Can you give me the email to send my policy documents?,Info Cl Docs Mail,False
+To which address do I send the repair estimate?,Info Cl Docs Mail,False
+What is the email for submitting my accident report?,Info Cl Docs Mail,False
+Where do I send the signed release form?,Info Cl Docs Mail,False
+Please provide the email for sending my medical records.,Info Cl Docs Mail,False
+Which email should I use to send the police report?,Info Cl Docs Mail,False
+To whom should I email the damage assessment?,Info Cl Docs Mail,False
+Where can I send the photos of the vehicle damage?,Info Cl Docs Mail,False
+What is the correct email for submitting my claim documents?,Info Cl Docs Mail,False
+Where can I send you my claims report,Info Cl Docs Send,True
+I need to send documents and pictures for my claim How do I do that,Info Cl Docs Send,True
+How do I submit my claim documents?,Info Cl Docs Send,False
+Where should I upload my claim files?,Info Cl Docs Send,False
+Can you guide me on sending my claim paperwork?,Info Cl Docs Send,False
+What is the process to email my claim documents?,Info Cl Docs Send,False
+Where do I send the supporting documents for my claim?,Info Cl Docs Send,False
+Is there a portal to upload my claim evidence?,Info Cl Docs Send,False
+How can I fax my claim documents to you?,Info Cl Docs Send,False
+What address should I use to mail my claim forms?,Info Cl Docs Send,False
+Can I send my claim documents via your app?,Info Cl Docs Send,False
+What is the best way to deliver my claim documentation?,Info Cl Docs Send,False
+Can you send over the assignment on claim to body shop,Info Cl Drp Assign,True
+Im following up on a vehicle in our shop Can we start repairs for claim,Info Cl Drp Assign,True
+Please forward the claim assignment details to the repair facility,Info Cl Drp Assign,False
+Is the claim assignment ready for the auto shop?,Info Cl Drp Assign,False
+Could you confirm the assignment of the claim to the garage?,Info Cl Drp Assign,False
+Has the claim been assigned to the collision center yet?,Info Cl Drp Assign,False
+We need the claim assignment to proceed with the vehicle repairs,Info Cl Drp Assign,False
+Can you verify if the claim has been assigned to our repair shop?,Info Cl Drp Assign,False
+Requesting the assignment of the claim to the designated body shop,Info Cl Drp Assign,False
+Is the claim assignment available for the repair center?,Info Cl Drp Assign,False
+Please update us on the claim assignment status for the workshop,Info Cl Drp Assign,False
+Can you allocate the claim to the authorized repair facility?,Info Cl Drp Assign,False
+I am looking to get information on how to become a Direct Repair Shop for the Austell and Atlanta area of Georgia,Info Cl Drp Join,True
+IIm from a body shop and want to be a preferred repair shop,Info Cl Drp Join,True
+How can my auto repair shop join the direct repair program?,Info Cl Drp Join,False
+What are the requirements to become a certified repair partner?,Info Cl Drp Join,False
+Can you provide details on joining the DRP network?,Info Cl Drp Join,False
+What steps are needed for a collision center to join the DRP?,Info Cl Drp Join,False
+Is there an application process for becoming a preferred repair facility?,Info Cl Drp Join,False
+What criteria must be met to qualify as a direct repair shop?,Info Cl Drp Join,False
+How does a body shop get listed as a preferred provider?,Info Cl Drp Join,False
+What benefits are there for shops in the direct repair program?,Info Cl Drp Join,False
+Where can I find the application for the DRP partnership?,Info Cl Drp Join,False
+What is the process for a collision repair shop to join the DRP?,Info Cl Drp Join,False
+How can I find out what scratched my car Should I file a claim,Info Cl File Claim,True
+I think I need to file a claim my car has scratches from something,Info Cl File Claim,True
+What is the process to file a claim for a dented bumper?,Info Cl File Claim,False
+Should I report a minor fender bender to my insurance?,Info Cl File Claim,False
+How do I initiate a claim for hail damage on my vehicle?,Info Cl File Claim,False
+Is it necessary to file a claim for a cracked windshield?,Info Cl File Claim,False
+What steps are involved in filing a claim for a hit and run incident?,Info Cl File Claim,False
+Can I file a claim for a stolen car stereo?,Info Cl File Claim,False
+What documentation is needed to file a claim for flood damage?,Info Cl File Claim,False
+How soon should I file a claim after an accident?,Info Cl File Claim,False
+What are the consequences of filing a claim for a small scratch?,Info Cl File Claim,False
+How do I file a claim for vandalism damage to my car?,Info Cl File Claim,False
+I was in an accident recently and need to file a claim,Info Cl Fnol,True
+If I was in an accident can I file a claim here,Info Cl Fnol,True
+How do I report a recent car accident to start a claim?,Info Cl Fnol,False
+Where can I initiate a claim for my recent accident?,Info Cl Fnol,False
+What is the process to file a claim after an accident?,Info Cl Fnol,False
+Can I submit a claim for my accident online?,Info Cl Fnol,False
+"I need to report an accident and file a claim, what are the steps?",Info Cl Fnol,False
+Is there a way to file a claim for my accident through this service?,Info Cl Fnol,False
+How do I begin the claims process after my accident?,Info Cl Fnol,False
+What information is needed to file a claim for an accident?,Info Cl Fnol,False
+Can I start a claim for my accident using this platform?,Info Cl Fnol,False
+What are the requirements to file a claim after an accident?,Info Cl Fnol,False
+file claim for hail damage to my truck,Info Cl Fnol Auto Hail,True
+I need to file a hail damage claim for my car,Info Cl Fnol Auto Hail,True
+report hail damage to my vehicle,Info Cl Fnol Auto Hail,False
+start a claim for hail damage on my SUV,Info Cl Fnol Auto Hail,False
+initiate hail damage claim for my sedan,Info Cl Fnol Auto Hail,False
+how to claim hail damage on my auto policy,Info Cl Fnol Auto Hail,False
+submit a hail damage report for my car,Info Cl Fnol Auto Hail,False
+hail damage claim process for my vehicle,Info Cl Fnol Auto Hail,False
+file a hail damage claim for my automobile,Info Cl Fnol Auto Hail,False
+hail damage insurance claim for my van,Info Cl Fnol Auto Hail,False
+register hail damage on my car insurance,Info Cl Fnol Auto Hail,False
+hail damage claim submission for my truck,Info Cl Fnol Auto Hail,False
+I need to call safelight to repair my windshield,Info Cl Glass Safelite,True
+Who can I call to get my windshield repaired,Info Cl Glass Safelite,True
+How do I contact Safelite for a windshield replacement?,Info Cl Glass Safelite,False
+Where can I find Safelite's number for glass repair?,Info Cl Glass Safelite,False
+Is Safelite covered by my insurance for windshield repair?,Info Cl Glass Safelite,False
+Can Safelite fix my car window under insurance?,Info Cl Glass Safelite,False
+What is the process to file a claim with Safelite?,Info Cl Glass Safelite,False
+Does Safelite handle insurance claims for glass damage?,Info Cl Glass Safelite,False
+How to schedule a windshield repair with Safelite?,Info Cl Glass Safelite,False
+Is there a Safelite location near me for glass repair?,Info Cl Glass Safelite,False
+Can I get a quote from Safelite for windshield replacement?,Info Cl Glass Safelite,False
+Does Safelite offer mobile service for windshield repair?,Info Cl Glass Safelite,False
+how to apply to be part of your preferred vendor list,Info Cl Hrp Join,True
+I want my roofing company to be recommended by amfam,Info Cl Hrp Join,True
+What are the requirements to become an approved contractor?,Info Cl Hrp Join,False
+How can my business join your network of service providers?,Info Cl Hrp Join,False
+Steps to register as a preferred repair vendor,Info Cl Hrp Join,False
+How do I get my company listed as a recommended service provider?,Info Cl Hrp Join,False
+Process to become a certified partner with your insurance company,Info Cl Hrp Join,False
+How to enroll my business in your preferred vendor program?,Info Cl Hrp Join,False
+Criteria for joining your approved vendor list,Info Cl Hrp Join,False
+How can I get my repair shop approved by your insurance company?,Info Cl Hrp Join,False
+What is the application process for becoming a preferred vendor?,Info Cl Hrp Join,False
+How to become a recognized contractor for your insurance claims?,Info Cl Hrp Join,False
+I got a rental car for the claim I have open Can you extend it a couple more days,Info Cl Rental,True
+Can you extend my rental car for a couple more days My repairs arent done yet,Info Cl Rental,True
+Is it possible to prolong my rental car period due to ongoing repairs?,Info Cl Rental,False
+Can you authorize an extension for my rental vehicle while my car is in the shop?,Info Cl Rental,False
+I need to keep the rental car longer because my vehicle repairs are delayed. Can you assist?,Info Cl Rental,False
+Could you extend the rental car agreement as my claim is still being processed?,Info Cl Rental,False
+My car is still in the repair shop. Can I get an extension on the rental car?,Info Cl Rental,False
+Can you approve a few more days for my rental car since my vehicle isn't ready yet?,Info Cl Rental,False
+I require an extension on my rental car due to the repair timeline. Can you help?,Info Cl Rental,False
+Can you extend the rental car duration as my vehicle repairs are taking longer than expected?,Info Cl Rental,False
+I need to extend my rental car period because my car repairs are not completed. Can you assist?,Info Cl Rental,False
+Could you please extend my rental car agreement while my claim is still active?,Info Cl Rental,False
+The Brakes body shop is looking for authorization for a supplement to claim,Info Cl Shop Add Work,True
+additional repair work authorization,Info Cl Shop Add Work,True
+Requesting approval for supplementary repair costs,Info Cl Shop Add Work,False
+Need authorization for extra bodywork on claim,Info Cl Shop Add Work,False
+Seeking permission for additional labor charges,Info Cl Shop Add Work,False
+Approval needed for extended repair services,Info Cl Shop Add Work,False
+Request for authorization of extra parts replacement,Info Cl Shop Add Work,False
+Supplementary work authorization required for claim,Info Cl Shop Add Work,False
+Additional repair estimate submitted for approval,Info Cl Shop Add Work,False
+Requesting consent for further mechanical repairs,Info Cl Shop Add Work,False
+Authorization needed for unforeseen repair expenses,Info Cl Shop Add Work,False
+Seeking approval for added paintwork on claim,Info Cl Shop Add Work,False
+I need a repair estimate emailed over to our shop for claim,Info Cl Shop Send Estimate,True
+Im from a body shop and need a copy of the estimate for claim,Info Cl Shop Send Estimate,True
+Could you send the repair estimate to our collision center for the claim?,Info Cl Shop Send Estimate,False
+Please email the claim estimate to our auto shop.,Info Cl Shop Send Estimate,False
+We require the estimate for the claim to be sent to our repair facility.,Info Cl Shop Send Estimate,False
+Can you forward the claim estimate to our body shop?,Info Cl Shop Send Estimate,False
+Our shop needs the estimate for the claim; please send it over.,Info Cl Shop Send Estimate,False
+"Send the insurance estimate to our garage for the claim, please.",Info Cl Shop Send Estimate,False
+Requesting the claim estimate to be emailed to our service center.,Info Cl Shop Send Estimate,False
+Please dispatch the repair estimate to our workshop for the claim.,Info Cl Shop Send Estimate,False
+Could you provide the claim estimate to our auto repair shop?,Info Cl Shop Send Estimate,False
+We need the claim estimate sent to our collision repair center.,Info Cl Shop Send Estimate,False
+How long will be take to process my claim,Info Cl Status,True
+Tell me about the status of the claim made by me for the car,Info Cl Status,True
+What is the current status of my insurance claim?,Info Cl Status,False
+Can you update me on my claim progress?,Info Cl Status,False
+Has my claim been approved yet?,Info Cl Status,False
+When can I expect a decision on my claim?,Info Cl Status,False
+Is there any update on my submitted claim?,Info Cl Status,False
+Could you provide the status of my recent claim?,Info Cl Status,False
+What is the processing time for my claim?,Info Cl Status,False
+Has my claim been processed?,Info Cl Status,False
+What stage is my claim at currently?,Info Cl Status,False
+When will I receive a response regarding my claim?,Info Cl Status,False
+i filied a claim do you need my body shop name,Info Cl Update Info,True
+Please update my email address for my claim,Info Cl Update Info,True
+Can I change the contact number associated with my claim?,Info Cl Update Info,False
+How do I update the address on my insurance policy?,Info Cl Update Info,False
+"I need to add a new driver to my policy, can you assist?",Info Cl Update Info,False
+Is it possible to update the vehicle details on my claim?,Info Cl Update Info,False
+Please update my mailing address for my insurance account.,Info Cl Update Info,False
+I want to change the beneficiary on my life insurance policy.,Info Cl Update Info,False
+Can you update the payment method for my policy renewal?,Info Cl Update Info,False
+I need to correct the spelling of my name on the claim form.,Info Cl Update Info,False
+How do I update my policy to reflect my new marital status?,Info Cl Update Info,False
+Please change the primary contact for my insurance policy.,Info Cl Update Info,False
+How do I pay off my debt with your company,Info Collections,True
+How can I pay my bill so collections can stop calling,Info Collections,True
+What are the payment options to settle my insurance collections?,Info Collections,False
+How do I resolve my outstanding insurance balance?,Info Collections,False
+Can I negotiate my insurance collections debt?,Info Collections,False
+What is the process to clear my insurance collections account?,Info Collections,False
+How do I contact the collections department for my insurance?,Info Collections,False
+What happens if I don't pay my insurance collections?,Info Collections,False
+How can I set up a payment plan for my insurance collections?,Info Collections,False
+Is there a way to dispute my insurance collections bill?,Info Collections,False
+What are the consequences of unpaid insurance collections?,Info Collections,False
+How do I verify the amount owed in insurance collections?,Info Collections,False
+Should I have collision coverage,Info Coll Cov Explan,True
+what does collision coverage mean,Info Coll Cov Explan,True
+Is collision coverage necessary for my car?,Info Coll Cov Explan,False
+How does collision insurance work?,Info Coll Cov Explan,False
+What is the purpose of collision coverage?,Info Coll Cov Explan,False
+Do I need collision coverage on an older vehicle?,Info Coll Cov Explan,False
+What are the benefits of having collision coverage?,Info Coll Cov Explan,False
+How is collision coverage different from comprehensive coverage?,Info Coll Cov Explan,False
+When should I consider dropping collision coverage?,Info Coll Cov Explan,False
+What factors affect the cost of collision coverage?,Info Coll Cov Explan,False
+Is collision coverage mandatory in my state?,Info Coll Cov Explan,False
+Can I get collision coverage for a leased car?,Info Coll Cov Explan,False
+I want to combine all my policies payments into one,Info Combine Pymts,True
+How do I combine my insurance payments,Info Combine Pymts,True
+Can I merge my premium payments?,Info Combine Pymts,False
+Is it possible to consolidate my policy payments?,Info Combine Pymts,False
+How can I unify my insurance payment schedule?,Info Combine Pymts,False
+What are the steps to combine my insurance premiums?,Info Combine Pymts,False
+Can I streamline my insurance payment process?,Info Combine Pymts,False
+How do I set up a single payment for all my policies?,Info Combine Pymts,False
+Is there an option to aggregate my insurance payments?,Info Combine Pymts,False
+Can I synchronize my policy payment dates?,Info Combine Pymts,False
+How do I align my insurance payment cycles?,Info Combine Pymts,False
+What is the process to integrate my insurance payments?,Info Combine Pymts,False
+I need to understand comprehensive coverage can you help,Info Comp Cov Explan,True
+Do I need to have comp coverage,Info Comp Cov Explan,True
+What does comprehensive coverage include?,Info Comp Cov Explan,False
+Can you explain what comp coverage is?,Info Comp Cov Explan,False
+Is comprehensive coverage necessary for my car?,Info Comp Cov Explan,False
+How does comprehensive coverage work?,Info Comp Cov Explan,False
+What are the benefits of having comprehensive coverage?,Info Comp Cov Explan,False
+Does comprehensive coverage cover theft?,Info Comp Cov Explan,False
+Can you break down comprehensive coverage for me?,Info Comp Cov Explan,False
+What situations does comprehensive coverage protect against?,Info Comp Cov Explan,False
+Is comp coverage the same as full coverage?,Info Comp Cov Explan,False
+Why should I consider comprehensive coverage?,Info Comp Cov Explan,False
+I need to know if my insurance is still on,Info Confirm Coverage,True
+Has the status of my auto coverage changed,Info Confirm Coverage,True
+Is my health insurance policy active?,Info Confirm Coverage,False
+Can you verify my current coverage status?,Info Confirm Coverage,False
+Am I still covered under my homeowner's insurance?,Info Confirm Coverage,False
+Please confirm if my life insurance is valid,Info Confirm Coverage,False
+Is my travel insurance still effective?,Info Confirm Coverage,False
+Has there been any change to my policy coverage?,Info Confirm Coverage,False
+Do I have active renters insurance?,Info Confirm Coverage,False
+Is my dental insurance still in force?,Info Confirm Coverage,False
+Can you check if my policy is still valid?,Info Confirm Coverage,False
+Is my coverage still in effect for this year?,Info Confirm Coverage,False
+I want to update credit card information,Info Credit Card Change Num,True
+New credit card needed,Info Credit Card Change Num,True
+Update my payment card details,Info Credit Card Change Num,False
+Change the card on file,Info Credit Card Change Num,False
+Switch to a different credit card,Info Credit Card Change Num,False
+Modify my billing card information,Info Credit Card Change Num,False
+Replace existing card with a new one,Info Credit Card Change Num,False
+Add a new card for premium payments,Info Credit Card Change Num,False
+Update card number for policy payments,Info Credit Card Change Num,False
+Change credit card for automatic billing,Info Credit Card Change Num,False
+Renew card details for insurance payments,Info Credit Card Change Num,False
+Update my card for premium deductions,Info Credit Card Change Num,False
+Does it cost more if I pay with a credit card,Info Credit Card Fee,True
+What are the credit card payment fees,Info Credit Card Fee,True
+Are there additional charges for using a credit card to pay my insurance premium?,Info Credit Card Fee,False
+Is there a surcharge for credit card transactions on my insurance policy?,Info Credit Card Fee,False
+How much is the fee for credit card payments on insurance?,Info Credit Card Fee,False
+Do insurance companies charge extra for credit card payments?,Info Credit Card Fee,False
+What is the credit card processing fee for insurance payments?,Info Credit Card Fee,False
+Is there a convenience fee for paying insurance with a credit card?,Info Credit Card Fee,False
+Are credit card fees applicable when paying for insurance?,Info Credit Card Fee,False
+Does my insurance provider charge a fee for credit card payments?,Info Credit Card Fee,False
+What are the transaction fees for credit card payments on insurance?,Info Credit Card Fee,False
+Is there an extra cost for using a credit card to pay my insurance bill?,Info Credit Card Fee,False
+Can I call in  hours a day,Info Customer Service Hours,True
+Customer service availability,Info Customer Service Hours,True
+What are the customer service hours for policy inquiries?,Info Customer Service Hours,False
+Is the helpline open on weekends?,Info Customer Service Hours,False
+When can I reach a representative for claims assistance?,Info Customer Service Hours,False
+Are there specific hours for billing support?,Info Customer Service Hours,False
+Can I contact customer service after 6 PM?,Info Customer Service Hours,False
+What time does the insurance support line close?,Info Customer Service Hours,False
+Is there 24/7 support for emergency claims?,Info Customer Service Hours,False
+How late is the customer service desk open?,Info Customer Service Hours,False
+Are customer service hours different for auto insurance?,Info Customer Service Hours,False
+What are the operating hours for the insurance help desk?,Info Customer Service Hours,False
+Can I please have a copy of my insurance declaration page,Info Dec Page Needed,True
+I need my insurance for declaration,Info Dec Page Needed,True
+Could you send me the declaration page for my policy?,Info Dec Page Needed,False
+Where can I find my insurance declaration page?,Info Dec Page Needed,False
+Please provide the declaration page for my insurance.,Info Dec Page Needed,False
+How do I obtain a copy of my policy's declaration page?,Info Dec Page Needed,False
+I require the declaration page for my insurance coverage.,Info Dec Page Needed,False
+Can you email me the insurance declaration page?,Info Dec Page Needed,False
+I need to access my policy's declaration page.,Info Dec Page Needed,False
+Please forward my insurance declaration page to me.,Info Dec Page Needed,False
+How can I get a digital copy of my declaration page?,Info Dec Page Needed,False
+I am requesting the declaration page for my insurance policy.,Info Dec Page Needed,False
+WHAT IS THE DEDUCTIBLE FOR WINDSHIELD REPAIR for my car insurance,Info Deductible,True
+Can you tell me the deductible for my car insurance,Info Deductible,True
+How much is the deductible on my home insurance?,Info Deductible,False
+What deductible applies to my health insurance plan?,Info Deductible,False
+Could you provide the deductible amount for my travel insurance?,Info Deductible,False
+What's the deductible for a comprehensive car insurance claim?,Info Deductible,False
+Is there a deductible for filing a claim on my renters insurance?,Info Deductible,False
+What is the deductible for collision coverage on my auto policy?,Info Deductible,False
+How does the deductible work for my pet insurance?,Info Deductible,False
+What deductible should I expect for my flood insurance policy?,Info Deductible,False
+Can you explain the deductible for my liability insurance?,Info Deductible,False
+What is the standard deductible for a homeowners insurance policy?,Info Deductible,False
+What is the purpose of a deductible,Info Ded Explan,True
+what is a deductible,Info Ded Explan,True
+How does a deductible work in insurance?,Info Ded Explan,False
+Can you explain the concept of a deductible?,Info Ded Explan,False
+Why do insurance policies have deductibles?,Info Ded Explan,False
+What role does a deductible play in a claim?,Info Ded Explan,False
+How is a deductible amount determined?,Info Ded Explan,False
+What happens if I don't meet my deductible?,Info Ded Explan,False
+Is a higher deductible better for my insurance?,Info Ded Explan,False
+How does a deductible affect my premium?,Info Ded Explan,False
+What are the benefits of having a deductible?,Info Ded Explan,False
+How do deductibles impact out-of-pocket costs?,Info Ded Explan,False
+What to do if I pay twice,Info Delete Dupe Pymt,True
+i have an issue with a double payment,Info Delete Dupe Pymt,True
+How can I reverse a duplicate insurance payment?,Info Delete Dupe Pymt,False
+Steps to cancel a repeated premium transaction,Info Delete Dupe Pymt,False
+"I accidentally paid my insurance twice, what now?",Info Delete Dupe Pymt,False
+Process to remove a duplicate payment from my account,Info Delete Dupe Pymt,False
+Help with refunding an extra insurance payment,Info Delete Dupe Pymt,False
+I need assistance with a double charge on my policy,Info Delete Dupe Pymt,False
+What should I do about a duplicate premium payment?,Info Delete Dupe Pymt,False
+How to handle a repeated payment for my insurance policy,Info Delete Dupe Pymt,False
+Can I get a refund for a duplicate insurance payment?,Info Delete Dupe Pymt,False
+Procedure to delete an extra payment made to my insurance,Info Delete Dupe Pymt,False
+I had a question about my billing statement I have noticed that the last few months my bill amount has gone up,Info Different Amts,True
+how come last months bill was less than this months bill,Info Different Amts,True
+Why did my premium increase this month compared to last month?,Info Different Amts,False
+Can you explain the difference in my insurance payment from last quarter?,Info Different Amts,False
+"I noticed a discrepancy in my policy charges, can you clarify?",Info Different Amts,False
+What caused the variation in my insurance bill this cycle?,Info Different Amts,False
+Why is my deductible different from what I paid previously?,Info Different Amts,False
+Could you provide details on why my coverage cost changed?,Info Different Amts,False
+Is there a reason for the fluctuation in my monthly insurance rate?,Info Different Amts,False
+I need information on why my insurance fees have varied recently.,Info Different Amts,False
+Can you help me understand the change in my policy's billing amount?,Info Different Amts,False
+What factors led to the increase in my insurance premium this year?,Info Different Amts,False
+Hello I would like to know how I can lower my monthly payment,Info Discounts,True
+What are the discounts available,Info Discounts,True
+Can you provide details on any premium reductions?,Info Discounts,False
+Are there any loyalty discounts for long-term policyholders?,Info Discounts,False
+What discounts do you offer for bundling home and auto insurance?,Info Discounts,False
+Is there a discount for installing safety features in my car?,Info Discounts,False
+Do you offer any discounts for good driving records?,Info Discounts,False
+Are there any special rates for military personnel?,Info Discounts,False
+How can I qualify for a multi-policy discount?,Info Discounts,False
+What are the eligibility criteria for senior citizen discounts?,Info Discounts,False
+Can I get a discount for paying my premium annually?,Info Discounts,False
+Are there any discounts for eco-friendly vehicles?,Info Discounts,False
+Put me on your Do Not Contact list,Info Do Not Contact,True
+Take me off your mailing list please,Info Do Not Contact,True
+Please remove my contact information from your database,Info Do Not Contact,False
+I wish to unsubscribe from all future communications,Info Do Not Contact,False
+Stop sending me promotional materials,Info Do Not Contact,False
+I do not wish to receive any more calls,Info Do Not Contact,False
+Please ensure I am not contacted again,Info Do Not Contact,False
+Kindly exclude me from your contact list,Info Do Not Contact,False
+I want to opt-out of all correspondence,Info Do Not Contact,False
+Please cease all communication with me,Info Do Not Contact,False
+I request to be added to your no-contact list,Info Do Not Contact,False
+Do not send me any more emails or messages,Info Do Not Contact,False
+What are the benefits of dream keep rewards,Info Dreamkeep Rewards,True
+How do I know if DreamKeep rewards is right for me,Info Dreamkeep Rewards,True
+How can I redeem DreamKeep rewards points?,Info Dreamkeep Rewards,False
+What is the eligibility criteria for DreamKeep rewards?,Info Dreamkeep Rewards,False
+Are there any fees associated with DreamKeep rewards?,Info Dreamkeep Rewards,False
+Can DreamKeep rewards be transferred to family members?,Info Dreamkeep Rewards,False
+What types of insurance policies qualify for DreamKeep rewards?,Info Dreamkeep Rewards,False
+How do DreamKeep rewards impact my insurance premiums?,Info Dreamkeep Rewards,False
+Is there an expiration date for DreamKeep rewards points?,Info Dreamkeep Rewards,False
+How do I enroll in the DreamKeep rewards program?,Info Dreamkeep Rewards,False
+What is the process for claiming DreamKeep rewards?,Info Dreamkeep Rewards,False
+Are there any restrictions on using DreamKeep rewards?,Info Dreamkeep Rewards,False
+I am receiving an error when i try to access my DreamKeep rewards,Info Dreamkeep Rewards Errors,True
+I cant log into my DreaM Keep rewards account,Info Dreamkeep Rewards Errors,True
+Why am I unable to redeem my DreamKeep rewards points?,Info Dreamkeep Rewards Errors,False
+DreamKeep rewards page is not loading for me,Info Dreamkeep Rewards Errors,False
+Error message appears when I attempt to view my DreamKeep rewards balance,Info Dreamkeep Rewards Errors,False
+I am having trouble accessing my DreamKeep rewards dashboard,Info Dreamkeep Rewards Errors,False
+My DreamKeep rewards account is showing an unexpected error,Info Dreamkeep Rewards Errors,False
+I can't see my DreamKeep rewards history due to an error,Info Dreamkeep Rewards Errors,False
+Why is my DreamKeep rewards account locked?,Info Dreamkeep Rewards Errors,False
+I am unable to update my DreamKeep rewards information,Info Dreamkeep Rewards Errors,False
+DreamKeep rewards portal is giving me a login error,Info Dreamkeep Rewards Errors,False
+I keep getting a server error on the DreamKeep rewards site,Info Dreamkeep Rewards Errors,False
+Do you have a charitable foundation,Info Dreams Foundation,True
+What is the contact for chartiable giving,Info Dreams Foundation,True
+How can I donate to the Info Dreams Foundation?,Info Dreams Foundation,False
+What initiatives does the Info Dreams Foundation support?,Info Dreams Foundation,False
+Is there a way to volunteer with the Info Dreams Foundation?,Info Dreams Foundation,False
+Can I get a tax receipt for donations to the Info Dreams Foundation?,Info Dreams Foundation,False
+What is the mission of the Info Dreams Foundation?,Info Dreams Foundation,False
+Are there any upcoming events hosted by the Info Dreams Foundation?,Info Dreams Foundation,False
+How does the Info Dreams Foundation allocate its funds?,Info Dreams Foundation,False
+Who are the beneficiaries of the Info Dreams Foundation?,Info Dreams Foundation,False
+Does the Info Dreams Foundation offer scholarships?,Info Dreams Foundation,False
+How can I become a partner with the Info Dreams Foundation?,Info Dreams Foundation,False
+need to confirm employment,Info Employment Verify,True
+need to confirm someone is employed with your company,Info Employment Verify,True
+can you verify current employment status,Info Employment Verify,False
+requesting employment confirmation for policyholder,Info Employment Verify,False
+please confirm employment details,Info Employment Verify,False
+employment verification needed for insurance purposes,Info Employment Verify,False
+verify if the individual is currently employed,Info Employment Verify,False
+employment status check required,Info Employment Verify,False
+confirm employment for insurance application,Info Employment Verify,False
+need employment verification for claim processing,Info Employment Verify,False
+employment confirmation needed for underwriting,Info Employment Verify,False
+verify employment history for insurance eligibility,Info Employment Verify,False
+I am having an emergency and I need roadside assistance,Info Ers,True
+How do I get help with a flat tire,Info Ers,True
+What should I do if my car breaks down on the highway?,Info Ers,False
+Who do I call for towing services under my policy?,Info Ers,False
+Is roadside assistance covered in my insurance plan?,Info Ers,False
+How can I request a jump start through my insurance?,Info Ers,False
+What is the process for getting fuel delivery if I run out of gas?,Info Ers,False
+Can I get help with a lockout situation through my insurance?,Info Ers,False
+Does my policy include coverage for emergency roadside repairs?,Info Ers,False
+How do I arrange for a tow truck using my insurance benefits?,Info Ers,False
+What number should I call for emergency roadside help?,Info Ers,False
+Is there a limit to the number of roadside assistance calls I can make?,Info Ers,False
+My car broke down can you help,Info Ers Contact,True
+whats the number I call if I need roadside assistance,Info Ers Contact,True
+How do I reach emergency roadside service?,Info Ers Contact,False
+Who do I contact for a flat tire?,Info Ers Contact,False
+Is there a hotline for towing services?,Info Ers Contact,False
+Can you provide the emergency assistance number?,Info Ers Contact,False
+What is the contact for vehicle breakdown support?,Info Ers Contact,False
+Where can I call for roadside help?,Info Ers Contact,False
+"Need assistance, who should I contact?",Info Ers Contact,False
+How do I get in touch with roadside assistance?,Info Ers Contact,False
+What's the helpline for car trouble?,Info Ers Contact,False
+Who do I call if my car won't start?,Info Ers Contact,False
+reimburse flat tire change,Info Ers Reimburse,True
+I have a receipt for a tire change What do I do to get reimbursed,Info Ers Reimburse,True
+How to claim reimbursement for roadside assistance?,Info Ers Reimburse,False
+Submit towing receipt for reimbursement,Info Ers Reimburse,False
+Process to get reimbursed for emergency fuel delivery,Info Ers Reimburse,False
+Reimbursement for locksmith service,Info Ers Reimburse,False
+Claim back expenses for jump start service,Info Ers Reimburse,False
+Steps to file a reimbursement for battery replacement,Info Ers Reimburse,False
+How do I get reimbursed for emergency roadside service?,Info Ers Reimburse,False
+Reimbursement procedure for car towing,Info Ers Reimburse,False
+Can I get reimbursed for a tow truck service?,Info Ers Reimburse,False
+Submitting a claim for roadside assistance reimbursement,Info Ers Reimburse,False
+Agent name and number please,Info Find Agent,True
+Help me find an agent within  miles from me,Info Find Agent,True
+Can you provide the contact details of a local insurance agent?,Info Find Agent,False
+Who is the nearest insurance agent to my location?,Info Find Agent,False
+I need the phone number of an insurance agent nearby.,Info Find Agent,False
+Locate an insurance agent in my area.,Info Find Agent,False
+Find me an insurance agent close to my zip code.,Info Find Agent,False
+What is the address of the closest insurance agent?,Info Find Agent,False
+Give me the details of an insurance agent in my vicinity.,Info Find Agent,False
+Where can I find an insurance agent near me?,Info Find Agent,False
+Connect me with a local insurance agent.,Info Find Agent,False
+List insurance agents available in my neighborhood.,Info Find Agent,False
+What is flood insurance,Info Flood Ins Explan,True
+flood insurance,Info Flood Ins Explan,True
+flood insurance coverage,Info Flood Ins Explan,False
+how does flood insurance work,Info Flood Ins Explan,False
+flood insurance policy details,Info Flood Ins Explan,False
+benefits of flood insurance,Info Flood Ins Explan,False
+flood insurance requirements,Info Flood Ins Explan,False
+flood insurance cost,Info Flood Ins Explan,False
+flood insurance eligibility,Info Flood Ins Explan,False
+flood insurance claims process,Info Flood Ins Explan,False
+flood insurance vs homeowners insurance,Info Flood Ins Explan,False
+flood insurance deductible,Info Flood Ins Explan,False
+Can you please help me with my email address,Info Forgot Email,True
+Need to get the email address associated with my account,Info Forgot Email,True
+I can't remember the email linked to my insurance policy,Info Forgot Email,False
+How do I retrieve my email for my insurance login?,Info Forgot Email,False
+Forgot the email I used for my insurance account,Info Forgot Email,False
+What is the email address on my insurance profile?,Info Forgot Email,False
+Help me find the email associated with my insurance account,Info Forgot Email,False
+I need assistance with recovering my insurance account email,Info Forgot Email,False
+Can you tell me the email tied to my insurance policy?,Info Forgot Email,False
+I lost access to the email for my insurance account,Info Forgot Email,False
+Please assist in finding my insurance account email,Info Forgot Email,False
+How can I verify the email on my insurance account?,Info Forgot Email,False
+can you help me login as I forgot my password,Info Forgot Password,True
+I forgot what I changed my password to,Info Forgot Password,True
+I can't remember my password for the insurance portal,Info Forgot Password,False
+How do I reset my insurance account password?,Info Forgot Password,False
+Lost my password for the insurance login,Info Forgot Password,False
+Need assistance with forgotten insurance account password,Info Forgot Password,False
+Forgot my password for accessing my insurance policy,Info Forgot Password,False
+Help! I can't log in to my insurance account due to password issues,Info Forgot Password,False
+What should I do if I forgot my insurance account password?,Info Forgot Password,False
+Unable to access my insurance account because I forgot my password,Info Forgot Password,False
+Can you guide me on recovering my insurance account password?,Info Forgot Password,False
+I need to retrieve my forgotten password for my insurance account,Info Forgot Password,False
+Could you help me locate my user ID,Info Forgot Userid,True
+I want to know my user ID,Info Forgot Userid,True
+How can I retrieve my user ID for my insurance account?,Info Forgot Userid,False
+"I forgot my user ID, can you assist me?",Info Forgot Userid,False
+What steps do I take to recover my insurance user ID?,Info Forgot Userid,False
+Please guide me on finding my user ID for my policy account.,Info Forgot Userid,False
+Is there a way to recover my user ID for my insurance login?,Info Forgot Userid,False
+I need help finding my user ID for my insurance portal.,Info Forgot Userid,False
+Can you tell me how to get my user ID back?,Info Forgot Userid,False
+"I misplaced my user ID, how do I get it?",Info Forgot Userid,False
+Where can I find my user ID for my insurance account?,Info Forgot Userid,False
+"I can't remember my user ID, what should I do?",Info Forgot Userid,False
+Can I buy GAP insurance from you,Info Gap Coverage,True
+Can I get a quote for GAP insurance,Info Gap Coverage,True
+What is the cost of GAP insurance?,Info Gap Coverage,False
+Do you offer GAP coverage?,Info Gap Coverage,False
+How do I apply for GAP insurance?,Info Gap Coverage,False
+Is GAP insurance available for my vehicle?,Info Gap Coverage,False
+Can you explain GAP insurance benefits?,Info Gap Coverage,False
+Where can I purchase GAP coverage?,Info Gap Coverage,False
+What vehicles are eligible for GAP insurance?,Info Gap Coverage,False
+How does GAP insurance work?,Info Gap Coverage,False
+Can I add GAP insurance to my policy?,Info Gap Coverage,False
+What are the terms for GAP insurance?,Info Gap Coverage,False
+does my policy cover weather damages,Info Gen Policy Cov Question,True
+Does my policy include tornado damage,Info Gen Policy Cov Question,True
+Is flood damage included in my coverage?,Info Gen Policy Cov Question,False
+Does my insurance cover theft?,Info Gen Policy Cov Question,False
+Am I covered for fire damage?,Info Gen Policy Cov Question,False
+Does my policy protect against vandalism?,Info Gen Policy Cov Question,False
+Is earthquake damage part of my coverage?,Info Gen Policy Cov Question,False
+Are medical expenses covered under my policy?,Info Gen Policy Cov Question,False
+Does my policy include liability coverage?,Info Gen Policy Cov Question,False
+Is water damage from leaks covered?,Info Gen Policy Cov Question,False
+Does my insurance cover accidental damage?,Info Gen Policy Cov Question,False
+Are natural disasters included in my policy?,Info Gen Policy Cov Question,False
+i am trying to see if i can get a quote for an auto well for  autos,Info Get A Quote Auto,True
+i want a quote for auto insurance,Info Get A Quote Auto,True
+Can I receive a car insurance quote?,Info Get A Quote Auto,False
+How do I get a quote for vehicle coverage?,Info Get A Quote Auto,False
+I need an estimate for auto insurance.,Info Get A Quote Auto,False
+Where can I find a quote for car insurance?,Info Get A Quote Auto,False
+Please provide a quote for my automobile insurance.,Info Get A Quote Auto,False
+Looking to obtain a quote for auto coverage.,Info Get A Quote Auto,False
+Could you give me a quote for car insurance?,Info Get A Quote Auto,False
+I am interested in a vehicle insurance quote.,Info Get A Quote Auto,False
+Requesting a quote for my car insurance policy.,Info Get A Quote Auto,False
+How can I get a quote for insuring my car?,Info Get A Quote Auto,False
+Do you sell insurance for non owner for auto,Info Get A Quote Auto Nonowner,True
+nonowner auto insurance quote,Info Get A Quote Auto Nonowner,True
+non-owner car insurance estimate,Info Get A Quote Auto Nonowner,False
+quote for nonowner vehicle insurance,Info Get A Quote Auto Nonowner,False
+how to get nonowner auto insurance,Info Get A Quote Auto Nonowner,False
+nonowner auto coverage quote,Info Get A Quote Auto Nonowner,False
+price for nonowner car insurance,Info Get A Quote Auto Nonowner,False
+nonowner vehicle insurance rates,Info Get A Quote Auto Nonowner,False
+nonowner auto policy quote,Info Get A Quote Auto Nonowner,False
+nonowner car insurance pricing,Info Get A Quote Auto Nonowner,False
+nonowner auto insurance cost,Info Get A Quote Auto Nonowner,False
+nonowner vehicle coverage estimate,Info Get A Quote Auto Nonowner,False
+My business needs insurance What would it cost,Info Get A Quote Cfr,True
+Can you get me a quote for business insurance,Info Get A Quote Cfr,True
+How much is the premium for business coverage?,Info Get A Quote Cfr,False
+Could you provide a business insurance estimate?,Info Get A Quote Cfr,False
+What is the cost for commercial insurance?,Info Get A Quote Cfr,False
+Requesting a quote for corporate insurance,Info Get A Quote Cfr,False
+Please send a business insurance quote,Info Get A Quote Cfr,False
+What are the rates for business liability insurance?,Info Get A Quote Cfr,False
+Can I get a price estimate for business insurance?,Info Get A Quote Cfr,False
+How much would business insurance cost?,Info Get A Quote Cfr,False
+Need a quote for company insurance,Info Get A Quote Cfr,False
+What's the price for business insurance coverage?,Info Get A Quote Cfr,False
+Would like insurance quote,Info Get A Quote Other,True
+homeowners insurance quote,Info Get A Quote Other,True
+Auto insurance rate request,Info Get A Quote Other,False
+Need a quote for life insurance,Info Get A Quote Other,False
+Requesting a quote for renters insurance,Info Get A Quote Other,False
+Can I get a quote for travel insurance?,Info Get A Quote Other,False
+Looking for a business insurance quote,Info Get A Quote Other,False
+Quote needed for health insurance,Info Get A Quote Other,False
+Pet insurance quote inquiry,Info Get A Quote Other,False
+Seeking a quote for motorcycle insurance,Info Get A Quote Other,False
+Quote request for boat insurance,Info Get A Quote Other,False
+Need a quote for umbrella insurance,Info Get A Quote Other,False
+Im in need of a renters insurance quote,Info Get A Quote Renters,True
+Renters quote,Info Get A Quote Renters,True
+Need a quote for renters insurance,Info Get A Quote Renters,False
+Can I get a renters insurance estimate?,Info Get A Quote Renters,False
+Requesting a renters insurance quote,Info Get A Quote Renters,False
+How much is renters insurance?,Info Get A Quote Renters,False
+Quote for apartment insurance,Info Get A Quote Renters,False
+Looking for a renters insurance quote,Info Get A Quote Renters,False
+Get a price for renters insurance,Info Get A Quote Renters,False
+Estimate for renters insurance needed,Info Get A Quote Renters,False
+Quote request for tenant insurance,Info Get A Quote Renters,False
+How to get a renters insurance quote?,Info Get A Quote Renters,False
+Can I get renters insurance from you,Info Get A Quote Renters Purchase,True
+Can I buy renters ins through chat,Info Get A Quote Renters Purchase,True
+How do I purchase renters insurance?,Info Get A Quote Renters Purchase,False
+Is it possible to get a quote for renters insurance?,Info Get A Quote Renters Purchase,False
+Can you provide a renters insurance quote?,Info Get A Quote Renters Purchase,False
+What are the steps to buy renters insurance?,Info Get A Quote Renters Purchase,False
+Can I obtain renters insurance online?,Info Get A Quote Renters Purchase,False
+How can I get a quote for renters insurance coverage?,Info Get A Quote Renters Purchase,False
+Where can I purchase renters insurance?,Info Get A Quote Renters Purchase,False
+Can I secure renters insurance through your service?,Info Get A Quote Renters Purchase,False
+What is the process to get a renters insurance policy?,Info Get A Quote Renters Purchase,False
+Can I get a quick quote for renters insurance?,Info Get A Quote Renters Purchase,False
+A rock hit my windshield is that covered by insurance,Info Glass Cov,True
+Does my car policy apply to glass brakeage,Info Glass Cov,True
+Is windshield damage included in my auto insurance?,Info Glass Cov,False
+Will my insurance cover a cracked side window?,Info Glass Cov,False
+Does my policy include coverage for glass repair?,Info Glass Cov,False
+Are glass chips covered under my current insurance plan?,Info Glass Cov,False
+Can I claim insurance for a shattered rear window?,Info Glass Cov,False
+Is there a deductible for glass coverage in my policy?,Info Glass Cov,False
+Does my insurance cover replacement of broken car windows?,Info Glass Cov,False
+Are windshield repairs covered by my comprehensive insurance?,Info Glass Cov,False
+Is glass damage protection part of my auto insurance package?,Info Glass Cov,False
+Will my insurance pay for a windshield replacement?,Info Glass Cov,False
+How do I waive off my handling fees,Info Handling Fee Remove,True
+Ive never has to pay a handling fee before I think this is a mistake that needs fixing,Info Handling Fee Remove,True
+Can handling fees be eliminated from my policy?,Info Handling Fee Remove,False
+Is it possible to get a refund on the handling fee?,Info Handling Fee Remove,False
+What steps are needed to remove handling charges?,Info Handling Fee Remove,False
+I want to dispute the handling fee on my account.,Info Handling Fee Remove,False
+How can I appeal the handling fee on my insurance bill?,Info Handling Fee Remove,False
+Is there a way to negotiate the handling fee down?,Info Handling Fee Remove,False
+Please advise on how to cancel the handling fee.,Info Handling Fee Remove,False
+Why was a handling fee added to my insurance premium?,Info Handling Fee Remove,False
+Can I get the handling fee waived for this year?,Info Handling Fee Remove,False
+What are the conditions for handling fee exemption?,Info Handling Fee Remove,False
+Can you compare the types of health insurance,Info Health Ins Quote,True
+I was looking online and got pointed to buying health insurance from you is this true,Info Health Ins Quote,True
+What are the premium rates for family health insurance plans?,Info Health Ins Quote,False
+How do I get a quote for individual health coverage?,Info Health Ins Quote,False
+Can you provide details on your health insurance packages?,Info Health Ins Quote,False
+What factors affect the cost of health insurance premiums?,Info Health Ins Quote,False
+Are there any discounts available for health insurance plans?,Info Health Ins Quote,False
+How does your health insurance compare to other providers?,Info Health Ins Quote,False
+What is the process to obtain a health insurance quote?,Info Health Ins Quote,False
+Can I get a quote for a high-deductible health plan?,Info Health Ins Quote,False
+What are the benefits included in your health insurance policies?,Info Health Ins Quote,False
+How can I customize my health insurance plan to fit my needs?,Info Health Ins Quote,False
+We are trying to get ahold of someone who can assist us with updating the mortgagee clause and information we need for an existing policy through your Homesite Insurance Partnership,Info Homesite Contact,True
+I have a Homesite policy who do I talk to,Info Homesite Contact,True
+Who should I contact to update my Homesite Insurance policy details?,Info Homesite Contact,False
+Can you provide the contact information for Homesite Insurance customer service?,Info Homesite Contact,False
+"I need assistance with my Homesite Insurance policy, who do I reach out to?",Info Homesite Contact,False
+How can I get in touch with a Homesite Insurance representative?,Info Homesite Contact,False
+Where can I find the contact number for Homesite Insurance support?,Info Homesite Contact,False
+Who do I call for questions about my Homesite Insurance coverage?,Info Homesite Contact,False
+"I need to speak with someone about my Homesite Insurance claim, who should I contact?",Info Homesite Contact,False
+What is the best way to contact Homesite Insurance for policy inquiries?,Info Homesite Contact,False
+Can you direct me to the Homesite Insurance customer support team?,Info Homesite Contact,False
+Who handles policy amendments at Homesite Insurance?,Info Homesite Contact,False
+i need to print an insurance card for the volkswagon touareg but cannot find a place to do that on the website,Info Ins Card Print,True
+need to print proof of insurance,Info Ins Card Print,True
+How do I print my auto insurance card?,Info Ins Card Print,False
+Where can I download and print my insurance ID card?,Info Ins Card Print,False
+Steps to print my insurance card online?,Info Ins Card Print,False
+Can I get a printable version of my insurance card?,Info Ins Card Print,False
+Looking for a way to print my insurance proof,Info Ins Card Print,False
+How to access and print my digital insurance card?,Info Ins Card Print,False
+Need help printing my insurance card from the portal,Info Ins Card Print,False
+Is there an option to print my insurance card from the app?,Info Ins Card Print,False
+Instructions to print my insurance card for my records,Info Ins Card Print,False
+How can I print my insurance card for my new policy?,Info Ins Card Print,False
+I cant find my proof of insurance card,Info Ins Card Proof,True
+where can I find proof of insurance card,Info Ins Card Proof,True
+How do I obtain a copy of my insurance card?,Info Ins Card Proof,False
+Need help locating my insurance proof card,Info Ins Card Proof,False
+Where is my insurance card located?,Info Ins Card Proof,False
+How can I access my digital insurance card?,Info Ins Card Proof,False
+"Lost my insurance card, how to get a new one?",Info Ins Card Proof,False
+Steps to retrieve my insurance proof card,Info Ins Card Proof,False
+What to do if I can't find my insurance card?,Info Ins Card Proof,False
+How to download my insurance card online?,Info Ins Card Proof,False
+Requesting a replacement for my insurance card,Info Ins Card Proof,False
+How to get proof of insurance for my vehicle?,Info Ins Card Proof,False
+Can you send me my proof of insurance card,Info Ins Card Send,True
+You did not send me the proof of insurance card,Info Ins Card Send,True
+Please mail my insurance card to me,Info Ins Card Send,False
+I need my insurance card sent to my address,Info Ins Card Send,False
+Could you dispatch my insurance card?,Info Ins Card Send,False
+"Send over my insurance card, please",Info Ins Card Send,False
+I haven't received my insurance card yet,Info Ins Card Send,False
+Can you forward my insurance card to my email?,Info Ins Card Send,False
+Please ensure my insurance card is sent,Info Ins Card Send,False
+I require my insurance card to be sent,Info Ins Card Send,False
+When will my insurance card be mailed?,Info Ins Card Send,False
+Can you expedite the delivery of my insurance card?,Info Ins Card Send,False
+What types of insurance do you sell in New York,Info Ins Not Available,True
+Are you guys in Chelsea,Info Ins Not Available,True
+Do you offer coverage in Brooklyn?,Info Ins Not Available,False
+Is your service available in California?,Info Ins Not Available,False
+Can I get a quote for Texas?,Info Ins Not Available,False
+Are your policies available in Florida?,Info Ins Not Available,False
+Do you provide insurance in Chicago?,Info Ins Not Available,False
+Is there coverage for residents of Seattle?,Info Ins Not Available,False
+Can I purchase a policy in Nevada?,Info Ins Not Available,False
+Are your services offered in Boston?,Info Ins Not Available,False
+Is insurance available for clients in Miami?,Info Ins Not Available,False
+Do you operate in the San Francisco area?,Info Ins Not Available,False
+What are the benefits of knowYOURDRIVE,Info Knowyourdrive,True
+How can I learn more about Know your drive,Info Knowyourdrive,True
+How does KnowYourDrive impact my insurance premium?,Info Knowyourdrive,False
+Can KnowYourDrive help me save on car insurance?,Info Knowyourdrive,False
+What is the eligibility criteria for KnowYourDrive?,Info Knowyourdrive,False
+Is KnowYourDrive available in all states?,Info Knowyourdrive,False
+How do I enroll in the KnowYourDrive program?,Info Knowyourdrive,False
+What data does KnowYourDrive collect from my vehicle?,Info Knowyourdrive,False
+Are there any privacy concerns with KnowYourDrive?,Info Knowyourdrive,False
+How does KnowYourDrive track my driving habits?,Info Knowyourdrive,False
+What kind of discounts can I get with KnowYourDrive?,Info Knowyourdrive,False
+Is there a mobile app for KnowYourDrive?,Info Knowyourdrive,False
+activate KnowYour Drive app,Info Knowyourdrive Device Activate,True
+I want to active my device,Info Knowyourdrive Device Activate,True
+How do I activate my KnowYourDrive device?,Info Knowyourdrive Device Activate,False
+Steps to activate KnowYourDrive,Info Knowyourdrive Device Activate,False
+Activate my insurance driving device,Info Knowyourdrive Device Activate,False
+Start using KnowYourDrive,Info Knowyourdrive Device Activate,False
+Enable my KnowYourDrive app,Info Knowyourdrive Device Activate,False
+How to turn on KnowYourDrive?,Info Knowyourdrive Device Activate,False
+Set up my KnowYourDrive device,Info Knowyourdrive Device Activate,False
+Begin using KnowYourDrive for insurance,Info Knowyourdrive Device Activate,False
+How to initiate KnowYourDrive?,Info Knowyourdrive Device Activate,False
+Activate my driving tracker for insurance,Info Knowyourdrive Device Activate,False
+Where can I send my Know Your Drive adapter,Info Knowyourdrive Device Return,True
+Im not using my device and want to send it back,Info Knowyourdrive Device Return,True
+How do I return my Know Your Drive device?,Info Knowyourdrive Device Return,False
+What is the process for sending back the Know Your Drive adapter?,Info Knowyourdrive Device Return,False
+Can I get a refund for my returned Know Your Drive device?,Info Knowyourdrive Device Return,False
+Where should I mail my Know Your Drive device for return?,Info Knowyourdrive Device Return,False
+Is there a deadline for returning the Know Your Drive adapter?,Info Knowyourdrive Device Return,False
+Do I need a return authorization for my Know Your Drive device?,Info Knowyourdrive Device Return,False
+What address do I use to return my Know Your Drive device?,Info Knowyourdrive Device Return,False
+Are there any fees for returning the Know Your Drive adapter?,Info Knowyourdrive Device Return,False
+How do I initiate a return for my Know Your Drive device?,Info Knowyourdrive Device Return,False
+What are the steps to return my Know Your Drive adapter?,Info Knowyourdrive Device Return,False
+Know Your Drive error,Info Knowyourdrive Errors,True
+Im having problems with my KnowYourDrive device,Info Knowyourdrive Errors,True
+KnowYourDrive app not working,Info Knowyourdrive Errors,False
+Issues with KnowYourDrive installation,Info Knowyourdrive Errors,False
+KnowYourDrive device malfunction,Info Knowyourdrive Errors,False
+Troubleshooting KnowYourDrive errors,Info Knowyourdrive Errors,False
+KnowYourDrive connectivity problems,Info Knowyourdrive Errors,False
+Error message on KnowYourDrive,Info Knowyourdrive Errors,False
+KnowYourDrive not syncing data,Info Knowyourdrive Errors,False
+Unable to access KnowYourDrive,Info Knowyourdrive Errors,False
+KnowYourDrive not tracking trips,Info Knowyourdrive Errors,False
+KnowYourDrive app crashes frequently,Info Knowyourdrive Errors,False
+i need an experience letter,Info Letter Of Experience,True
+Give the letter of experience which proves I have current insurance policy,Info Letter Of Experience,True
+Can you provide a letter of experience for my insurance history?,Info Letter Of Experience,False
+Requesting a proof of experience letter for my insurance coverage,Info Letter Of Experience,False
+How do I obtain an insurance experience letter?,Info Letter Of Experience,False
+Please send me a letter of experience for my insurance policy,Info Letter Of Experience,False
+I need documentation of my insurance experience,Info Letter Of Experience,False
+Where can I get a letter of experience for my insurance?,Info Letter Of Experience,False
+Could you issue a letter of experience for my insurance record?,Info Letter Of Experience,False
+I require an insurance experience letter for my new policy,Info Letter Of Experience,False
+How can I get a letter of experience for my insurance claims?,Info Letter Of Experience,False
+Need a letter of experience to verify my insurance tenure,Info Letter Of Experience,False
+Can you explain to me the coverage called liability,Info Liab Explan,True
+What does liability only cover,Info Liab Explan,True
+What is included in liability insurance?,Info Liab Explan,False
+How does liability insurance work?,Info Liab Explan,False
+Can you break down liability coverage for me?,Info Liab Explan,False
+What are the benefits of having liability insurance?,Info Liab Explan,False
+What risks does liability insurance protect against?,Info Liab Explan,False
+Could you clarify what liability insurance entails?,Info Liab Explan,False
+What situations are covered under liability insurance?,Info Liab Explan,False
+How is liability insurance different from full coverage?,Info Liab Explan,False
+What are the limitations of liability insurance?,Info Liab Explan,False
+Why is liability insurance important?,Info Liab Explan,False
+Set up new life insurance beneficiary,Info Life Beneficiary Change,True
+My life policy needs a beneficiary change,Info Life Beneficiary Change,True
+Update beneficiary on life insurance policy,Info Life Beneficiary Change,False
+Change the beneficiary for my life insurance,Info Life Beneficiary Change,False
+Modify life insurance beneficiary details,Info Life Beneficiary Change,False
+Add a new beneficiary to my life policy,Info Life Beneficiary Change,False
+Switch life insurance beneficiary,Info Life Beneficiary Change,False
+Revise beneficiary information on life insurance,Info Life Beneficiary Change,False
+How to change life insurance beneficiary,Info Life Beneficiary Change,False
+Request to alter life insurance beneficiary,Info Life Beneficiary Change,False
+Life insurance beneficiary update process,Info Life Beneficiary Change,False
+Instructions for changing life insurance beneficiary,Info Life Beneficiary Change,False
+While I cash out my life insurance policy what is the procedure,Info Life Cash Out,True
+Can you help me retrieve my life insurance,Info Life Cash Out,True
+How do I access the cash value of my life insurance?,Info Life Cash Out,False
+What steps are involved in cashing out a life insurance policy?,Info Life Cash Out,False
+Is there a penalty for cashing out my life insurance early?,Info Life Cash Out,False
+What documents are needed to cash out my life insurance?,Info Life Cash Out,False
+Can I receive a lump sum when cashing out my life insurance?,Info Life Cash Out,False
+How long does it take to process a life insurance cash out?,Info Life Cash Out,False
+What are the tax implications of cashing out my life insurance?,Info Life Cash Out,False
+Can I partially cash out my life insurance policy?,Info Life Cash Out,False
+What is the surrender value of my life insurance policy?,Info Life Cash Out,False
+How do I initiate a life insurance cash out request?,Info Life Cash Out,False
+How much does my monthly bill increase if I buy more life insurance,Info Life Incr Cov,True
+Can you tell me how to increase my life insurance coverage,Info Life Incr Cov,True
+What are the steps to enhance my life insurance policy?,Info Life Incr Cov,False
+Is it possible to expand my current life insurance coverage?,Info Life Incr Cov,False
+How do I upgrade my life insurance plan?,Info Life Incr Cov,False
+What options are available to boost my life insurance coverage?,Info Life Incr Cov,False
+Can I add more benefits to my existing life insurance policy?,Info Life Incr Cov,False
+What is the process to increase my life insurance coverage amount?,Info Life Incr Cov,False
+How can I adjust my life insurance to cover more?,Info Life Incr Cov,False
+Are there additional riders I can add to my life insurance?,Info Life Incr Cov,False
+What factors should I consider when increasing my life insurance coverage?,Info Life Incr Cov,False
+How does increasing my life insurance coverage affect my premiums?,Info Life Incr Cov,False
+How much is my life insurance,Info Life Policy Amt Due,True
+What is the amount due on my life insurance bill,Info Life Policy Amt Due,True
+What is the outstanding balance on my life policy?,Info Life Policy Amt Due,False
+Can you tell me the due amount for my life insurance?,Info Life Policy Amt Due,False
+How much do I owe on my life insurance premium?,Info Life Policy Amt Due,False
+What is the current amount due for my life insurance?,Info Life Policy Amt Due,False
+Please provide the due amount for my life insurance policy.,Info Life Policy Amt Due,False
+How much is pending on my life insurance account?,Info Life Policy Amt Due,False
+What is the payment amount required for my life insurance?,Info Life Policy Amt Due,False
+How much is left to pay on my life insurance policy?,Info Life Policy Amt Due,False
+What is the total due for my life insurance premium?,Info Life Policy Amt Due,False
+Can you give me the amount due for my life insurance coverage?,Info Life Policy Amt Due,False
+I would like to know how to set up auto payment with my life insurance account please,Info Life Policy Auto Pymt,True
+can you help me set up autopay for my life insurance police,Info Life Policy Auto Pymt,True
+How do I enable automatic payments for my life insurance policy?,Info Life Policy Auto Pymt,False
+What steps are needed to activate auto-pay for my life insurance?,Info Life Policy Auto Pymt,False
+Can you guide me on setting up recurring payments for my life insurance?,Info Life Policy Auto Pymt,False
+Is there a way to automate my life insurance premium payments?,Info Life Policy Auto Pymt,False
+Please provide instructions to initiate auto payment for my life insurance.,Info Life Policy Auto Pymt,False
+How can I arrange for my life insurance premiums to be paid automatically?,Info Life Policy Auto Pymt,False
+What is the process to set up automatic deductions for my life insurance policy?,Info Life Policy Auto Pymt,False
+Could you assist me in configuring auto payments for my life insurance?,Info Life Policy Auto Pymt,False
+I need help with enabling auto debit for my life insurance premiums.,Info Life Policy Auto Pymt,False
+What are the options for setting up automatic billing for my life insurance?,Info Life Policy Auto Pymt,False
+I do not need life insurance anymore,Info Life Policy Cancel,True
+How do I go about cancelling my life insurance,Info Life Policy Cancel,True
+Terminate my life insurance policy,Info Life Policy Cancel,False
+Steps to cancel my life insurance,Info Life Policy Cancel,False
+End my life insurance coverage,Info Life Policy Cancel,False
+Process for life insurance cancellation,Info Life Policy Cancel,False
+How to discontinue my life insurance,Info Life Policy Cancel,False
+Cancel my life insurance plan,Info Life Policy Cancel,False
+What is the procedure to cancel life insurance?,Info Life Policy Cancel,False
+I want to stop my life insurance policy,Info Life Policy Cancel,False
+Instructions to cancel life insurance,Info Life Policy Cancel,False
+How can I terminate my life insurance policy?,Info Life Policy Cancel,False
+i cant find my life insurance information,Info Life Policy Cannot See,True
+Where do I go to see my life insurance policy,Info Life Policy Cannot See,True
+How can I access my life insurance details?,Info Life Policy Cannot See,False
+Unable to locate my life insurance policy online,Info Life Policy Cannot See,False
+Where is my life insurance policy information?,Info Life Policy Cannot See,False
+Can't view my life insurance policy on the portal,Info Life Policy Cannot See,False
+Help me find my life insurance policy details,Info Life Policy Cannot See,False
+Why can't I see my life insurance policy?,Info Life Policy Cannot See,False
+Life insurance policy not visible in my account,Info Life Policy Cannot See,False
+Where can I find my life insurance policy documents?,Info Life Policy Cannot See,False
+I need help accessing my life insurance policy,Info Life Policy Cannot See,False
+My life insurance policy information is missing,Info Life Policy Cannot See,False
+Karen Im hoping to acquire some info on whether my life insurance payment was received Policy,Info Life Question General,True
+I have an insurance policy my mother took out on me in  and she has recently passed I have several questions please,Info Life Question General,True
+Can you provide details on how to update the beneficiary on my life insurance policy?,Info Life Question General,False
+I need clarification on the cash surrender value of my current life insurance plan.,Info Life Question General,False
+What are the steps to file a claim on a life insurance policy after the policyholder's death?,Info Life Question General,False
+Could you explain the difference between term and whole life insurance?,Info Life Question General,False
+How do I check the status of my life insurance application?,Info Life Question General,False
+What options do I have if I want to convert my term life insurance to a permanent policy?,Info Life Question General,False
+Is it possible to borrow against the cash value of my life insurance policy?,Info Life Question General,False
+How can I find out if there are any outstanding loans against my life insurance policy?,Info Life Question General,False
+What documentation is required to change the ownership of a life insurance policy?,Info Life Question General,False
+Can you help me understand the tax implications of my life insurance payout?,Info Life Question General,False
+How to apply for my refund from my life insurance payment,Info Life Refund,True
+how long will it take to receive my life insurance refund,Info Life Refund,True
+What is the process to get a refund on my life insurance policy?,Info Life Refund,False
+Can I get a refund if I cancel my life insurance policy early?,Info Life Refund,False
+Is there a refund policy for overpaid life insurance premiums?,Info Life Refund,False
+How do I check the status of my life insurance refund request?,Info Life Refund,False
+Are there any fees deducted from a life insurance refund?,Info Life Refund,False
+What documents are needed to claim a life insurance refund?,Info Life Refund,False
+Can I receive a partial refund on my life insurance premium?,Info Life Refund,False
+What are the eligibility criteria for a life insurance refund?,Info Life Refund,False
+How is the refund amount calculated for a life insurance policy?,Info Life Refund,False
+Who should I contact for inquiries about my life insurance refund?,Info Life Refund,False
+Please tell me how can i update my contact info on my life policy,Info Life Update Contact Info,True
+I need to update my name on my life policy now that Im married,Info Life Update Contact Info,True
+How do I change my phone number on my life insurance policy?,Info Life Update Contact Info,False
+What is the process to update my address on my life insurance?,Info Life Update Contact Info,False
+Can I update my email address on my life policy online?,Info Life Update Contact Info,False
+I need to add a new phone number to my life insurance account.,Info Life Update Contact Info,False
+How can I correct my contact details on my life insurance policy?,Info Life Update Contact Info,False
+Is there a way to update my contact information through the insurance app?,Info Life Update Contact Info,False
+Where do I submit a request to change my contact info for my life insurance?,Info Life Update Contact Info,False
+I want to update my mailing address for my life insurance policy.,Info Life Update Contact Info,False
+How do I notify my insurer about a change in my contact details?,Info Life Update Contact Info,False
+What steps are needed to update my contact information on my life insurance?,Info Life Update Contact Info,False
+I could use your assistance logging into my account I keep seeing an error,Info Login Error,True
+Hi Im trying to recover my online log in and it says my email isnt on file,Info Login Error,True
+I'm having trouble accessing my insurance account due to a login error.,Info Login Error,False
+Why am I getting an error message when I try to log into my insurance portal?,Info Login Error,False
+I can't log into my insurance account; it keeps saying my credentials are incorrect.,Info Login Error,False
+"My insurance login isn't working, and I keep receiving an error code.",Info Login Error,False
+I need help with a login error on my insurance account.,Info Login Error,False
+"Every time I try to log in to my insurance profile, it says my username is invalid.",Info Login Error,False
+I'm locked out of my insurance account due to a login error.,Info Login Error,False
+"The insurance website won't let me log in, and it says my password is wrong.",Info Login Error,False
+"I forgot my insurance account password, and now I'm getting an error trying to reset it.",Info Login Error,False
+I keep getting an error when I attempt to log into my insurance dashboard.,Info Login Error,False
+How do I log off,Info Log Out,True
+I dont know how to log out,Info Log Out,True
+How can I sign out of my account?,Info Log Out,False
+Where is the log out button?,Info Log Out,False
+Steps to log out of the portal,Info Log Out,False
+Guide to logging off the insurance site,Info Log Out,False
+How do I exit my insurance profile?,Info Log Out,False
+Instructions for signing out,Info Log Out,False
+How to safely log out of my insurance account?,Info Log Out,False
+Log out process for my insurance app,Info Log Out,False
+How do I end my session?,Info Log Out,False
+Where do I find the log out option?,Info Log Out,False
+Which PO box should my payment be sent to,Info Mail Pymt Address,True
+Please let me know where I can mail my payment,Info Mail Pymt Address,True
+What is the mailing address for premium payments?,Info Mail Pymt Address,False
+Where should I send my insurance payment check?,Info Mail Pymt Address,False
+Can you provide the address for sending my policy payment?,Info Mail Pymt Address,False
+To which address should I mail my insurance payment?,Info Mail Pymt Address,False
+Where do I mail my payment for the insurance premium?,Info Mail Pymt Address,False
+Could you tell me the address for mailing my payment?,Info Mail Pymt Address,False
+What is the correct address for sending my insurance payment?,Info Mail Pymt Address,False
+Where can I send my check for the insurance premium?,Info Mail Pymt Address,False
+Please provide the mailing address for my policy payment.,Info Mail Pymt Address,False
+What is the postal address for sending my insurance payment?,Info Mail Pymt Address,False
+I want to pay bill,Info Make Pymt,True
+Need to know different ways to pay my bill,Info Make Pymt,True
+How can I settle my insurance premium?,Info Make Pymt,False
+What are the payment options for my policy?,Info Make Pymt,False
+Can I pay my insurance bill online?,Info Make Pymt,False
+Is there an app to pay my insurance premium?,Info Make Pymt,False
+Where do I pay my insurance bill?,Info Make Pymt,False
+Can I set up automatic payments for my insurance?,Info Make Pymt,False
+What is the due date for my insurance payment?,Info Make Pymt,False
+Are there any fees for paying my insurance bill late?,Info Make Pymt,False
+How do I update my payment method for my insurance?,Info Make Pymt,False
+Can I pay my insurance premium in installments?,Info Make Pymt,False
+I was wondering if I can get auto insurance for a Mexico trip,Info Mexico Auto Ins,True
+I will be driving within Mexico and am interested in auto insurance,Info Mexico Auto Ins,True
+Can I purchase car insurance for traveling in Mexico?,Info Mexico Auto Ins,False
+What are the requirements for auto insurance in Mexico?,Info Mexico Auto Ins,False
+Is it mandatory to have Mexican auto insurance for tourists?,Info Mexico Auto Ins,False
+How do I get temporary car insurance for Mexico?,Info Mexico Auto Ins,False
+Are there specific policies for driving a rental car in Mexico?,Info Mexico Auto Ins,False
+What coverage options are available for driving in Mexico?,Info Mexico Auto Ins,False
+Do I need a special policy for driving my car in Mexico?,Info Mexico Auto Ins,False
+Where can I find reliable auto insurance for Mexico?,Info Mexico Auto Ins,False
+Is my US auto insurance valid in Mexico?,Info Mexico Auto Ins,False
+What is the process to insure my vehicle for a Mexico road trip?,Info Mexico Auto Ins,False
+Mortgage co seeking proof of ins for our mutual customer,Info Mortgage Co Poi,True
+I work for a mortgage processor and need a copy of a customers home declaration page,Info Mortgage Co Poi,True
+Requesting insurance binder for mortgage verification,Info Mortgage Co Poi,False
+Need updated insurance details for loan processing,Info Mortgage Co Poi,False
+Mortgage company requires evidence of home insurance coverage,Info Mortgage Co Poi,False
+Seeking insurance certificate for mortgage compliance,Info Mortgage Co Poi,False
+Please provide insurance policy information for mortgage records,Info Mortgage Co Poi,False
+Mortgage lender needs proof of hazard insurance,Info Mortgage Co Poi,False
+Request for insurance declaration page for mortgage underwriting,Info Mortgage Co Poi,False
+Need confirmation of insurance coverage for mortgage approval,Info Mortgage Co Poi,False
+Mortgage servicer requesting insurance policy documentation,Info Mortgage Co Poi,False
+Require insurance verification for mortgage account update,Info Mortgage Co Poi,False
+I got married and want to change my name,Info Name Change,True
+Would it be possible to change the name associated with my account i have just gotten married,Info Name Change,True
+How do I update my last name on my insurance policy?,Info Name Change,False
+I need to change my name on my insurance documents after marriage.,Info Name Change,False
+What is the process for changing my name on my insurance account?,Info Name Change,False
+Can I update my name on my insurance policy online?,Info Name Change,False
+I recently changed my name; how do I reflect this on my insurance?,Info Name Change,False
+What documents are required to change my name on my insurance policy?,Info Name Change,False
+Is there a fee to change my name on my insurance account?,Info Name Change,False
+How long does it take to update my name on my insurance policy?,Info Name Change,False
+I need to update my name due to a legal name change; what steps should I follow?,Info Name Change,False
+Can I change my name on my insurance policy over the phone?,Info Name Change,False
+what is the grace period on a new car,Info New Vehicle Grace Period,True
+How soon should I add my new car to my auto insurance,Info New Vehicle Grace Period,True
+How long do I have to insure a newly purchased vehicle?,Info New Vehicle Grace Period,False
+What is the time frame to report a new car to my insurance company?,Info New Vehicle Grace Period,False
+Is there a grace period for adding a new vehicle to my policy?,Info New Vehicle Grace Period,False
+When does the coverage for a new car start?,Info New Vehicle Grace Period,False
+How many days do I have to notify my insurer about a new car?,Info New Vehicle Grace Period,False
+What is the deadline for insuring a new vehicle?,Info New Vehicle Grace Period,False
+Do I have a grace period to update my insurance with a new car?,Info New Vehicle Grace Period,False
+How quickly must I inform my insurance about a new car purchase?,Info New Vehicle Grace Period,False
+What is the insurance grace period for a newly acquired vehicle?,Info New Vehicle Grace Period,False
+How long can I drive a new car before adding it to my insurance?,Info New Vehicle Grace Period,False
+payment with no login information,Info One Time Pymt,True
+How can I make a payment if I do not have an account,Info One Time Pymt,True
+Can I pay my premium without creating an account?,Info One Time Pymt,False
+Is it possible to make a one-time insurance payment online?,Info One Time Pymt,False
+How do I submit a single payment for my policy?,Info One Time Pymt,False
+Can I pay my insurance bill as a guest?,Info One Time Pymt,False
+What are the steps for a one-time payment on my insurance?,Info One Time Pymt,False
+How to pay my insurance premium without logging in?,Info One Time Pymt,False
+Can I use a one-time payment option for my insurance?,Info One Time Pymt,False
+Is there a guest checkout for insurance payments?,Info One Time Pymt,False
+How to make a standalone payment for my insurance policy?,Info One Time Pymt,False
+Can I pay my insurance premium without registering?,Info One Time Pymt,False
+What states are allowed to have insurance through your company,Info Operating Area,True
+How many locations are available with this company to sell insurance,Info Operating Area,True
+Which regions does your insurance coverage extend to?,Info Operating Area,False
+Can you provide a list of states where your insurance services are available?,Info Operating Area,False
+Are there any geographic restrictions for your insurance policies?,Info Operating Area,False
+In which areas do you offer insurance plans?,Info Operating Area,False
+What is the coverage area for your insurance products?,Info Operating Area,False
+Do you operate in all 50 states for insurance services?,Info Operating Area,False
+Is your insurance available nationwide?,Info Operating Area,False
+Which cities have access to your insurance offerings?,Info Operating Area,False
+Are there any states excluded from your insurance coverage?,Info Operating Area,False
+What territories are included in your insurance network?,Info Operating Area,False
+Is American Life Insurance your company,Info Operating Co,True
+Is American Life insurance one of your company names,Info Operating Co,True
+Is American Life Insurance part of your corporate group?,Info Operating Co,False
+Does American Life Insurance operate under your brand?,Info Operating Co,False
+Is American Life Insurance affiliated with your organization?,Info Operating Co,False
+Is American Life Insurance a subsidiary of your company?,Info Operating Co,False
+Is American Life Insurance included in your portfolio of companies?,Info Operating Co,False
+Is American Life Insurance a division of your enterprise?,Info Operating Co,False
+Is American Life Insurance one of your operating entities?,Info Operating Co,False
+Is American Life Insurance under your corporate umbrella?,Info Operating Co,False
+Is American Life Insurance a branch of your business?,Info Operating Co,False
+Is American Life Insurance managed by your corporation?,Info Operating Co,False
+How do I stop paper billing so I will stop getting charged an extra  for you guys to mail my paper bill to me,Info Paperless Docs Setup,True
+how can i set up my electronic billing,Info Paperless Docs Setup,True
+How do I enroll in paperless statements for my insurance policy?,Info Paperless Docs Setup,False
+What steps are needed to switch to digital billing for my insurance?,Info Paperless Docs Setup,False
+Can you guide me on activating e-billing for my insurance account?,Info Paperless Docs Setup,False
+Where can I find the option to opt out of paper bills for my insurance?,Info Paperless Docs Setup,False
+Is there a way to receive my insurance documents electronically?,Info Paperless Docs Setup,False
+How can I enable online statements for my insurance policy?,Info Paperless Docs Setup,False
+What is the process to go paperless with my insurance documents?,Info Paperless Docs Setup,False
+How do I change my insurance billing preference to email?,Info Paperless Docs Setup,False
+Can I receive my insurance policy updates via email instead of mail?,Info Paperless Docs Setup,False
+What are the benefits of switching to paperless billing for my insurance?,Info Paperless Docs Setup,False
+stop electronic billing,Info Paperless Docs Stop,True
+Online bills are too hard to use,Info Paperless Docs Stop,True
+Disable digital statements,Info Paperless Docs Stop,False
+Opt out of e-documents,Info Paperless Docs Stop,False
+Cancel paperless policy,Info Paperless Docs Stop,False
+Revert to paper billing,Info Paperless Docs Stop,False
+Stop receiving e-bills,Info Paperless Docs Stop,False
+Switch back to mail statements,Info Paperless Docs Stop,False
+End electronic document delivery,Info Paperless Docs Stop,False
+Unsubscribe from online invoices,Info Paperless Docs Stop,False
+Revert to physical policy documents,Info Paperless Docs Stop,False
+Discontinue digital notifications,Info Paperless Docs Stop,False
+If I sign up for paperless documents can you still mail me my bill,Info Paperless Mail,True
+Can I receive documents both electronically and in the mail,Info Paperless Mail,True
+How do I switch to paperless billing for my insurance policy?,Info Paperless Mail,False
+Is it possible to get my insurance policy documents via email?,Info Paperless Mail,False
+Can I opt out of paperless statements after enrolling?,Info Paperless Mail,False
+Will I receive a notification when my electronic insurance documents are ready?,Info Paperless Mail,False
+Are there any discounts for choosing paperless insurance documents?,Info Paperless Mail,False
+How do I access my insurance documents online?,Info Paperless Mail,False
+Can I revert to paper statements if I choose paperless now?,Info Paperless Mail,False
+What types of insurance documents are available in paperless format?,Info Paperless Mail,False
+Is there a fee for receiving paperless insurance documents?,Info Paperless Mail,False
+How secure are my insurance documents when sent electronically?,Info Paperless Mail,False
+I need to make life policy payment,Info Pay Life Ins,True
+Make a life insurance payment,Info Pay Life Ins,True
+How do I pay my life insurance premium?,Info Pay Life Ins,False
+Where can I pay my life insurance bill?,Info Pay Life Ins,False
+Process for paying life insurance premium,Info Pay Life Ins,False
+Steps to pay life insurance online,Info Pay Life Ins,False
+Pay life insurance premium via app,Info Pay Life Ins,False
+Life insurance payment options,Info Pay Life Ins,False
+Can I set up automatic payments for life insurance?,Info Pay Life Ins,False
+Life insurance premium payment methods,Info Pay Life Ins,False
+Pay my life insurance premium now,Info Pay Life Ins,False
+Schedule a life insurance payment,Info Pay Life Ins,False
+How can I reach you,Info Phone Num,True
+How can I reach you by phone,Info Phone Num,True
+What is your contact number?,Info Phone Num,False
+Could you provide your phone number?,Info Phone Num,False
+How do I contact you via phone?,Info Phone Num,False
+May I have your telephone number?,Info Phone Num,False
+What is the best number to reach you?,Info Phone Num,False
+Can I get your direct line?,Info Phone Num,False
+Please share your phone contact.,Info Phone Num,False
+How can I call your office?,Info Phone Num,False
+What number should I dial to reach you?,Info Phone Num,False
+Is there a phone number I can use to contact you?,Info Phone Num,False
+What international phone number works best to call you,Info Phone Num International,True
+Whats a non number I can use to contact you,Info Phone Num International,True
+Could you provide your international contact number for claims?,Info Phone Num International,False
+What is the best international number to reach your customer service?,Info Phone Num International,False
+How can I contact your international support team by phone?,Info Phone Num International,False
+Is there an international hotline for policy inquiries?,Info Phone Num International,False
+What international number should I dial for emergency assistance?,Info Phone Num International,False
+Can you share the international phone number for your insurance office?,Info Phone Num International,False
+Which international number should I use for policy updates?,Info Phone Num International,False
+What is the international contact number for your claims department?,Info Phone Num International,False
+How do I reach your international helpline for insurance queries?,Info Phone Num International,False
+Could you give me the international phone number for your customer care?,Info Phone Num International,False
+Can you send me my old insurance card,Info Poi Old,True
+Is my old insurance card available online,Info Poi Old,True
+How can I access my previous insurance policy documents?,Info Poi Old,False
+Where can I find my expired insurance card details?,Info Poi Old,False
+Is there a way to retrieve my old insurance policy number?,Info Poi Old,False
+Can I download my past insurance card from the portal?,Info Poi Old,False
+What steps do I need to follow to get my old insurance card?,Info Poi Old,False
+Are my previous insurance cards stored in the system?,Info Poi Old,False
+How do I view my historical insurance policy information?,Info Poi Old,False
+Can I get a digital copy of my old insurance card?,Info Poi Old,False
+Is it possible to see my old insurance card in the app?,Info Poi Old,False
+Where are my archived insurance cards located?,Info Poi Old,False
+mail my policy documents,Info Policy Doc Needed,True
+How do I find where to look for my policy copy,Info Policy Doc Needed,True
+Send me my insurance policy paperwork,Info Policy Doc Needed,False
+Where can I access my policy documents online?,Info Policy Doc Needed,False
+Requesting a copy of my insurance policy,Info Policy Doc Needed,False
+How do I obtain a duplicate of my policy?,Info Policy Doc Needed,False
+Can you email my policy details?,Info Policy Doc Needed,False
+Need assistance locating my policy documents,Info Policy Doc Needed,False
+How to download my insurance policy?,Info Policy Doc Needed,False
+Please provide my policy documentation,Info Policy Doc Needed,False
+Where can I view my policy terms?,Info Policy Doc Needed,False
+Instructions to retrieve my policy documents,Info Policy Doc Needed,False
+can you tel me the policy number,Info Policy Num,True
+Where can I find what my policy number is,Info Policy Num,True
+What is my insurance policy number?,Info Policy Num,False
+How do I locate my policy number?,Info Policy Num,False
+Could you provide my policy number?,Info Policy Num,False
+I need to know my policy number,Info Policy Num,False
+Where is my policy number listed?,Info Policy Num,False
+Help me find my insurance policy number,Info Policy Num,False
+Show me my policy number,Info Policy Num,False
+Can you give me my policy number?,Info Policy Num,False
+Where do I see my policy number?,Info Policy Num,False
+How can I check my policy number?,Info Policy Num,False
+What coverage do I need for a rental car,Info Policy Trans To Rental,True
+I want to rent a car this weekend and im wondering if my current insurance covers it,Info Policy Trans To Rental,True
+Does my auto insurance extend to rental vehicles?,Info Policy Trans To Rental,False
+Am I covered for rental cars under my current policy?,Info Policy Trans To Rental,False
+What is the process to transfer my insurance to a rental car?,Info Policy Trans To Rental,False
+Is rental car insurance included in my policy?,Info Policy Trans To Rental,False
+How do I ensure my rental car is covered by my insurance?,Info Policy Trans To Rental,False
+Will my insurance cover damages to a rental car?,Info Policy Trans To Rental,False
+Do I need additional insurance for renting a car?,Info Policy Trans To Rental,False
+Can I use my existing policy for a rental car?,Info Policy Trans To Rental,False
+Are there any limitations on my policy for rental cars?,Info Policy Trans To Rental,False
+What are the insurance requirements for renting a vehicle?,Info Policy Trans To Rental,False
+Can I view a detailed breakdown of the policy premium,Info Premium Breakdown,True
+i need to know how much my yearly car insurance and home insurance is separate and then bundled,Info Premium Breakdown,True
+What are the individual components of my insurance premium?,Info Premium Breakdown,False
+How is my total premium amount calculated?,Info Premium Breakdown,False
+Can you provide a summary of my premium charges?,Info Premium Breakdown,False
+What factors contribute to my premium cost?,Info Premium Breakdown,False
+Is there a way to see the premium distribution for each coverage?,Info Premium Breakdown,False
+Could you explain the breakdown of my monthly premium?,Info Premium Breakdown,False
+What are the different elements that make up my insurance premium?,Info Premium Breakdown,False
+How does my premium split between different coverages?,Info Premium Breakdown,False
+Can I get a detailed report on my premium allocation?,Info Premium Breakdown,False
+What are the specific charges included in my premium?,Info Premium Breakdown,False
+Can I use a Visa gift card,Info Prepaid Card Pymt,True
+Will there be a problem paying my insurance with a prepaid card,Info Prepaid Card Pymt,True
+Is it possible to pay my premium using a prepaid debit card?,Info Prepaid Card Pymt,False
+Can I set up automatic payments with a prepaid card for my insurance?,Info Prepaid Card Pymt,False
+Are there any fees for using a prepaid card to pay my insurance bill?,Info Prepaid Card Pymt,False
+Do insurance companies accept prepaid cards for monthly payments?,Info Prepaid Card Pymt,False
+Can I use a Mastercard prepaid card for my insurance payment?,Info Prepaid Card Pymt,False
+Is there a limit on the amount I can pay with a prepaid card for insurance?,Info Prepaid Card Pymt,False
+Can I pay my insurance deductible with a prepaid card?,Info Prepaid Card Pymt,False
+Will using a prepaid card affect my insurance payment processing time?,Info Prepaid Card Pymt,False
+Can I use a reloadable prepaid card for my insurance payments?,Info Prepaid Card Pymt,False
+Are prepaid cards accepted for online insurance payments?,Info Prepaid Card Pymt,False
+Wheres my profile,Info Profile Section,True
+I want to see my profile,Info Profile Section,True
+Show my insurance profile,Info Profile Section,False
+Access my insurance details,Info Profile Section,False
+View my policy profile,Info Profile Section,False
+Display my coverage information,Info Profile Section,False
+Open my insurance account,Info Profile Section,False
+Check my policy summary,Info Profile Section,False
+Find my insurance profile,Info Profile Section,False
+Locate my policy details,Info Profile Section,False
+Retrieve my coverage profile,Info Profile Section,False
+Inspect my insurance information,Info Profile Section,False
+I need to confirm my payment,Info Pymt Confirm,True
+can you tell me if my latest payment was received,Info Pymt Confirm,True
+Has my insurance payment been processed?,Info Pymt Confirm,False
+Did my premium payment go through?,Info Pymt Confirm,False
+Can you verify my last payment for the policy?,Info Pymt Confirm,False
+Is my recent insurance payment confirmed?,Info Pymt Confirm,False
+Please check if my policy payment was successful,Info Pymt Confirm,False
+Was my insurance premium received?,Info Pymt Confirm,False
+Can you confirm the receipt of my last payment?,Info Pymt Confirm,False
+Did my payment for the insurance policy clear?,Info Pymt Confirm,False
+Is there a confirmation for my recent premium payment?,Info Pymt Confirm,False
+Has my policy payment been acknowledged?,Info Pymt Confirm,False
+want to adjust payment due date,Info Pymt Duedate Change,True
+How can i change payment due date online,Info Pymt Duedate Change,True
+Modify my insurance payment schedule,Info Pymt Duedate Change,False
+Shift my premium due date,Info Pymt Duedate Change,False
+Update the billing cycle for my policy,Info Pymt Duedate Change,False
+Change the date my insurance payment is due,Info Pymt Duedate Change,False
+Reschedule my insurance payment date,Info Pymt Duedate Change,False
+Adjust the due date for my insurance premium,Info Pymt Duedate Change,False
+How to alter my insurance payment due date,Info Pymt Duedate Change,False
+Request a new due date for my insurance bill,Info Pymt Duedate Change,False
+Can I change the payment date for my insurance?,Info Pymt Duedate Change,False
+Move my insurance payment deadline,Info Pymt Duedate Change,False
+Well I been traying to make a payment on the app but is not letting me,Info Pymt Error,True
+I cannot make a payment through the app,Info Pymt Error,True
+The app keeps failing when I try to pay my premium,Info Pymt Error,False
+Payment option on the app isn't working,Info Pymt Error,False
+I'm unable to process my insurance payment via the app,Info Pymt Error,False
+The app won't accept my payment method,Info Pymt Error,False
+I keep getting an error when attempting to pay my insurance bill,Info Pymt Error,False
+The payment feature on the app is malfunctioning,Info Pymt Error,False
+I can't complete my insurance payment through the mobile app,Info Pymt Error,False
+The app crashes every time I try to make a payment,Info Pymt Error,False
+My payment isn't going through on the insurance app,Info Pymt Error,False
+The app is not processing my premium payment,Info Pymt Error,False
+Ive cancelled my American Family policies effective  but need history of payments for tax purposes Is that information still available to me online,Info Pymt History,True
+Previous payments please,Info Pymt History,True
+Can I access my past premium payments online?,Info Pymt History,False
+How do I get a record of my insurance payment history?,Info Pymt History,False
+Where can I find my payment history for my auto policy?,Info Pymt History,False
+Is there a way to download my payment history for my home insurance?,Info Pymt History,False
+I need a statement of all payments made for my life insurance policy.,Info Pymt History,False
+Could you provide a summary of my payment history for the last year?,Info Pymt History,False
+How can I view my payment history for my renters insurance?,Info Pymt History,False
+Please send me a detailed report of my insurance payments.,Info Pymt History,False
+I need to verify my payment history for my health insurance.,Info Pymt History,False
+Can you email me the history of my policy payments?,Info Pymt History,False
+are there late payment penalties,Info Pymt Not Ontime,True
+What do I do if the payment cant be made on time,Info Pymt Not Ontime,True
+How does a late payment affect my policy?,Info Pymt Not Ontime,False
+Is there a grace period for late payments?,Info Pymt Not Ontime,False
+What happens if I miss a premium payment?,Info Pymt Not Ontime,False
+Can I set up a payment plan if I'm late?,Info Pymt Not Ontime,False
+Will my coverage lapse if I pay late?,Info Pymt Not Ontime,False
+Are there fees for delayed premium payments?,Info Pymt Not Ontime,False
+How can I avoid late payment charges?,Info Pymt Not Ontime,False
+What is the process for reinstating a lapsed policy?,Info Pymt Not Ontime,False
+Does a late payment impact my renewal terms?,Info Pymt Not Ontime,False
+Can I request an extension for my payment due date?,Info Pymt Not Ontime,False
+Where can I find out where to change payment methods,Info Pymt Process Change,True
+Change payment methods,Info Pymt Process Change,True
+How do I update my payment details?,Info Pymt Process Change,False
+Steps to modify payment options,Info Pymt Process Change,False
+Guide to change billing information,Info Pymt Process Change,False
+Update my payment method,Info Pymt Process Change,False
+Instructions for altering payment settings,Info Pymt Process Change,False
+Process to switch payment accounts,Info Pymt Process Change,False
+How to revise payment preferences,Info Pymt Process Change,False
+Modify my billing method,Info Pymt Process Change,False
+Change my payment setup,Info Pymt Process Change,False
+Adjust payment method for my policy,Info Pymt Process Change,False
+set up auto pay,Info Pymt Setup Auto Pymt,True
+Please help me put this account on autopay,Info Pymt Setup Auto Pymt,True
+How do I enable automatic payments for my policy?,Info Pymt Setup Auto Pymt,False
+Can I schedule recurring payments for my insurance?,Info Pymt Setup Auto Pymt,False
+Activate auto payment for my insurance premium,Info Pymt Setup Auto Pymt,False
+I want to set up automatic billing for my account,Info Pymt Setup Auto Pymt,False
+Guide me to configure auto pay for my insurance,Info Pymt Setup Auto Pymt,False
+Initiate auto debit for my insurance payments,Info Pymt Setup Auto Pymt,False
+How can I arrange automatic deductions for my policy?,Info Pymt Setup Auto Pymt,False
+Enable recurring payments for my insurance plan,Info Pymt Setup Auto Pymt,False
+Set my insurance to pay automatically each month,Info Pymt Setup Auto Pymt,False
+Help me automate my insurance premium payments,Info Pymt Setup Auto Pymt,False
+why does it take so long for my payment to be applied,Info Pymt Time,True
+I made a payment yesterday When will it show in my account,Info Pymt Time,True
+How long until my insurance payment is processed?,Info Pymt Time,False
+When will my premium payment reflect in my account?,Info Pymt Time,False
+What is the processing time for my insurance payment?,Info Pymt Time,False
+How soon will my payment update my policy status?,Info Pymt Time,False
+When can I expect my payment to be credited?,Info Pymt Time,False
+Why hasn't my insurance payment been posted yet?,Info Pymt Time,False
+What is the delay in my payment showing up?,Info Pymt Time,False
+How long does it take for a payment to clear?,Info Pymt Time,False
+When will my payment be acknowledged in the system?,Info Pymt Time,False
+What is the typical time frame for payment posting?,Info Pymt Time,False
+show me the status of my insurance refund,Info Refund Check,True
+why I havent received my refund check yet,Info Refund Check,True
+When will my refund check be processed?,Info Refund Check,False
+Can you provide an update on my refund check?,Info Refund Check,False
+Is my insurance refund check on the way?,Info Refund Check,False
+What is the expected delivery date for my refund check?,Info Refund Check,False
+Has my refund check been issued yet?,Info Refund Check,False
+Where can I track my insurance refund check?,Info Refund Check,False
+What is the delay with my refund check?,Info Refund Check,False
+How long does it take to receive an insurance refund check?,Info Refund Check,False
+Can you confirm the amount of my refund check?,Info Refund Check,False
+What steps are involved in processing my refund check?,Info Refund Check,False
+Do you know how can I make my bill payment to get the coverage again,Info Reinstate Ins Policy,True
+My coverage was canceled I need to pay and reinstate,Info Reinstate Ins Policy,True
+How do I reactivate my insurance policy after cancellation?,Info Reinstate Ins Policy,False
+What steps are needed to reinstate my lapsed insurance policy?,Info Reinstate Ins Policy,False
+Can I restore my insurance coverage by paying the overdue premium?,Info Reinstate Ins Policy,False
+Is it possible to reinstate my policy after a missed payment?,Info Reinstate Ins Policy,False
+What is the process to reinstate a canceled insurance policy?,Info Reinstate Ins Policy,False
+How can I get my insurance policy reinstated after it was terminated?,Info Reinstate Ins Policy,False
+What are the requirements to reinstate my insurance coverage?,Info Reinstate Ins Policy,False
+Can I reinstate my policy if it has been inactive for a month?,Info Reinstate Ins Policy,False
+What fees are involved in reinstating my insurance policy?,Info Reinstate Ins Policy,False
+How long does it take to reinstate my insurance after payment?,Info Reinstate Ins Policy,False
+explain renters insurance,Info Renters Cov Explan,True
+Why should I get renters insurance,Info Renters Cov Explan,True
+What does renters insurance cover?,Info Renters Cov Explan,False
+Is renters insurance necessary?,Info Renters Cov Explan,False
+How does renters insurance work?,Info Renters Cov Explan,False
+Benefits of having renters insurance?,Info Renters Cov Explan,False
+What is the purpose of renters insurance?,Info Renters Cov Explan,False
+Do I need renters insurance for my apartment?,Info Renters Cov Explan,False
+What are the advantages of renters insurance?,Info Renters Cov Explan,False
+How can renters insurance protect me?,Info Renters Cov Explan,False
+What are the key features of renters insurance?,Info Renters Cov Explan,False
+Why is renters insurance important?,Info Renters Cov Explan,False
+I need insurance for ridesharing services,Info Rideshare Cov,True
+Does your company provide insurance for uber drivers,Info Rideshare Cov,True
+What coverage options are available for Lyft drivers?,Info Rideshare Cov,False
+Can I get a quote for rideshare insurance?,Info Rideshare Cov,False
+Is there a specific policy for rideshare drivers?,Info Rideshare Cov,False
+How does rideshare insurance differ from regular auto insurance?,Info Rideshare Cov,False
+Are there any discounts for rideshare insurance?,Info Rideshare Cov,False
+What are the requirements for obtaining rideshare coverage?,Info Rideshare Cov,False
+Does rideshare insurance cover both personal and business use?,Info Rideshare Cov,False
+Can I add rideshare coverage to my existing policy?,Info Rideshare Cov,False
+What is the process to file a claim under rideshare insurance?,Info Rideshare Cov,False
+Are passengers covered under rideshare insurance policies?,Info Rideshare Cov,False
+Do you insure RVs,Info Rv Ins Explan,True
+What does RV insurance cover,Info Rv Ins Explan,True
+How much does RV insurance cost?,Info Rv Ins Explan,False
+Is RV insurance mandatory?,Info Rv Ins Explan,False
+What are the benefits of RV insurance?,Info Rv Ins Explan,False
+Can I get a discount on RV insurance?,Info Rv Ins Explan,False
+What factors affect RV insurance premiums?,Info Rv Ins Explan,False
+Does RV insurance cover theft?,Info Rv Ins Explan,False
+Are there different types of RV insurance?,Info Rv Ins Explan,False
+How do I file a claim for RV insurance?,Info Rv Ins Explan,False
+What is the difference between RV and auto insurance?,Info Rv Ins Explan,False
+Does RV insurance cover personal belongings?,Info Rv Ins Explan,False
+Who can I talk to about insuring a salvage vehicle,Info Salvage Vehicle,True
+Does American Family insure salvage vehicles,Info Salvage Vehicle,True
+Can I get full coverage on a salvage title car?,Info Salvage Vehicle,False
+What are the insurance options for a rebuilt salvage vehicle?,Info Salvage Vehicle,False
+Is it possible to insure a salvage vehicle with State Farm?,Info Salvage Vehicle,False
+How does salvage title affect insurance premiums?,Info Salvage Vehicle,False
+Are there any insurance companies that specialize in salvage vehicles?,Info Salvage Vehicle,False
+What is the process to insure a car with a salvage title?,Info Salvage Vehicle,False
+Do I need a special policy for a salvage vehicle?,Info Salvage Vehicle,False
+Can I insure a salvage vehicle for liability only?,Info Salvage Vehicle,False
+What factors affect the insurance cost of a salvage vehicle?,Info Salvage Vehicle,False
+Is comprehensive coverage available for salvage vehicles?,Info Salvage Vehicle,False
+help me make an account,Info Set Up Acct,True
+How to set up new account online,Info Set Up Acct,True
+Steps to create an insurance account,Info Set Up Acct,False
+Guide to register for an insurance account,Info Set Up Acct,False
+How do I open a new insurance account?,Info Set Up Acct,False
+Process for setting up an insurance account,Info Set Up Acct,False
+Instructions for creating an insurance account,Info Set Up Acct,False
+What is needed to set up an insurance account?,Info Set Up Acct,False
+How to initiate an insurance account setup,Info Set Up Acct,False
+Requirements for opening an insurance account,Info Set Up Acct,False
+Can you assist with insurance account creation?,Info Set Up Acct,False
+Walkthrough for establishing an insurance account,Info Set Up Acct,False
+Can I talk to a representative,Info Speak To Rep,True
+no bots want real rep,Info Speak To Rep,True
+I need to speak with an insurance agent,Info Speak To Rep,False
+Connect me to a human representative,Info Speak To Rep,False
+How do I reach a live insurance advisor?,Info Speak To Rep,False
+Please transfer me to a customer service rep,Info Speak To Rep,False
+I want to discuss my policy with a person,Info Speak To Rep,False
+Can I get a human on the line?,Info Speak To Rep,False
+Is there a way to talk to an actual agent?,Info Speak To Rep,False
+I prefer to speak with a live representative,Info Speak To Rep,False
+Direct me to a real insurance consultant,Info Speak To Rep,False
+I need to talk to someone about my coverage,Info Speak To Rep,False
+how do I sign up for Teen safe driver,Info Teen Safe Driver Signup,True
+I want to sign my child up for Teen safe driver,Info Teen Safe Driver Signup,True
+register my teen for safe driver program,Info Teen Safe Driver Signup,False
+enroll my teenager in safe driver insurance,Info Teen Safe Driver Signup,False
+how to get my teen into safe driver plan,Info Teen Safe Driver Signup,False
+steps to sign up for teen safe driver,Info Teen Safe Driver Signup,False
+process for teen safe driver enrollment,Info Teen Safe Driver Signup,False
+add my child to teen safe driver insurance,Info Teen Safe Driver Signup,False
+how can I register my teen for safe driving,Info Teen Safe Driver Signup,False
+teen safe driver program registration,Info Teen Safe Driver Signup,False
+sign up my teenager for safe driver discount,Info Teen Safe Driver Signup,False
+how to enroll my child in teen safe driver,Info Teen Safe Driver Signup,False
+I have a question about my policy through The General,Info The General Contact,True
+How do I get in contact with The General,Info The General Contact,True
+What is the customer service number for The General?,Info The General Contact,False
+How can I reach The General's support team?,Info The General Contact,False
+Where can I find The General's contact information?,Info The General Contact,False
+Is there an email address for The General's customer service?,Info The General Contact,False
+Can I chat online with The General's representatives?,Info The General Contact,False
+What is the best way to contact The General for policy inquiries?,Info The General Contact,False
+How do I speak to a live agent at The General?,Info The General Contact,False
+Does The General have a toll-free number?,Info The General Contact,False
+Where is The General's headquarters located?,Info The General Contact,False
+How do I submit a complaint to The General?,Info The General Contact,False
+Help me move the money over to another account please,Info Transfer Acct Balance,True
+I would like to transfer my account balance,Info Transfer Acct Balance,True
+Can you assist with transferring my policy balance?,Info Transfer Acct Balance,False
+I need to shift my insurance funds to a different account.,Info Transfer Acct Balance,False
+Please guide me on moving my insurance balance.,Info Transfer Acct Balance,False
+How do I transfer my insurance account funds?,Info Transfer Acct Balance,False
+I want to relocate my insurance balance to another account.,Info Transfer Acct Balance,False
+Could you help me with transferring my insurance balance?,Info Transfer Acct Balance,False
+I need to transfer my policy balance to another account.,Info Transfer Acct Balance,False
+Please assist in moving my insurance account balance.,Info Transfer Acct Balance,False
+How can I transfer my insurance balance to a new account?,Info Transfer Acct Balance,False
+I would like to shift my insurance funds to another account.,Info Transfer Acct Balance,False
+Hello can I add travel insurance to my existing policy,Info Travel Ins Explan,True
+How can I buy travel insurance,Info Travel Ins Explan,True
+What does travel insurance cover?,Info Travel Ins Explan,False
+Can I get a refund on my travel insurance?,Info Travel Ins Explan,False
+Is travel insurance mandatory for international trips?,Info Travel Ins Explan,False
+How do I file a claim with my travel insurance?,Info Travel Ins Explan,False
+What is the process to renew my travel insurance?,Info Travel Ins Explan,False
+Are there any exclusions in travel insurance policies?,Info Travel Ins Explan,False
+How long does it take to process a travel insurance claim?,Info Travel Ins Explan,False
+Can I upgrade my travel insurance coverage?,Info Travel Ins Explan,False
+What documents are needed to apply for travel insurance?,Info Travel Ins Explan,False
+Does travel insurance cover trip cancellations?,Info Travel Ins Explan,False
+Im moving and I would to update my Address where vehicle is kept,Info Update Contact Info,True
+May i update my contact info,Info Update Contact Info,True
+How can I change my phone number on my policy?,Info Update Contact Info,False
+I need to update my email address for my insurance account.,Info Update Contact Info,False
+Can I modify the address listed on my insurance policy?,Info Update Contact Info,False
+Please guide me on updating my contact details.,Info Update Contact Info,False
+Where do I update my contact information for my insurance?,Info Update Contact Info,False
+I want to change the contact number associated with my policy.,Info Update Contact Info,False
+Is it possible to update my mailing address for my insurance?,Info Update Contact Info,False
+How do I update my personal information on my insurance profile?,Info Update Contact Info,False
+I need assistance with changing my contact info on my insurance account.,Info Update Contact Info,False
+Can you help me update my address for my insurance records?,Info Update Contact Info,False
+Help me update my email address,Info Update Email,True
+I want to use a new email address,Info Update Email,True
+Change my contact email for my insurance account,Info Update Email,False
+Update my email for policy notifications,Info Update Email,False
+Modify the email linked to my insurance profile,Info Update Email,False
+Switch my email address for insurance correspondence,Info Update Email,False
+How do I change my email for insurance updates?,Info Update Email,False
+I need to update my email for my insurance policy,Info Update Email,False
+Please update my email address on my insurance file,Info Update Email,False
+Can I change the email associated with my insurance?,Info Update Email,False
+Request to update my email for insurance communications,Info Update Email,False
+Alter the email address for my insurance account,Info Update Email,False
+What to do when there is no more lien on a car,Info Update Lienholder,True
+My insurance policy needs to have the lienholder deleted,Info Update Lienholder,True
+How to update lienholder information on my insurance policy,Info Update Lienholder,False
+Steps to remove a lienholder from my car insurance,Info Update Lienholder,False
+Process for changing lienholder details with my insurer,Info Update Lienholder,False
+What documents are needed to update lienholder on insurance,Info Update Lienholder,False
+Can I add a new lienholder to my existing insurance policy,Info Update Lienholder,False
+How do I notify my insurer about a lienholder change,Info Update Lienholder,False
+Procedure to update lienholder after paying off car loan,Info Update Lienholder,False
+How to reflect lienholder changes in my insurance records,Info Update Lienholder,False
+What happens to my insurance if the lienholder changes,Info Update Lienholder,False
+How to ensure lienholder is correctly listed on my policy,Info Update Lienholder,False
+I have a new telephone number and I need to update my contact information,Info Update Phone Num,True
+i need to give you my new contact number,Info Update Phone Num,True
+Please update my phone number in my insurance profile,Info Update Phone Num,False
+How can I change my contact number on my insurance account?,Info Update Phone Num,False
+I need to update my phone details for my policy,Info Update Phone Num,False
+Can you help me update my phone number for my insurance records?,Info Update Phone Num,False
+I have a new mobile number for my insurance account,Info Update Phone Num,False
+Where can I update my contact number for my insurance policy?,Info Update Phone Num,False
+I need to change my phone number on my insurance file,Info Update Phone Num,False
+Please amend my contact number in my insurance details,Info Update Phone Num,False
+I want to update my phone number for my insurance coverage,Info Update Phone Num,False
+How do I update my phone number in my insurance account?,Info Update Phone Num,False
+Is there something special I need to do to get the UW Alumni discount,Info Uw Alumni Discount,True
+Im a UW Alum Tell me about the discount,Info Uw Alumni Discount,True
+How do I qualify for the UW Alumni insurance discount?,Info Uw Alumni Discount,False
+What is the process to apply for the UW Alumni discount on my policy?,Info Uw Alumni Discount,False
+Can UW Alumni get a discount on car insurance?,Info Uw Alumni Discount,False
+Are there any special rates for UW Alumni on home insurance?,Info Uw Alumni Discount,False
+Do I need to provide proof of graduation for the UW Alumni discount?,Info Uw Alumni Discount,False
+What percentage discount do UW Alumni receive on insurance?,Info Uw Alumni Discount,False
+Is the UW Alumni discount applicable to all types of insurance?,Info Uw Alumni Discount,False
+Does the UW Alumni discount apply to family members?,Info Uw Alumni Discount,False
+How can I verify my eligibility for the UW Alumni insurance discount?,Info Uw Alumni Discount,False
+Are there any additional benefits for UW Alumni besides the discount?,Info Uw Alumni Discount,False
+Hello Abby I cannot find my agents Sandra Maldonados email Its not on her site either Can you help please,Info Who Is My Agent,True
+who is my agent,Info Who Is My Agent,True
+Can you tell me who my insurance agent is?,Info Who Is My Agent,False
+I need the contact details of my insurance representative.,Info Who Is My Agent,False
+Who is handling my insurance policy?,Info Who Is My Agent,False
+Could you provide the name of my insurance agent?,Info Who Is My Agent,False
+"I forgot the name of my insurance broker, can you help?",Info Who Is My Agent,False
+Who is assigned as my insurance advisor?,Info Who Is My Agent,False
+Please let me know who my current insurance agent is.,Info Who Is My Agent,False
+I need to know the name of my insurance consultant.,Info Who Is My Agent,False
+Who is responsible for managing my insurance account?,Info Who Is My Agent,False
+Can you identify my insurance agent for me?,Info Who Is My Agent,False
+Who cancelled my policy,Info Why Was Policy Cancelled,True
+Am I no longer insured I was told there was a cancellation of my policy,Info Why Was Policy Cancelled,True
+Why was my insurance policy terminated?,Info Why Was Policy Cancelled,False
+Can you explain the reason for my policy cancellation?,Info Why Was Policy Cancelled,False
+What led to the cancellation of my insurance coverage?,Info Why Was Policy Cancelled,False
+Why did my insurance policy get cancelled?,Info Why Was Policy Cancelled,False
+What are the reasons behind the termination of my policy?,Info Why Was Policy Cancelled,False
+Could you provide details on why my policy was cancelled?,Info Why Was Policy Cancelled,False
+What caused the cancellation of my insurance policy?,Info Why Was Policy Cancelled,False
+Why is my insurance no longer active?,Info Why Was Policy Cancelled,False
+What were the grounds for cancelling my policy?,Info Why Was Policy Cancelled,False
+Why did my insurance coverage end unexpectedly?,Info Why Was Policy Cancelled,False
+What is an srtwentytwo,Info Srtwentytwo,True
+How would I find out if I need an SR filing,Info Srtwentytwo,True
+What are the requirements for an srtwentytwo filing?,Info Srtwentytwo,False
+Who needs to file an srtwentytwo in insurance?,Info Srtwentytwo,False
+Can an srtwentytwo affect my insurance rates?,Info Srtwentytwo,False
+How do I apply for an srtwentytwo certificate?,Info Srtwentytwo,False
+What is the process to obtain an srtwentytwo?,Info Srtwentytwo,False
+Is an srtwentytwo mandatory for all drivers?,Info Srtwentytwo,False
+What documents are needed for an srtwentytwo filing?,Info Srtwentytwo,False
+How long does it take to process an srtwentytwo?,Info Srtwentytwo,False
+What happens if I don't file an srtwentytwo?,Info Srtwentytwo,False
+Are there penalties for not having an srtwentytwo?,Info Srtwentytwo,False
+no I will call the  number for assistance,No,True
+I dont think so,No,True
+I don't believe that's necessary,No,False
+"No, I have already submitted the claim",No,False
+I don't need additional coverage,No,False
+"No, I am not interested in that policy",No,False
+I don't agree with the premium increase,No,False
+"No, I haven't received the documents yet",No,False
+I don't want to renew my policy,No,False
+"No, I haven't had any accidents",No,False
+I don't require roadside assistance,No,False
+"No, I haven't changed my address",No,False
+I have a question,St General Request,True
+Hi I have auto insurance and policy No,St General Request,True
+Can you help me with my policy details?,St General Request,False
+I need assistance with my insurance claim,St General Request,False
+Could you provide information on my coverage?,St General Request,False
+I have a query regarding my premium payment,St General Request,False
+Please assist me with my account update,St General Request,False
+I need to understand my deductible,St General Request,False
+Can you explain my benefits?,St General Request,False
+I have a concern about my renewal,St General Request,False
+Could you clarify my policy terms?,St General Request,False
+I need help with my insurance documents,St General Request,False
+Hey Abby,St Hello,True
+HELLO ABBY MY NAME IS KELLY I WORK AT CLASSIC BODY AND PAINT CLAIM,St Hello,True
+"Hi Abby, this is Mark from Allstate Insurance",St Hello,False
+"Hello Abby, I'm Sarah from Progressive Claims",St Hello,False
+"Greetings Abby, this is Tom with State Farm",St Hello,False
+"Hey Abby, it's Lisa from Geico",St Hello,False
+"Hello Abby, my name is John from Liberty Mutual",St Hello,False
+"Hi Abby, this is Emily from Nationwide Insurance",St Hello,False
+"Hello Abby, I'm David from Farmers Insurance",St Hello,False
+"Hey Abby, this is Rachel from USAA",St Hello,False
+"Hello Abby, my name is Michael from Travelers Insurance",St Hello,False
+"Hi Abby, this is Jessica from The Hartford",St Hello,False
+Hey you how you doing,St How Is Abby,True
+how is it going,St How Is Abby,True
+How's everything on your end?,St How Is Abby,False
+What's the latest update?,St How Is Abby,False
+How are things progressing?,St How Is Abby,False
+Any news on the situation?,St How Is Abby,False
+How's the status looking?,St How Is Abby,False
+What's the current status?,St How Is Abby,False
+How are things shaping up?,St How Is Abby,False
+Any updates on the case?,St How Is Abby,False
+How's the process going?,St How Is Abby,False
+What's the progress so far?,St How Is Abby,False
+Can you tell me your age,St How Old Is Abby,True
+How old do you think you have to be to really appreciate art,St How Old Is Abby,True
+What is the age requirement for this policy?,St How Old Is Abby,False
+At what age does coverage begin?,St How Old Is Abby,False
+How old must you be to qualify for this plan?,St How Old Is Abby,False
+Is there an age limit for this insurance?,St How Old Is Abby,False
+What age group is this policy designed for?,St How Old Is Abby,False
+Can you provide the age criteria for eligibility?,St How Old Is Abby,False
+What is the minimum age for enrollment?,St How Old Is Abby,False
+Does this plan have an age restriction?,St How Old Is Abby,False
+What age do you need to be to apply for this insurance?,St How Old Is Abby,False
+Is there a specific age range for this coverage?,St How Old Is Abby,False
+Oh jesus are you even a real person,St Is Abby Real,True
+are you real,St Is Abby Real,True
+Is Abby a real agent?,St Is Abby Real,False
+Can I trust Abby's credentials?,St Is Abby Real,False
+Is Abby a verified insurance representative?,St Is Abby Real,False
+Is Abby a legitimate contact?,St Is Abby Real,False
+Is Abby an actual insurance advisor?,St Is Abby Real,False
+Is Abby a certified insurance professional?,St Is Abby Real,False
+Is Abby a genuine insurance consultant?,St Is Abby Real,False
+Is Abby an authentic insurance broker?,St Is Abby Real,False
+Is Abby a real insurance expert?,St Is Abby Real,False
+Is Abby a bona fide insurance agent?,St Is Abby Real,False
+Ill try to follow your directionsI may need to check in later Thank you,St Thank You,True
+Thats it thanks,St Thank You,True
+"I appreciate your help with this, thank you",St Thank You,False
+Thanks for clarifying the policy details,St Thank You,False
+Thank you for your assistance with my claim,St Thank You,False
+"I got it, thanks for the explanation",St Thank You,False
+Thanks for the quick response,St Thank You,False
+Thank you for updating my policy information,St Thank You,False
+"I understand now, thank you",St Thank You,False
+Thanks for the detailed breakdown,St Thank You,False
+"Appreciate the prompt service, thank you",St Thank You,False
+Thank you for resolving my issue so quickly,St Thank You,False
+What can you do,St What Can Abby Do,True
+Whatdo you do for a living,St What Can Abby Do,True
+What services do you offer?,St What Can Abby Do,False
+How can you assist with claims?,St What Can Abby Do,False
+What is your role in policy management?,St What Can Abby Do,False
+Can you help with insurance quotes?,St What Can Abby Do,False
+What expertise do you bring to underwriting?,St What Can Abby Do,False
+How do you support risk assessment?,St What Can Abby Do,False
+What can you do to improve coverage?,St What Can Abby Do,False
+How do you handle customer inquiries?,St What Can Abby Do,False
+What is your function in premium calculations?,St What Can Abby Do,False
+Can you assist with policy renewals?,St What Can Abby Do,False
+Where you come from,St Where Does Abby Live,True
+what part of the world are you located,St Where Does Abby Live,True
+What is your current residence?,St Where Does Abby Live,False
+Where is your home address?,St Where Does Abby Live,False
+Can you provide your living location?,St Where Does Abby Live,False
+What city do you reside in?,St Where Does Abby Live,False
+Which state is your home in?,St Where Does Abby Live,False
+Where is your primary residence?,St Where Does Abby Live,False
+What is your residential address?,St Where Does Abby Live,False
+In which area do you live?,St Where Does Abby Live,False
+What is your domicile location?,St Where Does Abby Live,False
+Where is your place of residence?,St Where Does Abby Live,False
+do it,Yes,True
+yep,Yes,True
+affirmative,Yes,False
+certainly,Yes,False
+absolutely,Yes,False
+indeed,Yes,False
+of course,Yes,False
+definitely,Yes,False
+sure thing,Yes,False
+right away,Yes,False
+without a doubt,Yes,False
+positively,Yes,False
+How much do I owe on my insurance bill,NO_NODES_DETECTED,
+I can't find my home insurance policy online,NO_NODES_DETECTED,
+"I recently purchased a bike, how do I add it to my insurance",NO_NODES_DETECTED,
+Is it possible to get paperless billing for my new property,NO_NODES_DETECTED,
+Can I remove my ex-partner from my policy without any hassle,NO_NODES_DETECTED,
+When is my next automatic payment scheduled,NO_NODES_DETECTED,
+"My agent is not responding to my emails, what should I do",NO_NODES_DETECTED,
+I need to update the agent details on my account,NO_NODES_DETECTED,
+I want to add a new house to my existing insurance but not sure how,NO_NODES_DETECTED,
+"I got a quote for a new policy, how do I proceed",NO_NODES_DETECTED,
+When is my next bill due,NO_NODES_DETECTED,
+I need to correct the name on my billing account,NO_NODES_DETECTED,
+Can you provide my billing account number,NO_NODES_DETECTED,
+Does my car insurance cover theft,NO_NODES_DETECTED,
+How do I stop automatic payments for my insurance,NO_NODES_DETECTED,
+Do you offer insurance for motorcycles,NO_NODES_DETECTED,
+I need a quote for a new policy but it says to contact support,NO_NODES_DETECTED,
+What are the benefits of having boat insurance,NO_NODES_DETECTED,
+Is my insurance valid if I travel to Mexico,NO_NODES_DETECTED,
+What does the American Star rating mean for agents,NO_NODES_DETECTED,
+How do I contact the billing department,NO_NODES_DETECTED,

@@ -1,0 +1,368 @@
+text,label,is_user_sample
+What time is your call centre operational during COVID?,CALL CENTER,True
+is the call center still functioning during lockdown,CALL CENTER,True
+How can I reach customer support for order issues?,CALL CENTER,False
+Is there a toll-free number for your helpline?,CALL CENTER,False
+What are the peak hours for your call center?,CALL CENTER,False
+Can I track my order through the call center?,CALL CENTER,False
+Do you offer 24/7 customer service support?,CALL CENTER,False
+How do I escalate a complaint through your call center?,CALL CENTER,False
+Are there any language options available when calling?,CALL CENTER,False
+Can I request a callback from your support team?,CALL CENTER,False
+What is the average wait time to speak with an agent?,CALL CENTER,False
+How do I verify my identity when calling customer service?,CALL CENTER,False
+I'd like to cancel my pending order,CANCEL ORDER,True
+How can I cancel my pending order?,CANCEL ORDER,True
+"Cancel my order, please",CANCEL ORDER,False
+Can I stop my order from processing?,CANCEL ORDER,False
+I need to cancel my recent purchase,CANCEL ORDER,False
+Please void my current order,CANCEL ORDER,False
+How do I terminate my order?,CANCEL ORDER,False
+Request to cancel my order,CANCEL ORDER,False
+Stop my order from shipping,CANCEL ORDER,False
+I want to withdraw my order,CANCEL ORDER,False
+Can you reverse my order?,CANCEL ORDER,False
+Please cancel my transaction,CANCEL ORDER,False
+Chat with agent,CHAT WITH AGENT,True
+I need customer support,CHAT WITH AGENT,True
+Connect me to a representative,CHAT WITH AGENT,False
+I need help with my order,CHAT WITH AGENT,False
+Can I speak to a support agent?,CHAT WITH AGENT,False
+Live chat with customer service,CHAT WITH AGENT,False
+Assistance required from an agent,CHAT WITH AGENT,False
+Help me with my purchase issue,CHAT WITH AGENT,False
+I want to talk to a support specialist,CHAT WITH AGENT,False
+Contact customer service,CHAT WITH AGENT,False
+Need to chat with a support agent,CHAT WITH AGENT,False
+Requesting live support assistance,CHAT WITH AGENT,False
+Tell me weight gaining,CONSULT START,True
+Consult Start,CONSULT START,True
+How to begin a consultation?,CONSULT START,False
+Initiate product advice,CONSULT START,False
+Start shopping consultation,CONSULT START,False
+Begin expert session,CONSULT START,False
+Launch buying guide,CONSULT START,False
+Open consultation chat,CONSULT START,False
+Start product inquiry,CONSULT START,False
+Begin customer support,CONSULT START,False
+Initiate purchase advice,CONSULT START,False
+Start expert consultation,CONSULT START,False
+Is there a delay in delivery becuase of the pandemic?,DELAY IN PARCEL,True
+How long is parcel delayed because of COVID?,DELAY IN PARCEL,True
+Why is my package taking longer than expected?,DELAY IN PARCEL,False
+Has my shipment been delayed due to weather conditions?,DELAY IN PARCEL,False
+What is causing the hold-up with my order?,DELAY IN PARCEL,False
+When can I expect my parcel to arrive?,DELAY IN PARCEL,False
+Is there a backlog affecting my delivery time?,DELAY IN PARCEL,False
+Are there any updates on the delay of my package?,DELAY IN PARCEL,False
+Could customs be causing a delay in my shipment?,DELAY IN PARCEL,False
+Is my parcel stuck in transit?,DELAY IN PARCEL,False
+Has the delivery date for my order changed?,DELAY IN PARCEL,False
+What are the reasons for the current shipping delay?,DELAY IN PARCEL,False
+What if I receive expired product,EXPIRY DATE,True
+I have received an Expired product,EXPIRY DATE,True
+Is the product still safe to use after the expiration date?,EXPIRY DATE,False
+How do I return an expired item?,EXPIRY DATE,False
+The product I ordered is past its expiration date,EXPIRY DATE,False
+Can I get a refund for expired goods?,EXPIRY DATE,False
+What should I do with expired products?,EXPIRY DATE,False
+Why was I sent an expired product?,EXPIRY DATE,False
+The expiration date on my item has already passed,EXPIRY DATE,False
+I need assistance with an expired product issue,EXPIRY DATE,False
+Received goods with a past expiration date,EXPIRY DATE,False
+How to handle expired items from my order?,EXPIRY DATE,False
+Get Franchise,FRANCHISE,True
+would like to associated as seller,FRANCHISE,True
+Request franchise information,FRANCHISE,False
+Apply for franchise partnership,FRANCHISE,False
+Franchise opportunities available,FRANCHISE,False
+Join as a franchisee,FRANCHISE,False
+Franchise application process,FRANCHISE,False
+Become a franchise partner,FRANCHISE,False
+Franchise investment details,FRANCHISE,False
+Franchise agreement terms,FRANCHISE,False
+Franchisee onboarding steps,FRANCHISE,False
+Franchise business model,FRANCHISE,False
+Track my order,ORDER STATUS,True
+What is my shipment status,ORDER STATUS,True
+Where is my package?,ORDER STATUS,False
+Has my order been dispatched?,ORDER STATUS,False
+Check delivery progress,ORDER STATUS,False
+Order tracking update,ORDER STATUS,False
+Is my order on the way?,ORDER STATUS,False
+When will my order arrive?,ORDER STATUS,False
+Current status of my order,ORDER STATUS,False
+Order delivery status,ORDER STATUS,False
+Has my order shipped yet?,ORDER STATUS,False
+Order tracking details,ORDER STATUS,False
+Delivery out of India,INTERNATIONAL SHIPPING,True
+International Shipping,INTERNATIONAL SHIPPING,True
+Global delivery options,INTERNATIONAL SHIPPING,False
+Shipping to Europe,INTERNATIONAL SHIPPING,False
+Worldwide parcel service,INTERNATIONAL SHIPPING,False
+Cross-border shipping,INTERNATIONAL SHIPPING,False
+International freight charges,INTERNATIONAL SHIPPING,False
+Overseas delivery times,INTERNATIONAL SHIPPING,False
+Customs and duties for international orders,INTERNATIONAL SHIPPING,False
+International shipping rates,INTERNATIONAL SHIPPING,False
+Global logistics solutions,INTERNATIONAL SHIPPING,False
+Shipping from USA to UK,INTERNATIONAL SHIPPING,False
+Modes of payments,MODES OF PAYMENTS,True
+ways of paymets,MODES OF PAYMENTS,True
+payment methods,MODES OF PAYMENTS,False
+online payment options,MODES OF PAYMENTS,False
+digital payment systems,MODES OF PAYMENTS,False
+e-commerce payment solutions,MODES OF PAYMENTS,False
+checkout payment choices,MODES OF PAYMENTS,False
+internet payment methods,MODES OF PAYMENTS,False
+electronic payment gateways,MODES OF PAYMENTS,False
+virtual payment options,MODES OF PAYMENTS,False
+secure payment methods,MODES OF PAYMENTS,False
+alternative payment systems,MODES OF PAYMENTS,False
+Change delivery address?,MODIFY ADDRESS,True
+Delivery address is wrong it is to be changed,MODIFY ADDRESS,True
+Update my shipping address,MODIFY ADDRESS,False
+Correct the billing address,MODIFY ADDRESS,False
+Edit the address for my order,MODIFY ADDRESS,False
+Revise the delivery location,MODIFY ADDRESS,False
+Alter the address on file,MODIFY ADDRESS,False
+Switch the current address,MODIFY ADDRESS,False
+Modify the address details,MODIFY ADDRESS,False
+Adjust the shipping destination,MODIFY ADDRESS,False
+Replace the existing address,MODIFY ADDRESS,False
+Fix the incorrect address,MODIFY ADDRESS,False
+I have a query related to my order,ORDER QUERY,True
+Help required on order,ORDER QUERY,True
+Where is my order?,ORDER QUERY,False
+Can I track my shipment?,ORDER QUERY,False
+Order status update needed,ORDER QUERY,False
+Need assistance with my purchase,ORDER QUERY,False
+How do I modify my order?,ORDER QUERY,False
+Requesting order cancellation,ORDER QUERY,False
+When will my package arrive?,ORDER QUERY,False
+Order confirmation not received,ORDER QUERY,False
+Need help with order delivery,ORDER QUERY,False
+Inquiry about order processing time,ORDER QUERY,False
+Are you taking orders during COVID?,ORDER TAKING,True
+i know its lockdown due to coronavirus but can i still place an order?,ORDER TAKING,True
+Can I place an order online during the pandemic?,ORDER TAKING,False
+Is your website accepting new orders right now?,ORDER TAKING,False
+Are there any restrictions on placing orders due to COVID-19?,ORDER TAKING,False
+How do I place an order if your store is closed?,ORDER TAKING,False
+Is it possible to order for home delivery during the lockdown?,ORDER TAKING,False
+Can I still order items for curbside pickup?,ORDER TAKING,False
+Are you experiencing any delays in order processing?,ORDER TAKING,False
+Is your order system operational during the current health crisis?,ORDER TAKING,False
+Can I schedule an order for a later date?,ORDER TAKING,False
+Are there any changes to your order policy due to the pandemic?,ORDER TAKING,False
+Original Products,ORIGINAL PRODUCT,True
+do you have authentic products,ORIGINAL PRODUCT,True
+Are these items genuine?,ORIGINAL PRODUCT,False
+Is this an authentic item?,ORIGINAL PRODUCT,False
+Do you sell real products?,ORIGINAL PRODUCT,False
+Are your products certified original?,ORIGINAL PRODUCT,False
+Can I trust the authenticity of this product?,ORIGINAL PRODUCT,False
+Is this a certified genuine product?,ORIGINAL PRODUCT,False
+Are these goods authentic?,ORIGINAL PRODUCT,False
+Do you guarantee original products?,ORIGINAL PRODUCT,False
+Is this product officially licensed?,ORIGINAL PRODUCT,False
+Are these items officially branded?,ORIGINAL PRODUCT,False
+I want to know my refund status,REFUNDS RETURNS REPLACEMENTS,True
+I want to know about my replacements,REFUNDS RETURNS REPLACEMENTS,True
+How do I initiate a return?,REFUNDS RETURNS REPLACEMENTS,False
+Can I exchange this item?,REFUNDS RETURNS REPLACEMENTS,False
+What is the return policy?,REFUNDS RETURNS REPLACEMENTS,False
+Where is my replacement order?,REFUNDS RETURNS REPLACEMENTS,False
+How long does a refund take?,REFUNDS RETURNS REPLACEMENTS,False
+Is my item eligible for return?,REFUNDS RETURNS REPLACEMENTS,False
+Can I get a refund for a damaged product?,REFUNDS RETURNS REPLACEMENTS,False
+What are the steps for returning a product?,REFUNDS RETURNS REPLACEMENTS,False
+How do I track my return shipment?,REFUNDS RETURNS REPLACEMENTS,False
+What is the process for getting a replacement?,REFUNDS RETURNS REPLACEMENTS,False
+I want to know about my payments,PAYMENT AND BILL,True
+Payments and Bills,PAYMENT AND BILL,True
+Check my billing history,PAYMENT AND BILL,False
+How do I update my payment method?,PAYMENT AND BILL,False
+View my recent transactions,PAYMENT AND BILL,False
+What are my current charges?,PAYMENT AND BILL,False
+Explain my last invoice,PAYMENT AND BILL,False
+How can I pay my bill?,PAYMENT AND BILL,False
+Details of my last payment,PAYMENT AND BILL,False
+When is my next payment due?,PAYMENT AND BILL,False
+Download my billing statement,PAYMENT AND BILL,False
+Set up automatic payments,PAYMENT AND BILL,False
+Portal not working,PORTAL ISSUE,True
+Option is not visible,PORTAL ISSUE,True
+Unable to log into portal,PORTAL ISSUE,False
+Checkout button missing,PORTAL ISSUE,False
+Error loading product page,PORTAL ISSUE,False
+Payment gateway not accessible,PORTAL ISSUE,False
+Account settings not updating,PORTAL ISSUE,False
+Order history not displaying,PORTAL ISSUE,False
+Search function not responding,PORTAL ISSUE,False
+Cart items not saving,PORTAL ISSUE,False
+Profile picture upload failing,PORTAL ISSUE,False
+Discount codes not applying,PORTAL ISSUE,False
+Product Service,CHECK PINCODE,True
+pincode serviceable,CHECK PINCODE,True
+delivery availability,CHECK PINCODE,False
+zip code check,CHECK PINCODE,False
+service area verification,CHECK PINCODE,False
+postal code eligibility,CHECK PINCODE,False
+shipping zone inquiry,CHECK PINCODE,False
+area service check,CHECK PINCODE,False
+location delivery check,CHECK PINCODE,False
+postal serviceability,CHECK PINCODE,False
+region delivery status,CHECK PINCODE,False
+address service check,CHECK PINCODE,False
+Recommend a product,RECOMMEND PRODUCT,True
+What are all the products you have?,RECOMMEND PRODUCT,True
+Suggest a product for me,RECOMMEND PRODUCT,False
+Can you recommend a good product?,RECOMMEND PRODUCT,False
+What products do you suggest?,RECOMMEND PRODUCT,False
+Show me some product recommendations,RECOMMEND PRODUCT,False
+Which product should I buy?,RECOMMEND PRODUCT,False
+What are your top product picks?,RECOMMEND PRODUCT,False
+Can you help me choose a product?,RECOMMEND PRODUCT,False
+What products do you recommend?,RECOMMEND PRODUCT,False
+Give me a product suggestion,RECOMMEND PRODUCT,False
+What are the best products available?,RECOMMEND PRODUCT,False
+Reedem referral,REFER EARN,True
+My friend refer me to CureKart,REFER EARN,True
+How to use referral code?,REFER EARN,False
+Invite friends for rewards,REFER EARN,False
+Share referral link,REFER EARN,False
+Earn credits by referring,REFER EARN,False
+Referral program details,REFER EARN,False
+Get bonus for referrals,REFER EARN,False
+Refer a friend discount,REFER EARN,False
+Referral code benefits,REFER EARN,False
+Track my referral earnings,REFER EARN,False
+How does refer and earn work?,REFER EARN,False
+When will you resume delivery due to COVID?,RESUME DELIVERY,True
+are you going to start delivery during this lockdown period as well?,RESUME DELIVERY,True
+Has delivery service resumed after the recent restrictions?,RESUME DELIVERY,False
+When can I expect deliveries to restart?,RESUME DELIVERY,False
+Is there a new date for resuming delivery operations?,RESUME DELIVERY,False
+Will delivery services be available again soon?,RESUME DELIVERY,False
+Are deliveries back on schedule now?,RESUME DELIVERY,False
+What is the timeline for resuming delivery services?,RESUME DELIVERY,False
+Have you resumed shipping orders yet?,RESUME DELIVERY,False
+When will normal delivery operations be reinstated?,RESUME DELIVERY,False
+Is there an update on when deliveries will resume?,RESUME DELIVERY,False
+Are you planning to restart deliveries this week?,RESUME DELIVERY,False
+It has any side effects or not,SIDE EFFECT,True
+Does it have side effects?,SIDE EFFECT,True
+Are there any adverse effects?,SIDE EFFECT,False
+What are the potential side effects?,SIDE EFFECT,False
+Can this product cause any side effects?,SIDE EFFECT,False
+Is there a risk of side effects?,SIDE EFFECT,False
+Does this item have any known side effects?,SIDE EFFECT,False
+Could there be any negative effects?,SIDE EFFECT,False
+Are there any reported side effects?,SIDE EFFECT,False
+What side effects should I be aware of?,SIDE EFFECT,False
+Is there a possibility of side effects?,SIDE EFFECT,False
+Have users experienced any side effects?,SIDE EFFECT,False
+New to CureKart?,SIGN UP,True
+Where can I sign up,SIGN UP,True
+Create an account,SIGN UP,False
+Join us today,SIGN UP,False
+Register now,SIGN UP,False
+How do I create a profile?,SIGN UP,False
+Sign up for exclusive offers,SIGN UP,False
+Become a member,SIGN UP,False
+Start your free trial,SIGN UP,False
+How to register?,SIGN UP,False
+Enroll for updates,SIGN UP,False
+Open a new account,SIGN UP,False
+Show me the main menu,START OVER,True
+Start again,START OVER,True
+Reset my shopping cart,START OVER,False
+Go back to the homepage,START OVER,False
+Restart my order,START OVER,False
+Clear my selections,START OVER,False
+Begin a new search,START OVER,False
+Return to the start,START OVER,False
+Refresh my shopping experience,START OVER,False
+Initiate a new session,START OVER,False
+Discard current choices,START OVER,False
+Reboot the shopping process,START OVER,False
+Can I visit your store,STORE INFORMATION,True
+Ã€re your shops operational,STORE INFORMATION,True
+What are your store hours?,STORE INFORMATION,False
+Is your physical store open on weekends?,STORE INFORMATION,False
+Where is your nearest store located?,STORE INFORMATION,False
+Do you offer curbside pickup?,STORE INFORMATION,False
+Can I check in-store stock online?,STORE INFORMATION,False
+Are there any special store events this month?,STORE INFORMATION,False
+Do you have a store locator on your website?,STORE INFORMATION,False
+Is there a contact number for your store?,STORE INFORMATION,False
+Are your stores following COVID-19 safety protocols?,STORE INFORMATION,False
+Do you offer in-store returns for online purchases?,STORE INFORMATION,False
+Re-assess my profile,USER GOAL FORM,True
+I would want to take re-assessment,USER GOAL FORM,True
+Update my shopping preferences,USER GOAL FORM,False
+Modify my account settings,USER GOAL FORM,False
+Change my delivery options,USER GOAL FORM,False
+Revise my wishlist,USER GOAL FORM,False
+Adjust my notification settings,USER GOAL FORM,False
+Re-evaluate my purchase history,USER GOAL FORM,False
+Edit my payment methods,USER GOAL FORM,False
+Reconfigure my subscription plan,USER GOAL FORM,False
+Refresh my saved items,USER GOAL FORM,False
+Reassess my loyalty points,USER GOAL FORM,False
+Is your head office working during lockdown?,WORK FROM HOME,True
+is curekart office open during the lockdown?,WORK FROM HOME,True
+Are your customer service teams operating remotely?,WORK FROM HOME,False
+Is the warehouse staff working on-site or from home?,WORK FROM HOME,False
+How is order processing being handled during remote work?,WORK FROM HOME,False
+Are your support teams available during the lockdown?,WORK FROM HOME,False
+Is the logistics department functioning remotely?,WORK FROM HOME,False
+Are there any delays in shipping due to remote work policies?,WORK FROM HOME,False
+Is your tech support team working from home?,WORK FROM HOME,False
+How are returns being managed with remote operations?,WORK FROM HOME,False
+Is the billing department working remotely?,WORK FROM HOME,False
+Are your marketing teams operating from home?,WORK FROM HOME,False
+How can I increase my immunity,IMMUNITY,True
+I want to increase my immunity power,IMMUNITY,True
+Best supplements for boosting immunity,IMMUNITY,False
+Products to enhance immune system,IMMUNITY,False
+Top-rated immunity boosters,IMMUNITY,False
+Immune support vitamins,IMMUNITY,False
+Herbal remedies for immunity,IMMUNITY,False
+Immunity-boosting foods,IMMUNITY,False
+Natural ways to strengthen immunity,IMMUNITY,False
+Immune system enhancement products,IMMUNITY,False
+Immunity-boosting drinks,IMMUNITY,False
+Effective immunity support supplements,IMMUNITY,False
+How do I leave a review for a product?,NO_NODES_DETECTED,
+Can I speak to someone about my account?,NO_NODES_DETECTED,
+What is your environmental policy?,NO_NODES_DETECTED,
+How do I contact the CEO?,NO_NODES_DETECTED,
+How do I update my payment method?,NO_NODES_DETECTED,
+Can I get a notification when an item is back in stock?,NO_NODES_DETECTED,
+What is your privacy policy?,NO_NODES_DETECTED,
+What is your policy on price matching?,NO_NODES_DETECTED,
+How do I track my return?,NO_NODES_DETECTED,
+What are your customer service hours?,NO_NODES_DETECTED,
+Can I get a discount on my next purchase?,NO_NODES_DETECTED,
+What is the warranty on this product?,NO_NODES_DETECTED,
+Can I get a sample of this product?,NO_NODES_DETECTED,
+How do I apply a promo code?,NO_NODES_DETECTED,
+What is the process for bulk orders?,NO_NODES_DETECTED,
+Can I get a replacement for a damaged item?,NO_NODES_DETECTED,
+How do I reset my account password?,NO_NODES_DETECTED,
+What is your policy on data protection?,NO_NODES_DETECTED,
+Can I get a gift receipt?,NO_NODES_DETECTED,
+Is there a way to expedite my order?,NO_NODES_DETECTED,
+How do I unsubscribe from your emails?,NO_NODES_DETECTED,
+Have you tried any new restaurants lately?,NO_NODES_DETECTED,
+Did you hear about the new restaurant?,NO_NODES_DETECTED,
+Grakno flim flam doodle,NO_NODES_DETECTED,
+Snarfblatt wiggin noodle soup,NO_NODES_DETECTED,
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½,NO_NODES_DETECTED,
+ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½,NO_NODES_DETECTED,
+สวัสดีครับ/ค่ะ คุณสบายดีไหม?,NO_NODES_DETECTED,
+Hur mår du?,NO_NODES_DETECTED,
+"Get lost, asshole!",NO_NODES_DETECTED,
+This is the worst fucking service ever!,NO_NODES_DETECTED,
