@@ -1,4 +1,4 @@
-## Details on using Route0x different nuanced routing requirements
+## Details on using Route0x for different nuanced routing requirements
 
 
 | Scenario | Link |
@@ -40,9 +40,11 @@ routebuilder = RouteBuilder(
             seed = 1234,
             build_request = build_request,
             domain="personal assistant",
-            llm_name="llama3.1",
+            llm_name="llama3.1",# You can use local LLMs or gpt4* models for better quality data, set your key using os.getenv("OPENAI_API_KEY")
             enable_synth_data_gen = True,
             enable_id_oos_gen = True,
+            max_query_len = 64,
+            log_level = "info",
     )
 ```
 
