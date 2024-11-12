@@ -320,11 +320,13 @@ Benchmarking is only researchers and not casual users.
 
 ### I want to see the detailed empirical evals
 <details>
+
 - Will be added shortly
 </details>
 
 ### Features and Roadmap
 <details>
+
 - Integrate DSPy or AdalFlow for streamlining LLM prompt integrations (make sense ?).
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
 - Implement typo robustness for queries.
@@ -336,8 +338,10 @@ Benchmarking is only researchers and not casual users.
 
 ### Caveats and Limitations
 <details>
-- For Local LLMs tested only on llama3.x
-- For hosted LLMs tested only on OAI GPT.x
+
+- For Local LLMs tested only on llama3.x.
+-  For hosted LLMs tested only on OAI GPT.x.
+
 </details>
 
 ### Citations
