@@ -43,21 +43,33 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 
 ## Table of Contents
 
+# Table of Contents
+
 - [Route0x: Getting Started](#route0x-getting-started)
   - [Training](#training)
-  - [Build your router - Starter Notebook](#build-your-router---starter-notebook)
+  - [Starter Notebook](#build-a-query-router-for-your-routes---starter-notebook)
   - [Inference](#inference)
-- [Route0x Evals: A Highlight Reel](#route0x-evals-a-highlight-reel)
-  - [1. Route0x vs Amazon Research 2024: HINT3 OOS Dataset](#1-route0x-vs-amazon-research-2024-hint3-oos-dataset)
-  - [2. Route0x vs Salesforce Research 2022: CLINC OOS Dataset](#2-route0x-vs-salesforce-research-2022-clinc-oos-dataset)
-  - [3. Route0x vs Aurelio Labs' Semantic Router](#3-route0x-vs-aurelio-labs-semantic-router)
-- [I want to know how it works](#i-want-to-know-how-it-works)
-- [I want to understand the knobs and tinker with it](#i-want-to-understand-the-knobs-and-tinker-with-it)
-- [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
-- [Features and Roadmap](#features-and-roadmap)
-- [Caveats and Limitations](#caveats-and-limitations)
-- [Citations](#citations)
+  
+- [Route0x Evals: A Highlight reel](#route0x-evals-a-highlight-reel)
+  - [Route0x vs Amazon Research 2024: HINT3 OOS Dataset](#route0x-vs-amazon-research-2024-hint3-oos-dataset)
+  - [Route0x vs Salesforce Research 2022: CLINC OOS Dataset](#route0x-vs-salesforce-research-2022-clinc-oos-dataset)
+  - [Route0x vs Aurelio Labs' Semantic Router](#route0x-vs-aurelio-labs-semantic-router)
 
+- [I want to know how it works](#i-want-to-know-how-it-works)
+
+- [I want to understand the knobs and tinker with it](#i-want-to-understand-the-knobs-and-tinker-with-it)
+  - [Key knobs for building](#key-knobs-for-building)
+  - [Key knobs for routing](#key-knobs-for-routing)
+  - [Full set of knobs for building](#full-set-of-knobs-for-building)
+  - [Full set of knobs for routing](#full-set-of-knobs-for-routing)
+
+- [I want to see the detailed empirical evals](#i-want-to-see-the-detailed-empirical-evals)
+
+- [Features and Roadmap](#features-and-roadmap)
+
+- [Caveats and Limitations](#caveats-and-limitations)
+
+- [Citations](#citations)
 
 
 ## Route0x: Getting Started
@@ -139,6 +151,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/SOFM_SR.png"/><br/><br/>
 
 ### I want to know how it works
+<details>
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
 As the image suggests we have multiple heads to the same model a setfit model with 
@@ -202,7 +215,7 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 
 <img src="./images/ctrend.png" width=150%/><br/><br/>
-
+</details>
 
 
 ### I want to understand the knobs and tinker with it:
