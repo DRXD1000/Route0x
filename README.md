@@ -68,7 +68,7 @@ We've disetangled the resource heavy route building (entails training) from quer
 ```python 
 pip install route0x[build] # (*ML skills not needed)
 ```
-### [Build your router - Starter Notebook]()
+### [Build a query router for your routes - Starter Notebook]()
 
 ### Inference 
 
@@ -99,7 +99,7 @@ route_obj = query_router.find_route(<your-query>)
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
-Caveat: Route0x uses SetFit as a base. But not as-is, we added a tweak on how we use it and a few more innovations on top of SetFit. (Jump to the sections below for more details). But unlike the SetFit + NA option suggested in the paper, We do not perturb positive samples to create hard negatives, We employ a straight forward Low-shot learning regime that only needs 2-samples from real dataset to simulate real world query routing users (who might find it hard to offer more samples for each route of interest). We augment those 2 sampls into to 12 effective samplesm, more on this later. Also we train only for 100 steps. The LLMs used in the paper as for as we can tell are hosted APIs hence by design suffers high latency due to network I/O and incurs $ which makes it infeasible for query routing which might touch many queries even if with uncertainity routing.
+Caveat: Route0x uses SetFit as a base. But not as-is, we added a tweak on how we use it and a few more innovations on top of SetFit. (Jump to the sections below for more details). But unlike the SetFit + NA option suggested in the paper, We do not perturb positive samples to create hard negatives nor we used any special prompting or CoT for intent/OOS detection. We employ a straight forward Low-shot learning regime that only needs 2-samples from real dataset to simulate real world query routing users (who might find it hard to offer more samples for each route of interest). We augment those 2 sampls into to 12 effective samplesm, more on this later. Also we train only for 100 steps. The LLMs used in the paper as for as we can tell are hosted APIs hence by design suffers high latency due to network I/O and incurs $ which makes it infeasible for query routing which might touch many queries even if with uncertainity routing.
 
 Note: All numbers are based on CPU, MPS/CUDA GPU device. Numbers can slightly vary based on the device and seeds. As the paper shows only the best numbers (without any notion of variations denoted usually with ±), we also show the best numbers in this comparison. 
 
@@ -156,11 +156,11 @@ route0x system combines all of its heads returns `route_obj`
 ```python
 
 {
-  'is_oos': True,    # LOF / IF head output
+  'is_oos': True,                            # LOF / IF head output
  'query': 'How can we build an Alarm clock from scratch?',
  'route_id': 1,
- 'route_name': 'NO_NODES_DETECTED',  # default OOS label
- 'prob': 0.56, # Model confidence
+ 'route_name': 'NO_NODES_DETECTED',          # default label for OOS intents
+ 'prob': 0.56,                               # Model confidence
  'majority_voted_route': 'NO_NODES_DETECTED' # Majority voted NN
  'mean_distance_from_majority_route': 1.1501572
  }
@@ -201,7 +201,7 @@ How can you come up with sensible values for `model_confidence_threshold_for_usi
 We have added an experimental feature to offer a confidence_trend (confidence_trend.png in your route0x model folder), which can give a good idea as what should be these values.
 
 
-<img src="./images/ctrend.png" width=100%/><br/><br/>
+<img src="./images/ctrend.png" width=150%/><br/><br/>
 
 
 
@@ -209,32 +209,33 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 <details>
 
+Benchmarking is only researchers and not casual users.
+
 #### Key knobs for building
 
 ```python
 'loss_funct_name': 'PairwiseArcFaceFocalLoss',   # If you need Large Angular Margin + Scale between your routes.
-'llm_name': 'llama3.1',   # If you want local or hosted LLMs, for hosted LLMs use provider given model names as-is
-'min_samples': 12, # Recommended,  works well for most cases.
-'samples_per_route': 30, # Recommended, try experimenting with 50 if needed.
-'expected_oos_proportion': 0.1, # if you have domain knowledge on OOS / bechmarking use this other wise reduce to 1% or 0.01
-'nn_for_oos_detection': 10, # if you have domain knowledge on OOS / bechmarking try experimenting 5/10/20
-'model_name': 'sentence-transformers/all-mpnet-base-v2',# Recommended, works well for most english use-cases.
-'add_additional_invalid_routes': False, # enable when you have want to stop specific user behaviour like chitchat/profanity 
+'llm_name': 'llama3.1',   # You can use local or hosted LLMs, for hosted LLMs use provider given model names as-is
+'min_samples': 12, # Recommended.
+'samples_per_route': 30, # Recommended, may be try 50
+'expected_oos_proportion': 0.1, # Unless you have extra domain knowledge on OOS / benchmarking use just 1% or 0.01
+'nn_for_oos_detection': 10, # Unless you have extra domain knowledge on OOS / benchmarking just use 5
+'model_name': 'sentence-transformers/all-mpnet-base-v2',# Recommended english use-cases.
+'add_additional_invalid_routes': False, # enable to stop specific intents like chitchat/profanity 
 "invalid_routes": ["gibberish", "mojibake", "chitchat", "non-english", "profanity"],
-'instruct_llm': '' # If you want additional instructions about your domain or anything to help synthetic data gen.
+'instruct_llm': '' # To send additional instructions for better synthetic data gen.
 ```
 
 #### Key knobs for routing
 
 ```python
-  'use_calibrated_head': True, # Recommended, but when benchmarking on hard datasets try turning it off.
-  'return_raw_scores': False, # Recommended, but when you want a logic to when to use fallback enable.
-  'use_multivec_reranking': True, # Recommended, but if you want to experiment try turning it off. 
-  'max_length': 64, # Recommended, if use_multivec_reranking =  True, else 24 is good.
-  'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (see experimental features below for more on when to change)
-  'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (see experimental features below for more on when to change)
+  'use_calibrated_head': True, # Recommended, when benchmarking try turning it off.
+  'return_raw_scores': False, # Recommended,  enable for custom fallback flow.
+  'use_multivec_reranking': True, # Recommended, use it with  max_length = 64.
+  'max_length': 64, # use_multivec_reranking =  False 24 is good.
+  'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (How it works for more)
+  'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (How it works for more)
 ```
-
 
 
 #### Full set of knobs for building
@@ -322,7 +323,8 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 ### Caveats and Limitations
 <details>
-- Will be added shortly
+- For Local LLMs tested only on llama3.x
+- For hosted LLMs tested only on OAI GPT.x
 </details>
 
 ### Citations
