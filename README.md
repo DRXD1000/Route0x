@@ -6,10 +6,10 @@
 <div align="center">
 
 [![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/route0x)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]()
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 [![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![package]( https://img.shields.io/badge/Package-PYPI-blue.svg)](https://pypi.org/project/route0x/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524)
+<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524) -->
 
 </div>
 
@@ -18,7 +18,7 @@
 <div align="center">
 
   <h4 align="center">
-    <b>Low latency, High Accuracy, Custom Query routers for Humans and Agents </b>
+    <b>Low latency, High Accuracy, Custom Query routers for Humans and Agents. </b>
     <br />
   </h4>
 </div>
@@ -77,9 +77,9 @@ We've disetangled the resource heavy route building (entails training) from quer
 
 ### Training 
 ```python 
-pip install route0x[build] # (*ML skills not needed)
+pip install route0x[build] # (Built with SWEs as target audience)
 ```
-### [Build a query router for your routes - Starter Notebook]()
+### [Build a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 
 ### Inference 
 
@@ -124,7 +124,7 @@ route_obj = query_router.find_route(<your-query>)
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
-Caveat: Route0x uses SetFit as a base. But not as-is, we added a tweak on how we use it and a few more innovations on top of SetFit. (Jump to "How it works"). But unlike the SetFit + NA option suggested in the paper, We do not perturb positive samples to create hard negatives nor we used any special prompting or CoT for intent/OOS detection. We employ a straight forward Low-shot learning regime that only needs 2-samples from real dataset to simulate real world query routing users (who might find it hard to offer more samples for each route of interest). We augment those 2 sampls into to 12 effective samples, more on this later. Also we train only for 100 steps. The LLMs used in the paper as for as we can tell are hosted APIs hence by design suffers high latency due to network I/O and incurs $ which makes it infeasible for query routing which might touch many queries even if that is reserved for uncertainity predictions.
+Caveat: Route0x uses SetFit as a base. But not as-is, we added a tweak on how we use it and a few more innovations on top of SetFit. (Jump to "How it works"). But unlike the SetFit + NA option suggested in the paper, We do not perturb positive samples to create hard negatives nor we used any special prompting or CoT for intent/OOS detection. We employ a straight forward Low-shot learning regime that only needs 2-samples from real dataset to simulate real world query routing users (who might find it hard to offer more samples for each route of interest). We augment those 2 samples into to 12 effective samples with LLMs, more on this later. Also we train only for 100 steps. The LLMs used in the paper as for as we can tell are hosted APIs hence by design suffers high latency due to network I/O and incurs $ which makes it infeasible for query routing which might touch many queries even if that is reserved for uncertainity predictions.
 
 Note: All numbers are based on CPU, MPS/CUDA GPU device. Numbers can slightly vary based on the device and seeds. As the paper shows only the best numbers (without any notion of variations denoted usually with ±), we also show the best numbers in this comparison. 
 
@@ -171,9 +171,9 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
-As the image suggests we have multiple heads to the same model a setfit model with 
-default logistic regression head, a calibrated head, a LOF and IF head and a faiss index of NNs and a numpy compressed file of multi-vector representation of the NNs.
-classifier heads will the first pass, LOF/IF heads help in OOS detection and NNs can help for classifier uncertainity, multi-vector representations help in reranking candidates. 
+Data:For synthetic data generation we leverage both open weight and hosted LLMs. For Open LLMs we integrate ollama and for hosted LLMs we use respective LLM provider libraries.
+
+Training: As the image suggests we have multiple heads to the same model: A setfit model with default logistic regression head, a calibrated head, a LOF and IF head and a faiss index of NNs and a numpy compressed file of multi-vector representation of the NN. Classifier heads will take the first pass, LOF/IF heads help in OOS detection and NNs can help for classifier uncertainity, multi-vector representations help in reranking candidates. 
 
 So when run `find_route`
 
@@ -232,6 +232,16 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 
 <img src="./images/ctrend.png" width=150%/><br/><br/>
+
+What is `use_multivec_reranking` and how it works ?
+
+[You can read more on this here in this awesome work by Kacper Łukawski](https://qdrant.tech/articles/late-interaction-models/). We took the basic idea and repurposed it. It can lift your overall peformance for a small tradeoff in latency.
+
+<img src="https://qdrant.tech/articles_data/late-interaction-models/single-model-reranking.png" width=100%/><br/><br/>
+
+*image courtesy: qdrant website*
+
+
 </details>
 
 

@@ -8,7 +8,7 @@
 |I have a list of routes but no samples | T.B.A |
 |I have a full-on train.csv and test.csv  | T.B.A |
 |I would like to handle In-domain / adversarial OOS queries  | T.B.A |
-|I would like my router robust to typos in queries | T.B.A |
+|I would like my router robust to typos in queries ? | T.B.A |
 |I would like run route0x on a TODS style benchmark dataset to compare performance | T.B.A |
 
 
@@ -40,7 +40,7 @@ routebuilder = RouteBuilder(
             seed = 1234,
             build_request = build_request,
             domain="personal assistant",
-            llm_name="llama3.1",# You can use local LLMs or gpt4* models for better quality data, set your key using os.getenv("OPENAI_API_KEY")
+            llm_name="llama3.1",# gpt4* offers better quality data, API key searched in env, os.getenv("OPENAI_API_KEY")
             enable_synth_data_gen = True,
             enable_id_oos_gen = True,
             max_query_len = 64,
@@ -57,4 +57,5 @@ routebuilder = RouteBuilder(
 2. All generated synthetic queries will be in the folder `generated_datasets`
 3. `min_samples` signifies the no of samples per route expected for training and defaults to 12.
 4. `samples_per_route` signifies how many synthetic samples to be generated per route.
-4. routebuilder obj method show_defaults() prints all defaults.
+5. route_builder obj method build_params() prints all defaults.
+6. route_finder obj method route_params() prints all defaults.
