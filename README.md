@@ -48,27 +48,20 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
   - [Training](#training)
   - [Starter Notebook](#build-a-query-router-for-your-routes---starter-notebook)
   - [Inference](#inference)
-  
 - [Route0x Evals: A Highlight reel](#route0x-evals-a-highlight-reel)
   - [Route0x vs Amazon Research 2024: HINT3 OOS Dataset](#route0x-vs-amazon-research-2024-hint3-oos-dataset)
   - [Route0x vs Salesforce Research 2022: CLINC OOS Dataset](#route0x-vs-salesforce-research-2022-clinc-oos-dataset)
   - [Route0x vs Aurelio Labs' Semantic Router](#route0x-vs-aurelio-labs-semantic-router)
-
 - [I want to know how it works](#i-want-to-know-how-it-works)
-
 - [I want to understand the knobs and tinker with it](#i-want-to-understand-the-knobs-and-tinker-with-it)
   - [Key knobs for building](#key-knobs-for-building)
   - [Key knobs for routing](#key-knobs-for-routing)
   - [Full set of knobs for building](#full-set-of-knobs-for-building)
   - [Full set of knobs for routing](#full-set-of-knobs-for-routing)
-
 - [I want to see more usage samples](#i-want-to-see-more-usage-samples)
 - [I want to see the detailed numbers & reproduce benchmarks](#i-want-to-see-the-detailed-numbers--reproduce-benchmarks)
-
 - [Features and Roadmap](#features-and-roadmap)
-
 - [Caveats and Limitations](#caveats-and-limitations)
-
 - [Citations](#citations)
 
 
