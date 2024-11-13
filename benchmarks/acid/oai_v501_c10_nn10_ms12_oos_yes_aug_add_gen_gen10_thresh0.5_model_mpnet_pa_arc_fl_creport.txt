@@ -1,4 +1,4 @@
-                                             precision    recall  f1-score   support
+	                                             precision    recall  f1-score   support
 
                              Info Add House       0.67      0.67      0.67         6
                     Info Add Remove Insured       0.97      0.20      0.33       179

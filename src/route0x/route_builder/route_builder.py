@@ -44,7 +44,6 @@ from sklearn.metrics import precision_recall_curve, roc_curve
 
 import nlpaug.augmenter.char as nac
 
-
 from .outlier_detector import OutlierDetector
 from .vector_db import VectorDB
 from .unified_llm_caller import UnifiedLLM
@@ -1402,20 +1401,19 @@ class RouteBuilder:
             self.logger.info("Thank you for using route0x! May all your queries find their way.")
 
 
-
 # routebuilder = RouteBuilder(
 #             seed = 1234,
-#             train_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_164543_train.csv",
-#             eval_path = "./generated_datasets/synthetic_llama3.1_personal_assistant_20241109_164543_eval.csv",
+#             train_path = "../../../benchmarks/powerplay11/synthetic_gpt-4o_online_gaming_and_betting_20241008_101435_train.csv",
+#             eval_path = "../../../samples/datasets/powerplay11/powerplay11_eval.csv",
 #             loss_funct_name="PairwiseArcFaceFocalLoss",
 #             oos_label = "NO_NODES_DETECTED",
 #             expected_oos_proportion =  0.1,
 #             nn_for_oos_detection = 10,
-#             max_query_len = 64,
-#             domain="personal assistant",
+#             max_query_len = 24,
+#             domain="online gaming",
 #             max_steps=100,
 #             warmup_proportion=0.05,
-#             # llm_name="llama3.1",
+#             llm_name="llama3.1",
 #             enable_test_dataset_gen = False,
 #             enable_synth_data_gen = False,
 #             enable_id_oos_gen = False,

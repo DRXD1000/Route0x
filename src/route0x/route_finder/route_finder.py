@@ -15,12 +15,13 @@ class RouteFinder:
                  model_dir: str = None, 
                  oos_label: str = "NO_NODES_DETECTED",
                  use_calibrated_head = False,
-                 max_length: int = 64,
-                # Valid only when return_raw_scores = False
-                model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
-                model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
-                nn_for_fallback: int = 5,
-                use_compressed_model: bool = False):
+                 max_length: int = 24,
+                 use_multivec_reranking = False,
+                 # Valid only when return_raw_scores = False
+                 model_confidence_threshold_for_using_outlier_head: float = 0.9, # If classifier predicts with >=0.9, we take it as-is
+                 model_uncertainity_threshold_for_using_nn: float = 0.5,  # If classifier predicts with <= 0.5, we replace it with Majority voted NN  
+                 nn_for_fallback: int = 5,
+                 use_compressed_model: bool = False):
         
         self.logger = logging.getLogger(__name__)
         self.model_dir = Path(model_dir)
@@ -51,6 +52,7 @@ class RouteFinder:
         self.model_confidence_threshold_for_using_outlier_head = model_confidence_threshold_for_using_outlier_head
         self.model_uncertainity_threshold_for_using_nn = model_uncertainity_threshold_for_using_nn
         self.nn_for_fallback = nn_for_fallback
+        self.use_multivec_reranking = use_multivec_reranking
 
         # TODO: Default ONNX FP32 offers best latency, only mem usage is the concern, Quantisation might address it but perfomance drop is quite a bit
         # So use_compressed_model at the moment will be discouraged for users, but can be used.
@@ -177,7 +179,6 @@ class RouteFinder:
     def find_route(self, 
                    query: str,
                    return_raw_scores = False,
-                   use_multivec_reranking  = True
                    ) -> dict:
 
         embeddings, query_token_embeddings = self._get_embeddings(query)
@@ -196,9 +197,8 @@ class RouteFinder:
             "prob": np.round(probabilities[class_id],2)
         })
 
-
         indices, distances = self.vectordb.search_index(embeddings, self.vec_index , num_neighbors=self.nn_for_fallback)
-        if use_multivec_reranking:
+        if self.use_multivec_reranking:
 
             metadata = self.vectordb.get_metadata_from_indices(indices, self.metadata_dict)
             reranked_metadata = self.vectordb.rerank_with_maxsim(query_token_embeddings, metadata, self.multi_vec_embs)

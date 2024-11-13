@@ -28,31 +28,16 @@
 
 **KPI for Query Routing:** $ / Query. (subsumes accuracy, latency)
 
-> Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains, granularity and complexity` against 2 different researches and 1 library.*
-
-<br/>
-
-| Dataset                   | Domain              | Has OOS? | Type                     | Test Size |
-|---------------------------|---------------------|----------|--------------------------|-----------|
-| Curekart                  | E-commerce         | Yes      | Real-world TODS queries  | 991       |
-| Powerplay11               | Online Gaming      | Yes      | Real-world TODS queries  | 983       |
-| Sofmattress               | Furniture          | Yes      | Real-world TODS queries  | 397       |
-| CLINC150 OOS - Banking    | Banking            | Yes      | Expert / Synthetic       | 1850      |
-| CLINC150 OOS - Credit Cards | Credit Cards     | Yes      | Expert / Synthetic       | 1850      |
-| Banking 77                | Banking            | Yes      | Expert / Synthetic       | 4076      |
-| ACID                      | Insurance          | No       | Real-world TODS queries  | 11042     |
-| ROSTD                     | Personal Assistant | Yes      | Expert written           | 11711     |
-
-<br/>
+> Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains, granularity and complexity` against 2 different researches and 1 library. (detailed table below).*
 
 **Contributions**
 
 1. Loss function - Variant of large scale angular margin loss .
 2. Unsupervised OOS detection - novel combination. 
 3. Uncertainity based fall-back mechanism - via NN.
-4. Multi-vector (late interaction) reranking.
+4. Simple trick to do Multi-vector (late interaction) reranking.
 
-Ablations suggest each of these are required.
+Ablations suggest each of these items contribute to the results.
 
 Check out the highlight reel of empirical evals and/or even dig deep with more numbers or get your hands-on with the starter notebook.
 
@@ -110,18 +95,32 @@ route_obj = query_router.find_route(<your-query>)
 
 ## Route0x Evals: A Highlight reel.
 
+<br/>
+
+| Dataset                   | Domain              | Has OOS? | Type                     | Test Size |
+|---------------------------|---------------------|----------|--------------------------|-----------|
+| Curekart                  | E-commerce         | Yes      | Real-world TODS queries  | 991       |
+| Powerplay11               | Online Gaming      | Yes      | Real-world TODS queries  | 983       |
+| Sofmattress               | Furniture          | Yes      | Real-world TODS queries  | 397       |
+| CLINC150 OOS - Banking    | Banking            | Yes      | Expert / Synthetic       | 1850      |
+| CLINC150 OOS - Credit Cards | Credit Cards     | Yes      | Expert / Synthetic       | 1850      |
+| Banking 77                | Banking            | Yes      | Expert / Synthetic       | 4076      |
+| ACID                      | Insurance          | No       | Real-world TODS queries  | 11042     |
+| ROSTD                     | Personal Assistant | Yes      | Expert written           | 11711     |
+
+<br/>
+
+
 ### 1. [Route0x vs Amazon Research 2024: HINT3 OOS Dataset](https://arxiv.org/pdf/2410.01627)
 
-**Goal of this comparison:** To show that Route0x offers:
+[HINT3 Datasets](https://github.com/hellohaptik/HINT3)
 
-- A better perf wrt  SetFit + NA or 
-- A competitive perf wrt expensive & slow vanilla LLMs 
-- A competitive perf wrt expensive & slow SetFit + NA + LLMs based approaches cited in the paper.
+**Goal of this comparison:** To show that Route0x beats SetFit + NA and Hosted LLMs in OOS recall while offering best-in class F1 scores across datasets while having miniscule latency needs.
 
-<img src="./images/HINT3-F1.png"/><br/><br/>
 <img src="./images/HINT3-OOS-RECALL.png"/><br/><br/>
+<img src="./images/HINT3-F1.png"/><br/><br/>
 
-**P50 Latency:** p50 Latency taken from the Amazon research paper are an average across datasets with no hardware details were shared. Our latency numbers were ran on a Mac M1 Pro 16" machine, while we acknowledge it is not directly comparable (as the hardware specs could be different), but our is assertion if dataset specific route0x p50 latency is lower than a conservative latency estimate of an average across datasets it should be definitely lower than a dataset specific latency. This is shown to just to give a ballpark. 
+**P50 Latency:** p50 Latency numbers in the Amazon paper is unclear on couple of levels: 1.) it combines latencies between hosted LLMs and local setfit inferences. For latter case hardware specs are not mentioned 2.) It uses an average across datasets. Our latency numbers based on CPUs ran a Mac M1 Pro 16" machine. While we acknowledge it is not directly comparable (as the hardware specs could be different), but our is assertion if dataset specific route0x p50 latency is lower than a conservative latency estimate of an average across datasets it should be definitely lower than a dataset specific latency. This is shown to just to give a ballpark. 
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
@@ -132,13 +131,11 @@ Note: All numbers are based on CPU, MPS/CUDA GPU device. Numbers can slightly va
 <img src="./images/HINT3-Training Regime.png"/>
 
 
-
-
 ### 2. [Route0x vs Salesforce Research 2022: CLINC OOS Dataset](https://arxiv.org/pdf/2106.04564)
 
-[Datasets](https://huggingface.co/datasets/Salesforce/dialogstudio) 
+[Salesforce Datasets](https://huggingface.co/datasets/Salesforce/dialogstudio) 
 
-**Goal of this comparison:** To show that Route0x offers robust in-scope accuracy in the presence of ID OOS and OOD OOS.
+**Goal of this comparison:** To show that Route0x offers robust in-scope accuracy in the presence of adversarial ID OOS and OOD OOS, while having miniscule latency needs.
 
 <img src="./images/FS-CLINC-IS-ACC.png"/><br/><br/>
 <img src="./images/FS-CLINC-OOS-RECALL.png"/><br/><br/>
@@ -154,7 +151,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 ### 3. [Route0x vs Aurelio Labs' Semantic Router](https://github.com/aurelio-labs/semantic-router)
 
-**Goal of this comparison:** To show that Route0x beats pure embedding similarity + threshold based approach for query routing.
+**Goal of this comparison:** To show that Route0x beats pure embedding similarity + threshold based approach for query routing, while having miniscule latency needs.
 
 <img src="./images/FOOD_SR.png"/><br/><br/>
 <img src="./images/CC_SR.png"/><br/><br/>
@@ -163,6 +160,8 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/CUREKART_SR.png"/><br/><br/>
 <img src="./images/PP11_SR.png"/><br/><br/>
 <img src="./images/SOFM_SR.png"/><br/><br/>
+
+  Note: All the above numbers are with `use_multivec_reranking` = False, (explore below sections for more details)
 
 ### I want to know how it works
 <details>
@@ -234,9 +233,10 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 ### I want to understand the knobs and tinker with it:
 
+
 <details>
 
-Benchmarking is only researchers and not casual users.
+**Take all these numbers as sensible defaults which (surprisingly) works well across datasets**, but at the same time be sure to experiment for your usecase as model training is a subjective and nuanced endeavour. Small tweaks to make or break peformance for your usecase.
 
 #### Key knobs for building
 
@@ -256,14 +256,13 @@ Benchmarking is only researchers and not casual users.
 #### Key knobs for routing
 
 ```python
-  'use_calibrated_head': True, # Recommended, when benchmarking try turning it off.
-  'return_raw_scores': False, # Recommended,  enable for custom fallback flow.
-  'use_multivec_reranking': True, # Recommended, use it with  max_length = 64.
-  'max_length': 64, # use_multivec_reranking =  False 24 is good.
-  'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (How it works for more)
-  'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (How it works for more)
+  'use_calibrated_head':    # Default is False, Try both
+  'return_raw_scores':      # Default is False, Try True for using custom fallback flow.
+  'use_multivec_reranking': # False, Try True for squeezing extra fallback performance for a tiny extra latency.
+  'max_length': 24,         # If use_multivec_reranking = False, 24 is good, else 64.
+  'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (See "How it works" for more)
+  'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (See "How it works" for more)
 ```
-
 
 #### Full set of knobs for building
 
@@ -339,9 +338,10 @@ Benchmarking is only researchers and not casual users.
 [Benchmarks](./benchmarks/)
 
 ### Features and Roadmap
-<details>
 
-- Integrate DSPy or AdalFlow for streamlining LLM prompt integrations (make sense ?).
+<details>
+- Integrate [distilabel](https://github.com/argilla-io/distilabel) ?
+- Integrate DSPy or AdalFlow for streamlining LLM prompt integrations ?
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
 - Implement typo robustness for queries.
 - Fill-in other LLM providers.
