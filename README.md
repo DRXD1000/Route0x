@@ -121,7 +121,7 @@ route_obj = query_router.find_route(<your-query>)
 <img src="./images/HINT3-F1.png"/><br/><br/>
 <img src="./images/HINT3-OOS-RECALL.png"/><br/><br/>
 
-**P50 Latency:** Numbers taken from the Amazon research paper but no hardware details were shared. Our latency numbers were ran on a Mac M1 Pro 16" machine, while we acknowledge it is not directly comparable (as the hardware details are missing) this gives a ballpark.
+**P50 Latency:** p50 Latency taken from the Amazon research paper are an average across datasets with no hardware details were shared. Our latency numbers were ran on a Mac M1 Pro 16" machine, while we acknowledge it is not directly comparable (as the hardware specs could be different), but our is assertion if dataset specific route0x p50 latency is lower than a conservative latency estimate of an average across datasets it should be definitely lower than a dataset specific latency. This is shown to just to give a ballpark. 
 
 <img src="./images/p50 Latency.png"/><br/><br/>
 
@@ -354,7 +354,8 @@ Benchmarking is only researchers and not casual users.
 <details>
 
 - For Local LLMs tested only on llama3.x.
--  For hosted LLMs tested only on OAI GPT.x.
+- For hosted LLMs tested only on OAI GPT.x.
+- While theoretically any LLM should work, prompt faithfulness needs to verified. 
 
 </details>
 
