@@ -73,7 +73,7 @@ We've disetangled the resource heavy route building (entails training) from quer
 ```python 
 pip install route0x[build] # (Built with SWEs as target audience)
 ```
-<a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank"> <h3> Build a query router for your routes - Starter Notebook </h3> </a>
+<h3> <a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank">  Build a query router for your routes - Starter Notebook </a></h3>
 
 ### Inference 
 
