@@ -349,6 +349,7 @@ What is `use_multivec_reranking` and how it works ?
 
 <details>
 <br/>
+
 - Integrate [distilabel](https://github.com/argilla-io/distilabel) ?
 - Integrate DSPy or AdalFlow for streamlining LLM prompt integrations ?
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
@@ -363,6 +364,7 @@ What is `use_multivec_reranking` and how it works ?
 
 <details>
 <br/>
+
 - For Local LLMs tested only on llama3.x.
 - For hosted LLMs tested only on OAI GPT.x.
 - While theoretically any LLM should work, prompt faithfulness needs to verified. 
