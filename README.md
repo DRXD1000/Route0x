@@ -6,9 +6,7 @@
 <div align="center">
 
 [![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/route0x)
-<a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
-</a>
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 [![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524) -->
 
@@ -73,7 +71,8 @@ We've disetangled the resource heavy route building (entails training) from quer
 ```python 
 pip install route0x[build] # (Built with SWEs as target audience)
 ```
-<h3> <a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank">  Build a query router for your routes - Starter Notebook </a></h3>
+
+### [Build a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 
 ### Inference 
 
