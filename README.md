@@ -140,7 +140,7 @@ Note: All numbers are based on CPU, MPS/CUDA GPU device. Numbers can slightly va
 <img src="./images/FS-CLINC-IS-ACC.png"/><br/><br/>
 <img src="./images/FS-CLINC-OOS-RECALL.png"/><br/><br/>
 
-Caveat: In this Route0x model is all-mpnet-base-v2 is compared against purpose-built architectures like TOD-BERT which are architected for and trained on TODS style intent detection. 
+Caveat: The Route0x base model is all-mpnet-base-v2 but it is compared against purpose-built architectures like TOD-BERT which are architected for and trained on TODS style intent detection and yet we outperform them.
 
 Note: All numbers are based on MPS GPU device. Numbers can slightly vary based on the device and seeds. As the paper shows the 
 all numbers with uncertainity we present numbers from 3 runs and denote the variations with ±.
@@ -164,7 +164,11 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
   Note: All the above numbers are with `use_multivec_reranking` = False, (explore below sections for more details)
 
 ### I want to know how it works
+
 <details>
+
+<br/>
+
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
 As the image suggests we have multiple heads to the same model a setfit model with 
@@ -233,8 +237,9 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 ### I want to understand the knobs and tinker with it:
 
-
 <details>
+
+<br/>
 
 **Take all these numbers as sensible defaults which (surprisingly) works well across datasets**, but at the same time be sure to experiment for your usecase as model training is a subjective and nuanced endeavour. Small tweaks to make or break peformance for your usecase.
 
@@ -242,11 +247,11 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 ```python
 'loss_funct_name': 'PairwiseArcFaceFocalLoss',   # If you need Large Angular Margin + Scale between your routes.
-'llm_name': 'llama3.1',   # You can use local or hosted LLMs, for hosted LLMs use provider given model names as-is
+'llm_name': 'llama3.1',   # Use local or hosted LLMs. For hosted option, use provider given model names as-is.
 'min_samples': 12, # Recommended.
-'samples_per_route': 30, # Recommended, may be try 50
-'expected_oos_proportion': 0.1, # Unless you have extra domain knowledge on OOS / benchmarking use just 1% or 0.01
-'nn_for_oos_detection': 10, # Unless you have extra domain knowledge on OOS / benchmarking just use 5
+'samples_per_route': 30, # Recommended, trying 50 can help in some cases.
+'expected_oos_proportion': 0.1, # Unless you have extra domain knowledge on OOS dont touch this. if you dont except any OOS use 0.01.
+'nn_for_oos_detection': 10, # # Unless you have extra domain knowledge on OOS dont touch this. if you dont except any OOS use 5. 
 'model_name': 'sentence-transformers/all-mpnet-base-v2',# Recommended english use-cases.
 'add_additional_invalid_routes': False, # enable to stop specific intents like chitchat/profanity 
 "invalid_routes": ["gibberish", "mojibake", "chitchat", "non-english", "profanity"],
@@ -340,6 +345,7 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 ### Features and Roadmap
 
 <details>
+<br/>
 - Integrate [distilabel](https://github.com/argilla-io/distilabel) ?
 - Integrate DSPy or AdalFlow for streamlining LLM prompt integrations ?
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
@@ -351,8 +357,9 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 </details>
 
 ### Caveats and Limitations
-<details>
 
+<details>
+<br/>
 - For Local LLMs tested only on llama3.x.
 - For hosted LLMs tested only on OAI GPT.x.
 - While theoretically any LLM should work, prompt faithfulness needs to verified. 
@@ -361,5 +368,7 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 ### Citations
 <details>
+<br/>
 - Will be added shortly
+
 </details>
