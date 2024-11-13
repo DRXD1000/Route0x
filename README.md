@@ -6,9 +6,10 @@
 <div align="center">
 
 [![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/route0x)
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
+<a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
+</a>
 [![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![package]( https://img.shields.io/badge/Package-PYPI-blue.svg)](https://pypi.org/project/route0x/)
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524) -->
 
 </div>
@@ -79,7 +80,7 @@ We've disetangled the resource heavy route building (entails training) from quer
 ```python 
 pip install route0x[build] # (Built with SWEs as target audience)
 ```
-### [Build a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
+<a href="https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing" target="_blank"> <h3> Build a query router for your routes - Starter Notebook </h3> </a>
 
 ### Inference 
 
@@ -89,7 +90,7 @@ pip install route0x[route] # (Light-weight without any heavy torch dependencies)
 
 ```python
 from route0x.route_finder import RouteFinder
-query_router = RouteFinder(<your_route0x_model_path>, use_calibrated_head=True)
+query_router = RouteFinder(<your_route0x_model_path>)
 route_obj = query_router.find_route(<your-query>)
 ```
 
