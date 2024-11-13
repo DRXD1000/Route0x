@@ -153,6 +153,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/CUREKART_SR.png"/><br/><br/>
 <img src="./images/PP11_SR.png"/><br/><br/>
 <img src="./images/SOFM_SR.png"/><br/><br/>
+<img src="./images/ACID_SR.png"/><br/><br/>
 
   Note: All the above numbers are with `use_multivec_reranking` = False, (explore below sections for more details)
 
@@ -164,7 +165,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 
 <img src="./images/How it works.png" width=100%/><br/><br/>
 
-Data:For synthetic data generation we leverage both open weight and hosted LLMs. For Open LLMs we integrate ollama and for hosted LLMs we use respective LLM provider libraries.
+Data:For synthetic data generation we leverage both open weight and hosted LLMs. For Open LLMs we integrate ollama and for hosted LLMs we use respective LLM provider libraries. 
 
 Training: As the image suggests we have multiple heads to the same model: A setfit model with default logistic regression head, a calibrated head, a LOF and IF head and a faiss index of NNs and a numpy compressed file of multi-vector representation of the NN. Classifier heads will take the first pass, LOF/IF heads help in OOS detection and NNs can help for classifier uncertainity, multi-vector representations help in reranking candidates. 
 
