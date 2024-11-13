@@ -267,7 +267,7 @@ What is `use_multivec_reranking` and how it works ?
   'use_calibrated_head':    # Default is False, Try both
   'return_raw_scores':      # Default is False, Try True for using custom fallback flow.
   'use_multivec_reranking': # False, Try True for squeezing extra fallback performance for a tiny extra latency.
-  'max_length': 24,         # If use_multivec_reranking = False, 24 is good, else 64.
+  'max_length': 24,         # If use_multivec_reranking = False, 24 is good, else use longer based on your median query token size.
   'model_confidence_threshold_for_using_outlier_head': 0.9, # Recommended, (See "How it works" for more)
   'model_uncertainity_threshold_for_using_nn': 0.5, # Recommended, (See "How it works" for more)
 ```
@@ -331,7 +331,7 @@ What is `use_multivec_reranking` and how it works ?
   'metadata_dict':{},
   'multi_vec_embs': '/content/route0x_sof_model/token_embeddings.npz',
   'oos_label': 'NO_NODES_DETECTED',
-  'max_length': 64,
+  'max_length': 24,
   'model_confidence_threshold_for_using_outlier_head': 0.9,
   'model_uncertainity_threshold_for_using_nn': 0.5,
   'nn_for_fallback': 5
