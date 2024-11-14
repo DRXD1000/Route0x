@@ -218,7 +218,8 @@ query_router = RouteFinder(<your_route0x_model_path>,
                           )
 ```                        
 
-b.) Add your custom logic  set `return_raw_scores = True` and do post-hoc
+b.) Add your custom logic  set `return_raw_scores = True` and do post-hoc. if you are wondering why this might be useful. There are few datasets where outliers are not a concern so you can entirely ignore the LOF/IF head's output and only use the classifier prediction + uncertainity routing based on NNs.
+
 
 How can you come up with sensible values for `model_confidence_threshold_for_using_outlier_head` and `model_uncertainity_threshold_for_using_nn` for your dataset/domain ?
 
