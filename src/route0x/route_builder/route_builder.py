@@ -1287,7 +1287,7 @@ class RouteBuilder:
                 train_path = f"{self.synthetic_data_dir}/train_{self.domain}_{timestamp}.csv"
                 self.build_request.to_csv(train_path)
                 number_of_synthetic_samples = self.samples_per_route if self.samples_per_route else self.fallback_samples_per_route 
-                train_dataset = self._load_data(file_path=train_path)
+                train_dataset = self._load_data(file_path=train_path, apply_route_template= False)
                 self.logger.info(f"Augmenting synthetic data from your sample <query,label> pairs:")
                 if self.eval_path:
                     number_of_synthetic_samples = self.samples_per_route if self.samples_per_route else self.min_samples
