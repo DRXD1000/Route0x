@@ -246,7 +246,7 @@ class RouteBuilder:
                 encoding = self._detect_encoding(file_path)
                 df = pd.read_csv(path, delimiter=",", encoding=encoding)
                 df[label_column] = df[label_column].apply(lambda x: x.title() if x != self.oos_label else x)
-                if self.route_template is not None:
+                if self.route_template is not None and "train_" not in file_path:
                     df[label_column] = df[label_column].apply(lambda x: self.route_template.format(x) if x != self.oos_label else x )
             elif path.suffix == '.jsonl':
                 with open(path, 'r', encoding="utf-8") as f:
@@ -1115,7 +1115,7 @@ class RouteBuilder:
         """
         downloaded_models = self._get_downloaded_models()
         if not any(model_name in downloaded_model for downloaded_model in downloaded_models):
-            self.logger.info(f"Downloading model '{model_name}'...")
+            self.logger.info(f"Downloading model '{model_name}'...This can take a min..")
             ollama.pull(model_name)
             self.logger.info(f"Model '{model_name}' has been successfully downloaded.")  
 
