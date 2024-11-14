@@ -230,6 +230,7 @@ class RouteBuilder:
                   text_column: str = "text", 
                   train_samples: int = 12, 
                   label_mapping = None,
+                  apply_route_template=True
                   ) -> Optional[Dataset]:
         """
         Loads data from a file or Hugging Face dataset.
@@ -246,7 +247,7 @@ class RouteBuilder:
                 encoding = self._detect_encoding(file_path)
                 df = pd.read_csv(path, delimiter=",", encoding=encoding)
                 df[label_column] = df[label_column].apply(lambda x: x.title() if x != self.oos_label else x)
-                if self.route_template is not None and "train_" not in file_path:
+                if apply_route_template is True and self.route_template is not None:
                     df[label_column] = df[label_column].apply(lambda x: self.route_template.format(x) if x != self.oos_label else x )
             elif path.suffix == '.jsonl':
                 with open(path, 'r', encoding="utf-8") as f:
@@ -1326,8 +1327,8 @@ class RouteBuilder:
             train_file, eval_file = self.train_path, self.eval_path
 
 
-        train_without_adv_dataset = self._load_data(train_file)
-        eval_without_adv_dataset =  self._load_data(eval_file)
+        train_without_adv_dataset = self._load_data(train_file, apply_route_template= False)
+        eval_without_adv_dataset =  self._load_data(eval_file, apply_route_template= False)
         train_without_adv_dataset = train_without_adv_dataset.filter(lambda x: x['label'] != self.route_template.format(self.oos_label))
         eval_without_adv_dataset = eval_without_adv_dataset.filter(lambda x: x['label'] != self.route_template.format(self.oos_label))
 
@@ -1337,20 +1338,20 @@ class RouteBuilder:
         if self.enable_id_oos_gen:
             self.logger.info(f"Generating adversarial i.e. ID OOS based on training samples")
             train_adv_file, eval_adv_file = self._generate_adversarial_samples(train_samples=train_without_adv_dataset, number_of_synthetic_samples=number_of_synthetic_samples + 10, domain=self.domain, route_template=self.route_template, model=self.llm_name, prefix=prefix, user_instructions=self.instruct_llm)
-            train_dataset = concatenate_datasets([train_without_adv_dataset, self._load_data(train_adv_file)])
-            eval_dataset = concatenate_datasets([eval_without_adv_dataset, self._load_data(eval_adv_file)])
+            train_dataset = concatenate_datasets([train_without_adv_dataset, self._load_data(train_adv_file, apply_route_template= False)])
+            eval_dataset = concatenate_datasets([eval_without_adv_dataset, self._load_data(eval_adv_file, apply_route_template= False)])
             train_dataset.to_csv(train_file, index=False)
             eval_dataset.to_csv(eval_file, index=False)
         else:    
             self.logger.info(f"Warning: enable_id_oos_gen is turned off, assuming your training samples have `{self.oos_label}` labeled queries")
-            train_dataset = self._load_data(train_file)
-            eval_dataset =  self._load_data(eval_file)
+            train_dataset = self._load_data(train_file, apply_route_template= False)
+            eval_dataset =  self._load_data(eval_file, apply_route_template= False)
 
         self.logger.info(f"Training dataset w/ ID OOS {train_dataset.num_rows}")
         self.logger.info(f"Eval dataset w/ ID OOS {eval_dataset.num_rows}")
 
         if self.enable_test_dataset_gen:
-            train_dataset = self._load_data(train_file)
+            train_dataset = self._load_data(train_file, apply_route_template= False)
             test_file = self._generate_synthetic_test_queries(self.routes, 
                                                                 self.domain, 
                                                                 samples_per_route=self.test_samples_per_route, 
@@ -1362,7 +1363,7 @@ class RouteBuilder:
         
         if self.add_additional_invalid_routes:    
             train_additional_invalid_file = self._generate_additional_invalid_routes(prefix)
-            train_additional_invalid_dataset = self._load_data(train_additional_invalid_file)
+            train_additional_invalid_dataset = self._load_data(train_additional_invalid_file, apply_route_template= False)
             train_dataset = concatenate_datasets([train_dataset, train_additional_invalid_dataset])
             train_dataset.to_csv(train_file, index=False)
             self.logger.info(f"Training dataset w Additional Invalid OOS {train_dataset.num_rows}")
