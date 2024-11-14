@@ -1,0 +1,12 @@
+                   precision    recall  f1-score   support
+
+          Abstain       0.52      0.04      0.08       364
+          Factual       0.50      0.03      0.06       363
+     Instrumental       0.40      0.10      0.16        59
+NO_NODES_DETECTED       0.00      0.00      0.00         0
+     Navigational       0.52      0.16      0.25       171
+    Transactional       0.55      0.37      0.44        43
+
+         accuracy                           0.08      1000
+        macro avg       0.41      0.12      0.17      1000
+     weighted avg       0.51      0.08      0.12      1000

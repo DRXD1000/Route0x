@@ -59,7 +59,7 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 - [I want to see more usage samples](#i-want-to-see-more-usage-samples)
 - [I want to see the detailed numbers & reproduce benchmarks](#i-want-to-see-the-detailed-numbers--reproduce-benchmarks)
 - [Features and Roadmap](#features-and-roadmap)
-- [Caveats and Limitations](#caveats-and-limitations)
+- [Scope, Caveats and Limitations](#scope-caveats-and-limitations)
 - [Citations](#citations)
 
 
@@ -361,10 +361,19 @@ What is `use_multivec_reranking` and how it works ?
   - Generating a test set quickly check the route0x outputs.
 </details>
 
-### Caveats and Limitations
+### Scope, Caveats and Limitations
 
 <details>
 <br/>
+
+**On Low shot regime and domains**
+
+- Low-shot regime (+ 100 steps) demonstrated works well for closed-domain TODS/GODS systems at any granularity.
+- But this WON'T work for open-domain datasets like ORCAS-I or Similar web queries. Even upgrading Low to Few shot won't help either. 
+- For open-domain datasets you need to switch vanilla supervised fine-tuning.
+- Curious souls can compare ORCAS-I FS performance (100 samples / route) on Route0x vs Semantic Router in benchmarks folder.
+
+**On LLMS**
 
 - For Local LLMs tested only on llama3.x.
 - For hosted LLMs tested only on OAI GPT.x.
@@ -373,8 +382,10 @@ What is `use_multivec_reranking` and how it works ?
 </details>
 
 ### Citations
+
 <details>
 <br/>
+
 - Will be added shortly
 
 </details>

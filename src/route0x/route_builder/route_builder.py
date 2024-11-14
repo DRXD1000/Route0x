@@ -40,7 +40,6 @@ from setfit import SetFitModel
 
 from kneed import KneeLocator
 import matplotlib.pyplot as plt
-from sklearn.metrics import precision_recall_curve, roc_curve
 
 import nlpaug.augmenter.char as nac
 
@@ -1407,17 +1406,13 @@ class RouteBuilder:
 #             eval_path = "../../../samples/datasets/powerplay11/powerplay11_eval.csv",
 #             loss_funct_name="PairwiseArcFaceFocalLoss",
 #             oos_label = "NO_NODES_DETECTED",
-#             expected_oos_proportion =  0.1,
-#             nn_for_oos_detection = 10,
-#             max_query_len = 24,
-#             domain="online gaming",
 #             max_steps=100,
 #             warmup_proportion=0.05,
-#             llm_name="llama3.1",
+#             route_template = "{}",
 #             enable_test_dataset_gen = False,
 #             enable_synth_data_gen = False,
 #             enable_id_oos_gen = False,
-#             skip_eval = False,
+#             skip_eval = True,
 #             add_additional_invalid_routes = False,
 #             log_level = "info",
 #     )

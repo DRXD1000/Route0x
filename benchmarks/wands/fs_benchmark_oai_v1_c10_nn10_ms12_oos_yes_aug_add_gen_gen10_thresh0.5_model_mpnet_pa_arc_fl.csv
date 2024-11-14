@@ -1,0 +1,197 @@
+text,label,Route42 route,pred label,is_outlier,prob,most_nn,most_nn_mean_dist,latency
+smart coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,False,0.66,Coffee & Cocktail Tables,0.4475705,0.10988220899999979
+turquoise pillows,Accent Pillows,Accent Pillows,Accent Pillows,False,0.73,Accent Pillows,0.4430819,0.09732441700000027
+chair and a half recliner,Recliners,Recliners,Recliners,False,0.6447380781173706,Recliners,0.6447381,0.11168862499999976
+sofa with ottoman,Sectionals,Sectionals,Ottomans,False,0.44689857959747314,Sectionals,0.44689858,0.12353770800000019
+acrylic clear chair,Dining Chairs,Accent Chairs,Accent Chairs,False,0.4150294065475464,Accent Chairs,0.4150294,0.11765725000000016
+driftwood mirror,Wall & Accent Mirrors,Wall & Accent Mirrors,Wall & Accent Mirrors,False,0.91,Wall & Accent Mirrors,0.51644355,0.08301933400000028
+home sweet home sign,Wall Décor,Wall Décor,Outdoor Wall Decor,True,1.1917387247085571,Wall Décor,1.1917387,0.10812479199999991
+king poster bed,Beds,Beds,Beds,False,0.4317823350429535,Beds,0.43178234,0.09216783400000006
+ombre rug,Area Rugs,Area Rugs,Area Rugs,False,0.9,Area Rugs,0.42817894,0.09999695800000019
+large spoon and fork wall decor,Wall Décor,Outdoor Wall Decor,Flatware Serving Pieces,False,0.9968295097351074,Outdoor Wall Decor,0.9968295,0.11910266599999986
+beds that have leds,Beds,Kids Beds,Beds,True,0.7737793326377869,Kids Beds,0.77377933,0.11996333299999984
+black 5 drawer dresser by guilford,Dressers & Chests,Dressers & Chests,Dressers & Chests,False,0.75,Dressers & Chests,0.44060406,0.10765183400000033
+blk 18x18 seat cushions,Furniture Cushions,Furniture Cushions,Furniture Cushions,False,0.68,Furniture Cushions,0.61577535,0.145386625
+gurney  slade 56,Chandeliers,Light Bulbs,Light Bulbs,False,1.2175976037979126,Light Bulbs,1.2175976,0.11006241699999997
+living curtains pearl,Curtains & Drapes,Curtains & Drapes,Curtains & Drapes,False,0.86,Curtains & Drapes,0.6486739,0.09515925000000003
+light and navy blue decorative pillow,Accent Pillows,Accent Pillows,Accent Pillows,False,0.8,Accent Pillows,0.34426343,0.13415454200000054
+stoneford end tables white and wood,End Tables,End Tables,Sideboards & Buffets,True,0.697896420955658,End Tables,0.6978964,0.08659641699999998
+sunflower,Wall Art,Wreaths,Wreaths,False,0.79,Wreaths,1.0520782,0.10426708299999987
+leather chairs,Accent Chairs,Dining Chairs,Dining Chairs,False,0.22748973965644836,Dining Chairs,0.22748974,0.06974154200000005
+rooster decor,Decorative Objects,Garden Statues,Garden Statues,False,0.63,Garden Statues,0.97255826,0.06512837500000046
+3 1/2 inch drawer pull,Cabinet And Drawer Pulls,Cabinet And Drawer Knobs,Cabinet And Drawer Pulls,True,0.5342804789543152,Cabinet And Drawer Knobs,0.5342805,0.08636954199999991
+dark gray dresser,Dressers & Chests,Dressers & Chests,Dressers & Chests,False,0.71,Dressers & Chests,0.28804195,0.0714352500000004
+non slip shower floor tile,Floor & Wall Tile,Floor & Wall Tile,Floor & Wall Tile,False,0.68,Floor & Wall Tile,0.6200382,0.10457270800000007
+bar stool with backrest,Bar Stools,Bar Stools,Bar Stools,False,0.3806690573692322,Bar Stools,0.38066906,0.11325295800000035
+bar stool 24 inches height,Bar Stools,Accent Stools,Accent Stools,True,0.6317426562309265,Accent Stools,0.63174266,0.07642004200000052
+elegant executive chair,Office Chairs,Office Chairs,Office Chairs,True,1.042044997215271,Office Chairs,1.042045,0.06741879200000067
+solid teak end table,End Tables,End Tables,Sofa & Console Tables,False,0.5533782243728638,End Tables,0.5533782,0.07806112499999962
+70s inspired furniture,Wall Art,Living Room Sets,Living Room Sets,False,0.6073706150054932,Living Room Sets,0.6073706,0.06577445799999992
+tufted chair with gold legs,Accent Chairs,Accent Chairs,Accent Chairs,False,0.54,Accent Chairs,0.49240768,0.09157187499999964
+westling coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,False,0.6,Coffee & Cocktail Tables,0.4203287,0.07755595799999959
+carolyn console table,Sofa & Console Tables,Sofa & Console Tables,Sofa & Console Tables,False,0.79,Sofa & Console Tables,0.45963734,0.0695319999999997
+tollette teal outdoor rug,Area Rugs,Area Rugs,Area Rugs,False,0.82,Area Rugs,0.4602272,0.0696331670000001
+medium size chandelier,Chandeliers,Chandeliers,Chandeliers,False,0.76,Chandeliers,0.31688678,0.08603091600000035
+capricorn chest,Dressers & Chests,Licensed Products,Licensed Products,True,0.52,Dressers & Chests,0.7767121,0.08279466699999993
+overstreet rustic pub stools,Bar Stools,Accent Stools,Accent Stools,True,0.66,Patio Bar Stools,0.63097405,0.06684937500000032
+osgood mirror,Wall & Accent Mirrors,Wall & Accent Mirrors,Wall & Accent Mirrors,False,0.88,Wall & Accent Mirrors,0.52765065,0.07187991699999952
+annex dresser,Dressers & Chests,Dressers & Chests,Dressers & Chests,False,0.64,Dressers & Chests,0.623875,0.0682640000000001
+sancroft armchair,Accent Chairs,Accent Chairs,Accent Chairs,True,0.51,Accent Chairs,0.60120434,0.06849999999999934
+dorel vanity,Vanities,Makeup Vanities,Makeup Vanities,True,0.57,Makeup Vanities,0.91414165,0.10030520799999998
+7 draw white dresser,Dressers & Chests,Dressers & Chests,Dressers & Chests,False,0.8,Dressers & Chests,0.57921153,0.063188083
+orren ellis l shape desk,Desks,Desks,Desks,False,0.61,Desks,0.60716945,0.07481116700000001
+bathroom vanity with counter space,Vanities,Makeup Vanities,Makeup Vanities,False,0.4700435698032379,Makeup Vanities,0.47004357,0.06767295900000025
+wall art fiji,Wall Art,Wallpaper,Wallpaper,False,0.6515688896179199,Wallpaper,0.6515689,0.06890183400000005
+full metal bed rose gold,Beds,Beds,Door Knobs,True,0.8652645349502563,Beds,0.86526453,0.07122862499999982
+industrial pipe dining  table,Dining Tables,Dining Tables,Dining Tables,True,0.5168486833572388,Dining Tables,0.5168487,0.07776779100000031
+outdoor sectional dining,Patio Sofas,Patio Dining Sets,Patio Dining Sets,False,0.43548309803009033,Patio Dining Sets,0.4354831,0.07087299999999974
+entertainment stand end table,Tv Stands & Entertainment Centers,End Tables,End Tables,False,0.6364715695381165,End Tables,0.63647157,0.07455187500000005
+regner power loom red,Area Rugs,Pantry Cabinets,Light Bulbs,True,1.3851518630981445,Pantry Cabinets,1.3851519,0.0665795410000003
+front porch furniture sets,Outdoor Conversation Sets,Patio Dining Sets,Patio Dining Sets,False,0.62,Outdoor Conversation Sets,0.45556566,0.26885600000000043
+mila task chair,Office Chairs,Kids Chairs,Kids Chairs,False,0.7,Kids Chairs,0.71654576,0.18519529100000032
+delta trinsic,Bathroom Sink Faucets,Innerspring Mattresses,Light Bulbs,True,1.3599672317504883,Innerspring Mattresses,1.3599672,0.0818967500000003
+geralyn upholstered storage platform bed,Beds,Beds,Beds,True,0.58,Beds,0.6638378,0.06534212499999992
+tall storage cabinet,Office Storage Cabinets,Office Storage Cabinets,Office Storage Cabinets,False,0.30989977717399597,Office Storage Cabinets,0.30989978,0.0894290419999999
+body pillow case,Sheets And Sheet Sets,Accent Pillows,Accent Pillows,False,0.4692293703556061,Accent Pillows,0.46922937,0.06606004200000015
+upholstered bed,Beds,Beds,Beds,False,0.4244621694087982,Beds,0.42446217,0.06630324999999981
+king size bed,Beds,Innerspring Mattresses,Beds,False,0.3049432933330536,Innerspring Mattresses,0.3049433,0.06413412500000071
+entrance table,Sofa & Console Tables,Sofa & Console Tables,Sofa & Console Tables,True,0.7336534261703491,Sofa & Console Tables,0.7336534,0.06829745900000006
+block coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,False,0.62,Coffee & Cocktail Tables,0.44626692,0.06237729199999986
+entertainment console,Tv Stands & Entertainment Centers,Tv Stands & Entertainment Centers,Tv Stands & Entertainment Centers,False,0.5227986574172974,Tv Stands & Entertainment Centers,0.52279866,0.07242058400000051
+black hanging bookshelf,Bookcases,Bookcases,Bookcases,True,0.77,Bookcases,0.4955171,0.09096074999999981
+low profile loveseat recliner,Sofas,Recliners,Recliners,False,0.54,Recliners,0.49724078,0.08353566699999959
+orren ellis l shaped desk,Desks,Desks,Desks,False,0.63,Desks,0.49181622,0.07254045899999984
+auburn throw pillows,Accent Pillows,Accent Pillows,Accent Pillows,True,0.71,Accent Pillows,0.4904078,0.06835658299999992
+rug plum,Area Rugs,Area Rugs,Area Rugs,True,1.0016953945159912,Area Rugs,1.0016954,0.14755108399999983
+drum picture,Wall Art,Wall Art,Door Knobs,True,1.4321781396865845,Wall Art,1.4321781,0.09062212500000122
+mid century modern,Dressers & Chests,Wall Art,Wall Art,False,0.56,Door Knobs,0.7451944,0.11634487499999935
+leather chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.2943986654281616,Accent Chairs,0.29439867,0.08574141699999949
+bohemian,Area Rugs,Wreaths,Wreaths,True,0.85,Wall Art,0.7401248,0.17777691599999912
+papasan chair frame only,Accent Chairs,Accent Chairs,Picture Frames,True,0.7488445043563843,Accent Chairs,0.7488445,0.12755962499999995
+turquoise chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.57,Accent Chairs,0.48888734,0.06292962500000066
+modern outdoor furniture,Outdoor Conversation Sets,Patio Dining Sets,Patio Dining Sets,False,0.67,Patio Dining Sets,0.33915794,0.07659304099999886
+feather wall art,Wall Art,Decorative Objects,Garden Statues,False,0.6014811396598816,Decorative Objects,0.60148114,0.0758472500000007
+camper,Sheets And Sheet Sets,Playhouses & Play Tents,Kids Wall Décor,True,1.01500403881073,Playhouses & Play Tents,1.015004,0.0669456249999989
+zen,Wall Art,Wreaths,Wreaths,False,0.73,Wreaths,1.322736,0.0738672919999992
+picasso,Wall Art,Wall Art,Wall Art,False,0.59,Wall Art,0.91894764,0.07907424999999968
+mexican art,Wall Art,Wall Art,Wall Art,False,0.58,Wall Décor,0.78563404,0.05934083400000034
+rustic storage cabinet,Office Storage Cabinets,Office Storage Cabinets,Office Storage Cabinets,False,0.2663748562335968,Office Storage Cabinets,0.26637486,0.07037808300000137
+promo codes or discounts,Wall Art,Wreaths,Light Bulbs,True,1.398219108581543,Wreaths,1.3982191,0.07868983300000032
+outdoor lounge cushions,Furniture Cushions,Furniture Cushions,Furniture Cushions,False,0.37620073556900024,Furniture Cushions,0.37620074,0.11764808399999893
+sugar canister,Canisters & Jars,Canisters & Jars,Canisters & Jars,False,0.74,Canisters & Jars,0.7097809,0.09478766600000021
+"bedroom wall decor floral, multicolored with some teal (prints)",Wall Décor,Outdoor Wall Decor,Wall Décor,False,0.7697557806968689,Outdoor Wall Decor,0.7697558,0.0760895829999999
+belchertown table lamp,Table Lamps,Table Lamps,Table Lamps,False,0.68,Table Lamps,0.38731545,0.11527916600000054
+chabely 5 draw chest,Dressers & Chests,Dressers & Chests,Licensed Products,True,0.8456279635429382,Dressers & Chests,0.84562796,0.07394683299999905
+blue faux throw with pillows,Accent Pillows,Accent Pillows,Accent Pillows,True,0.51,Accent Pillows,0.65316564,0.06754229200000061
+ines shag rug w003096809,Area Rugs,Area Rugs,Area Rugs,True,0.79,Area Rugs,0.67549306,0.06706820800000024
+wisdom stone river 3-3/4,Cabinet And Drawer Pulls,Bookcases,Door Knobs,True,1.3070765733718872,Bookcases,1.3070766,0.07114162500000099
+power lift chair,Recliners,Recliners,Office Chairs,False,0.419249564409256,Recliners,0.41924956,0.08034262500000011
+owl,Garden Statues,Garden Statues,Kids Wall Décor,False,0.9198293089866638,Garden Statues,0.9198293,0.06554358400000027
+gold,Decorative Objects,Wreaths,Wreaths,False,0.61,Door Knobs,1.1330072,0.06874204200000023
+storage dresser,Dressers & Chests,Dressers & Chests,Dressers & Chests,False,0.61,Dressers & Chests,0.39343196,0.08622850000000071
+eiffel tower wall art,Wall Art,Outdoor Wall Decor,Wall Décor,False,0.7351998686790466,Outdoor Wall Decor,0.73519987,0.06733112500000082
+accent leather chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.51,Accent Chairs,0.26761547,0.06666783400000043
+indoor multi tiered plant stand,Plant & Telephone Tables,Plant & Telephone Tables,Plant & Telephone Tables,False,0.61,Planters,0.40920252,0.07809645900000106
+anchor decor,Wall Décor,Wall Art,Molding & Millwork,False,0.8100778460502625,Wall Art,0.81007785,0.07530091599999977
+beaded curtains,Curtains & Drapes,Curtains & Drapes,Curtains & Drapes,False,0.8,Curtains & Drapes,0.42188126,0.07897779199999988
+multi color rug,Area Rugs,Area Rugs,Area Rugs,False,0.92,Area Rugs,0.3592855,0.0675790420000002
+accent chairs living room,Accent Chairs,Dining Chairs,Living Room Sets,True,0.6232403516769409,Dining Chairs,0.62324035,0.07322845799999911
+antique brass faucet,Bathroom Sink Faucets,Bathroom Sink Faucets,Bathroom Sink Faucets,False,0.53,Bathroom Sink Faucets,0.29085913,0.0718304579999991
+comfortable accent chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.65,Accent Chairs,0.24613218,0.0890727920000014
+nursery end table,End Tables,End Tables,End Tables,True,0.6731020212173462,End Tables,0.673102,0.0790699159999999
+semi flush foyer light,Flush Mount Lighting,Flush Mount Lighting,Flush Mount Lighting,False,0.5812565088272095,Flush Mount Lighting,0.5812565,0.0992162909999994
+cortez pillow,Accent Pillows,Accent Pillows,Accent Pillows,False,0.78,Accent Pillows,0.4067936,0.06830449999999999
+candace wingback upholstered bed,Beds,Beds,Beds,False,0.5303542017936707,Beds,0.5303542,0.07116212499999897
+champagne velvet desk chair,Office Chairs,Office Chairs,Office Chairs,False,0.4785394072532654,Office Chairs,0.4785394,0.0639822910000003
+dolomite subway tile,Floor & Wall Tile,Floor & Wall Tile,Floor & Wall Tile,False,0.91,Floor & Wall Tile,0.47584692,0.08318233299999989
+oliver parsons,Dining Chairs,Accent Pillows,Light Bulbs,False,1.2976880073547363,Accent Pillows,1.297688,0.06825016700000042
+chaves l-shape floating desk with hutch,Desks,Desks,Desks,False,0.55,Desks,0.67424566,0.08087595800000003
+marlon tufted queen bed,Beds,Beds,Beds,False,0.5447224378585815,Beds,0.54472244,0.06942870800000023
+johan desk by laurel foundry,Desks,Desks,Desks,True,0.8134084343910217,Desks,0.81340843,0.06948425000000036
+brunk ship wheel,Decorative Objects,Ride-On Toys,Ride-On Toys,False,0.81,Swing Set Accessories,0.90001035,0.06313875000000024
+grantola wall mirror,Wall & Accent Mirrors,Wall & Accent Mirrors,Wall & Accent Mirrors,False,0.85,Wall & Accent Mirrors,0.44738117,0.06553516600000009
+coma inducer comforter king set,Bedding Sets,Bedding Sets,Bedding Sets,False,0.6034461259841919,Bedding Sets,0.6034461,0.12957566599999915
+mission double vanity,Vanities,Makeup Vanities,Makeup Vanities,True,0.67,Makeup Vanities,0.8374302,0.07894995800000082
+decorative white pillow,Accent Pillows,Accent Pillows,Accent Pillows,False,0.86,Accent Pillows,0.31016657,0.06574670800000071
+end table between recliners,End Tables,End Tables,End Tables,True,0.7776675224304199,End Tables,0.7776675,0.07000041699999926
+zakariyah twin platform,Kids Beds,Bed Frames,Picture Frames,True,1.1834778785705566,Bed Frames,1.1834779,0.0680794579999997
+small woven pouf,Ottomans,Area Rugs,Faux Florals,True,1.1277236938476562,Area Rugs,1.1277237,0.08024329199999869
+animal print handmade tufted wool beige/black area rug by allmodern,Area Rugs,Area Rugs,Area Rugs,True,0.75,Area Rugs,0.54674655,0.06726441600000044
+circle cabinet pulls,Cabinet And Drawer Pulls,Cabinet And Drawer Knobs,Cabinet And Drawer Pulls,False,0.2926423251628876,Cabinet And Drawer Knobs,0.29264233,0.07472566699999916
+hawaii vintage art,Wall Art,Wall Art,Wall Art,False,0.66,Wall Art,0.94011676,0.07613433300000061
+ligth bulb,Light Bulbs,Light Bulbs,Light Bulbs,False,0.54,Lighting Accessories,0.51416415,0.06791266699999987
+moen 5995 arbor one,Kitchen Faucets,Bookcases,Door Knobs,True,1.3110742568969727,Bookcases,1.3110743,0.09578887500000022
+meade mirror,Wall & Accent Mirrors,Wall & Accent Mirrors,Wall & Accent Mirrors,False,0.84,Wall & Accent Mirrors,0.6058914,0.07060295800000027
+odum velvet,Sofas,Wreaths,Wreaths,True,1.175289273262024,Wreaths,1.1752893,0.07194604200000043
+malachi sled,Coffee & Cocktail Tables,Bird Play Stand & Playcenters,Door Knobs,True,1.2796123027801514,Bird Play Stand & Playcenters,1.2796123,0.0869839170000013
+rolande heavy duty power lift assist recliner,Recliners,Recliners,Recliners,False,0.87,Recliners,0.49337986,0.2644990000000007
+hulmeville writing desk with hutch,Desks,Desks,Desks,True,0.54,Desks,0.6664339,0.1164498750000007
+landis wall mounted bathroom shelves,Bathroom Storage,Bathroom Storage,Wall Mounted Shelves,False,0.3783566951751709,Bathroom Storage,0.3783567,0.09853404199999893
+blaylock bookcase headboard,Headboards,Headboards,Headboards,True,0.71,Headboards,0.55422527,0.06340054200000012
+hussain handmade tufted magenta rug,Area Rugs,Area Rugs,Area Rugs,False,0.9,Area Rugs,0.34621397,0.08249183400000071
+hub leaning full length mirror,Wall & Accent Mirrors,Wall & Accent Mirrors,Wall & Accent Mirrors,False,0.92,Wall & Accent Mirrors,0.69846165,0.0891991670000003
+bowersville ladder writing desk,Desks,Kids Desks,Memo Boards,True,0.8655443787574768,Kids Desks,0.8655444,0.07520416699999899
+kohler purist brushed bronze,Bathroom Sink Faucets,Door Knobs,Door Knobs,True,0.59,Door Knobs,1.0030936,0.07223604200000011
+kari 2 piece,Outdoor Conversation Sets,Lawn Games,Door Knobs,True,1.281055212020874,Lawn Games,1.2810552,0.06603912499999964
+upholstered girls bed,Beds,Beds,Beds,False,0.5460383892059326,Beds,0.5460384,0.06643650000000001
+attleboro drum coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,True,0.6939384341239929,Coffee & Cocktail Tables,0.69393843,0.06329012499999997
+itchington butterfly,Dining Tables,Bird Play Stand & Playcenters,Bird Play Stand & Playcenters,False,0.76,Garden Statues,0.9493952,0.07791745799999994
+mystic swivel,Accent Chairs,Computer Mounts,Swing Set Accessories,True,1.068727970123291,Computer Mounts,1.068728,0.07178266699999902
+ruckus chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.59,Accent Chairs,0.58573693,0.07914812499999968
+canvas map art,Wall Art,Wall Art,Wall Art,False,0.55,Wall Art,0.670502,0.07399033399999944
+brendon counter stool,Bar Stools,Accent Stools,Accent Stools,True,0.9,Accent Stools,0.5804938,0.07022737499999998
+olive green console table,Sofa & Console Tables,Sofa & Console Tables,Sofa & Console Tables,False,0.86,Sofa & Console Tables,0.46672124,0.1392895420000002
+one alium way,Sofas,Wreaths,Wreaths,False,0.67,Wreaths,1.4585862,0.06784829100000067
+mud room sign,Wall Décor,Wall Décor,Outdoor Wall Decor,False,0.9398496150970459,Wall Décor,0.9398496,0.06097391600000002
+white bathroom vanity black hardware,Vanities,Makeup Vanities,Vanity Bases,True,0.5637660622596741,Makeup Vanities,0.56376606,0.06342679200000134
+amarillo,Wall Art,Kids Wall Décor,Door Knobs,True,1.468217372894287,Kids Wall Décor,1.4682174,0.06361245899999979
+tressler rug,Area Rugs,Area Rugs,Area Rugs,False,0.89,Area Rugs,0.4496541,0.07643991700000008
+argenteuil,Wall Art,Espresso Machines,Door Knobs,True,1.4678584337234497,Espresso Machines,1.4678584,0.06712941699999853
+platform bed side table,End Tables,End Tables,End Tables,True,0.67,End Tables,0.58946866,0.07223779200000102
+huntsville sectional sofa,Sectionals,Sofas,Sofas,False,0.40371862053871155,Sofas,0.40371862,0.07029054100000032
+kisner,Wall Art,Innerspring Mattresses,Wreaths,False,1.2523434162139893,Innerspring Mattresses,1.2523434,0.06421350000000103
+brushed gold wall decor,Wall Décor,Wallpaper,Wall Décor,False,0.6817821264266968,Wallpaper,0.6817821,0.08915545900000055
+fortunat coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,True,0.59,Coffee & Cocktail Tables,0.47202593,0.06996024999999939
+rug for teen room,Area Rugs,Area Rugs,Area Rugs,False,0.88,Area Rugs,0.58598244,0.06498508299999983
+milk cow chair,Accent Chairs,Accent Chairs,Kids Chairs,True,0.8287537097930908,Accent Chairs,0.8287537,0.0746166670000008
+sinks bed frame,Kitchen Sinks,Kitchen Sinks,Kitchen Sinks,True,0.9884187579154968,Kitchen Sinks,0.98841876,0.07387691699999976
+pastel pink desk chair,Office Chairs,Office Chairs,Office Chairs,True,0.5826713442802429,Office Chairs,0.58267134,0.06698658300000027
+island estate coffee table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Coffee & Cocktail Tables,False,0.68,Coffee & Cocktail Tables,0.4186345,0.06971537500000125
+urban outfitters duvet,Bedding Sets,Bedding Sets,Bedding Sets,False,0.61,Bedding Sets,0.3363583,0.07203033300000072
+minnestrista,Wall Art,Innerspring Mattresses,Wreaths,False,1.2914936542510986,Innerspring Mattresses,1.2914937,0.06400779199999995
+alter furniture,Outdoor Conversation Sets,Living Room Sets,Living Room Sets,True,0.8600066304206848,Living Room Sets,0.86000663,0.07702016700000058
+outdoor sectional doning,Outdoor Conversation Sets,Outdoor Conversation Sets,Furniture Covers,True,0.9047198295593262,Outdoor Conversation Sets,0.9047198,0.07666766600000052
+brush nickel faucet bathroom,Bathroom Sink Faucets,Bathroom Sink Faucets,Bathroom Sink Faucets,False,0.4882858693599701,Bathroom Sink Faucets,0.48828587,0.08717266699999904
+cushion replacement insert,Furniture Cushions,Furniture Cushions,Furniture Cushions,False,0.69,Furniture Cushions,0.49215472,0.05804612499999706
+"writing desk 48""",Desks,Desks,Desks,False,0.68,Desks,0.6368543,0.06421345800000111
+china clock,Wall Clocks,Wall Clocks,Wall Clocks,True,0.9,Wall Clocks,0.5818905,0.07507758300000233
+gray leather cocktail table,Coffee & Cocktail Tables,Coffee & Cocktail Tables,Sofa & Console Tables,False,0.4211176931858063,Coffee & Cocktail Tables,0.4211177,0.07126233299999996
+maryford queen tufted bed,Beds,Beds,Beds,False,0.5524590015411377,Beds,0.552459,0.08036274999999904
+small ladies rocker swivel recliner,Recliners,Recliners,Recliners,False,0.68,Recliners,0.37629423,0.07241779199999954
+large cushion outdoor chair,Furniture Cushions,Uniters Outdoor Furniture,Accent Chairs,False,0.372839093208313,Uniters Outdoor Furniture,0.3728391,0.07174483299999679
+queen ann style living room chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.63,Accent Chairs,0.52227974,0.07390829099999863
+teal chair,Accent Chairs,Accent Chairs,Accent Chairs,False,0.56,Accent Chairs,0.43446246,0.06876399999999805
+jennie tufted upholstered low profile platform bed,Beds,Beds,Beds,True,0.53,Beds,0.5172041,0.07324191700000071
+burruss patio sectional with cushions,Outdoor Conversation Sets,Patio Sofas,Patio Sofas,False,0.38084641098976135,Patio Sofas,0.3808464,0.09453254199999961
+tile backsplash,Floor & Wall Tile,Floor & Wall Tile,Floor & Wall Tile,False,0.89,Floor & Wall Tile,0.62313443,0.07519520900000032
+dining room tables,Dining Tables,Dining Table Sets,Dining Table Sets,False,0.3523801267147064,Dining Table Sets,0.35238013,0.06597162499999953
+ergonomic chair,Office Chairs,Accent Chairs,Accent Chairs,False,0.3330596685409546,Accent Chairs,0.33305967,0.0752677499999983
+wall shelves,Wall Mounted Shelves,Shelving & Racks,Wall Mounted Shelves,False,0.31637030839920044,Shelving & Racks,0.3163703,0.07004212499999696
+wayfair comforters,Bedding Sets,Bedding Sets,Bedding Sets,False,0.56,Bedding Sets,0.647171,0.06376204099999683
+side table with storage,End Tables,End Tables,End Tables,True,0.5906501412391663,End Tables,0.59065014,0.06618333300000145
+lowes tile,Floor & Wall Tile,Floor & Wall Tile,Floor & Wall Tile,False,0.91,Floor & Wall Tile,0.5716692,0.12429824999999894
+30 inch bathroom vanity,Vanities,Makeup Vanities,Makeup Vanities,False,0.61,Makeup Vanities,0.44270116,0.06315462499999924
+shoe bench entryway,Shoe Storage,Benches,Benches,True,0.6261487603187561,Benches,0.62614876,0.06467558299999965
+parsons chairs,Dining Chairs,Dining Chairs,Dining Chairs,True,0.4893331527709961,Dining Chairs,0.48933315,0.09355954199999772
+wood bar stools,Bar Stools,Bar Stools,Bar Stools,False,0.26105430722236633,Bar Stools,0.2610543,0.07388320899999812
+chaise lounge couch,Sectionals,Sofas,Sofas,False,0.4260770082473755,Sofas,0.426077,0.06570341600000162
+aiden black velvet bed,Beds,Beds,Beds,False,0.4817306399345398,Beds,0.48173064,0.06914308400000024
+carpet 5x6,Area Rugs,Area Rugs,Area Rugs,True,0.57,Area Rugs,0.7594433,0.059841875000000044
+bubble guppies chair,Dining Chairs,Kids Chairs,Kids Chairs,True,0.765152633190155,Kids Chairs,0.76515263,0.06940262500000216
+tye dye duvet cover,Bedding Sets,Bedding Sets,Bedding Sets,False,0.63,Bedding Sets,0.29752788,0.05897783400000023
+white abstract,Area Rugs,Wall Art,Wall Art,False,1.2347090244293213,Wall Art,1.234709,0.08097929200000209
+town & country living curtains,Curtains & Drapes,Curtains & Drapes,Curtains & Drapes,True,0.78,Curtains & Drapes,0.9040623,0.08234383299999948
+elephant framed,Wall Art,Picture Frames,Licensed Products,False,1.0457860231399536,Picture Frames,1.045786,0.09210058300000057
+chair pillow cushion,Furniture Cushions,Accent Pillows,Furniture Cushions,False,0.4261995553970337,Accent Pillows,0.42619956,0.06073504199999746
+hardwood beds,Beds,Beds,Beds,True,0.5693650245666504,Beds,0.569365,0.0695055420000017
+pictures to hang over fireplace,Wall Art,Wall Décor,Wall Décor,True,1.0859273672103882,Wall Décor,1.0859274,0.06633125000000106

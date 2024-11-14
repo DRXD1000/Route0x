@@ -1,0 +1,82 @@
+                                   precision    recall  f1-score   support
+
+                    Accent Chairs       0.85      0.79      0.81        14
+                   Accent Pillows       0.67      1.00      0.80         6
+                    Accent Stools       0.00      0.00      0.00         0
+                        Area Rugs       0.91      0.77      0.83        13
+                       Bar Stools       1.00      0.40      0.57         5
+            Bathroom Sink Faucets       1.00      0.50      0.67         4
+                 Bathroom Storage       1.00      1.00      1.00         1
+                       Bed Frames       0.00      0.00      0.00         0
+                     Bedding Sets       1.00      1.00      1.00         4
+                             Beds       1.00      0.85      0.92        13
+                          Benches       0.00      0.00      0.00         0
+    Bird Play Stand & Playcenters       0.00      0.00      0.00         0
+                        Bookcases       0.33      1.00      0.50         1
+         Cabinet And Drawer Knobs       0.00      0.00      0.00         0
+         Cabinet And Drawer Pulls       0.00      0.00      0.00         3
+                 Canisters & Jars       1.00      1.00      1.00         1
+                      Chandeliers       1.00      0.50      0.67         2
+         Coffee & Cocktail Tables       1.00      0.88      0.93         8
+                  Computer Mounts       0.00      0.00      0.00         0
+                Curtains & Drapes       1.00      1.00      1.00         3
+               Decorative Objects       0.00      0.00      0.00         3
+                            Desks       1.00      0.86      0.92         7
+                    Dining Chairs       0.33      0.25      0.29         4
+                Dining Table Sets       0.00      0.00      0.00         0
+                    Dining Tables       1.00      0.33      0.50         3
+                       Door Knobs       0.00      0.00      0.00         0
+                Dressers & Chests       1.00      0.75      0.86         8
+                       End Tables       0.86      1.00      0.92         6
+                Espresso Machines       0.00      0.00      0.00         0
+                Floor & Wall Tile       1.00      1.00      1.00         4
+             Flush Mount Lighting       1.00      1.00      1.00         1
+               Furniture Cushions       1.00      0.60      0.75         5
+                   Garden Statues       0.50      1.00      0.67         1
+                       Headboards       1.00      1.00      1.00         1
+           Innerspring Mattresses       0.00      0.00      0.00         0
+                        Kids Beds       0.00      0.00      0.00         1
+                      Kids Chairs       0.00      0.00      0.00         0
+                       Kids Desks       0.00      0.00      0.00         0
+                  Kids Wall Décor       0.00      0.00      0.00         0
+                  Kitchen Faucets       0.00      0.00      0.00         1
+                    Kitchen Sinks       1.00      1.00      1.00         1
+                       Lawn Games       0.00      0.00      0.00         0
+                Licensed Products       0.00      0.00      0.00         0
+                      Light Bulbs       0.50      1.00      0.67         1
+                 Living Room Sets       0.00      0.00      0.00         0
+                  Makeup Vanities       0.00      0.00      0.00         0
+                    Office Chairs       1.00      0.60      0.75         5
+          Office Storage Cabinets       1.00      1.00      1.00         2
+                         Ottomans       0.00      0.00      0.00         1
+        Outdoor Conversation Sets       1.00      0.17      0.29         6
+               Outdoor Wall Decor       0.00      0.00      0.00         0
+                  Pantry Cabinets       0.00      0.00      0.00         0
+                Patio Dining Sets       0.00      0.00      0.00         0
+                      Patio Sofas       0.00      0.00      0.00         1
+                   Picture Frames       0.00      0.00      0.00         0
+         Plant & Telephone Tables       1.00      1.00      1.00         1
+          Playhouses & Play Tents       0.00      0.00      0.00         0
+                        Recliners       0.80      1.00      0.89         4
+                     Ride-On Toys       0.00      0.00      0.00         0
+                       Sectionals       1.00      0.33      0.50         3
+            Sheets And Sheet Sets       0.00      0.00      0.00         2
+                 Shelving & Racks       0.00      0.00      0.00         0
+                     Shoe Storage       0.00      0.00      0.00         1
+            Sofa & Console Tables       1.00      1.00      1.00         3
+                            Sofas       0.00      0.00      0.00         3
+                      Table Lamps       1.00      1.00      1.00         1
+Tv Stands & Entertainment Centers       1.00      0.50      0.67         2
+        Uniters Outdoor Furniture       0.00      0.00      0.00         0
+                         Vanities       0.00      0.00      0.00         5
+            Wall & Accent Mirrors       1.00      1.00      1.00         5
+                         Wall Art       0.62      0.28      0.38        18
+                      Wall Clocks       1.00      1.00      1.00         1
+                       Wall Décor       0.67      0.33      0.44         6
+             Wall Mounted Shelves       0.00      0.00      0.00         1
+                        Wallpaper       0.00      0.00      0.00         0
+                          Wreaths       0.00      0.00      0.00         0
+
+                         accuracy                           0.62       196
+                        macro avg       0.45      0.39      0.40       196
+                     weighted avg       0.79      0.62      0.67       196
