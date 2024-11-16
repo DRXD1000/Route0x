@@ -22,10 +22,9 @@
   </h4>
 </div>
 
-**Why Route0x?** Query Routing cannot be fully solved just with Text classification or just with Semantic similarity in isolation. Using LLMs makes it a slow and expensive pursuit. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. The research literature is vast and it hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue. It takes a 360 degree approach and leverages LLMs to offer a production-grade solution.
+**Why Route0x?** Query Routing cannot be fully solved just with Text classification or just with Semantic similarity in isolation. Here is why: The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. The research literature is vast and it hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. 
 
-
-**KPI for Query Routing:** $ / Query. (subsumes accuracy, latency)
+`route0x` is a production-grade solution that takes a comprehensive approach to query routing, leveraging LLMs while optimizing for cost per query ($/query). 0x your latency, cost and learning curve.
 
 > Hitherto, route0x is the `only (practically) free, low latency (no external I/O needed), DIY + Improvable, low shot (only 2 user samples per route/intent needed), production-grade solution, that is FT for only 100 steps` that matches or beats contemporay Query Routing Researches and Solutions. We tested it on `8 different TODS datasets (some are deployed systems) from different domains, granularity and complexity` against 2 different researches and 1 library. (detailed table below).*
 
