@@ -52,6 +52,9 @@ routebuilder = RouteBuilder(
             max_query_len = 24,
             log_level = "info",
     )
+
+routebuilder.build_routes()
+    
 ```
 
 ### FAQs:

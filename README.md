@@ -155,7 +155,7 @@ all numbers with uncertainity we present numbers from 3 runs and denote the vari
 <img src="./images/ACID_SR.png"/><br/><br/>
 
   Note: All the above numbers are with `use_multivec_reranking` = False, (explore below sections for more details)
-  
+
   - BGE-BASE - BAAI/bge-base-en-v1.5,  
   - MPNET - sentence-transformers/all-mpnet-base-v2
 
