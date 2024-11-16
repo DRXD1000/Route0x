@@ -8,6 +8,7 @@
 |I have a list of routes but no samples | T.B.A |
 |I have a full-on train.csv and test.csv  | T.B.A |
 |I would like to handle In-domain / adversarial OOS queries  | T.B.A |
+|I would like to handle Only In-domain queries No OOS  | T.B.A |
 |I would like my router robust to typos in queries ? | T.B.A |
 |I would like run route0x on a TODS style benchmark dataset to compare performance | T.B.A |
 
@@ -16,7 +17,12 @@
 
 ```python
 
-from route0x import RouteBuilder, Route, RouteBuilderRequest
+# ONLY IF YOU WANT TO USE OAI GPT4x Models
+import os
+os.putenv("OPENAI_API_KEY", "<your_api_key>")
+os.environ["OPENAI_API_KEY"] = "<your_api_key>"
+
+from route0x.route_builder import RouteBuilder, Route, RouteBuilderRequest
 
 routes = [
   Route("alarm/cancel_alarm", ['delete my alarms please', 'cancel oven alarm']),
@@ -43,7 +49,7 @@ routebuilder = RouteBuilder(
             llm_name="llama3.1",# gpt4* offers better quality data, API key searched in env, os.getenv("OPENAI_API_KEY")
             enable_synth_data_gen = True,
             enable_id_oos_gen = True,
-            max_query_len = 64,
+            max_query_len = 24,
             log_level = "info",
     )
 ```

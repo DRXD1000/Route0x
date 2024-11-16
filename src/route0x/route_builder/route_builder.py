@@ -43,6 +43,7 @@ import matplotlib.pyplot as plt
 
 import nlpaug.augmenter.char as nac
 
+
 from .outlier_detector import OutlierDetector
 from .vector_db import VectorDB
 from .unified_llm_caller import UnifiedLLM
@@ -1401,21 +1402,3 @@ class RouteBuilder:
             self.logger.info("Thank you for using route0x! May all your queries find their way.")
 
 
-# routebuilder = RouteBuilder(
-#             seed = 1234,
-#             train_path = "../../../benchmarks/powerplay11/synthetic_gpt-4o_online_gaming_and_betting_20241008_101435_train.csv",
-#             eval_path = "../../../samples/datasets/powerplay11/powerplay11_eval.csv",
-#             loss_funct_name="PairwiseArcFaceFocalLoss",
-#             oos_label = "NO_NODES_DETECTED",
-#             max_steps=100,
-#             warmup_proportion=0.05,
-#             route_template = "{}",
-#             enable_test_dataset_gen = False,
-#             enable_synth_data_gen = False,
-#             enable_id_oos_gen = False,
-#             skip_eval = True,
-#             add_additional_invalid_routes = False,
-#             log_level = "info",
-#     )
-
-# routebuilder.build_routes()

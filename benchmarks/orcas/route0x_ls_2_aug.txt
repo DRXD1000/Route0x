@@ -1,0 +1,11 @@
+                     precision    recall  f1-score   support
+
+      Abstain Query       0.59      0.07      0.13       364
+      Factual Query       0.50      0.75      0.60       363
+ Instrumental Query       0.44      0.32      0.37        59
+ Navigational Query       0.30      0.25      0.27       171
+Transactional Query       0.17      0.86      0.28        43
+
+           accuracy                           0.40      1000
+          macro avg       0.40      0.45      0.33      1000
+       weighted avg       0.48      0.40      0.34      1000

@@ -1,0 +1,1001 @@
+text,label,Route42 route,pred label,is_outlier,prob,most_nn,most_nn_mean_dist,latency
+best reads,Abstain Query,Abstain Query,Factual Query,True,1.7641105651855469,Abstain Query,1.7641106,0.05485641600000024
+tamerind,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2817837,0.024964084000000053
+show mi ip,Instrumental Query,Navigational Query,Navigational Query,True,0.64,Navigational Query,1.2948542,0.026574458000000245
+do carpenter ants eat wood,Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,1.1659279,0.034514916999999645
+rheumatoid arthritis in children,Abstain Query,Factual Query,Factual Query,False,0.95,Factual Query,0.5759102,0.05315237499999981
+flight regulations,Abstain Query,Factual Query,Navigational Query,True,1.6578633785247803,Factual Query,1.6578634,0.02539141700000025
+sports swimming,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.515763,0.026945958999999853
+tacoma wheelbase,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.4492943,0.02017733399999999
+cooking boneless chicken breasts,Instrumental Query,Factual Query,Factual Query,True,0.8,Factual Query,1.6547428,0.024922834000000282
+how much are medicare premiums for 2018,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1383336,0.02443683299999977
+does quizlet cost money,Factual Query,Transactional Query,Transactional Query,True,1.6500093936920166,Transactional Query,1.6500094,0.025506791999999834
+outlamder,Factual Query,Transactional Query,Factual Query,True,1.5983444452285767,Transactional Query,1.5983444,0.02614320899999978
+"turbotax.cp,",Navigational Query,Transactional Query,Transactional Query,True,0.7,Transactional Query,1.1591892,0.02331562499999995
+custom gifts,Abstain Query,Transactional Query,Transactional Query,True,0.88,Transactional Query,0.9901884,0.023859166999999903
+cariboo coffee,Navigational Query,Navigational Query,Factual Query,True,1.4281678199768066,Navigational Query,1.4281678,0.020580916000000116
+is richard gere dead,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7462402,0.01679070799999982
+idverify.irs.gov refund,Navigational Query,Transactional Query,Transactional Query,True,0.54,Transactional Query,1.2302108,0.02602512499999987
+arctanhx,Factual Query,Factual Query,Factual Query,True,0.81,Factual Query,1.4876446,0.015114167000000123
+10+4,Factual Query,Factual Query,Factual Query,True,0.68,Factual Query,1.6784528,0.027794166000000065
+c# save settings,Factual Query,Transactional Query,Transactional Query,True,1.6375936269760132,Transactional Query,1.6375936,0.01888362499999996
+cdczika,Navigational Query,Factual Query,Factual Query,True,0.77,Factual Query,1.4645714,0.01781620900000025
+what is lead time,Factual Query,Factual Query,Factual Query,True,0.59,Factual Query,1.7072109,0.015506832999999887
+direct debits,Navigational Query,Transactional Query,Transactional Query,True,0.72,Transactional Query,1.1446216,0.017900000000000027
+muscolare,Factual Query,Factual Query,Factual Query,True,0.85,Factual Query,1.3651329,0.027359500000000203
+place in spain,Factual Query,Navigational Query,Navigational Query,True,0.65,Navigational Query,1.0686731,0.020784916999999847
+celebrities dead or alive website,Navigational Query,Factual Query,Factual Query,True,0.62,Transactional Query,1.5964243,0.021634000000000153
+apple phone replacement,Factual Query,Transactional Query,Transactional Query,True,0.86,Transactional Query,0.9279874,0.018905499999999797
+weather vancouver march,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.4933239,0.023927542000000024
+almond butter,Abstain Query,Factual Query,Factual Query,True,0.79,Factual Query,1.5767695,0.01737041699999997
+"www,craiglist",Navigational Query,Navigational Query,Navigational Query,True,0.79,Navigational Query,0.93212587,0.025044832999999933
+force and motion video,Abstain Query,Instrumental Query,Factual Query,True,1.65599524974823,Instrumental Query,1.6559952,0.020541167000000193
+what is physical development in childcare,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4688711,0.035990500000000036
+best crossbow for deer hunting,Abstain Query,Factual Query,Factual Query,True,0.56,Navigational Query,1.6661177,0.021858916999999867
+can i order prescription eyeglasses online,Transactional Query,Factual Query,Factual Query,True,0.53,Transactional Query,1.3240669,0.018000124999999922
+slo county jail,Navigational Query,Navigational Query,Navigational Query,True,0.76,Navigational Query,1.041241,0.02435833399999998
+post traumatic epilepsy,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.6861162,0.014792334000000018
+famous black explorers,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0244336,0.015706915999999627
+health benefits of beet juice,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1850814,0.02636733400000013
+ss-5,Abstain Query,Factual Query,Factual Query,True,0.89,Factual Query,1.2896907,0.01930062500000007
+paycvor,Navigational Query,Transactional Query,Transactional Query,True,0.61,Transactional Query,1.1771946,0.018167125000000173
+zeus family tree,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.134958,0.022922832999999976
+gc12 battery,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.5455097,0.023866374999999884
+background sound effects free download,Transactional Query,Transactional Query,Transactional Query,True,0.69,Transactional Query,1.3070552,0.024440624999999994
+mars retrograde motion,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.4801517,0.018964791000000147
+oberto,Factual Query,Factual Query,Factual Query,True,0.77,Factual Query,1.4720964,0.02523454100000011
+dell support assistant repair,Factual Query,Transactional Query,Transactional Query,True,0.82,Transactional Query,0.94703215,0.03831812499999998
+aquitaine,Factual Query,Factual Query,Factual Query,True,0.74,Factual Query,1.5182654,0.034775542000000215
+marines seal,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.1378381,0.030466708999999703
+what does the pharynx do,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.2126013,0.0218977090000001
+irish alphabet,Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4628006,0.02032637500000023
+test mic windows 10,Instrumental Query,Instrumental Query,Transactional Query,True,1.659369707107544,Instrumental Query,1.6593697,0.019393208000000328
+retention meaning,Factual Query,Factual Query,Factual Query,True,0.66,Abstain Query,1.5820805,0.01598079100000005
+gooogle login,Navigational Query,Navigational Query,Navigational Query,True,1.5194629430770874,Navigational Query,1.519463,0.031449417000000146
+excel merge data,Instrumental Query,Transactional Query,Instrumental Query,True,1.4323538541793823,Transactional Query,1.4323539,0.023966709000000197
+pioneer woman brisket recipe,Factual Query,Factual Query,Factual Query,True,0.65,Navigational Query,1.5773373,0.020461875000000074
+flowers for algernon daniel keyes,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.5578874,0.028306333999999822
+bank of eastern oregon,Navigational Query,Navigational Query,Navigational Query,True,0.61,Navigational Query,1.2043848,0.07480075000000008
+indeed job,Navigational Query,Transactional Query,Factual Query,True,1.7173305749893188,Transactional Query,1.7173306,0.02199166599999991
+phising scam,Factual Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.2431027,0.019500541999999843
+clemson tigers news,Abstain Query,Factual Query,Factual Query,True,0.78,Factual Query,1.5753753,0.029131666999999695
+how indira gandhi died,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.6942369,0.01918741699999993
+cbs sports network live stream,Abstain Query,Navigational Query,Factual Query,True,1.670962929725647,Navigational Query,1.6709629,0.02136074999999993
+sensitivity calculation,Abstain Query,Instrumental Query,Factual Query,True,1.8066515922546387,Instrumental Query,1.8066516,0.02108279199999963
+tangled characters names,Factual Query,Navigational Query,Factual Query,True,1.9049954414367676,Navigational Query,1.9049954,0.01880395899999998
+fallout new vegas ultimate edition,Factual Query,Transactional Query,Factual Query,True,1.6887903213500977,Transactional Query,1.6887903,0.0309579590000002
+rescue knots,Abstain Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4628358,0.016782500000000145
+padora music,Transactional Query,Instrumental Query,Factual Query,True,1.6242738962173462,Instrumental Query,1.6242739,0.021051208000000265
+community bank westfield ny,Navigational Query,Navigational Query,Navigational Query,True,0.91,Navigational Query,0.6820675,0.019045207999999647
+how to measure 7 8 cup,Instrumental Query,Navigational Query,Factual Query,True,1.7081403732299805,Navigational Query,1.7081404,0.0326204579999998
+hands turn purple bluish color,Abstain Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1820713,0.023265042000000236
+definition of activation energy,Factual Query,Factual Query,Factual Query,True,0.76,Factual Query,1.6457736,0.031026917000000154
+launch tech usa,Navigational Query,Transactional Query,Transactional Query,True,0.85,Transactional Query,0.95710725,0.042445666999999965
+new jersey corvette dealer largest,Abstain Query,Navigational Query,Navigational Query,True,0.75,Navigational Query,0.86552584,0.025712833000000046
+salt intake,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4122269,0.016225708999999533
+liver spots on back,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,0.994454,0.02188858299999996
+dfas help desk,Abstain Query,Transactional Query,Transactional Query,True,0.77,Transactional Query,1.15413,0.02763370899999984
+a340-200,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4386339,0.026146957999999998
+anthem blue cross number,Factual Query,Factual Query,Factual Query,True,0.81,Factual Query,1.3897241,0.016804916999999975
+atorvastain,Factual Query,Navigational Query,Navigational Query,True,1.360328197479248,Navigational Query,1.3603282,0.016273167000000477
+did romeo and juliet get married,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0707083,0.018622749999999577
+meaning of exception,Factual Query,Factual Query,Factual Query,True,0.52,Abstain Query,1.5927519,0.0246431669999998
+car rental abroad,Abstain Query,Transactional Query,Transactional Query,True,0.88,Transactional Query,0.8282403,0.04026791600000035
+nadaguidelines,Navigational Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0101836,0.03067124999999926
+vizio tv remote app,Transactional Query,Transactional Query,Transactional Query,True,0.87,Transactional Query,0.93507063,0.022026417000000187
+mint green hex,Abstain Query,Factual Query,Factual Query,True,0.69,Factual Query,1.6529588,0.019902958999999498
+https://support.hpe.com,Navigational Query,Factual Query,Factual Query,True,0.53,Transactional Query,1.6928715,0.02591908399999987
+airline abbreviation codes,Factual Query,Navigational Query,Navigational Query,True,0.55,Navigational Query,1.4606006,0.023924959000000356
+chesapeake bay bridge tunnel construction,Abstain Query,Navigational Query,Navigational Query,True,0.77,Navigational Query,0.9615903,0.022368333000000185
+duration calculator between two dates,Transactional Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.69282955,0.02414824999999965
+accuweather monthly forecast,Navigational Query,Transactional Query,Transactional Query,True,1.712558388710022,Transactional Query,1.7125584,0.02575949999999949
+download crome free,Transactional Query,Transactional Query,Transactional Query,True,0.55,Transactional Query,1.2441877,0.02003725000000056
+zip codes by address,Factual Query,Navigational Query,Navigational Query,True,0.92,Navigational Query,0.7829955,0.018249625000000158
+black vault website,Navigational Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.139253,0.022937708999999806
+driver license office near me,Abstain Query,Navigational Query,Navigational Query,False,0.93,Navigational Query,0.47462898,0.02211933300000002
+phosphate conversion coating,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4962606,0.040873749999999376
+cannot start microsoft outlook 365,Instrumental Query,Factual Query,Factual Query,True,0.72,Factual Query,1.6654533,0.04298712499999979
+the benefits of cinnamon,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.378865,0.021568457999999957
+united states inflation rate 2018,Factual Query,Factual Query,Factual Query,True,0.68,Factual Query,1.3715087,0.02502966700000009
+free algebra word problem solver,Transactional Query,Transactional Query,Transactional Query,False,0.94,Transactional Query,0.39715165,0.017741250000000264
+best startup companies,Abstain Query,Transactional Query,Factual Query,True,1.3667688369750977,Transactional Query,1.3667688,0.04106774999999985
+elasticity coefficient,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4792078,0.06038387499999942
+what are signs of pneumonia in adults,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.78216374,0.040492541999999965
+gmail uc davis,Navigational Query,Navigational Query,Navigational Query,True,0.68,Navigational Query,1.264518,0.028961291999999972
+about rose,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4521849,0.03552970899999952
+indiana members credit union login,Navigational Query,Transactional Query,Transactional Query,True,0.55,Navigational Query,1.3418592,0.018845416000000448
+minnesota inmates,Abstain Query,Factual Query,Factual Query,False,0.78,Factual Query,1.3895031,0.022272499999999695
+nursing license lookup,Abstain Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,0.875385,0.027190083999999892
+netflix.com my account,Navigational Query,Transactional Query,Transactional Query,True,0.67,Transactional Query,1.3600266,0.024003458000000144
+why is my cricut cutting through vinyl,Factual Query,Factual Query,Factual Query,True,0.63,Instrumental Query,1.6857615,0.02603687499999996
+whale watching east coast,Abstain Query,Navigational Query,Navigational Query,True,0.63,Navigational Query,1.2650665,0.019828791000000123
+pocker online,Transactional Query,Transactional Query,Transactional Query,True,0.86,Transactional Query,0.8064345,0.01634412500000071
+sdtax,Abstain Query,Transactional Query,Transactional Query,True,0.61,Transactional Query,1.1811061,0.014883750000000084
+knight rider tv show,Factual Query,Factual Query,Factual Query,True,0.71,Factual Query,1.666449,0.023237750000000723
+air canada plane,Navigational Query,Navigational Query,Factual Query,True,1.572773814201355,Navigational Query,1.5727738,0.030104750000000458
+ffafsa,Navigational Query,Factual Query,Factual Query,True,0.75,Factual Query,1.6787815,0.03291970800000055
+how to install sharkbite,Instrumental Query,Factual Query,Factual Query,True,0.58,Transactional Query,1.7480676,0.023071333999999943
+funny google street view images,Transactional Query,Navigational Query,Navigational Query,True,0.7,Navigational Query,1.2777729,0.025700500000000126
+sage name meaning,Factual Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4336994,0.02828608300000024
+disabled iphone connect to itunes not working,Abstain Query,Instrumental Query,Factual Query,True,1.6787135601043701,Instrumental Query,1.6787136,0.025878374999999565
+can i cancel car insurance anytime,Factual Query,Factual Query,Factual Query,True,0.52,Instrumental Query,1.6679674,0.014769667000000375
+national weather radar live doppler,Factual Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.2306385,0.018525792000000152
+solitaire game cards,Abstain Query,Transactional Query,Transactional Query,True,0.68,Transactional Query,1.3056899,0.015300167000000364
+conjunctions list,Factual Query,Factual Query,Factual Query,True,0.58,Factual Query,1.7908207,0.026667708999999817
+download outlook for win 10,Transactional Query,Transactional Query,Transactional Query,True,0.65,Transactional Query,1.2687547,0.028254916999999935
+perseverations,Factual Query,Abstain Query,Abstain Query,True,0.75,Abstain Query,1.205792,0.022437334000000142
+edit pdf size,Instrumental Query,Instrumental Query,Factual Query,True,1.6738474369049072,Instrumental Query,1.6738474,0.026681415999999736
+one drive singin,Navigational Query,Navigational Query,Navigational Query,True,0.73,Navigational Query,1.2740935,0.027697208000000195
+alabaster stone,Factual Query,Factual Query,Factual Query,True,0.76,Factual Query,1.2924368,0.016427583000000467
+ibuprofen pregnancy,Abstain Query,Factual Query,Factual Query,False,0.89,Factual Query,1.0943792,0.02287133399999952
+kitcc,Navigational Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6314483,0.019181915999999966
+kitchen remodel cost,Factual Query,Navigational Query,Navigational Query,True,0.57,Navigational Query,1.4536947,0.0179136669999993
+how many people died in the civil war,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,0.8610586,0.020259207999999695
+what is the most unhealthy food in the world,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.99661905,0.03750279200000062
+anticathexis,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0057592,0.023138250000000582
+morningstar moat,Navigational Query,Navigational Query,Navigational Query,True,0.82,Navigational Query,1.0499651,0.017893291000000033
+drinking alkaline water benefits,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.1286778,0.0204369170000005
+nutrients in pomegranate,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4213665,0.02598833299999992
+issues in the us today,Abstain Query,Abstain Query,Abstain Query,False,0.94,Abstain Query,0.3862967,0.03866208300000018
+quicken loans arena,Factual Query,Navigational Query,Navigational Query,True,0.78,Navigational Query,0.9722015,0.022906374999999812
+idle for python,Abstain Query,Transactional Query,Transactional Query,True,0.54,Transactional Query,1.5077078,0.02123833300000033
+eel skin,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4429512,0.029769665999999972
+what does rosacea look like,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.86458987,0.044838291000000474
+i need my desktop back,Abstain Query,Transactional Query,Transactional Query,True,1.521894097328186,Transactional Query,1.5218941,0.02690670800000028
+terre haute weather forecast,Factual Query,Navigational Query,Navigational Query,True,0.56,Navigational Query,1.359725,0.021775292000000057
+asthma medications,Abstain Query,Factual Query,Factual Query,False,0.9,Factual Query,1.1399337,0.01999058299999934
+ozark season 3,Factual Query,Factual Query,Factual Query,True,0.56,Factual Query,1.787202,0.01998329200000004
+chilie,Abstain Query,Factual Query,Factual Query,True,0.76,Factual Query,1.6284126,0.019925708000000597
+mr hans,Abstain Query,Factual Query,Factual Query,True,0.81,Factual Query,1.5027387,0.02474699999999963
+green valley casino henderson nv,Abstain Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.6431707,0.030484167000000006
+evisa egypt,Factual Query,Factual Query,Factual Query,True,0.72,Factual Query,1.4395458,0.024073624999999765
+octopus symbolism,Abstain Query,Factual Query,Factual Query,True,0.68,Factual Query,1.7806885,0.02228462500000017
+cricinfo scores,Navigational Query,Factual Query,Factual Query,True,0.9,Factual Query,1.2717218,0.038675792000000264
+high neutrophils low lymphocytes,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7731994,0.03033570800000085
+thin ribbon rack builder,Abstain Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,0.95374566,0.03720608400000014
+what is this ip,Factual Query,Navigational Query,Navigational Query,True,1.34877610206604,Navigational Query,1.3487761,0.0191855839999997
+window loader,Transactional Query,Transactional Query,Transactional Query,True,0.86,Transactional Query,1.0264845,0.033730540999999725
+cooking a prime rib roast,Instrumental Query,Navigational Query,Factual Query,True,1.7273852825164795,Navigational Query,1.7273853,0.050163958999999814
+https://web-mech01.mail.mil/owa,Navigational Query,Factual Query,Factual Query,True,0.7,Navigational Query,1.3437757,0.04512070799999979
+meaning of nouns,Factual Query,Abstain Query,Abstain Query,True,1.6673305034637451,Abstain Query,1.6673305,0.031643625000000064
+exit tickets template,Abstain Query,Transactional Query,Transactional Query,True,0.83,Transactional Query,1.0189915,0.020246917000000586
+how many bags of concrete for 1 yard,Factual Query,Navigational Query,Factual Query,True,1.57611882686615,Navigational Query,1.5761188,0.02883816699999997
+rmb and cny,Abstain Query,Factual Query,Factual Query,True,0.76,Factual Query,1.4364982,0.0246060409999993
+big brother 2018,Factual Query,Factual Query,Factual Query,True,0.68,Abstain Query,1.5635695,0.026749917000000067
+carteret county public library,Navigational Query,Navigational Query,Navigational Query,True,0.82,Navigational Query,0.8884034,0.04684037499999949
+steve mcqueen morgue photo,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.1968745,0.03488220900000005
+toothpaste for gum disease,Abstain Query,Factual Query,Factual Query,True,0.83,Factual Query,1.283179,0.021836500000000036
+ectum,Factual Query,Factual Query,Factual Query,True,0.85,Factual Query,1.390725,0.020966666000000522
+good sam enterprises,Abstain Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.314756,0.02166629199999992
+soptfy,Navigational Query,Factual Query,Factual Query,True,0.72,Factual Query,1.7235317,0.018225624999999468
+2018 ford taurus sho,Factual Query,Factual Query,Factual Query,True,0.71,Factual Query,1.6414042,0.023363792000000494
+eye optic nerve,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9555918,0.02956687499999955
+44142,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.4532349,0.02127812500000026
+geez word,Factual Query,Factual Query,Factual Query,True,0.68,Factual Query,1.7384945,0.016167416000000046
+personal fall arrest system osha,Abstain Query,Factual Query,Factual Query,True,0.75,Factual Query,1.5154237,0.023130749999999978
+paypal.com/prepaidlogin,Navigational Query,Transactional Query,Transactional Query,True,0.88,Transactional Query,0.743965,0.027032791999999972
+highclere castle history,Abstain Query,Factual Query,Factual Query,True,0.61,Navigational Query,1.2115421,0.030014540999999895
+barbie matel,Navigational Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1012284,0.019241709000000107
+moniker definition,Factual Query,Instrumental Query,Factual Query,True,1.6940276622772217,Instrumental Query,1.6940277,0.01744937499999999
+kekegenkai,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.3093843,0.02549795899999996
+toledo city school district,Navigational Query,Navigational Query,Navigational Query,True,1.3228869438171387,Navigational Query,1.322887,0.01748962499999962
+texas rangers disbanded,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.3450568,0.02917191600000013
+volkswagen credit payoff phone number,Factual Query,Navigational Query,Navigational Query,True,1.4659966230392456,Navigational Query,1.4659966,0.024994375000000346
+what are the levels of organization of the human body,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3526132,0.05320141600000028
+aids sign,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.3686804,0.047927209000000026
+deers.gov,Navigational Query,Navigational Query,Navigational Query,True,0.52,Navigational Query,1.2629226,0.01791104199999971
+mrsa recurrence,Abstain Query,Factual Query,Factual Query,False,0.95,Factual Query,0.65978694,0.026104916999999617
+oticon opn 1,Factual Query,Transactional Query,Transactional Query,True,0.52,Transactional Query,1.3153503,0.020040584000000194
+pdf add,Instrumental Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,1.1777394,0.026291749999999503
+implantation bleeding,Abstain Query,Factual Query,Factual Query,True,0.92,Factual Query,1.0782595,0.02237537499999931
+la fitness,Navigational Query,Navigational Query,Navigational Query,True,0.67,Navigational Query,1.1286818,0.03767533399999934
+northern safety & industrial,Navigational Query,Navigational Query,Navigational Query,True,0.62,Navigational Query,1.3016891,0.030432083
+top paid footballers,Abstain Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1532719,0.023108415999999465
+new york real id,Navigational Query,Factual Query,Factual Query,True,0.53,Navigational Query,1.6119429,0.016999291000000305
+b12,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,1.1268947,0.0212758329999998
+ford hybrid,Factual Query,Factual Query,Factual Query,True,0.52,Transactional Query,1.7096778,0.024498707999999425
+nocturnal,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.646863,0.0327124999999997
+how often do ball pythons eat,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,1.0379994,0.03225287500000018
+ssamsung,Abstain Query,Factual Query,Factual Query,True,0.7,Navigational Query,1.6171347,0.038761000000000045
+uat sign off,Abstain Query,Navigational Query,Navigational Query,True,0.72,Navigational Query,1.2961214,0.0454893330000008
+rescue bridge,Abstain Query,Navigational Query,Navigational Query,True,0.63,Navigational Query,1.3121697,0.025456083000000795
+mrcp,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,0.99218094,0.025560708999999626
+how to change a catalytic converter,Instrumental Query,Instrumental Query,Factual Query,True,1.5906248092651367,Instrumental Query,1.5906248,0.03238841699999995
+bare metal stent,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2759947,0.019556624999999883
+how to convert excel to csv file,Instrumental Query,Instrumental Query,Factual Query,True,1.5947092771530151,Instrumental Query,1.5947093,0.022016625000000012
+mexico's population 2018,Factual Query,Factual Query,Factual Query,False,0.88,Factual Query,1.0345644,0.03745733299999987
+the monster mash,Factual Query,Factual Query,Factual Query,True,0.69,Factual Query,1.7326063,0.02274570799999953
+semifowler,Factual Query,Factual Query,Factual Query,True,0.69,Factual Query,1.5949446,0.03802466599999921
+parthena,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.2129141,0.02585958299999991
+blue cross blue shield individual plans,Abstain Query,Factual Query,Factual Query,True,0.59,Transactional Query,1.3913646,0.03501783399999958
+former wimbledon champions,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,1.00562,0.023694374999999823
+siren wisconsin,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.5145404,0.020518541999999584
+baked chicken drumsticks,Factual Query,Navigational Query,Factual Query,True,1.722377061843872,Navigational Query,1.7223771,0.02831799999999962
+definition of rv,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.3814682,0.023120332999999604
+rpm,Factual Query,Factual Query,Factual Query,True,0.65,Navigational Query,1.6591225,0.018882790999999344
+new,Abstain Query,Factual Query,Factual Query,True,0.54,Navigational Query,1.7547458,0.04312545799999956
+places to stay near the grand canyon,Abstain Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.66251576,0.033801624999999724
+google dublin,Navigational Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.7711123,0.017879957999999974
+sql getdate format,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.6116978,0.04360266700000004
+dissolving plaque on teeth,Instrumental Query,Factual Query,Factual Query,False,0.93,Factual Query,0.8771019,0.02695620899999973
+what is christian character,Factual Query,Factual Query,Factual Query,True,0.75,Abstain Query,1.6210166,0.03373937499999968
+columbus zoo and aquarium ohio,Navigational Query,Navigational Query,Navigational Query,True,0.82,Navigational Query,0.76119965,0.04682304199999976
+quitiapine',Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,1.1262467,0.063270833999999
+notary rules,Abstain Query,Instrumental Query,Instrumental Query,True,0.75,Instrumental Query,1.1838175,0.038577999999999335
+is metformin dangerous,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.70704097,0.031884790999999524
+procurement meaning in english,Factual Query,Transactional Query,Transactional Query,True,1.5593291521072388,Transactional Query,1.5593292,0.01697104199999977
+dcm,Factual Query,Factual Query,Factual Query,True,0.62,Navigational Query,1.6120386,0.02506400000000042
+low grade glioma,Factual Query,Factual Query,Factual Query,False,0.95,Factual Query,0.56608593,0.04278449999999978
+solar eclipse 2019 usa where,Factual Query,Factual Query,Factual Query,False,0.75,Factual Query,1.4093173,0.04086175000000125
+best vacations on a budget,Abstain Query,Navigational Query,Navigational Query,True,0.51,Navigational Query,1.4095578,0.022382417000001098
+dave and busters tulsa,Navigational Query,Navigational Query,Navigational Query,True,0.8,Navigational Query,0.91915685,0.027323292000000166
+masters grading,Abstain Query,Factual Query,Factual Query,True,0.73,Factual Query,1.5846106,0.03295458400000051
+bake a pork chop,Instrumental Query,Factual Query,Factual Query,True,0.61,Navigational Query,1.6795763,0.03329579199999877
+access query date,Transactional Query,Factual Query,Factual Query,True,0.67,Transactional Query,1.7208447,0.039324666999998925
+47 chromosomes,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9164079,0.03239816600000012
+empire fire and marine insurance,Abstain Query,Transactional Query,Transactional Query,True,1.641387939453125,Transactional Query,1.6413879,0.035498166
+festival in florida,Abstain Query,Navigational Query,Navigational Query,True,0.53,Navigational Query,1.4437412,0.027600292000000692
+who proved the world was round,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0412142,0.030346457999998577
+apps to get free internet,Transactional Query,Transactional Query,Transactional Query,True,0.83,Transactional Query,1.0455444,0.06870575000000123
+pains in stomach,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3458593,0.0432042500000005
+reimage repair scam windows 10,Instrumental Query,Transactional Query,Transactional Query,True,0.53,Transactional Query,1.426371,0.027846333000001167
+how does alcohol affect the body,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.2728719,0.026124582999999646
+ups tv,Transactional Query,Transactional Query,Transactional Query,True,0.67,Transactional Query,1.3103056,0.020855541999999616
+fiat 500 pop reviews,Factual Query,Factual Query,Factual Query,True,0.53,Navigational Query,1.6473774,0.028608707999998373
+220 c to fahrenheit oven,Factual Query,Factual Query,Factual Query,True,0.69,Factual Query,1.6566262,0.02505066700000036
+what is a cnm in medical field,Factual Query,Factual Query,Factual Query,True,0.92,Factual Query,1.1292024,0.046646750000000736
+astroes,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4474599,0.01991783300000094
+standard ethnicity list,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9596268,0.024872958000001333
+common weeds identification,Abstain Query,Factual Query,Factual Query,True,0.69,Factual Query,1.6373885,0.033568834000000436
+i make mistakes,Abstain Query,Factual Query,Factual Query,True,0.69,Factual Query,1.7599796,0.02561987500000029
+vibrio symptoms,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9324104,0.0250319999999995
+ciprodex savings,Abstain Query,Transactional Query,Transactional Query,True,0.83,Transactional Query,1.0950199,0.031125124999999088
+trachea definition,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.296435,0.02199887499999953
+nina dobrev instagram,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.3691587,0.03653820799999963
+pho delivery,Abstain Query,Factual Query,Factual Query,True,0.58,Transactional Query,1.5046395,0.024722249999999946
+who sang it,Factual Query,Factual Query,Factual Query,True,0.75,Instrumental Query,1.3679482,0.025266041000000072
+new cell phones coming out,Abstain Query,Abstain Query,Abstain Query,True,0.7,Abstain Query,1.1656023,0.021243750000000006
+google account opening,Navigational Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,1.2106459,0.023914833000000968
+america got talent auditions,Navigational Query,Abstain Query,Factual Query,True,1.7284404039382935,Abstain Query,1.7284404,0.01812129200000001
+rocks and soils,Abstain Query,Factual Query,Factual Query,True,0.65,Factual Query,1.3049394,0.019707125000000048
+paint brush types,Factual Query,Factual Query,Factual Query,True,0.57,Factual Query,1.7085837,0.03364712499999989
+microsoft hd audio driver windows 10 download,Transactional Query,Transactional Query,Factual Query,True,1.6130332946777344,Transactional Query,1.6130333,0.055957917000000634
+charities.org,Navigational Query,Factual Query,Factual Query,True,0.64,Transactional Query,1.545102,0.028928374999999562
+lever,Factual Query,Factual Query,Factual Query,True,0.58,Navigational Query,1.620484,0.024633416000000352
+ako login],Navigational Query,Navigational Query,Factual Query,True,1.6071242094039917,Navigational Query,1.6071242,0.035433417000000134
+us dept of health and human services,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1772232,0.0468914999999992
+carport kits do it yourself,Abstain Query,Transactional Query,Transactional Query,True,1.466534972190857,Transactional Query,1.466535,0.051076042000000044
+high point university news,Abstain Query,Factual Query,Factual Query,True,0.8,Factual Query,1.3417501,0.02598958399999951
+synonyms of enhance,Factual Query,Factual Query,Factual Query,True,0.51,Factual Query,1.799944,0.03036279100000172
+trump is bad,Abstain Query,Abstain Query,Factual Query,True,1.3866946697235107,Abstain Query,1.3866947,0.019803542000000007
+ncap crash test,Abstain Query,Transactional Query,Factual Query,True,1.6007483005523682,Transactional Query,1.6007483,0.02508216699999899
+ohio city income tax rates,Abstain Query,Navigational Query,Navigational Query,True,1.6596606969833374,Navigational Query,1.6596607,0.036917917000000244
+healthiest cottage cheese,Abstain Query,Factual Query,Factual Query,True,0.7,Factual Query,1.6141027,0.02211233299999904
+uses of dry ice,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4547441,0.027479665999999625
+j,Abstain Query,Factual Query,Factual Query,True,0.62,Factual Query,1.7237277,0.03976662500000039
+how much is a roku account,Factual Query,Factual Query,Factual Query,True,0.65,Factual Query,1.5401975,0.07474104099999934
+most expensive house in the world,Abstain Query,Factual Query,Factual Query,True,0.76,Factual Query,1.270763,0.03541883300000137
+ww email.com,Navigational Query,Transactional Query,Transactional Query,True,0.85,Transactional Query,1.0257828,0.04828491600000007
+chest cold,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1951116,0.021185542000001334
+who owns guadalcanal today,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,1.1763703,0.02920245800000032
+transformers,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.6382225,0.03302508400000015
+multiply by decimals,Instrumental Query,Transactional Query,Factual Query,True,1.732826590538025,Transactional Query,1.7328266,0.02464041699999875
+chinese communist revolution 1949,Factual Query,Factual Query,Factual Query,True,0.52,Abstain Query,0.97825086,0.03847741699999929
+history of the model t,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0094806,0.02806720799999951
+no till food plot seed,Abstain Query,Factual Query,Factual Query,True,0.79,Factual Query,1.5252793,0.052084917000000175
+export itunes library,Instrumental Query,Instrumental Query,Instrumental Query,True,0.65,Instrumental Query,1.2365301,0.04814154199999976
+lotto usa results,Navigational Query,Factual Query,Factual Query,True,0.58,Navigational Query,1.6249075,0.03872991700000128
+requirements for a passport,Abstain Query,Factual Query,Factual Query,True,0.62,Instrumental Query,1.5410341,0.03216508300000065
+merciless,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.6305492,0.03595162500000093
+how much cost to build a house,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.481313,0.032663749999999325
+msnb.com,Navigational Query,Navigational Query,Navigational Query,True,0.51,Navigational Query,1.2598064,0.03211483299999962
+system mechanic download bought already,Transactional Query,Transactional Query,Transactional Query,True,0.57,Transactional Query,1.5173584,0.02609612500000047
+change display to two monitors,Instrumental Query,Factual Query,Factual Query,True,0.67,Factual Query,1.7462124,0.03986399999999968
+superhero definition,Factual Query,Factual Query,Factual Query,True,0.72,Factual Query,1.6936058,0.0402625419999989
+gallahue mental health services,Abstain Query,Factual Query,Factual Query,True,0.64,Navigational Query,1.2537521,0.04047066699999924
+who owns the federal reserve?,Factual Query,Factual Query,Factual Query,False,0.71,Factual Query,1.5685385,0.032600625000000605
+fluid in hip joint,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0323094,0.041180084000000505
+ascvd risk calculatro,Transactional Query,Transactional Query,Transactional Query,True,0.88,Transactional Query,0.6616137,0.03716170899999938
+ssdi versus ssi,Abstain Query,Factual Query,Factual Query,True,0.89,Factual Query,1.3112898,0.027674833999999038
+kombucha benefits,Abstain Query,Factual Query,Factual Query,True,0.8,Factual Query,1.4224185,0.03777316699999922
+dvla log book change of address,Abstain Query,Instrumental Query,Instrumental Query,True,0.56,Instrumental Query,1.2612538,0.0668098749999988
+media creator,Abstain Query,Transactional Query,Transactional Query,True,0.94,Transactional Query,0.5897851,0.03544824999999996
+cuurency convertor,Transactional Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.3400784,0.023617624999999975
+karate kid 3 cast,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.6219528,0.022543541000001
+10 day weather la,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.4358549,0.03622454199999936
+transfer number plate,Instrumental Query,Navigational Query,Navigational Query,True,0.85,Navigational Query,1.1274439,0.029245666000001336
+what are giblets,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1693947,0.049895667000001254
+how to answer how are you,Instrumental Query,Factual Query,Factual Query,True,0.54,Navigational Query,1.8224463,0.03267308399999891
+shuterstock,Navigational Query,Transactional Query,Transactional Query,True,0.69,Transactional Query,1.2462757,0.02709208300000121
+outlook notifications,Abstain Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.861242,0.05076791699999994
+spe blood test,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1890371,0.03616562499999887
+pandora the goddess,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2819062,0.03880475000000061
+cymbalta side effects in elderly,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.94416964,0.06585387500000017
+article on healthy eating,Abstain Query,Factual Query,Factual Query,True,0.64,Factual Query,1.5950235,0.048620208000000886
+phase moon,Factual Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6074255,0.03641241699999931
+sensory disorders,Abstain Query,Factual Query,Factual Query,True,0.89,Factual Query,1.2465738,0.023172957999999966
+winco grocery store near me,Navigational Query,Navigational Query,Navigational Query,False,0.91,Navigational Query,0.59007204,0.02896145899999958
+net calculator uk,Transactional Query,Transactional Query,Transactional Query,False,0.93,Transactional Query,0.3776484,0.02575874999999961
+chinese first name,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3699348,0.02574749999999959
+great golf,Navigational Query,Factual Query,Factual Query,True,0.51,Navigational Query,1.5061746,0.05055004199999935
+44269 dortmund,Factual Query,Navigational Query,Navigational Query,True,0.51,Navigational Query,1.2239562,0.10282370800000074
+induce bowel movement quickly,Instrumental Query,Factual Query,Factual Query,True,0.87,Factual Query,1.451031,0.03551483300000058
+www.saccounty.org,Navigational Query,Factual Query,Factual Query,True,0.65,Factual Query,1.1577777,0.03249141700000102
+nursing assistant certification,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4260988,0.04754287500000132
+etsy coupon code,Factual Query,Transactional Query,Transactional Query,True,0.86,Transactional Query,0.91184175,0.032542457999999996
+lease definition,Factual Query,Factual Query,Factual Query,True,0.55,Navigational Query,1.732793,0.02084070899999979
+home building kits and prices,Abstain Query,Transactional Query,Transactional Query,True,0.51,Transactional Query,1.3886791,0.026896541999999357
+rochester carburetors for sale,Abstain Query,Factual Query,Factual Query,True,0.53,Navigational Query,1.5397705,0.025046917000000946
+dachshund meaning,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.3068619,0.02094733399999882
+meaning of yellow,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.5235636,0.024961167000000728
+hidan naruto,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.4413431,0.04145829199999973
+netflix member sign,Navigational Query,Transactional Query,Transactional Query,True,0.77,Transactional Query,1.2770395,0.03618574999999957
+uranus ring,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.1718165,0.033656041000000414
+applyatwalmart.com/jobs,Navigational Query,Transactional Query,Transactional Query,True,0.68,Transactional Query,1.2977024,0.051593042000000366
+how to find my microsoft product key,Instrumental Query,Instrumental Query,Instrumental Query,True,0.51,Instrumental Query,1.3943312,0.059800333000000094
+yakult probiotic drink side effects,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2640623,0.03136550000000149
+relative atomic mass definition,Factual Query,Factual Query,Factual Query,True,0.81,Factual Query,1.5750006,0.033735374999999124
+congestion charging zone,Abstain Query,Navigational Query,Navigational Query,True,0.74,Navigational Query,1.20064,0.03034270800000094
+names of muses,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.280809,0.03547787499999977
+venomous snakes australia,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,0.96195126,0.03146454100000007
+novelas in english,Abstain Query,Factual Query,Factual Query,True,0.57,Abstain Query,1.7601938,0.043740207999999114
+hhn,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.604569,0.2394300420000004
+watts middle school,Abstain Query,Navigational Query,Navigational Query,True,0.67,Navigational Query,1.0687172,0.033094542000000615
+pip payment amounts,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.593892,0.023043958000000586
+san francisco marriott marquis union square,Navigational Query,Navigational Query,Navigational Query,True,0.91,Navigational Query,0.56020224,0.028984707999999415
+florida office of insurance regulation,Abstain Query,Navigational Query,Factual Query,True,1.427435278892517,Navigational Query,1.4274353,0.028809374999999804
+amortixation,Abstain Query,Transactional Query,Transactional Query,True,1.543677568435669,Transactional Query,1.5436776,0.0289077080000002
+us bank routing number arizona,Factual Query,Navigational Query,Navigational Query,True,0.68,Navigational Query,1.2250687,0.04472370799999936
+cpi for 2019,Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4528904,0.02543779199999996
+lung drainage,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9392414,0.040177625000000106
+what's on in derbyshire tomorrow,Factual Query,Navigational Query,Factual Query,True,1.5940278768539429,Navigational Query,1.5940279,0.026972415999999555
+channel 9 weather,Factual Query,Navigational Query,Navigational Query,True,0.65,Navigational Query,1.3588126,0.0329150829999989
+mt vernon ky,Abstain Query,Navigational Query,Navigational Query,True,0.58,Navigational Query,0.945488,0.026864166999999384
+governor simcoe,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2225715,0.018267500000000325
+numbers spreadsheet download for pc,Transactional Query,Transactional Query,Transactional Query,True,0.91,Transactional Query,0.6868976,0.04388720900000109
+history drama,Abstain Query,Abstain Query,Abstain Query,True,0.68,Abstain Query,1.1425068,0.02606725000000054
+andy warhol parents,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.2945275,0.022281666999999672
+order domino's online,Transactional Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.2428317,0.035561500000000024
+caucausian,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.2233881,0.030516791000000154
+sbceo,Navigational Query,Transactional Query,Transactional Query,True,1.516982078552246,Transactional Query,1.5169821,0.024663541999998984
+abbreviations list,Abstain Query,Abstain Query,Factual Query,True,1.7841322422027588,Abstain Query,1.7841322,0.061182291999999805
+enhanced drivers license florida,Abstain Query,Transactional Query,Factual Query,True,1.614091157913208,Transactional Query,1.6140912,0.044805000000000206
+puerto penasco,Abstain Query,Factual Query,Factual Query,True,0.73,Factual Query,1.4274387,0.04297533399999942
+ucc3 form,Factual Query,Factual Query,Factual Query,True,0.51,Transactional Query,1.5000658,0.07004070900000059
+icd 10 code renal insufficiency,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.75666064,0.03911541699999965
+the great gatsby movie,Factual Query,Factual Query,Factual Query,True,0.67,Abstain Query,1.5710154,0.02673399999999937
+how long do you bake cod,Factual Query,Factual Query,Factual Query,True,0.71,Factual Query,1.6943852,0.028580915999999235
+351 transaction,Factual Query,Factual Query,Factual Query,True,0.51,Transactional Query,1.5546407,0.02425999999999995
+what is discipline mean,Factual Query,Factual Query,Factual Query,True,0.62,Abstain Query,1.5243068,0.030768166999999735
+lose weight with water,Instrumental Query,Factual Query,Factual Query,True,0.87,Factual Query,1.381057,0.11699979099999958
+5 layers of soil,Factual Query,Factual Query,Factual Query,False,0.82,Factual Query,1.4101436,0.038502541999999806
+mac& cheese,Factual Query,Navigational Query,Navigational Query,True,1.5144609212875366,Navigational Query,1.5144609,0.05337866700000049
+setting up a sep ira,Instrumental Query,Factual Query,Factual Query,True,0.62,Instrumental Query,1.5161842,0.055533416999999474
+breast tenderness in older women,Abstain Query,Factual Query,Factual Query,True,0.92,Factual Query,1.1415642,0.05757208300000016
+patellofemoral osteoarthritis knee,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.83041656,0.10738241700000017
+necleolus,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.310169,0.06208570800000146
+weather and climate change,Abstain Query,Abstain Query,Abstain Query,True,0.57,Abstain Query,1.0324984,0.03152075000000032
+how much are truffles,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4773358,0.028438833999999247
+microsoft live xbox,Navigational Query,Transactional Query,Transactional Query,True,0.75,Transactional Query,1.2309415,0.04860387499999952
+michael jackson's kids,Factual Query,Factual Query,Factual Query,False,0.82,Factual Query,1.3507096,0.03510666699999909
+punctuality in the workplace,Abstain Query,Abstain Query,Abstain Query,True,0.6,Abstain Query,1.3241919,0.0811632909999993
+6 months pregnant,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1437777,0.0399167079999998
+bartending certification,Abstain Query,Transactional Query,Factual Query,True,1.7171608209609985,Transactional Query,1.7171608,0.03356600000000043
+finance crisis,Factual Query,Abstain Query,Abstain Query,True,0.85,Abstain Query,0.85875344,0.044894167000000706
+wisconsin sales and use tax,Abstain Query,Instrumental Query,Factual Query,True,1.6729583740234375,Instrumental Query,1.6729584,0.05111750000000015
+infant temperament,Abstain Query,Factual Query,Factual Query,True,0.82,Factual Query,1.5245299,0.056154749999999254
+edit program free,Transactional Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.77779317,0.05205004199999941
++www.wwenetwork.com,Navigational Query,Transactional Query,Transactional Query,True,1.5914403200149536,Transactional Query,1.5914403,0.04829349999999977
+richard ramirez victims pictures,Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,1.1530278,0.0531602090000014
+thickening of uterine lining,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0074266,0.046046332999999606
+dia and company,Navigational Query,Factual Query,Factual Query,True,0.74,Factual Query,1.475849,0.047645291000000256
+how to get something manufactured,Instrumental Query,Instrumental Query,Instrumental Query,True,0.63,Instrumental Query,1.2458862,0.025882999999998546
+how do wheel locks work,Instrumental Query,Instrumental Query,Factual Query,True,1.7016844749450684,Instrumental Query,1.7016845,0.0299974160000005
+letter end,Abstain Query,Factual Query,Factual Query,True,0.57,Abstain Query,1.7246836,0.03222650000000016
+how long to cook pork loin,Factual Query,Factual Query,Factual Query,True,0.76,Factual Query,1.6757803,0.07179204200000022
+how to cook beef roasting joint,Instrumental Query,Navigational Query,Navigational Query,True,0.79,Navigational Query,0.955554,0.05520066700000115
+the persian gulf war,Factual Query,Factual Query,Factual Query,True,0.57,Abstain Query,1.0167506,0.04994624999999964
+america facts for kids,Factual Query,Factual Query,Factual Query,True,0.67,Abstain Query,1.4120922,0.07503070899999997
+final fantasy xi,Navigational Query,Transactional Query,Factual Query,True,1.7672348022460938,Transactional Query,1.7672348,0.058744958000000125
+http://www.walmart/careers.com,Navigational Query,Transactional Query,Factual Query,True,1.5966997146606445,Transactional Query,1.5966997,0.058148167000000583
+latest bill maher,Abstain Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4352949,0.0387863339999992
+bus canada,Abstain Query,Navigational Query,Navigational Query,True,0.59,Navigational Query,1.3605225,0.03526229200000053
+wnep school delays and closings,Factual Query,Abstain Query,Abstain Query,True,0.81,Abstain Query,1.0595895,0.05699133300000092
+krotan,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4406142,0.03557787499999954
+facts about volcanos,Factual Query,Factual Query,Factual Query,False,0.88,Factual Query,1.0788257,0.04773191600000004
+speedtyping.com,Navigational Query,Transactional Query,Transactional Query,True,0.88,Transactional Query,0.85100955,0.042778957999999534
+united club san francisco,Abstain Query,Navigational Query,Navigational Query,True,0.8,Navigational Query,0.9336214,0.024131666999998913
+first admendment,Factual Query,Abstain Query,Abstain Query,True,0.69,Abstain Query,1.0951822,0.03494245799999973
+healthy meals to cook,Factual Query,Navigational Query,Transactional Query,True,1.693958044052124,Navigational Query,1.693958,0.03407341600000002
+1mymountain.com,Navigational Query,Transactional Query,Transactional Query,True,0.53,Transactional Query,1.3350188,0.06617320800000037
+mid land,Navigational Query,Navigational Query,Navigational Query,True,0.63,Navigational Query,1.2829826,0.0333447919999994
+dd 441,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0378544,0.04707362500000123
+fort pickett zip code,Factual Query,Navigational Query,Navigational Query,True,0.85,Navigational Query,0.6909794,0.052736499999999964
+highwayman,Factual Query,Factual Query,Factual Query,True,0.65,Navigational Query,1.6976495,0.022440500000000085
+louisville in,Factual Query,Factual Query,Factual Query,True,0.53,Navigational Query,1.2490715,0.03983279200000034
+plus size clothing canada online,Transactional Query,Transactional Query,Transactional Query,True,0.82,Transactional Query,1.0278404,0.03733458399999989
+ds-160 appointment,Factual Query,Factual Query,Factual Query,True,0.71,Navigational Query,1.2990746,0.034431665999999694
+format sd card to fat32 windows 10,Factual Query,Factual Query,Factual Query,True,0.63,Instrumental Query,1.7590115,0.02713858300000105
+uzbekistan population,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.95197994,0.08951000000000064
+currency converters,Transactional Query,Transactional Query,Transactional Query,True,0.91,Transactional Query,0.70140755,0.05068662500000087
+virtual hairstyler,Abstain Query,Transactional Query,Transactional Query,True,0.85,Transactional Query,1.0076945,0.044893459000000746
+anemia,Abstain Query,Factual Query,Factual Query,False,0.9,Factual Query,1.0707204,0.05927120800000196
+what does an automotive engineer do,Factual Query,Factual Query,Factual Query,True,0.76,Factual Query,1.6376743,0.03619250000000207
+msu president,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.3212755,0.025223542000002652
+www.imap.com,Navigational Query,Transactional Query,Transactional Query,True,0.79,Transactional Query,1.1797794,0.027618542000002577
+fedex pars,Abstain Query,Transactional Query,Transactional Query,True,0.68,Transactional Query,1.2582304,0.02980195799999663
+recommendation letters for employment,Abstain Query,Instrumental Query,Instrumental Query,True,0.69,Instrumental Query,1.2011307,0.03906266699999961
+daily forex rates,Abstain Query,Transactional Query,Navigational Query,True,1.609458327293396,Transactional Query,1.6094583,0.03353354200000069
+petro truck stops,Abstain Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.82719976,0.05443104200000093
+high rate cds 6%,Abstain Query,Factual Query,Factual Query,True,0.86,Factual Query,1.3320924,0.02737920800000282
+skpye download,Transactional Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,1.0763987,0.026644999999998475
+bactrim ds 800-160,Factual Query,Factual Query,Factual Query,True,0.72,Factual Query,1.4905534,0.048412583000001064
+best marine sealant,Abstain Query,Factual Query,Factual Query,True,0.56,Transactional Query,1.5709153,0.04903824999999884
+police academy in florida,Abstain Query,Navigational Query,Navigational Query,True,0.53,Navigational Query,1.3579509,0.045706458999998034
+hip roof calculator,Transactional Query,Transactional Query,Transactional Query,True,0.87,Transactional Query,0.7297712,0.04085120800000297
+pensacola fl forecast,Factual Query,Factual Query,Factual Query,True,0.6,Navigational Query,1.4852477,0.035802000000000334
+free account,Transactional Query,Transactional Query,Transactional Query,True,0.89,Transactional Query,0.8671584,0.03942991699999965
+winsted mn,Factual Query,Navigational Query,Factual Query,True,1.2300447225570679,Navigational Query,1.2300447,0.020957791999997255
+how to find domains of functions,Instrumental Query,Navigational Query,Factual Query,True,1.6786688566207886,Navigational Query,1.6786689,0.020800375000000315
+bradley il,Factual Query,Factual Query,Factual Query,True,0.51,Navigational Query,1.1852826,0.016945708000001503
+sync your windows phone and pc with your microsoft account,Instrumental Query,Transactional Query,Transactional Query,True,0.69,Transactional Query,1.3553736,0.03612012500000006
+square foot converter,Transactional Query,Transactional Query,Transactional Query,True,0.72,Transactional Query,1.2693055,0.02228287499999837
+new apple phone coming out,Factual Query,Transactional Query,Transactional Query,True,1.4928560256958008,Transactional Query,1.492856,0.059256459000000206
+dog passing blood from rectum,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0468404,0.027459083000000106
+9 digit zip code,Factual Query,Navigational Query,Navigational Query,True,0.66,Navigational Query,1.2054367,0.03599591600000096
+the divergent series: allegiant cast,Factual Query,Factual Query,Factual Query,True,0.65,Factual Query,1.8008572,0.025688916000000006
+can you get gout in your ankle,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.666113,0.03497687499999813
+association of writers & writing programs,Abstain Query,Factual Query,Factual Query,True,0.63,Factual Query,1.6447778,0.037784958999999674
+birth certificate,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4592472,0.05697933300000102
+rock climbing richmond,Abstain Query,Navigational Query,Navigational Query,True,0.75,Navigational Query,0.8810352,0.025383582999999987
+amc forum 30 john r,Factual Query,Factual Query,Factual Query,True,0.7,Navigational Query,1.3391714,0.06727679200000125
+post.org,Navigational Query,Transactional Query,Transactional Query,True,0.81,Transactional Query,1.14085,0.026059875000001398
+what is the jurassic period,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9915185,0.02791108399999942
+series lost,Factual Query,Factual Query,Factual Query,True,0.62,Abstain Query,1.6604371,0.05196858299999718
+what is illegal immigration,Factual Query,Abstain Query,Abstain Query,True,0.86,Abstain Query,0.8622347,0.02437258400000175
+how long is human dna,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.83978784,0.04243891700000191
+channel 5 news atlanta,Abstain Query,Factual Query,Factual Query,True,0.6,Navigational Query,1.6138566,0.025325834000000214
+nature vs nurture experiments,Abstain Query,Factual Query,Factual Query,True,0.8,Factual Query,1.4552851,0.03166624999999712
+1 hotels new york,Navigational Query,Navigational Query,Navigational Query,True,0.83,Navigational Query,0.9668686,0.018506458000000947
+iphone nfc pairing,Abstain Query,Transactional Query,Transactional Query,True,1.636309027671814,Transactional Query,1.636309,0.03516162500000064
+blue cross blue shield illinois,Navigational Query,Factual Query,Factual Query,True,0.84,Factual Query,1.3155969,0.026274958000001902
+ageonline,Navigational Query,Factual Query,Factual Query,True,0.59,Transactional Query,1.3993368,0.040252040999998684
+ga. football,Abstain Query,Factual Query,Factual Query,True,0.66,Factual Query,1.6214299,0.03247595899999922
+medicaid mississippi,Navigational Query,Factual Query,Factual Query,True,0.81,Factual Query,1.41597,0.03503633300000075
+vegetarian biryani,Factual Query,Factual Query,Factual Query,True,0.7,Navigational Query,1.5784351,0.057711459000000076
+josephbanks,Navigational Query,Factual Query,Factual Query,True,0.86,Factual Query,1.1401365,0.046941332999999474
+difference between organic and non organic,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4421501,0.02714199999999778
+spine problems scoliosis,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7858361,0.05155541699999944
+reforms,Factual Query,Abstain Query,Transactional Query,True,1.754875659942627,Abstain Query,1.7548757,0.023006625000000724
+tikal national park,Factual Query,Navigational Query,Factual Query,True,0.9794387221336365,Navigational Query,0.9794387,0.02363037499999976
+dsl reports,Navigational Query,Transactional Query,Transactional Query,True,0.8,Transactional Query,1.2214057,0.033605999999998915
+easy panna cotta recipe,Factual Query,Navigational Query,Transactional Query,True,1.6522068977355957,Navigational Query,1.6522069,0.028375082999996692
+irs logon,Navigational Query,Transactional Query,Transactional Query,True,0.54,Transactional Query,1.4059112,0.04843612500000205
+store coffee,Instrumental Query,Navigational Query,Navigational Query,True,0.67,Navigational Query,1.147372,0.01779950000000241
+wolwerin,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.3174598,0.061361375000000606
+ett medical,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.2556555,0.04158812500000053
+how to make a baked potato in the oven,Instrumental Query,Instrumental Query,Factual Query,True,1.6987104415893555,Instrumental Query,1.6987104,0.03552374999999941
+usbank fargo,Navigational Query,Navigational Query,Navigational Query,True,0.85,Navigational Query,0.904658,0.021486707999997634
+mla format maker,Abstain Query,Transactional Query,Transactional Query,True,0.82,Transactional Query,0.9208396,0.036557499999997134
+snymets,Abstain Query,Navigational Query,Navigational Query,True,0.66,Navigational Query,1.079383,0.05406258300000033
+california magazine capacity,Abstain Query,Factual Query,Factual Query,True,0.82,Factual Query,1.5519644,0.029125374999999565
+what is respiratory,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1670752,0.028508332999997776
+cimzia indications,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.7443042,0.05136179200000157
+is elder scrolls online good,Factual Query,Factual Query,Factual Query,True,0.52,Transactional Query,1.5849491,0.1058692499999978
+acreage square feet,Abstain Query,Factual Query,Factual Query,True,0.56,Factual Query,1.5683656,0.03280366599999951
+usbankk,Abstain Query,Factual Query,Factual Query,True,0.72,Factual Query,1.6759354,0.05052949999999967
+front desk assistant job description,Factual Query,Instrumental Query,Factual Query,True,1.6942386627197266,Instrumental Query,1.6942387,0.03233758299999678
+ms patches,Abstain Query,Factual Query,Factual Query,True,0.71,Factual Query,1.5300877,0.024626208000000815
+holiday inn express cleveland ohio,Factual Query,Navigational Query,Navigational Query,True,0.86,Navigational Query,0.82593477,0.026932500000000914
+how big is 40 acres,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.3228537,0.03271412499999826
+pain in the left side of stomach,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1897006,0.033123916000000975
+kubota .com,Navigational Query,Transactional Query,Transactional Query,True,1.3998537063598633,Transactional Query,1.3998537,0.03157762500000061
+perks for work,Navigational Query,Transactional Query,Transactional Query,True,1.5914615392684937,Transactional Query,1.5914615,0.029814542000000444
+african chimpanzee,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0067339,0.03942595799999893
+digestion of fat,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4251398,0.027128624999999573
+holidays throughout the year,Abstain Query,Abstain Query,Abstain Query,True,0.55,Abstain Query,1.299172,0.023091707999999045
+interset rates,Abstain Query,Instrumental Query,Transactional Query,True,1.7025365829467773,Instrumental Query,1.7025366,0.026456124999999275
+university of wasington,Navigational Query,Factual Query,Factual Query,True,0.75,Factual Query,1.3820388,0.03265529200000117
+weather bug,Factual Query,Factual Query,Factual Query,True,1.691483497619629,Factual Query,1.6914835,0.024482750000000664
+deped cebu province memo,Navigational Query,Factual Query,Factual Query,True,0.89,Factual Query,1.2377126,0.026537250000000512
+weld county sheriff,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4360777,0.03189120799999756
+mafic rocks,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.7042258,0.02588912499999907
+are mb or kb bigger,Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.5946144,0.054432124999998166
+high protein foods list uk,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.3866773,0.0370235000000001
+gdp increase,Abstain Query,Abstain Query,Abstain Query,True,0.7,Abstain Query,0.9655552,0.03603520800000126
+usda zones for planting,Factual Query,Factual Query,Factual Query,True,0.61,Factual Query,1.3385268,0.026494249999998942
+bengals,Abstain Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6271113,0.02204662500000154
+www.bdo online banking,Transactional Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,0.9294664,0.018107167000000146
+washington house of representatives,Factual Query,Factual Query,Factual Query,True,0.58,Abstain Query,1.397155,0.07315158300000135
+bogdanoff twins,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.334683,0.05366579200000032
+how tall is betty white,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9040438,0.03268283300000263
+www.albertsons.com weekly ad,Navigational Query,Transactional Query,Transactional Query,True,0.62,Transactional Query,1.4524753,0.039203083000000305
+how to remove price stickers,Instrumental Query,Instrumental Query,Instrumental Query,True,1.5583080053329468,Instrumental Query,1.558308,0.025185207999999903
+understanding blood test results,Instrumental Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4618461,0.03976183400000011
+nist time server,Abstain Query,Transactional Query,Transactional Query,True,0.87,Transactional Query,0.8385178,0.05004895899999795
+george washingtons life,Factual Query,Factual Query,Factual Query,False,0.76,Factual Query,1.0895042,0.049928874999999096
+worst looking cars,Abstain Query,Factual Query,Factual Query,True,0.58,Factual Query,1.6470431,0.032280249999999455
+canards meaning,Factual Query,Factual Query,Factual Query,True,0.72,Factual Query,1.7553551,0.05339662500000131
+zebrz,Factual Query,Factual Query,Factual Query,True,0.67,Navigational Query,1.5672878,0.03383691600000205
+10 things to do in toronto,Abstain Query,Navigational Query,Navigational Query,True,0.9,Navigational Query,0.791062,0.035587875000000935
+the weather,Abstain Query,Abstain Query,Abstain Query,True,0.79,Abstain Query,1.0210874,0.026896750000002356
+free radio code,Factual Query,Transactional Query,Transactional Query,True,0.72,Transactional Query,1.2187675,0.02485579200000032
+medicare.fcso/fee schedule,Navigational Query,Factual Query,Factual Query,True,0.79,Factual Query,1.5395838,0.02668541699999949
+track my phone for free,Transactional Query,Transactional Query,Transactional Query,True,0.81,Transactional Query,1.0364792,0.02847345799999701
+in vitro diagnosis,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.735196,0.024243999999999488
+dacia automobile,Factual Query,Factual Query,Factual Query,True,0.62,Navigational Query,1.6879842,0.02075133299999976
+home building cost per square foot,Factual Query,Factual Query,Factual Query,True,0.59,Factual Query,1.6424599,0.03294870799999927
+north carolina retirement system,Abstain Query,Factual Query,Factual Query,True,0.67,Navigational Query,1.4461405,0.03362520900000021
+dry mouth causes nhs,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.79595834,0.01742050000000006
+q-see view download,Transactional Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.2372769,0.031197249999998178
+fencing history,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.3342674,0.015846041999999727
+penguins eat,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.5506992,0.04041233299999902
+will ferrell imdb,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4912883,0.0277155829999991
+toggle button in excel,Instrumental Query,Transactional Query,Transactional Query,True,0.61,Transactional Query,1.3848667,0.025285875000001568
+telephone alphabet code,Factual Query,Factual Query,Factual Query,True,0.62,Navigational Query,1.5751208,0.033065499999999304
+city of conover,Factual Query,Navigational Query,Navigational Query,True,0.57,Navigational Query,1.1215549,0.03132020900000043
+largest commercial airplane,Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,1.003086,0.02713166700000258
+symptoms of uti men,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7333,0.026300875000000445
+weather madrid spain,Factual Query,Navigational Query,Navigational Query,True,0.58,Navigational Query,1.1287837,0.026713832999998743
+proglitazone,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.944733,0.02375733300000249
+back leg muscle,Abstain Query,Factual Query,Factual Query,True,0.81,Factual Query,1.5047919,0.025296791999998902
+health insurance plans,Abstain Query,Transactional Query,Transactional Query,True,1.521881103515625,Transactional Query,1.5218811,0.07795349999999956
+skype contact number,Factual Query,Navigational Query,Factual Query,True,1.5578536987304688,Navigational Query,1.5578537,0.05672274999999871
+www.straighttalk.com account,Navigational Query,Transactional Query,Transactional Query,True,0.61,Transactional Query,1.3130275,0.03905529100000038
+top 10 google searches 2018,Abstain Query,Factual Query,Factual Query,True,0.61,Navigational Query,1.5492681,0.02958849999999913
+popular types of music,Abstain Query,Abstain Query,Abstain Query,True,0.69,Abstain Query,1.3147161,0.04285704100000132
+delta dental ppo high coverage,Navigational Query,Factual Query,Factual Query,True,0.88,Factual Query,1.0949218,0.039201667000000384
+upper motor neuron vs lower motor neuron,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,0.99647033,0.04406437500000138
+windows control panel,Abstain Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,1.1038713,0.034764334000001895
+samsclubcredit.com,Navigational Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,1.0069563,0.05384191699999974
+flux core vs mig welding,Abstain Query,Factual Query,Factual Query,True,0.81,Factual Query,1.5579346,0.03341270800000018
+google financ,Navigational Query,Transactional Query,Transactional Query,True,0.77,Transactional Query,1.057217,0.029385540999999904
+plant pollination,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4707615,0.03293654200000162
+post high school education,Factual Query,Factual Query,Factual Query,True,0.74,Factual Query,1.608581,0.04425833299999837
+is the sun the biggest star,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0394509,0.058113667000000646
+www.ticketmaster.com,Navigational Query,Navigational Query,Navigational Query,True,0.86,Navigational Query,1.0959736,0.032498165999999884
+top 10 tennis players of all time,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.8579095,0.046512667000001784
+what is bronchitis?,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.8945979,0.03321170799999962
+carolingian renaissance,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.6008976,0.037604708000003484
+ncb online,Transactional Query,Transactional Query,Transactional Query,True,1.3705782890319824,Transactional Query,1.3705783,0.06507137499999871
+calhoun schools calhoun ga,Navigational Query,Factual Query,Factual Query,True,0.57,Navigational Query,1.2724707,0.0590653329999995
+angry birds wikipedia,Navigational Query,Transactional Query,Transactional Query,True,0.65,Transactional Query,1.307037,0.041050458000000845
+noun university,Abstain Query,Factual Query,Factual Query,True,0.7,Navigational Query,1.6073619,0.050052333000000004
+rue recipe,Factual Query,Factual Query,Factual Query,True,0.57,Navigational Query,1.519549,0.03058874999999972
+queen size bedspreads on sale,Abstain Query,Transactional Query,Transactional Query,True,1.557685375213623,Transactional Query,1.5576854,0.04022041700000045
+food with magnesium rich foods,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.245674,0.04108312500000011
+chase card services,Navigational Query,Transactional Query,Transactional Query,True,0.89,Transactional Query,0.78408587,0.023181250000000375
+distance from atlanta to savannah,Factual Query,Navigational Query,Navigational Query,True,0.85,Navigational Query,0.6513728,0.036445582999999004
+cancun to playa del carmen,Abstain Query,Navigational Query,Navigational Query,True,0.73,Navigational Query,0.88288176,0.020612374999998906
+version control,Abstain Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.8917922,0.017127999999999588
+types of manufacturing companies,Abstain Query,Factual Query,Factual Query,True,0.62,Factual Query,1.3503056,0.018571209000000977
+what foods contain carbs,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4121687,0.022450332999998324
+forex mcx,Navigational Query,Transactional Query,Transactional Query,True,1.498974323272705,Transactional Query,1.4989743,0.0178076659999995
+death index search,Abstain Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6005951,0.025819833999999986
+cialis daily dose,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.2559841,0.022485333999998858
+ryzen memory,Abstain Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6036377,0.032452083999999104
+alpecin caffeine shampoo side effects,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.1944788,0.02443845900000241
+small oranges cuties,Abstain Query,Navigational Query,Factual Query,True,1.704723596572876,Navigational Query,1.7047236,0.018683416999998315
+benefits of breast milk,Abstain Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1660058,0.021317667000001705
+verizon update towers,Abstain Query,Navigational Query,Navigational Query,True,1.2306482791900635,Navigational Query,1.2306483,0.036729125000000806
+power point veiwer,Transactional Query,Transactional Query,Transactional Query,True,0.91,Transactional Query,0.7145203,0.019869041999999837
+high school equivalent,Abstain Query,Navigational Query,Navigational Query,True,1.6929287910461426,Navigational Query,1.6929288,0.024878167000000673
+sql order descending,Factual Query,Navigational Query,Factual Query,True,1.7775804996490479,Navigational Query,1.7775805,0.030715458999999612
+nurse aide registry massachusetts,Abstain Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4656184,0.029847084000000024
+gordo's,Abstain Query,Navigational Query,Navigational Query,True,0.65,Navigational Query,1.0690062,0.040571333000002596
+gum tree australia,Abstain Query,Transactional Query,Transactional Query,True,0.53,Transactional Query,1.3713204,0.023013292000001684
+track fedex smartpost,Instrumental Query,Transactional Query,Transactional Query,True,0.62,Transactional Query,1.1280428,0.034563999999999595
+how much are solar panels,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4012369,0.03519816699999723
+sikh surnames,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.3912753,0.023407709000000665
+sears stores near me,Navigational Query,Navigational Query,Navigational Query,True,0.89,Navigational Query,0.7553522,0.02886133399999835
+aa milne,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9600541,0.03180587499999987
+apply for a dbs,Instrumental Query,Instrumental Query,Instrumental Query,True,1.4472368955612183,Instrumental Query,1.4472369,0.028609749999997547
+nc sales tax,Navigational Query,Navigational Query,Navigational Query,True,1.536758303642273,Navigational Query,1.5367583,0.02267079199999955
+ups calculator for shipping,Transactional Query,Transactional Query,Transactional Query,False,0.94,Transactional Query,0.41073745,0.026805374999998577
+inflammatory foods,Abstain Query,Factual Query,Factual Query,False,0.88,Factual Query,1.2484293,0.027005750000000717
+macs 609,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.6451467,0.022758625000001587
+minecraft earth codes,Factual Query,Transactional Query,Transactional Query,True,0.57,Transactional Query,1.4037042,0.03279224999999997
+why wont chrome open,Factual Query,Factual Query,Factual Query,True,0.62,Factual Query,1.7863593,0.042009208999999714
+buffer recipe,Factual Query,Transactional Query,Factual Query,True,1.6542878150939941,Transactional Query,1.6542878,0.028913333999998514
+sweet potato diet,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4855745,0.039499040999999124
+popular baby names,Abstain Query,Factual Query,Factual Query,True,0.83,Factual Query,1.5078304,0.025467958000000124
+ninda,Factual Query,Factual Query,Factual Query,True,0.74,Factual Query,1.6089473,0.024038333000000023
+what to do when your eyes hurt,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4080677,0.025191249999998888
+what is pneumonia,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1299132,0.03738587500000179
+princess di,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.6947012,0.02511083299999939
+ethylene glycol coolant color,Abstain Query,Factual Query,Factual Query,True,0.7,Factual Query,1.6898705,0.04713183399999821
+difference between language and dialect,Abstain Query,Factual Query,Factual Query,True,0.71,Factual Query,1.6789379,0.043623584000002325
+transporteur dpd,Navigational Query,Factual Query,Factual Query,True,0.84,Factual Query,1.3170502,0.02990433300000106
+cyclooxygenase,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.2829854,0.033448665999998184
+dmv nj gov,Navigational Query,Navigational Query,Navigational Query,True,0.6,Navigational Query,1.3782747,0.07929029099999951
+at&t star codes for phones,Factual Query,Transactional Query,Transactional Query,True,0.8,Transactional Query,1.1948116,0.039216832999997564
+quetzalcoatl god,Factual Query,Factual Query,Factual Query,True,0.85,Factual Query,1.3665268,0.024566791999998117
+vue tv,Abstain Query,Transactional Query,Transactional Query,True,0.87,Transactional Query,0.9688406,0.020237833999999566
+kentucky finance cabinet,Navigational Query,Navigational Query,Navigational Query,True,0.8,Navigational Query,1.1888751,0.025300417000000408
+tor project download windows,Transactional Query,Transactional Query,Transactional Query,True,0.87,Transactional Query,0.97055703,0.02977549999999951
+edby,Abstain Query,Factual Query,Factual Query,True,0.71,Factual Query,1.5678719,0.02074262500000046
+mcgovern hyundai brockton,Navigational Query,Navigational Query,Navigational Query,True,0.57,Navigational Query,1.254605,0.022912250000000967
+how much is internet with xfinity,Factual Query,Factual Query,Factual Query,True,0.57,Factual Query,1.5218728,0.029300708999997482
+myr,Factual Query,Factual Query,Factual Query,True,0.56,Navigational Query,1.7582321,0.02711049999999915
+analysis phase of sdlc,Abstain Query,Factual Query,Factual Query,True,0.81,Factual Query,1.5742452,0.0219707910000011
+iacra login,Navigational Query,Transactional Query,Transactional Query,True,0.77,Transactional Query,1.2268279,0.023243167000000398
+ventral spinal cord,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.96517646,0.023965249999999827
+world health organisation breastfeeding uk,Abstain Query,Factual Query,Factual Query,False,0.89,Factual Query,1.1283264,0.028201417000001783
+toronto blue jays jacket,Abstain Query,Factual Query,Factual Query,True,0.65,Factual Query,1.7513355,0.02081416700000105
+office of medicaid inspector general,Navigational Query,Factual Query,Factual Query,True,0.9,Factual Query,1.2930903,0.033129792000000435
+pharaonic egypt,Abstain Query,Factual Query,Factual Query,False,0.9,Factual Query,1.083779,0.054420499999999095
+projector screen,Abstain Query,Transactional Query,Transactional Query,True,0.72,Transactional Query,1.1976345,0.03324683400000339
+calhoun,Factual Query,Factual Query,Factual Query,True,0.74,Factual Query,1.4566965,0.026534833000003033
+hoise,Navigational Query,Factual Query,Factual Query,True,0.76,Factual Query,1.5741479,0.036038708999999614
+best bridesmaid dresses online,Transactional Query,Transactional Query,Transactional Query,True,0.82,Transactional Query,1.1444812,0.04691662500000149
+lufthansa slogan,Abstain Query,Navigational Query,Factual Query,True,1.6293567419052124,Navigational Query,1.6293567,0.03733108299999799
+homogenization,Factual Query,Factual Query,Factual Query,True,0.56,Abstain Query,1.4702104,0.028841583000001947
+ropivacaine vs bupivacaine,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9077903,0.0396805829999991
+sample recommendation letters,Abstain Query,Instrumental Query,Instrumental Query,True,1.4625393152236938,Instrumental Query,1.4625393,0.02751754199999823
+ppo,Abstain Query,Factual Query,Factual Query,True,0.61,Navigational Query,1.7562613,0.025673499999999905
+external display,Abstain Query,Transactional Query,Transactional Query,True,0.67,Transactional Query,1.3131773,0.017271250000000293
+amsterdam tulip season,Abstain Query,Factual Query,Factual Query,True,0.66,Factual Query,1.4800578,0.03734399999999738
+spectrum internet upload speeds,Abstain Query,Navigational Query,Transactional Query,True,1.7071195840835571,Navigational Query,1.7071196,0.02493541699999824
+fuzzy bears,Factual Query,Factual Query,Factual Query,True,0.67,Abstain Query,1.6751152,0.023049458999999217
+usb-a,Abstain Query,Factual Query,Factual Query,True,0.73,Factual Query,1.6568308,0.027644958000003328
+oven temp for pork tenderloin,Abstain Query,Navigational Query,Navigational Query,True,1.4929269552230835,Navigational Query,1.492927,0.025795041999998602
+amazon telephone number customer service,Factual Query,Navigational Query,Navigational Query,True,1.429013729095459,Navigational Query,1.4290137,0.028340833000001453
+four forces of nature,Abstain Query,Factual Query,Factual Query,True,0.51,Abstain Query,1.5727341,0.02797654199999755
+atcts account registration,Navigational Query,Transactional Query,Transactional Query,True,0.71,Transactional Query,1.2989459,0.02692812499999775
+bipolar condition,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.141174,0.05694195799999946
+when was the thermometer invented,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7211462,0.08885991700000062
+www.netspend.com/activate visa,Navigational Query,Transactional Query,Transactional Query,True,1.4483487606048584,Transactional Query,1.4483488,0.05034737500000119
+the sausage maker,Abstain Query,Factual Query,Factual Query,True,0.72,Factual Query,1.5899196,0.036217666999998954
+"weather for pittsburgh, pa",Factual Query,Factual Query,Factual Query,True,0.61,Navigational Query,1.4846579,0.037012500000003
+how to care for a newborn boy,Instrumental Query,Factual Query,Factual Query,True,0.84,Factual Query,1.5129973,0.03329425000000086
+signs and symptoms of lupus,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7062738,0.029115999999998365
+best outdoor flowering plants,Abstain Query,Factual Query,Factual Query,True,0.6,Navigational Query,1.5578164,0.03778962500000205
+la mesa california,Abstain Query,Navigational Query,Navigational Query,True,0.53,Navigational Query,1.2269223,0.04430145799999963
+valium pills,Factual Query,Factual Query,Factual Query,True,0.6,Factual Query,1.6095024,0.04605124999999788
+ewealthmanager login,Navigational Query,Transactional Query,Factual Query,True,1.6463264226913452,Transactional Query,1.6463264,0.025433583000001647
+ige serum,Abstain Query,Factual Query,Factual Query,False,0.86,Factual Query,0.9655455,0.04022416699999809
+ramen coleslaw,Factual Query,Navigational Query,Navigational Query,True,1.6167452335357666,Navigational Query,1.6167452,0.024317124999999606
+calculate mpg,Instrumental Query,Factual Query,Factual Query,True,1.6230559349060059,Factual Query,1.6230559,0.035358125000001905
+allegheny county assistance office pa,Abstain Query,Navigational Query,Navigational Query,True,0.67,Navigational Query,1.2406305,0.04571579099999923
+the wembley,Factual Query,Navigational Query,Navigational Query,True,0.62,Navigational Query,1.1410954,0.023885374999998987
+md mva,Navigational Query,Factual Query,Factual Query,True,0.85,Factual Query,1.2763025,0.0216697919999973
+my local congressman,Abstain Query,Abstain Query,Abstain Query,True,1.3507144451141357,Abstain Query,1.3507144,0.0309538329999981
+what is the maximum number of rows in excel,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.5931957,0.04097041700000048
+sterling federal credit union,Navigational Query,Transactional Query,Transactional Query,True,1.4978597164154053,Transactional Query,1.4978597,0.028162749999999903
+google backup for android phone,Instrumental Query,Transactional Query,Transactional Query,True,0.8,Transactional Query,1.094168,0.03898020800000168
+nramemberservices.org,Navigational Query,Transactional Query,Transactional Query,True,1.4997351169586182,Transactional Query,1.4997351,0.020801582999997237
+bulb invented by,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.91144276,0.03173291699999936
+events in nh today,Abstain Query,Abstain Query,Abstain Query,True,0.59,Abstain Query,1.194572,0.021437458000001186
+macfree,Navigational Query,Transactional Query,Transactional Query,True,0.62,Transactional Query,1.1146072,0.016578000000002646
+ebitda definition formula,Factual Query,Instrumental Query,Instrumental Query,True,0.59,Instrumental Query,1.3588011,0.041410917000000325
+prague temperatures by month,Factual Query,Factual Query,Factual Query,True,0.84,Factual Query,1.3125694,0.042055291000000494
+byte order,Abstain Query,Factual Query,Factual Query,True,0.66,Instrumental Query,1.6731734,0.030646791999998868
+lithuanian language,Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.5218658,0.01976262499999848
+balsalazide disodium 750mg,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.0921791,0.023671749999998326
+colonialism in nigeria,Abstain Query,Abstain Query,Abstain Query,False,0.93,Abstain Query,0.40471515,0.02103079200000124
+crafting guide gw2,Factual Query,Transactional Query,Transactional Query,True,0.6,Transactional Query,1.4725001,0.02169945799999695
+james v reyes,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0733026,0.015414166999999424
+quicken interest rates,Navigational Query,Abstain Query,Abstain Query,True,1.4811009168624878,Abstain Query,1.4811009,0.02440433399999975
+what is cold brew coffee,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.6301663,0.036859291999999044
+gym membership,Abstain Query,Transactional Query,Transactional Query,True,1.5847140550613403,Transactional Query,1.584714,0.06415470900000031
+how do you sell a car,Instrumental Query,Instrumental Query,Instrumental Query,True,0.74,Instrumental Query,1.138244,0.204166917000002
+dark spots on tongue,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0120256,0.03802974999999975
+2know,Navigational Query,Factual Query,Factual Query,True,0.77,Factual Query,1.6694801,0.024624750000000972
+weather history by date,Abstain Query,Factual Query,Factual Query,False,0.85,Factual Query,1.2994976,0.021843125000000185
+recipe for zucchini and squash,Factual Query,Navigational Query,Factual Query,True,1.7585010528564453,Navigational Query,1.758501,0.021058916000001204
+recommended 401k contributions by age,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.5363528,0.0284021249999995
+how to update my sgli online,Instrumental Query,Instrumental Query,Instrumental Query,True,1.5323060750961304,Instrumental Query,1.5323061,0.021065957999997664
+pc support scam,Abstain Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,1.1492085,0.022919250000001057
+html style tag,Abstain Query,Transactional Query,Factual Query,True,1.716057538986206,Transactional Query,1.7160575,0.03085887499999984
+ncstate fair,Navigational Query,Navigational Query,Navigational Query,True,0.76,Navigational Query,1.1843741,0.018385165999998065
+can jews eat shrimp,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.2653925,0.01954525000000018
+amaric,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4312024,0.020876790999999173
+st pauline,Factual Query,Factual Query,Factual Query,True,0.64,Factual Query,1.2399406,0.018417291999998753
+brale,Factual Query,Factual Query,Factual Query,True,0.69,Factual Query,1.7458677,0.01863591600000092
+vrbo.com,Navigational Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,1.1093276,0.03008558400000183
+apply for costco membership,Instrumental Query,Navigational Query,Factual Query,True,1.5929967164993286,Navigational Query,1.5929967,0.03212433399999881
+currency for cuba,Abstain Query,Abstain Query,Factual Query,True,1.5806673765182495,Abstain Query,1.5806674,0.018704417000002138
+best rain gutters,Abstain Query,Navigational Query,Factual Query,True,1.5987205505371094,Navigational Query,1.5987206,0.015383582999998424
+outlook set up,Instrumental Query,Transactional Query,Transactional Query,True,0.81,Transactional Query,1.2018912,0.024892582999999746
+history of trolls,Abstain Query,Abstain Query,Abstain Query,True,1.2507874965667725,Abstain Query,1.2507875,0.01857404199999735
+histrionic personality disorder examples,Factual Query,Factual Query,Factual Query,False,0.89,Factual Query,1.2038591,0.023466875000000442
+2016 vw gti,Factual Query,Factual Query,Factual Query,True,0.62,Factual Query,1.7602338,0.04163191700000013
+what mobile phone is best for me,Factual Query,Transactional Query,Transactional Query,True,0.64,Transactional Query,1.3202784,0.020934583000002505
+transmembrane potential,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2706228,0.015831667000000493
+surgery for detached retina,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.7179778,0.019398500000001206
+interpreting blood test results,Instrumental Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4577574,0.01644154099999895
+severe abdominal pain,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.055082,0.01666741700000074
+medical information bureau,Abstain Query,Factual Query,Factual Query,True,0.69,Transactional Query,1.4553405,0.032272708999997235
+finance companies for bad credit,Abstain Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.4247261,0.018736958999998166
+parts of the scalp,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1916708,0.015980708000000732
+softwood tree,Abstain Query,Navigational Query,Factual Query,True,1.5461022853851318,Navigational Query,1.5461023,0.016611833000002463
+tricare young adult program,Abstain Query,Transactional Query,Factual Query,True,1.2583335638046265,Transactional Query,1.2583336,0.0166308750000006
+nsips new link,Abstain Query,Navigational Query,Navigational Query,True,1.4563651084899902,Navigational Query,1.4563651,0.02824095800000137
+ny state wcb,Navigational Query,Factual Query,Factual Query,True,0.83,Factual Query,1.328862,0.026618082999998904
+fit-dna test,Abstain Query,Factual Query,Factual Query,True,0.89,Factual Query,1.3315591,0.024548124999999033
+the ups store.com,Navigational Query,Transactional Query,Navigational Query,True,1.2778164148330688,Transactional Query,1.2778164,0.028736874999999884
+the founder of google,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,0.99727976,0.017646082999998924
+england and united kingdom,Abstain Query,Abstain Query,Abstain Query,True,0.57,Abstain Query,1.0330124,0.061825749999997015
+oee performance calculation,Abstain Query,Instrumental Query,Instrumental Query,True,1.6304597854614258,Instrumental Query,1.6304598,0.02314837499999811
+venous thromboembolism,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.7745675,0.02480762500000111
+cone shapes,Factual Query,Navigational Query,Factual Query,True,1.614535927772522,Navigational Query,1.6145359,0.021853582999998622
+demerara sugar,Abstain Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4175774,0.019394249999997726
+rassmussen presidential apporval,Navigational Query,Abstain Query,Abstain Query,True,0.56,Abstain Query,1.0607817,0.029760541999998225
+exchange definition,Factual Query,Factual Query,Factual Query,True,0.57,Abstain Query,1.7034167,0.01856058399999938
+westjet world elite mastercard login,Navigational Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,1.0254225,0.02688908400000045
+illinois lottery official site,Navigational Query,Navigational Query,Navigational Query,True,0.63,Navigational Query,1.3151531,0.030448167000002968
+wellsfargo/activatecard.com,Navigational Query,Transactional Query,Factual Query,True,1.3107577562332153,Transactional Query,1.3107578,0.0230230409999983
+myhbo,Navigational Query,Factual Query,Factual Query,True,0.73,Factual Query,1.6844711,0.01746249999999705
+water safety tips,Abstain Query,Navigational Query,Navigational Query,True,1.5836656093597412,Navigational Query,1.5836656,0.01628358299999988
+saudiaramco.com,Navigational Query,Transactional Query,Transactional Query,True,0.58,Transactional Query,1.2701257,0.017153999999997893
+meningitis fever,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.73490834,0.016335624999999965
+when did usa join ww2,Factual Query,Factual Query,Factual Query,False,0.86,Factual Query,0.8702716,0.021783124999998904
+why does google chrome go to bing,Factual Query,Factual Query,Factual Query,True,0.63,Factual Query,1.7246957,0.01951412499999705
+texasfarmbureau.com,Navigational Query,Navigational Query,Transactional Query,True,1.5074665546417236,Navigational Query,1.5074666,0.03815249999999892
+sharepointonline.com,Navigational Query,Transactional Query,Transactional Query,True,0.92,Transactional Query,0.6105636,0.018656082999999768
+ranier,Abstain Query,Factual Query,Factual Query,True,0.89,Factual Query,1.0627987,0.017879915999998275
+who blood pressure chart,Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,0.949786,0.027058916999997962
+substitute greek yogurt for sour cream,Abstain Query,Factual Query,Factual Query,True,0.62,Factual Query,1.7670261,0.029705415999998763
+uk boy bands,Abstain Query,Abstain Query,Factual Query,True,1.6709052324295044,Abstain Query,1.6709052,0.023046458999999686
+the boss baby 2017,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.6894981,0.023615249999998866
+good professional skills,Abstain Query,Abstain Query,Abstain Query,True,1.5854371786117554,Abstain Query,1.5854372,0.024082208999999466
+alan alda,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.70148534,0.02527854099999871
+iron maiden albums,Factual Query,Factual Query,Factual Query,True,0.73,Factual Query,1.7144487,0.02183179099999677
+damsels in distress,Factual Query,Factual Query,Factual Query,True,0.71,Abstain Query,1.4530629,0.029295375000000234
+genocide rwanda,Abstain Query,Abstain Query,Abstain Query,True,0.54,Abstain Query,0.87813354,0.030115666000000374
+california non resident tax form,Instrumental Query,Instrumental Query,Instrumental Query,True,1.3589086532592773,Instrumental Query,1.3589087,0.03248941700000074
+what is the abbreviation for for example,Factual Query,Instrumental Query,Factual Query,True,1.6215438842773438,Instrumental Query,1.6215439,0.021280874999998645
+how to treat mites on chickens,Instrumental Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4667732,0.03257070899999803
+text to speech,Abstain Query,Transactional Query,Transactional Query,True,1.578932762145996,Transactional Query,1.5789328,0.02276295900000136
+poseidon story,Factual Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4064585,0.021272583000001788
+alphabetical list of american artists,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2939459,0.015240999999999616
+active transport and passive transport,Abstain Query,Factual Query,Factual Query,True,0.81,Factual Query,1.4809031,0.029913457999999338
+magnesium taurate supplements,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.2045076,0.020316874999998902
+margot robbie actress,Factual Query,Factual Query,Factual Query,True,0.92,Factual Query,1.0571451,0.018895875000001894
+adp kimpton vantage,Navigational Query,Factual Query,Factual Query,True,0.8,Factual Query,1.2962359,0.02859524999999863
+is rice a grain,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1847614,0.023687541999997563
+cross curricular lessons,Abstain Query,Abstain Query,Factual Query,True,1.6370280981063843,Abstain Query,1.6370281,0.024458916999996916
+symptoms of high bun,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9278636,0.03359116699999731
+fifa world cup women 2019,Navigational Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1680584,0.02706612500000105
+gutters installed,Factual Query,Navigational Query,Navigational Query,True,1.5582942962646484,Navigational Query,1.5582943,0.027566958000001307
+md medical license lookup,Abstain Query,Transactional Query,Transactional Query,True,0.75,Transactional Query,1.0408978,0.02559125000000151
+first bank,Abstain Query,Navigational Query,Navigational Query,True,1.3944509029388428,Navigational Query,1.3944509,0.014682500000002818
+match in excel,Factual Query,Transactional Query,Transactional Query,True,1.5615777969360352,Transactional Query,1.5615778,0.028552624999999665
+nfl schedule today on tv,Navigational Query,Factual Query,Factual Query,True,0.58,Navigational Query,1.7435505,0.026118500000002598
+salah wikipedia,Navigational Query,Factual Query,Factual Query,True,0.85,Factual Query,1.2633668,0.03237787499999811
+animated engines,Navigational Query,Transactional Query,Transactional Query,True,0.74,Transactional Query,1.2945988,0.02090658299999859
+cherokee reservations,Abstain Query,Factual Query,Factual Query,False,0.8,Factual Query,1.254149,0.01929912499999986
+ucl thumb,Abstain Query,Factual Query,Factual Query,True,0.86,Factual Query,1.3193308,0.07508333300000203
+excel qm 5.2,Factual Query,Transactional Query,Transactional Query,True,0.76,Transactional Query,1.1978749,0.018023249999998825
+reference a book,Instrumental Query,Instrumental Query,Factual Query,True,1.6270748376846313,Instrumental Query,1.6270748,0.01708691600000023
+allstate uber claims,Navigational Query,Instrumental Query,Instrumental Query,True,1.5025253295898438,Instrumental Query,1.5025253,0.020704583000000554
+dla stores web,Navigational Query,Transactional Query,Transactional Query,False,0.94,Transactional Query,0.47271973,0.023973082999997786
+applied kinesiology,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.2335023,0.020938333000000142
+examples of hydrophobic molecules,Factual Query,Factual Query,Factual Query,True,0.92,Factual Query,1.0965415,0.02128358400000252
+f1 result today,Navigational Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4974132,0.0308130420000019
+bpa,Navigational Query,Factual Query,Factual Query,True,0.86,Factual Query,1.4477816,0.022471249999998832
+word to pdf converter online free,Transactional Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.8062394,0.016311667000000085
+dinovite for dogs,Navigational Query,Factual Query,Factual Query,True,0.69,Factual Query,1.4087517,0.025316208999999645
+valentine's day meaning and definition,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.6209198,0.02121749999999878
+racism for kids,Factual Query,Abstain Query,Abstain Query,True,0.86,Abstain Query,0.8528743,0.016401292000001177
+airbed uk,Abstain Query,Navigational Query,Navigational Query,True,1.341818928718567,Navigational Query,1.3418189,0.0248577499999989
+emirates seat pitch,Abstain Query,Navigational Query,Navigational Query,True,0.54,Navigational Query,1.2803147,0.015596874999999955
+directv,Abstain Query,Transactional Query,Transactional Query,True,0.6,Transactional Query,1.4315013,0.025808583999999968
+top high schools in the us,Abstain Query,Factual Query,Factual Query,True,0.76,Factual Query,1.3157623,0.025530875000001174
+epa fuel mileage ratings,Abstain Query,Factual Query,Factual Query,False,1.7641098499298096,Factual Query,1.7641098,0.023216958999999093
+what is m.a. degree,Factual Query,Factual Query,Factual Query,True,0.86,Factual Query,1.454098,0.01657241700000256
+french revolution of 1789,Factual Query,Abstain Query,Abstain Query,True,0.51,Abstain Query,0.92459595,0.025897291999999794
+stages of grif,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.8985567,0.023809333999999183
+capricorn birth stone,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.2748058,0.02323245899999904
+is death penalty effective,Factual Query,Factual Query,Factual Query,False,0.9,Factual Query,1.251096,0.019131874999999354
+airline tracking flights,Abstain Query,Transactional Query,Transactional Query,True,0.53,Transactional Query,1.3778869,0.02405033399999823
+tri county electric celina tn,Navigational Query,Navigational Query,Navigational Query,True,0.52,Navigational Query,1.1574295,0.03929866600000054
+price chopper rewards,Navigational Query,Transactional Query,Transactional Query,True,0.83,Transactional Query,0.92413247,0.019140332999999288
+sheree real housewives of atlanta,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1979444,0.0192991659999997
+calculate attrition,Instrumental Query,Transactional Query,Transactional Query,True,1.4811758995056152,Transactional Query,1.4811759,0.029839042000002536
+corgis,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.325637,0.015220541999998005
+suicide prevention program,Abstain Query,Transactional Query,Transactional Query,True,0.72,Transactional Query,1.0459244,0.018017332999999525
+j&j benefits login,Navigational Query,Transactional Query,Transactional Query,True,0.77,Transactional Query,1.2905344,0.014905583000000888
+how to make name badges,Instrumental Query,Instrumental Query,Instrumental Query,True,0.57,Instrumental Query,1.2830303,0.030515083999997472
+who is travis barker,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.3502871,0.03583133300000085
+1st president,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.91468656,0.018901792000001194
+what are subatomic particles made of,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.198444,0.026125999999997873
+ancient chinese herbal medicine,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1861513,0.02467850000000027
+apa in text citation for 4 authors,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.4872968,0.027403291999998913
+boiled eggs in oven muffin tin,Instrumental Query,Factual Query,Factual Query,True,0.58,Factual Query,1.7659094,0.0214064169999979
+update dbs online,Transactional Query,Transactional Query,Transactional Query,True,0.67,Transactional Query,1.2847402,0.020074749999999142
+speedctest,Navigational Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,0.84111387,0.016175374999999548
+how seo works,Factual Query,Instrumental Query,Instrumental Query,True,1.5195868015289307,Instrumental Query,1.5195868,0.022613666000001587
+navigate,Abstain Query,Navigational Query,Navigational Query,True,0.89,Navigational Query,0.8543313,0.02395195799999783
+hunter thompson,Factual Query,Factual Query,Factual Query,False,0.94,Factual Query,0.6837357,0.020336709000002173
+surrealism paintings,Abstain Query,Factual Query,Factual Query,True,0.58,Abstain Query,1.615916,0.021492083999998357
+edit access,Instrumental Query,Instrumental Query,Transactional Query,True,1.588494896888733,Instrumental Query,1.5884949,0.018768500000000188
+echanesia,Factual Query,Factual Query,Factual Query,False,0.91,Factual Query,0.96963274,0.03136854199999917
+wakemed web,Navigational Query,Transactional Query,Transactional Query,True,0.81,Transactional Query,1.0606825,0.016202416999998803
+guinness harp,Abstain Query,Factual Query,Factual Query,True,0.63,Navigational Query,1.5799415,0.015143374999997405
+andromeda,Abstain Query,Factual Query,Factual Query,True,0.52,Navigational Query,1.4878342,0.022957625000000093
+sage publishers,Navigational Query,Transactional Query,Transactional Query,True,0.8,Transactional Query,0.907944,0.022050832999997994
+natural gas meter,Factual Query,Transactional Query,Transactional Query,True,1.5435346364974976,Transactional Query,1.5435346,0.021344792000000723
+national priorities,Navigational Query,Abstain Query,Abstain Query,False,0.91,Abstain Query,0.6326436,0.013222291999998248
+stuxnet wiki,Factual Query,Factual Query,Factual Query,True,0.58,Factual Query,1.542041,0.024068958000000862
+construed in a sentence,Factual Query,Abstain Query,Abstain Query,True,0.52,Abstain Query,1.4771292,0.019907332999999028
+what does the lion symbolize,Factual Query,Factual Query,Factual Query,True,0.68,Factual Query,1.7074836,0.017117124999998623
+orthopedic spine specialist,Abstain Query,Factual Query,Factual Query,False,0.91,Factual Query,1.0149469,0.01814124999999933
+tomgreen,Factual Query,Navigational Query,Navigational Query,True,1.1949653625488281,Navigational Query,1.1949654,0.015101665999999625
+the history of tv,Abstain Query,Factual Query,Factual Query,True,0.79,Factual Query,1.4219667,0.017222541999998953
+cities in oaxaca mexico,Abstain Query,Navigational Query,Navigational Query,True,1.3645890951156616,Navigational Query,1.3645891,0.01683137499999887
+kidney ultrasound preparation,Abstain Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1387475,0.02325783299999884
+therapy dog certification requirements,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3127134,0.026285165999997417
+tender package,Abstain Query,Transactional Query,Transactional Query,True,0.68,Transactional Query,1.2572925,0.0318002909999997
+wi license lookup,Navigational Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.8089263,0.03215212499999964
+aarp travel,Abstain Query,Transactional Query,Factual Query,True,1.4127254486083984,Transactional Query,1.4127254,0.02302829199999934
+employers compensation insurance,Abstain Query,Transactional Query,Factual Query,True,1.4989899396896362,Transactional Query,1.4989899,0.021206500000001682
+series top online,Abstain Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.2388046,0.01672212499999759
+ip codes lookup,Factual Query,Transactional Query,Transactional Query,True,0.6,Transactional Query,1.3589337,0.01815791599999983
+hpd credit union,Navigational Query,Transactional Query,Factual Query,True,1.5302462577819824,Transactional Query,1.5302463,0.015325499999999437
+3:30 central time,Factual Query,Navigational Query,Factual Query,True,1.6047827005386353,Navigational Query,1.6047827,0.026381959000001842
+orange theory gift cards,Abstain Query,Transactional Query,Transactional Query,True,0.85,Transactional Query,1.0417049,0.022987624999998957
+contractor lookup california,Abstain Query,Transactional Query,Transactional Query,True,0.63,Transactional Query,1.2639554,0.02388162500000135
+print ruler actual size,Factual Query,Navigational Query,Factual Query,True,1.7072854042053223,Navigational Query,1.7072854,0.025331333000000456
+cat scan with contrast,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.2761986,0.08443808399999853
+group activities for adults,Abstain Query,Transactional Query,Transactional Query,True,0.63,Transactional Query,1.3735415,0.02685358300000118
+what is a carbon copy email,Factual Query,Instrumental Query,Instrumental Query,True,0.72,Instrumental Query,1.1831667,0.034382125000000485
+futures stock,Abstain Query,Transactional Query,Transactional Query,True,0.65,Transactional Query,1.2710732,0.030485459000001214
+parkland high school pa,Factual Query,Factual Query,Factual Query,True,0.67,Factual Query,1.4277277,0.023025749999998624
+foxwoods sign in,Navigational Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.79854184,0.01928458300000102
+table numbers and stands,Abstain Query,Instrumental Query,Instrumental Query,True,1.6783180236816406,Instrumental Query,1.678318,0.023001874999998506
+internet explorer 17,Factual Query,Factual Query,Factual Query,True,0.58,Transactional Query,1.4271783,0.02374770799999837
+flysouthwest.com,Navigational Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.7685742,0.03118187500000147
+what is texas time zone,Factual Query,Factual Query,Factual Query,True,0.76,Factual Query,1.3875252,0.022374334000001994
+define pons,Abstain Query,Factual Query,Factual Query,True,0.75,Factual Query,1.7243159,0.021354542000000976
+scottish female names,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3357009,0.02651654099999945
+floridablue,Abstain Query,Transactional Query,Transactional Query,True,0.61,Transactional Query,1.3957579,0.02275441700000158
+who is dennis rodman,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.99954194,0.022435167000001144
+home depot return policy 2019,Abstain Query,Transactional Query,Transactional Query,True,0.54,Transactional Query,1.450578,0.02042387500000231
+hundredweight,Abstain Query,Factual Query,Factual Query,True,0.86,Factual Query,1.3741496,0.015451542000000984
+"e,g,",Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.5516827,0.016583958000001786
+balsamic vinegar dressing recipe,Factual Query,Navigational Query,Factual Query,True,1.699428915977478,Navigational Query,1.6994289,0.033361959000000496
+java random number generator,Instrumental Query,Transactional Query,Transactional Query,True,0.75,Transactional Query,1.1356144,0.01934424999999962
+exp;orer,Transactional Query,Factual Query,Factual Query,True,0.83,Factual Query,1.4426857,0.02572045800000211
+where did the etruscans originate,Factual Query,Factual Query,Factual Query,True,0.92,Factual Query,1.1384695,0.02301762499999782
+a spondylosis,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.67157966,0.017926875000000564
+1/4 sheet cake feeds how many,Factual Query,Factual Query,Factual Query,True,0.79,Factual Query,1.6045086,0.021758875000003286
+best shampoo and conditioner for hair growth,Abstain Query,Factual Query,Factual Query,True,0.52,Transactional Query,1.4918063,0.025113749999999158
+causative definition,Factual Query,Factual Query,Factual Query,True,0.71,Factual Query,1.6675744,0.02447716599999694
+rail meaning,Factual Query,Navigational Query,Factual Query,True,1.6309936046600342,Navigational Query,1.6309936,0.015727000000001823
+american revolutionary war dates,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9404281,0.017768249999999597
+las vegas airport,Navigational Query,Navigational Query,Navigational Query,True,0.81,Navigational Query,0.6901246,0.021635832999997717
+pdf to word convertoer,Navigational Query,Transactional Query,Transactional Query,True,0.84,Transactional Query,1.0553076,0.025883165999999846
+cheap flight reservations,Abstain Query,Transactional Query,Transactional Query,True,0.53,Transactional Query,1.272596,0.01839350000000195
+winco cda,Navigational Query,Transactional Query,Transactional Query,True,0.56,Transactional Query,1.2676165,0.024675166999998055
+organic clay,Abstain Query,Factual Query,Factual Query,True,0.72,Factual Query,1.646002,0.022768208999998762
+bank key meaning,Factual Query,Transactional Query,Factual Query,True,1.7429510354995728,Transactional Query,1.742951,0.018780792000001156
+stpre,Navigational Query,Factual Query,Factual Query,True,0.6,Navigational Query,1.4780958,0.017242040999999375
+solar screen,Abstain Query,Factual Query,Factual Query,True,0.6,Transactional Query,1.4981337,0.02061604199999678
+exempt vs non-exempt employees,Factual Query,Instrumental Query,Instrumental Query,True,1.4350645542144775,Instrumental Query,1.4350646,0.019190292000001108
+www.carespot.com,Navigational Query,Transactional Query,Transactional Query,True,0.66,Transactional Query,1.0902083,0.01960491700000233
+barack obama article,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.235686,0.020078625000000017
+juvenile life without parole,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4732393,0.02921324999999797
+xampp4,Navigational Query,Transactional Query,Transactional Query,True,0.76,Transactional Query,1.0541838,0.022002624999998943
+dell sales number,Factual Query,Navigational Query,Factual Query,True,1.5222784280776978,Navigational Query,1.5222784,0.024683958000000672
+www.dhr.alabama.gov child support,Navigational Query,Instrumental Query,Instrumental Query,True,0.55,Instrumental Query,1.3111895,0.028279167000000882
+kermit frog,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1671487,0.022334875000002086
+women in black movie release for 2018,Factual Query,Factual Query,Factual Query,True,0.83,Factual Query,1.5607169,0.023983708999999465
+agb whatsapp,Navigational Query,Transactional Query,Transactional Query,True,0.69,Transactional Query,1.2708839,0.023736166999999142
+magic chef microwave problems,Abstain Query,Factual Query,Factual Query,True,0.6,Factual Query,1.7462715,0.022131541000000254
+zero down lease offers,Transactional Query,Transactional Query,Transactional Query,True,0.57,Transactional Query,1.4720112,0.02098312500000077
+www.banggood.com,Navigational Query,Transactional Query,Transactional Query,True,0.65,Transactional Query,1.2234113,0.014614167000001288
+iec amendment online,Abstain Query,Transactional Query,Transactional Query,True,1.4615026712417603,Transactional Query,1.4615027,0.01729083300000056
+motley crue discography,Navigational Query,Factual Query,Factual Query,True,0.85,Factual Query,1.4829384,0.02828991699999861
+psychology graduate jobs,Abstain Query,Factual Query,Factual Query,True,0.7,Factual Query,1.5361938,0.02408983400000153
+what does loaded question mean,Factual Query,Abstain Query,Factual Query,True,1.6250724792480469,Abstain Query,1.6250725,0.02740316699999923
+matcha tea benefits dr oz,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.2833067,0.02659095899999997
+sldcada navy login,Navigational Query,Navigational Query,Factual Query,True,1.5062367916107178,Navigational Query,1.5062368,0.020882457999999104
+routing and switching,Abstain Query,Navigational Query,Navigational Query,True,0.66,Navigational Query,1.4597003,0.01624183399999879
+water based polyurethane,Abstain Query,Factual Query,Factual Query,True,0.66,Factual Query,1.7202657,0.024500833000001165
+pregnancy trimesters,Abstain Query,Factual Query,Factual Query,True,0.8,Factual Query,1.4953964,0.017777000000002374
+feline stomach cancer,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.7547888,0.03076387499999811
+bechets,Abstain Query,Factual Query,Factual Query,True,0.61,Factual Query,1.7467271,0.026297667000001468
+full body physical examination procedure,Factual Query,Factual Query,Factual Query,True,0.9,Factual Query,1.3121874,0.02351608300000052
+federal salaries database,Navigational Query,Transactional Query,Transactional Query,True,1.4682925939559937,Transactional Query,1.4682926,0.02357687499999983
+todays baseball scores,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.5604162,0.0229371659999984
+fees for service,Factual Query,Transactional Query,Transactional Query,True,0.56,Transactional Query,1.4609681,0.0196983330000009
+ao smith boilers,Abstain Query,Factual Query,Factual Query,True,0.63,Navigational Query,1.4808859,0.01708374999999762
+drawing board for computer,Abstain Query,Transactional Query,Transactional Query,True,0.8,Transactional Query,1.0949891,0.02515066600000182
+nagual definition,Factual Query,Factual Query,Factual Query,True,0.88,Factual Query,1.3690351,0.03296449999999851
+ira limits 2018 over 50,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.3595426,0.018163125000000946
+what is a healthy total cholesterol level,Factual Query,Factual Query,Factual Query,False,0.92,Factual Query,0.9838311,0.022542500000000132
+denton texas weather,Factual Query,Factual Query,Factual Query,True,0.52,Navigational Query,1.2895212,0.03172437499999958
+array size c,Factual Query,Factual Query,Factual Query,True,0.6,Factual Query,1.7647276,0.01850008399999936
+adt pulse login,Navigational Query,Transactional Query,Transactional Query,True,0.7,Transactional Query,1.3390088,0.025267249999998853
+a-scan biometry,Abstain Query,Factual Query,Factual Query,True,0.9,Factual Query,1.1742147,0.016564916000000096
+humana company,Factual Query,Factual Query,Factual Query,True,0.8,Factual Query,1.4224154,0.018807417000001436
+is tuna keto friendly,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1242162,0.02268262500000162
+what does gop mean in american politics,Factual Query,Abstain Query,Abstain Query,True,0.7,Abstain Query,1.2695893,0.03367908300000266
+quotes on art,Abstain Query,Abstain Query,Factual Query,True,1.5533363819122314,Abstain Query,1.5533364,0.02493700000000132
+wifi cable,Abstain Query,Transactional Query,Transactional Query,True,0.6,Transactional Query,1.4077222,0.01748933400000041
+best ultrasonic dog repellent devices,Abstain Query,Factual Query,Factual Query,True,0.67,Factual Query,1.6421914,0.026758582999999447
+how to apply for british passport,Instrumental Query,Instrumental Query,Instrumental Query,True,0.56,Instrumental Query,1.2816064,0.024028790999999217
+food sensitivity test reviews,Abstain Query,Factual Query,Factual Query,True,0.88,Factual Query,1.2755849,0.016580375000000203
+12 lakhs,Factual Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4180216,0.02889762499999904
+miami dade building department forms,Navigational Query,Instrumental Query,Instrumental Query,True,1.4408118724822998,Instrumental Query,1.4408119,0.017108291999999636
+alarax,Factual Query,Factual Query,Factual Query,True,0.78,Factual Query,1.4903688,0.018268792000000644
+delete outlook mail,Instrumental Query,Transactional Query,Factual Query,True,1.6447750329971313,Transactional Query,1.644775,0.015241000000003169
+providence,Navigational Query,Navigational Query,Navigational Query,True,0.56,Navigational Query,1.2355211,0.024623125000001522
+eurogolf,Abstain Query,Factual Query,Factual Query,True,0.51,Navigational Query,1.4337062,0.02534920800000151
+computer science jobs,Abstain Query,Transactional Query,Transactional Query,True,0.59,Transactional Query,1.3715628,0.02011962499999953
+nobel peace prize winners list,Abstain Query,Factual Query,Factual Query,False,0.95,Factual Query,0.5145535,0.037053041000000064
+google classtoo,Abstain Query,Transactional Query,Transactional Query,True,0.91,Transactional Query,0.6713707,0.022301208000001793
+lululemon coupons,Abstain Query,Transactional Query,Transactional Query,True,0.78,Transactional Query,1.113544,0.025811209000000446
+www.chaseamazon.com,Navigational Query,Transactional Query,Transactional Query,True,0.56,Transactional Query,1.2855064,0.03805287500000176
+neutral stimulus,Abstain Query,Factual Query,Factual Query,True,0.83,Factual Query,1.5028409,0.020937083999999828
+register for sat,Instrumental Query,Factual Query,Factual Query,True,0.68,Factual Query,1.6163445,0.02032000000000167
+voting locations by zip code,Factual Query,Navigational Query,Navigational Query,True,0.88,Navigational Query,0.92289925,0.03160562500000097
+tax code l,Factual Query,Transactional Query,Factual Query,True,1.5517427921295166,Transactional Query,1.5517428,0.01686275000000137
+www.colonialpenn.com life insurance,Navigational Query,Factual Query,Factual Query,True,0.6,Transactional Query,1.4555336,0.02960870799999782
+how many americans served in ww1,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.73531663,0.02200945899999951
+honor mi,Abstain Query,Factual Query,Factual Query,True,0.66,Navigational Query,1.4060656,0.014308541000001895
+tai air,Navigational Query,Factual Query,Factual Query,True,0.75,Factual Query,1.6008625,0.01968570799999725
+bose earbuds bluetooth,Abstain Query,Transactional Query,Transactional Query,True,0.52,Transactional Query,1.4663622,0.022033125000000098
+utv weather forecast,Factual Query,Factual Query,Factual Query,True,0.55,Navigational Query,1.4290161,0.01989979200000036
+what is the best prescription diet pill,Factual Query,Factual Query,Factual Query,True,0.7,Factual Query,1.5087125,0.016136458000001852
+camber caster toe explained,Abstain Query,Factual Query,Factual Query,True,0.84,Factual Query,1.4479887,0.03318475000000021
+costco en ligne franÃ§ais,Navigational Query,Navigational Query,Navigational Query,True,1.2721312046051025,Navigational Query,1.2721312,0.03567216700000131
+level of aggregation,Abstain Query,Factual Query,Factual Query,False,0.84,Factual Query,1.4624257,0.018351917000000384
+aura colors,Abstain Query,Factual Query,Factual Query,True,0.71,Factual Query,1.6897967,0.02474575000000101
+xbox live account login,Navigational Query,Transactional Query,Transactional Query,True,0.83,Transactional Query,1.1715177,0.0208617920000016
+www.politico.com,Navigational Query,Abstain Query,Abstain Query,True,1.549810767173767,Abstain Query,1.5498108,0.01966116699999887
+blackwater reptile,Transactional Query,Factual Query,Factual Query,True,0.9,Factual Query,1.115612,0.055450792000002025
+www.vonage.co.uk login,Navigational Query,Transactional Query,Transactional Query,True,0.62,Transactional Query,1.3345809,0.047532707999998536
+california real estate license application,Navigational Query,Instrumental Query,Instrumental Query,True,1.3984278440475464,Instrumental Query,1.3984278,0.0294338329999988
+haskell quicksort,Abstain Query,Transactional Query,Navigational Query,True,1.6194547414779663,Transactional Query,1.6194547,0.0190238330000021
+ancient greek clothes,Abstain Query,Factual Query,Factual Query,True,0.83,Factual Query,1.5466636,0.058737582999999205
+wakeforestbaptist,Abstain Query,Factual Query,Factual Query,True,0.72,Factual Query,1.6430429,0.025637458999998586
+duplicate word page,Instrumental Query,Instrumental Query,Instrumental Query,True,1.4671095609664917,Instrumental Query,1.4671096,0.02182495799999984
+kinds of music,Abstain Query,Instrumental Query,Factual Query,True,1.587189793586731,Instrumental Query,1.5871898,0.043525332999998056
+plymouth roadster,Factual Query,Navigational Query,Factual Query,True,1.5732142925262451,Navigational Query,1.5732143,0.024613291000001425
+the showman movie,Factual Query,Factual Query,Factual Query,True,0.52,Abstain Query,1.7120951,0.016457208999998585
+yahoo! fantasy sports,Navigational Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.2883685,0.019983584000001997
+country code united states,Factual Query,Factual Query,Factual Query,True,0.63,Navigational Query,1.4465766,0.021741999999999706
+fllotto,Navigational Query,Navigational Query,Factual Query,True,1.3550891876220703,Navigational Query,1.3550892,0.01636841599999883
+"www,wellsfargocom",Navigational Query,Factual Query,Factual Query,False,0.82,Factual Query,1.1309676,0.03188433400000079
+crock pot sirloin tip roast,Instrumental Query,Navigational Query,Factual Query,True,1.4858617782592773,Navigational Query,1.4858618,0.020824415999999957
+discover pay online,Transactional Query,Transactional Query,Transactional Query,True,0.9,Transactional Query,0.69800955,0.0245402499999976
+lackland afb county,Factual Query,Factual Query,Factual Query,True,0.71,Factual Query,1.3859134,0.023418082999999257
+democratic party chairman,Abstain Query,Factual Query,Factual Query,True,0.87,Factual Query,1.4315468,0.0188998749999989
+atalectasis,Factual Query,Factual Query,Factual Query,False,0.93,Factual Query,0.8087708,0.028745999999998162
+mercy general hospital,Abstain Query,Factual Query,Factual Query,False,0.74,Factual Query,1.1329429,0.023291874999998186
+best surgery for acid reflux,Abstain Query,Factual Query,Factual Query,False,0.94,Factual Query,0.58363855,0.02253087500000106
+poison ivy actress,Abstain Query,Factual Query,Factual Query,False,0.93,Factual Query,0.9053696,0.02002412499999906
+connecticut elections,Abstain Query,Abstain Query,Factual Query,True,1.2721227407455444,Abstain Query,1.2721227,0.015224916000001087
+queen sheet sets,Abstain Query,Factual Query,Factual Query,True,0.58,Transactional Query,1.6762078,0.013902000000001635
+pixma mg3600 wireless setup without disc,Instrumental Query,Factual Query,Factual Query,True,0.52,Transactional Query,1.7301861,0.02093062500000542
+pah compounds,Factual Query,Factual Query,Factual Query,True,0.91,Factual Query,1.1285336,0.023426792000002195
+avg internet,Abstain Query,Transactional Query,Transactional Query,True,0.79,Transactional Query,1.080488,0.02315487499999591
+usaa san antonio,Abstain Query,Factual Query,Factual Query,True,0.71,Factual Query,1.5137421,0.019508874999999648
+www.antennasearch.com,Navigational Query,Navigational Query,Navigational Query,True,0.86,Navigational Query,0.9861218,0.022941500000001724
+what is spinal meningitis,Factual Query,Factual Query,Factual Query,False,0.95,Factual Query,0.7060256,0.016144875000001946
+ebs flexible spending account,Abstain Query,Transactional Query,Transactional Query,True,0.51,Transactional Query,1.3413475,0.028444917000001624
+volt drop calculator,Transactional Query,Transactional Query,Transactional Query,True,0.93,Transactional Query,0.5211337,0.015848000000005413
+my ring account,Navigational Query,Transactional Query,Transactional Query,True,1.6400117874145508,Transactional Query,1.6400118,0.01739470899999418
+delusion of jealousy,Abstain Query,Abstain Query,Abstain Query,True,0.69,Abstain Query,1.236913,0.025410708999999088
+residual volume,Factual Query,Factual Query,Factual Query,True,0.66,Factual Query,1.6696471,0.021759125000002655
+windows 10 turn off screen lock,Instrumental Query,Transactional Query,Factual Query,True,1.6950724124908447,Transactional Query,1.6950724,0.018295708000003685
+samples of contracts,Abstain Query,Transactional Query,Transactional Query,True,1.358913540840149,Transactional Query,1.3589135,0.023722208000002354
+b12 vitamin food,Abstain Query,Factual Query,Factual Query,True,0.85,Factual Query,1.2831389,0.02378820800000625
+news sport football,Abstain Query,Abstain Query,Factual Query,True,1.663691759109497,Abstain Query,1.6636918,0.019026666999998554
+alveoli structure and function,Abstain Query,Factual Query,Factual Query,False,0.92,Factual Query,1.0240844,0.024917915999999707
+starwars disneyland,Abstain Query,Navigational Query,Navigational Query,True,0.75,Navigational Query,1.1833609,0.025289082999996992
+what router should i buy,Factual Query,Transactional Query,Transactional Query,True,1.4742056131362915,Transactional Query,1.4742056,0.026952124999993998
+ncdps forms,Navigational Query,Transactional Query,Factual Query,True,1.4375545978546143,Transactional Query,1.4375546,0.0251586250000031
+how much oxycodone is safe,Factual Query,Factual Query,Factual Query,True,0.89,Factual Query,1.2027842,0.021000541999995903
+micro anti-snoring device,Abstain Query,Factual Query,Factual Query,True,0.61,Transactional Query,1.428619,0.027477707999999268
+cvs market,Abstain Query,Navigational Query,Navigational Query,True,0.76,Navigational Query,0.8918597,0.020658124999997085
+riverside county ca property tax search,Navigational Query,Navigational Query,Navigational Query,True,0.55,Navigational Query,1.493461,0.031020415999996942
+bank of america abuse reporting,Navigational Query,Abstain Query,Transactional Query,True,1.4813388586044312,Abstain Query,1.4813389,0.03197316699999675
+electricity facts,Factual Query,Factual Query,Factual Query,True,0.82,Factual Query,1.4123164,0.022665332999999066
+hit ledger,Factual Query,Navigational Query,Transactional Query,True,1.5271272659301758,Navigational Query,1.5271273,0.024830375000000515
+first health insurance reviews,Abstain Query,Factual Query,Factual Query,True,0.77,Factual Query,1.5158967,0.02517654199999697
+luxury suv rental,Abstain Query,Transactional Query,Transactional Query,True,0.55,Transactional Query,1.4430723,0.019626041000002203
+sam's club synchrony sign in,Navigational Query,Transactional Query,Transactional Query,True,0.73,Transactional Query,1.0895611,0.023163459000002717
+sylane,Abstain Query,Factual Query,Factual Query,True,0.76,Factual Query,1.5541346,0.017376791000003777

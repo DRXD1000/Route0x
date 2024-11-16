@@ -17,12 +17,12 @@
 <div align="center">
 
   <h4 align="center">
-    <b>Low latency, High Accuracy, Custom Query routers for Humans and Agents. </b>
+    <b>Low latency, High Accuracy, Custom Query routers Dialogue Systems. </b>
     <br />
   </h4>
 </div>
 
-**Why Route0x?** Query Routing is a higher level tasks that neither dovetails into Intent classification nor into Query similarity, not atleast in isolation. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. Query routing cannot be just mapped to Intent classification alone and it won't work owing to the above requirements. Research literature hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue and offer a production-grade solution for Humans and Agents.
+**Why Route0x?** Query Routing cannot be fully solved only Text classification or Semantic similarity in isolation. Using LLMs makes it a slow and expensive pursuit. The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and **Reject both ID OOS and OOD OOS**. The research literature is vast and it hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. route0x is a humble attempt to tackle this issue. It takes a 360 degree approach and leverages LLMs to offer a production-grade solution.
 
 
 **KPI for Query Routing:** $ / Query. (subsumes accuracy, latency)
