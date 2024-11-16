@@ -17,7 +17,7 @@
 <div align="center">
 
   <h4 align="center">
-    <b>Low latency, High Accuracy, Custom Query routers Dialogue Systems. </b>
+    <b>Low latency, High Accuracy, Custom Query routers. </b>
     <br />
   </h4>
 </div>
