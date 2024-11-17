@@ -347,6 +347,9 @@ What is `use_multivec_reranking` and how it works ?
 [Samples](./samples/)
 
 ### I want to see the detailed numbers & reproduce benchmarks
+
+Below are the benchmarks, and yes the numbers are reproducable. Detailed tables will be added shortly.
+
 [Benchmarks](./benchmarks/)
 
 ### Features and Roadmap
