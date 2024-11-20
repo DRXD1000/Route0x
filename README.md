@@ -58,6 +58,7 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 - [I want to see more usage samples](#i-want-to-see-more-usage-samples)
 - [I want to see the detailed numbers & reproduce benchmarks](#i-want-to-see-the-detailed-numbers--reproduce-benchmarks)
 - [Features and Roadmap](#features-and-roadmap)
+- [I have a question](#i-have-a-question)
 - [Scope, Caveats and Limitations](#scope-caveats-and-limitations)
 - [Citations](#citations)
 
@@ -366,6 +367,10 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
   - Identifying Confidence and Uncertainity thresholds to use fallback mechanism using Elbow/Knee locator.
   - Generating a test set quickly check the route0x outputs.
 </details>
+
+### I have a question
+
+- Please head to the discussions tab and ask your question.
 
 ### Scope, Caveats and Limitations
 
