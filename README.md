@@ -69,7 +69,8 @@ We've disetangled the resource heavy route building (entails training) from quer
 
 ### Training 
 ```python 
-pip install route0x[build] # (Built with SWEs as target audience)
+# (Built with SWEs in mind)
+pip install route0x[build] 
 ```
 
 ### [Build a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
@@ -77,7 +78,8 @@ pip install route0x[build] # (Built with SWEs as target audience)
 ### Inference 
 
 ```python 
-pip install route0x[route] # (Light-weight without any heavy torch dependencies)
+# (Light-weight without any heavy torch dependencies)
+pip install route0x[route] 
 ```
 
 ```python
