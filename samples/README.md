@@ -4,10 +4,10 @@
 | Scenario | Link |
 |---------------|----------|
 |Get me started | [Snippet](#get-me-started) |
-|I have a list of routes and I can give 2 samples per route | T.B.A |
+|I have a list of routes and I can give 2 samples per route | [Snippet](#get-me-started) |
+|I have a full-on train.csv and test.csv  | [Snippet](#i-have-traincsv-and-testcsv) |
 |I have a list of routes but no samples | T.B.A |
-|I have a full-on train.csv and test.csv  | T.B.A |
-|I would like to handle In-domain / adversarial OOS queries  | T.B.A |
+|I would like to handle In-domain / adversarial OOS queries  | [Snippet](#i-want-to-handle-id-or-adversarial-oos-queries) |
 |I would like to handle Only In-domain queries No OOS  | T.B.A |
 |I would like my router robust to typos in queries ? | T.B.A |
 |I would like run route0x on a TODS style benchmark dataset to compare performance | T.B.A |
@@ -17,7 +17,7 @@
 
 ```python
 
-# ONLY IF YOU WANT TO USE OAI GPT4x Models
+# ONLY IF YOU WANT TO USE OAI GPT4x Models, This must be set before importing route0x classes
 import os
 os.putenv("OPENAI_API_KEY", "<your_api_key>")
 os.environ["OPENAI_API_KEY"] = "<your_api_key>"
@@ -54,8 +54,64 @@ routebuilder = RouteBuilder(
     )
 
 routebuilder.build_routes()
-    
+
 ```
+
+
+### I have train.csv and test.csv
+
+- *Assumes your intention is to get a router out of your train.csv that has atleast 2 samples per route and you want to test the performance of the router on the test.csv you have prepared.* 
+- *Use add_additional_invalid_routes only when the TODS is very domain specific formal niche conversations because invalid_routes by default excludes  "chitchat" if you want to allow a more informal chat include the right invalid_routes or set add_additional_invalid_routes to false*
+
+```python
+
+from route0x.route_builder import RouteBuilder, Route, RouteBuilderRequest
+
+routebuilder = RouteBuilder(
+            seed = 1234,
+            train_path = "<your_train.csv>",
+            domain="<your domain description>",
+            llm_name="llama3.1",# gpt4* offers better quality data, API key searched in env, os.getenv("OPENAI_API_KEY")
+            enable_synth_data_gen = True,
+            samples_per_route = 30 # This is default and is more than enough but if you want to experiment and are willing to spend few extra cents you can increase it, best practice it is to increase it in folds of 20s i.e. 50, 70, 90
+            max_query_len = 24, # if you have longer queries increase accordingly, but it will have performance penalty
+            add_additional_invalid_routes = True # If you have a few additional invalid routes that you want to avoid
+            invalid_routes = ["gibberish", "mojibake", "chitchat", "non-english", "profanity"] # Exclude elements as you see fit
+            only_gen_dataset = True # enable this to only generate a train and eval set to examine the variety and quality without training.
+            log_level = "info",
+    )
+
+routebuilder.build_routes()
+
+```
+
+
+### I want to handle ID or adversarial OOS queries
+
+- *Assumes your intention is to get a router out of your train.csv that has atleast 2 samples per route and you want to test the performance of the router on the test.csv you have prepared.* 
+
+
+```python
+
+from route0x.route_builder import RouteBuilder, Route, RouteBuilderRequest
+
+routebuilder = RouteBuilder(
+            seed = 1234,
+            train_path = "<your_train.csv>",
+            domain="<your domain description>",
+            llm_name="llama3.1",
+            enable_synth_data_gen = True,
+            enable_id_oos_gen = True, # Include this
+            samples_per_route = 30 
+            max_query_len = 24, 
+            log_level = "info",
+    )
+
+routebuilder.build_routes()
+
+```
+
+
 
 ### FAQs:
 - T.B.A

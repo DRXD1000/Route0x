@@ -86,6 +86,14 @@ query_router = RouteFinder(<your_route0x_model_path>)
 route_obj = query_router.find_route(<your-query>)
 ```
 
+```python
+# prints defaults and your choices for build
+print(route_builder.build_params())
+
+# prints defaults and your choices for find 
+print(query_router.route_params()) 
+```
+
 ## Route0x Evals: A Highlight reel.
 
 <br/>
