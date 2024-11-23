@@ -17,7 +17,7 @@
 <div align="center">
 
   <h4 align="center">
-    <b>Low latency, High Accuracy, Custom Query routers. </b>
+    <b>Low latency, High Accuracy, Custom Query routers for Humans and Agents. </b>
     <br />
   </h4>
 </div>
@@ -233,7 +233,7 @@ We have added an experimental feature to offer a confidence_trend (confidence_tr
 
 What is `use_multivec_reranking` and how it works ?
 
-[You can read more on this here in this awesome work by Kacper Łukawski](https://qdrant.tech/articles/late-interaction-models/). We took the basic idea and repurposed it. It can lift your overall peformance for a small tradeoff in latency.
+[You can read more on this here in this awesome work by Kacper Łukawski](https://qdrant.tech/articles/late-interaction-models/). We implemented a variant of this. It can lift your overall peformance for a small tradeoff in latency.
 
 <img src="https://qdrant.tech/articles_data/late-interaction-models/single-model-reranking.png" width=100%/><br/><br/>
 
