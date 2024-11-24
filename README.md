@@ -409,7 +409,24 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 <details>
 <br/>
 
-- Will be added shortly
+```bibtex
+  @misc{damodaran2024route0x,
+    author       = {Prithiviraj Damodaran},
+    title        = {Route0x: Low Latency, High Accuracy, Custom Query Routers for Humans and Agents},
+    year         = {2024},
+    doi          = {10.5281/zenodo.14211645},
+    url          = {https://doi.org/10.5281/zenodo.14211645},
+    publisher    = {Zenodo}
+  }
+
+  @misc{damodaran2024route0xrepo,
+    author       = {Prithiviraj Damodaran},
+    title        = {Route0x: Low Latency, High Accuracy, Custom Query Routers for Humans and Agents},
+    year         = {2024},
+    url          = {https://github.com/PrithivirajDamodaran/Route0x},
+    note         = {GitHub repository}
+  }
+```
 
 </details>
 
