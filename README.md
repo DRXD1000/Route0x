@@ -8,7 +8,7 @@
 [![Downloads](https://static.pepy.tech/badge/route0x)](https://pepy.tech/project/route0x)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 [![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11093524.svg)](https://doi.org/10.5281/zenodo.11093524) -->
+[![DOI](https://zenodo.org/badge/882773487.svg)](https://doi.org/10.5281/zenodo.14211645)
 
 </div>
 
