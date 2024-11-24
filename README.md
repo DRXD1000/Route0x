@@ -61,6 +61,7 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 - [I have a question](#i-have-a-question)
 - [Scope, Caveats and Limitations](#scope-caveats-and-limitations)
 - [Citations](#citations)
+- [FAQs](#faqs)
 
 
 ## Route0x: Getting Started
@@ -410,7 +411,13 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 
 - Will be added shortly
 
+</details>
+
 ### FAQs
+
+<details>
+<br/>
+
 
 - If you got "connection refused" exception for Local LLMs + Local machine CLI for synthetic data make sure docker daemon is running. If everything goes smoothly you should see something like below.
 
