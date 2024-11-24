@@ -380,6 +380,7 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 
 ### I have a question
 
+- Check FAQs, if it's not addressed:
 - Please head to the discussions tab and ask your question.
 
 ### Scope, Caveats and Limitations
@@ -408,5 +409,16 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 <br/>
 
 - Will be added shortly
+
+### FAQs
+
+- If you got "connection refused" exception for Local LLMs + Local machine CLI for synthetic data make sure docker daemon is running. If everything goes smoothly you should see something like below.
+
+```python
+2024-11-24 09:43:35,708 - INFO - Local LLM server is not running.
+2024-11-24 09:43:35,708 - INFO - 1st time setup might take a few minutes. Please be patient...
+2024-11-24 09:43:40,685 - INFO - Attempting to start LLM server via Docker...
+a2ddd96346fea535759c47681fdd7164618e2aa27f0565444e508b82a26a01f8
+```
 
 </details>

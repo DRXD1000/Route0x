@@ -23,17 +23,15 @@ class UnifiedLLM:
             openai.api_key = self.api_token
 
         elif self.provider == 'claude':
-            self.client = Anthropic(api_key=self.api_token)
+            # self.client = Anthropic(api_key=self.api_token)
+            raise NotImplementedError("Anthropic support is not yet implemented.")
 
         elif self.provider == 'google':
-            pass
+            raise NotImplementedError("Google support is not yet implemented.")
 
         elif self.provider == 'ollama':
             self.client = Client(host=ollama_server_url)
-            ollama_system_prompt = f"""FROM {model}
-SYSTEM {system_prompt}"""
-            ollama.create(model=model, modelfile=ollama_system_prompt)  
-
+            
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")
 
@@ -78,9 +76,13 @@ SYSTEM {system_prompt}"""
     def _generate_ollama(self, prompt):
             response = self.client.chat(model=self.model, messages=[
                     {
-                        'role': 'user',
-                        'content': prompt,
+                        'role': 'system',
+                        'content': self.system_prompt
                     },
-                ])
+                    {
+                        'role': 'user',
+                        'content': prompt
+                    },
+             ])
 
             return response["message"]["content"]

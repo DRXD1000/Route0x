@@ -1401,4 +1401,3 @@ class RouteBuilder:
             self.logger.info("Model training and evaluation completed.")
             self.logger.info("Thank you for using route0x! May all your queries find their way.")
 
-
