@@ -74,7 +74,42 @@ We've disetangled the resource heavy route building (entails training) from quer
 pip install route0x[build] 
 ```
 
-### [Build a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
+```python
+from route0x.route_builder import RouteBuilder, Route, RouteBuilderRequest
+
+routes = [
+  Route("alarm/cancel_alarm", ['delete my alarms please', 'cancel oven alarm']),
+  Route("alarm/modify_alarm", ['Change alarm setting to 5am.', 'change my 5am alarm to 6am please']),
+  Route("alarm/set_alarm", ['Set alarm to go off every 30 seconds for 20 minutes', 'Set alarm every 3 minutes for 20 minutes.']),
+  Route("alarm/show_alarms", ['When is my next alarm for', 'when is my alarm going to go off']),
+  Route("alarm/snooze_alarm", ['Snooze the alarm for 20 mins.', 'snooze all the alarms']),
+  Route("alarm/time_left_on_alarm", ['How much time is left until my alarm rings?', 'How much time do I have left on my alarm?']),
+  Route("reminder/cancel_reminder", ['delete my two most recent reminders', 'Clear all reminders for this weekend']),
+  Route("reminder/set_reminder", ['Remind me to look for a dress for the wedding on Friday', 'Remind me to get dog food at 4:30 pm']),
+  Route("reminder/show_reminders", ['remind me of when I need to leave for my flight on Friday', 'Show my Reminders every 30 minutes until I swipe them as done']),
+  Route("weather/checkSunrise", ['What time does the sun come up tomorrow', 'what time is sunrise tomorrow']),
+  Route("weather/checkSunset", ['What time is sunset on friday', 'When does the sun set today?']),
+  Route("weather/find", ['Whats the high for the next 3 days?', 'what is the temperature high and low for today'])
+]
+
+build_request = RouteBuilderRequest(routes)
+
+
+routebuilder = RouteBuilder(
+            seed = 1234,
+            build_request = build_request,
+            domain="personal assistant",
+            llm_name="llama3.1", # or gpt4*, offers better quality data, API key searched in env, os.getenv("OPENAI_API_KEY")
+            enable_synth_data_gen = True,
+            enable_id_oos_gen = True,
+            max_query_len = 24,
+            log_level = "info",
+    )
+
+routebuilder.build_routes()
+```
+
+### [Building a query router for your routes - Starter Notebook](https://colab.research.google.com/drive/1ZBXFZpmXLHZtALcKMCd48kS-cGwQogri?usp=sharing)
 
 ### Inference 
 
@@ -369,6 +404,7 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 <details>
 <br/>
 
+- Add pydantic classes as response format to increase structered output generation.
 - Integrate [distilabel](https://github.com/argilla-io/distilabel) ?
 - Integrate DSPy or AdalFlow for streamlining LLM prompt integrations ?
 - Run identify best non-english base model and test on few datasets (should be straight-jacket).
