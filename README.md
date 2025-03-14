@@ -22,7 +22,7 @@
   </h4>
 </div>
 
-**Why Route0x?** Query Routing cannot be fully solved just with Text classification or just with Semantic similarity in isolation. Here is why: The query `"How can I improve my credit score?"` is `In-Domain (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Domain (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and gracefully **Reject both ID OOS and OOD OOS**. The research literature is vast and it hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. 
+**Why Route0x?** Query Routing cannot be fully solved just with Text classification or just with Semantic similarity in isolation. Here is why: The query `"How can I improve my credit score?"` is `In-Distribution (ID)` but `Out-of-scope (OOS)` for a banking chatbot and `Out-Of-Distribution (OOD) OOS` for a e-Commerce chatbot. A good query router should be able to learn to accept **ID In-Scope** queries and gracefully **Reject both ID OOS and OOD OOS**. The research literature is vast and it hints Chatbots (or more formally) Task-Oriented Dialogue Systems (TODS) and Goal Oriented Dialogue Systems (GODS) have been grappling with this hard problem for a long time now. 
 
 `route0x` is a production-grade solution that takes a comprehensive approach to query routing, leveraging LLMs while optimizing for cost per query ($/query). 0x your latency, cost and learning curve.
 
