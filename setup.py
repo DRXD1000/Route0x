@@ -4,25 +4,26 @@ import os
 
 
 build_requires = [
-    'pandas',
-    'datasets',
-    'sentence-transformers',
+    'pandas==2.2.3',
+    'datasets==3.2.0',
+    'sentence-transformers==4.0.1',
     'setfit==1.0.2',
     'onnx==1.14.0',
     'onnxruntime==1.15.1',
-    'tqdm',
-    'scikit-learn',
+    'tqdm==4.67.1',
+    'scikit-learn==1.6.1',
     'huggingface_hub==0.23.5',
-    'accelerate',
-    'ollama',
-    'matplotlib',
-    'chardet',
+    'accelerate==1.5.2',
+    'ollama==0.4.7',
+    'matplotlib==3.10.1',
+    'chardet==5.2.0',
     'openai==1.57.2',
-    'anthropic',
-    'onnxconverter-common',
-    'faiss-cpu',
-    'nlpaug',
-    'kneed'
+    'anthropic==0.49.0',
+    'onnxconverter-common==1.14.0',
+    'faiss-cpu==1.10.0',
+    'nlpaug==1.1.11',
+    'kneed==0.8.5',
+    'numpy==1.24.4'
 ]
 
 route_requires = [
@@ -37,7 +38,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.1.14',
+    version='0.1.15',
     description='Low latency, High Accuracy, Custom Query routers.',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
