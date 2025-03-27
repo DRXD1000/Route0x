@@ -894,9 +894,11 @@ class RouteBuilder:
         Trains and evaluates the model.
         """
         if routes:
-            model = SetFitModel.from_pretrained(model_name, labels = routes, trust_remote_code=True, device=self.device)
+            # model = SetFitModel.from_pretrained(model_name, labels = routes, trust_remote_code=True, device=self.device)
+            model = SetFitModel.from_pretrained(model_name, labels = routes, device=self.device)
         else:    
-            model = SetFitModel.from_pretrained(model_name, trust_remote_code=True, device=self.device)
+            # model = SetFitModel.from_pretrained(model_name, trust_remote_code=True, device=self.device)
+            model = SetFitModel.from_pretrained(model_name, device=self.device)
 
         self.logger.info("model loaded")
 
