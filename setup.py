@@ -23,7 +23,7 @@ build_requires = [
     'faiss-cpu==1.10.0',
     'nlpaug==1.1.11',
     'kneed==0.8.5',
-    'numpy==1.24.4'
+    'numpy==1.25.0'
 ]
 
 route_requires = [
@@ -38,7 +38,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.1.15',
+    version='0.1.16',
     description='Low latency, High Accuracy, Custom Query routers.',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
