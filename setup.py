@@ -7,22 +7,23 @@ build_requires = [
     'pandas',
     'datasets',
     'sentence-transformers',
-    'setfit==1.0.2',
+    'setfit==1.1.1',
     'onnx==1.14.0',
     'onnxruntime==1.15.1',
     'tqdm',
     'scikit-learn',
-    'huggingface_hub==0.23.5',
+    'huggingface_hub==0.26.0',
     'accelerate',
     'ollama',
     'matplotlib',
     'chardet',
-    'openai==1.37.1',
+    'openai==1.57.2',
     'anthropic',
     'onnxconverter-common',
     'faiss-cpu',
     'nlpaug',
-    'kneed'
+    'kneed',
+    'numpy==2.2.4'
 ]
 
 route_requires = [
@@ -37,7 +38,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.1.1',
+    version='0.1.11',
     description='Low latency, High Accuracy, Custom Query routers.',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
