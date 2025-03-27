@@ -22,8 +22,7 @@ build_requires = [
     'onnxconverter-common',
     'faiss-cpu',
     'nlpaug',
-    'kneed',
-    'numpy==2.1.0'
+    'kneed'
 ]
 
 route_requires = [
@@ -38,7 +37,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.1.13',
+    version='0.1.14',
     description='Low latency, High Accuracy, Custom Query routers.',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},
