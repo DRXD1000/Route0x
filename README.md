@@ -69,10 +69,19 @@ Check out the highlight reel of empirical evals and/or even dig deep with more n
 We've disetangled the resource heavy route building (entails training) from query routing (entails inference)
 
 ### Training 
+
+
 ```python 
 # (Built with SWEs in mind)
 pip install route0x[build] 
 ```
+
+**Important step before training**
+
+```
+!huggingface-cli login
+```
+
 
 ```python
 from route0x.route_builder import RouteBuilder, Route, RouteBuilderRequest
