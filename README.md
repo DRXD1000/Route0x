@@ -23,7 +23,7 @@
 </div>
 
 <div style='background-color: #e7f3fe; border-left: 6px solid #2196F3; padding: 10px; margin: 10px 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6;'>
-  <p style="margin: 0;"><strong>ℹ️ Update: 28th March '25 </strong> Getting started Google colab throws some dependency issues, we are working on it. You can continue to use Route0x locally as usual - Create a new conda or other python environment and install route0x to proceed.</p>
+  <p style="margin: 0;"><strong>ℹ️ Update: 28th March '25 </strong> <i> Getting started Google colab throws some dependency issues, we are working on it. You can continue to use Route0x locally as usual - Create a new conda or other python environment and install route0x to proceed </i> .</p>
 </div>
 
 
