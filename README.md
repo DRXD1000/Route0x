@@ -487,7 +487,7 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 <br/>
 
 
-- If you got "connection refused" exception for Local LLMs + Local machine CLI for synthetic data make sure docker daemon is running. If everything goes smoothly you should see something like below.
+1. If you got "connection refused" exception for Local LLMs + Local machine CLI for synthetic data make sure docker daemon is running. If everything goes smoothly you should see something like below.
 
 ```python
 2024-11-24 09:43:35,708 - INFO - Local LLM server is not running.
@@ -495,5 +495,22 @@ Below are the benchmarks, and yes the numbers are reproducable. Detailed tables 
 2024-11-24 09:43:40,685 - INFO - Attempting to start LLM server via Docker...
 a2ddd96346fea535759c47681fdd7164618e2aa27f0565444e508b82a26a01f8
 ```
+2. Training completed but it throws the below exception "OMP: Error #179: Function pthread_mutex_init failed:
+OMP: System error #22: Invalid argument" or something related to OMP like below:
+
+```
+2025-03-28 10:37:39,295 - IF OOS detection model saved to output/run_20250328_103735/route0x_model/model_if_outlier_head.pkl
+2025-03-28 10:37:39,295 - INFO - All models trained and saved.
+
+OMP: Error #179: Function pthread_mutex_init failed:
+OMP: System error #22: Invalid argument
+zsh: segmentation fault  ipython
+(route0x) prithivida@Prithividas-M1 routing % /Users/prithivida/anaconda3/envs/route0x/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+```
+
+This typically happens in >= Mac M1 
+
+run `export OMP_NUM_THREADS=1`
 
 </details>
