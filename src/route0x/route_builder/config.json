@@ -21,7 +21,7 @@
     "instruct_llm": "",
     "output_dir": "output",
     "local_llm_host": "http://localhost:11434",
-    "hosted_llm_families": { "openai": ["gpt"], "anthropic": ["claude"], "google": ["gemini"]},
+    "hosted_llm_families": { "openai": ["gpt", "o1", "o3"], "anthropic": ["claude"], "google": ["gemini"]},
     "seed": 1234,
     "oos_label": "NO_NODES_DETECTED",
     "expected_oos_proportion": 0.1,
