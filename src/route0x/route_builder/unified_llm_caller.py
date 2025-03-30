@@ -28,7 +28,7 @@ class UnifiedLLM:
             raise NotImplementedError("Anthropic support is not yet implemented.")
 
         elif self.provider == 'google':
-            genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+            self.api_token =os.environ["GEMINI_API_KEY"]
             # raise NotImplementedError("Google support is not yet implemented.")
 
         elif self.provider == 'ollama':
@@ -52,7 +52,11 @@ class UnifiedLLM:
 
     def _generate_google(self, prompt):
         try:
-
+            import urllib.request
+            import urllib.error
+            import json
+            
+            # Configuration similar to original
             generation_config = {
                 "temperature": TEMPERATURE,
                 "top_p": 1.0,
@@ -60,29 +64,47 @@ class UnifiedLLM:
                 "max_output_tokens": 4000,
                 "response_mime_type": "application/json",
             }
-
-            model = genai.GenerativeModel(
-                model_name=self.model,
-                generation_config=generation_config,
-            )
-
-            chat_session = model.start_chat(
-                history=[
+            
+            # Build the API URL with your API key
+            url = f"https://generativelanguage.googleapis.com/v1/models/{self.model}:generateContent?key={self.api_token}"
+            
+            # Create the request payload
+            payload = {
+                "contents": [
                     {
                         "role": "user",
                         "parts": [{"text": self.system_prompt}]
+                    },
+                    {
+                        "role": "user", 
+                        "parts": [{"text": prompt}]
                     }
-                ]
-            )
-
-            response = chat_session.send_message({"text": prompt})
-            response_content = response.text
-            return response_content
-
-
+                ],
+                "generationConfig": generation_config
+            }
+            
+            # Convert data to JSON string and encode as bytes
+            data_bytes = json.dumps(payload).encode('utf-8')
+            
+            # Create request with headers
+            headers = {"Content-Type": "application/json"}
+            req = urllib.request.Request(url, data=data_bytes, headers=headers, method='POST')
+            
+            # Send request and get response
+            with urllib.request.urlopen(req) as response:
+                response_data = response.read().decode('utf-8')
+                response_json = json.loads(response_data)
+            
+            # Extract text from response
+            if "candidates" in response_json and len(response_json["candidates"]) > 0:
+                response_content = response_json["candidates"][0]["content"]["parts"][0]["text"]
+                return response_content
+            else:
+                return f"Error in response: {response_json}"
+                
         except Exception as e:
             traceback.print_exc()
-
+            return f"Error: {str(e)}"
 
     def _generate_openai(self, prompt):
         try:
