@@ -2,7 +2,6 @@ import openai
 from anthropic import Anthropic, HUMAN_PROMPT, AI_PROMPT
 import ollama
 from ollama import Client
-import google.generativeai as genai
 import traceback
 import os
 
