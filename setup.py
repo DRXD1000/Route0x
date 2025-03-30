@@ -38,7 +38,7 @@ route_requires = [
 
 setup(
     name='Route0x',
-    version='0.1.22',
+    version='0.1.24',
     description='Low latency, High Accuracy, Custom Query routers.',
     packages=find_packages(where="src"),
     package_dir={'': 'src'},

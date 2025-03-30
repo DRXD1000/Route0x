@@ -61,7 +61,6 @@ class UnifiedLLM:
                 "top_p": 1.0,
                 "top_k": 0,
                 "max_output_tokens": 4000,
-                "response_mime_type": "application/json",
             }
             
             # Build the API URL with your API key

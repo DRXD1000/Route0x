@@ -462,8 +462,11 @@ class RouteBuilder:
                         self.logger.debug(response)
                     else:
                         resp_obj = json.loads(response)
+                        self.logger.debug(resp_obj)
                         if "queries" in resp_obj:
                             examples = resp_obj["queries"]
+                        elif isinstance(resp_obj, list):    
+                            examples = resp_obj
                         else:
                             self.logger.error("LLM Prompt failed to stick to the schema") 
                             sys.exit(0)       
