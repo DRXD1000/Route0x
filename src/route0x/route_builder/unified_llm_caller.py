@@ -2,6 +2,7 @@ import openai
 from anthropic import Anthropic, HUMAN_PROMPT, AI_PROMPT
 import ollama
 from ollama import Client
+import google.generativeai as genai
 import traceback
 import os
 
@@ -27,7 +28,8 @@ class UnifiedLLM:
             raise NotImplementedError("Anthropic support is not yet implemented.")
 
         elif self.provider == 'google':
-            raise NotImplementedError("Google support is not yet implemented.")
+            genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+            # raise NotImplementedError("Google support is not yet implemented.")
 
         elif self.provider == 'ollama':
             self.client = Client(host=ollama_server_url)
@@ -39,10 +41,47 @@ class UnifiedLLM:
         
         if self.provider == 'openai':
             return self._generate_openai(prompt)
+        elif self.provider == 'google':
+            return self._generate_google(prompt)
         elif self.provider == 'claude':
             return self._generate_claude(prompt)
         elif self.provider == 'ollama':
             return self._generate_ollama(prompt)
+
+
+
+    def _generate_google(self, prompt):
+        try:
+
+            generation_config = {
+                "temperature": TEMPERATURE,
+                "top_p": 1.0,
+                "top_k": 0,
+                "max_output_tokens": 4000,
+                "response_mime_type": "application/json",
+            }
+
+            model = genai.GenerativeModel(
+                model_name=self.model,
+                generation_config=generation_config,
+            )
+
+            chat_session = model.start_chat(
+                history=[
+                    {
+                        "role": "user",
+                        "parts": [{"text": self.system_prompt}]
+                    }
+                ]
+            )
+
+            response = chat_session.send_message({"text": prompt})
+            response_content = response.text
+            return response_content
+
+
+        except Exception as e:
+            traceback.print_exc()
 
 
     def _generate_openai(self, prompt):
